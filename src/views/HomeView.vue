@@ -16,7 +16,7 @@
 <script>
 import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
-import { groupBy } from '@/utils/utils'
+import { groupBy, filterObject } from '@/utils/utils'
 
 import AlertComponent from '@/components/AlertComponent.vue'
 import FiltersComponent from '@/components/FiltersComponent.vue'
@@ -36,9 +36,13 @@ export default {
 
 		filteredWeapons() {
 			let filteredWeapons = this.weapons
-			const { hideCompleted, hideNonRequired, category } = this.filters
+			const { hideGold, hideCompleted, hideNonRequired, category } = this.filters
 
 			if (hideNonRequired) filteredWeapons = filteredWeapons.filter((weapon) => !weapon.dlc)
+			if (hideGold)
+				filteredWeapons = filteredWeapons.filter(
+					(weapon) => !Object.values(filterObject(weapon.progress, ['Polyatomic'])).every(Boolean)
+				)
 			if (hideCompleted)
 				filteredWeapons = filteredWeapons.filter(
 					(weapon) => !Object.values(weapon.progress).every(Boolean)

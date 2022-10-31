@@ -20,6 +20,17 @@
 				</div>
 
 				<div class="checkbox">
+					<label for="hideGold" :class="{ checked: filters.hideGold }">
+						<input
+							id="hideGold"
+							type="checkbox"
+							v-model="filters.hideGold"
+							@change="updateFilters(filters)" />
+						<span>Hide Gold</span>
+					</label>
+				</div>
+
+				<div class="checkbox">
 					<label for="hideCompleted" :class="{ checked: filters.hideCompleted }">
 						<input
 							id="hideCompleted"
@@ -33,14 +44,14 @@
 				<!-- TODO: Add this once the first DLC weapons are released -->
 				<!--<div class="checkbox">
 				<label for="hideNonRequired" :class="{ checked: filters.hideNonRequired }">
-					<input
-						id="hideNonRequired"
-						type="checkbox"
-						v-model="filters.hideNonRequired"
-						@change="updateFilters(filters)" />
-					<span>Hide non required</span>
-				</label>
-			</div>-->
+						<input
+							id="hideNonRequired"
+							type="checkbox"
+							v-model="filters.hideNonRequired"
+							@change="updateFilters(filters)" />
+						<span>Hide non required</span>
+					</label>
+				</div>-->
 
 				<div class="info">
 					<IconComponent
