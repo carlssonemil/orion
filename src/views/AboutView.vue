@@ -73,7 +73,7 @@ export default {
 				},
 				{
 					title: 'Filterable',
-					description: 'Easily switch between weapon categories and toggle completed off.',
+					description: 'Easily switch between weapon categories and toggle completed on/off.',
 					icon: 'filter',
 				},
 				{
