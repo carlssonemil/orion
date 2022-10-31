@@ -22,7 +22,7 @@ export const useStore = defineStore({
 
 	actions: {
 		setWeapons(weapons) {
-			this.weapons = defaultWeapons
+			this.weapons = JSON.parse(JSON.stringify(defaultWeapons))
 
 			if (weapons) {
 				weapons.forEach((weapon) => {
@@ -40,7 +40,7 @@ export const useStore = defineStore({
 		},
 
 		setFilters(filters) {
-			this.filters = defaultFilters
+			this.filters = JSON.parse(JSON.stringify(defaultFilters))
 
 			if (filters) {
 				Object.keys(filters).forEach((key) => {
@@ -80,8 +80,7 @@ export const useStore = defineStore({
 
 		resetProgress() {
 			localStorage.removeItem(token)
-			this.setWeapons(defaultWeapons)
-			this.setFilters(defaultFilters)
+			this.setWeapons()
 			this.beganGrind = null
 
 			Vue.notify({
