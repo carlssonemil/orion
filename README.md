@@ -9,7 +9,7 @@ Orion is a Call of Duty: Modern Warfare 2 (2022) camouflage tracker to easily ma
 - Auto-saving – Your progress is automatically saved and stored. No account needed.
 - Responsive – Use it on your smartphone while gaming.
 - Export/Import – Export your progress to another device or browser.
-- Filterable – Easily switch between weapon categories and toggle completed off.
+- Filterable – Easily switch between weapon categories and toggle completed on/off.
 - Ad-free – No annoying ads cluttering the site. Not now, not ever.
 
 ## Bug reports & feature requests
