@@ -15,7 +15,7 @@
 			<div class="footer">
 				<router-link to="/settings">Settings</router-link>
 				<router-link to="/about">About</router-link>
-				<a href="https://github.com/carlssonemil/vanguard">GitHub</a>
+				<a href="https://github.com/carlssonemil/orion">GitHub</a>
 
 				<a href="https://www.buymeacoffee.com/emilcarlsson" class="button"
 					>Support me by buying me a beer 🍺</a
