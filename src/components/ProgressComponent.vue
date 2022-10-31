@@ -51,7 +51,8 @@ export default {
 		...mapState(useStore, ['weapons', 'categories', 'beganGrind']),
 
 		daysSinceStart() {
-			return daysBetweenDates(this.beganGrind, new Date())
+			const days = daysBetweenDates(this.beganGrind, new Date())
+			return days ? days : 1
 		},
 
 		orionProgress() {
