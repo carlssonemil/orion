@@ -2,7 +2,7 @@
 	<div class="weapon">
 		<div
 			:class="['name', { gold: goldCompleted, polyatomic: polyatomicCompleted }]"
-			@dblclick="toggleWeaponCompleted(weapon, polyatomicCompleted)"
+			@dblclick="toggleGoldCamouflageCompleted(weapon, goldCompleted)"
 			v-tippy="{ content: `Double-click to ${polyatomicCompleted ? 'reset' : 'complete'} weapon` }">
 			{{ weapon.name }}
 		</div>
@@ -26,7 +26,7 @@
 				</div>
 			</div>
 			<div
-				v-if="weapon.progress['Gold']"
+				v-if="polyatomicUnlocked"
 				class="camouflage polyatomic"
 				@click="toggleCamouflageCompleted(weapon, 'Polyatomic', weapon.progress['Polyatomic'])"
 				:content="requirementTooltip(weapon, 'Polyatomic')"
@@ -53,6 +53,11 @@ export default {
 			type: Object,
 			required: true,
 		},
+
+		polyatomicUnlocked: {
+			type: Boolean,
+			required: true,
+		},
 	},
 
 	computed: {
@@ -72,11 +77,7 @@ export default {
 	},
 
 	methods: {
-		...mapActions(useStore, [
-			'toggleWeaponCompleted',
-			'toggleCamouflageCompleted',
-			'toggleGoldCamouflageCompleted',
-		]),
+		...mapActions(useStore, ['toggleCamouflageCompleted', 'toggleGoldCamouflageCompleted']),
 
 		handleCamouflageCompletedToggle(weapon, camouflage, completed) {
 			if (camouflage === 'Gold') {

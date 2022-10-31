@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import { defineStore } from 'pinia'
+import { filterObject } from '../utils/utils'
 import defaultWeapons from '../data/weapons'
 import defaultFilters from '../data/defaults/filters'
 import requirements from '../data/requirements'
@@ -119,9 +120,15 @@ export const useStore = defineStore({
 
 		toggleCategoryCompleted(category, current) {
 			category.forEach((weapon) => {
-				Object.keys(weapon.progress).forEach(
-					(camouflage) => (weapon.progress[camouflage] = !current)
-				)
+				let camouflages
+
+				if (current) {
+					camouflages = Object.keys(weapon.progress)
+				} else {
+					camouflages = Object.keys(filterObject(weapon.progress, ['Polyatomic']))
+				}
+
+				camouflages.forEach((camouflage) => (weapon.progress[camouflage] = !current))
 			})
 
 			this.storeProgress()

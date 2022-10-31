@@ -22,7 +22,11 @@
 				</h2>
 
 				<transition-group name="fade" tag="div" class="weapons">
-					<WeaponComponent v-for="weapon in category" :key="weapon.name" :weapon="weapon" />
+					<WeaponComponent
+						v-for="weapon in category"
+						:key="weapon.name"
+						:weapon="weapon"
+						:polyatomicUnlocked="polyatomicUnlocked" />
 				</transition-group>
 			</div>
 		</transition-group>
@@ -51,6 +55,21 @@ export default {
 		},
 	},
 
+	computed: {
+		polyatomicUnlocked() {
+			const required = 51
+			const completed = Object.values(this.weapons)
+				.flat()
+				.reduce(
+					(a, weapon) =>
+						a + Object.values(filterObject(weapon.progress, ['Polyatomic'])).every(Boolean),
+					0
+				)
+
+			return completed >= required
+		},
+	},
+
 	methods: {
 		...mapActions(useStore, ['toggleCategoryCompleted']),
 
@@ -71,7 +90,8 @@ export default {
 		categoryCompleted(category) {
 			const required = category.filter((weapon) => !weapon.dlc).length
 			const completed = category.reduce(
-				(a, weapon) => a + Object.values(weapon.progress).every(Boolean),
+				(a, weapon) =>
+					a + Object.values(filterObject(weapon.progress, ['Polyatomic'])).every(Boolean),
 				0
 			)
 
