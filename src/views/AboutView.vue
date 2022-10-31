@@ -48,6 +48,10 @@
 </template>
 
 <script>
+import vanguardIcon from '@/assets/vanguard.png'
+import coldWarIcon from '@/assets/coldwar.png'
+import damascusIcon from '@/assets/damascus.png'
+
 export default {
 	data() {
 		return {
@@ -82,17 +86,17 @@ export default {
 			trackers: [
 				{
 					title: 'Vanguard',
-					icon: './src/assets/vanguard.png',
+					icon: vanguardIcon,
 					url: 'https://vanguard.emca.app',
 				},
 				{
 					title: 'Cold War',
-					icon: './src/assets/coldwar.png',
+					icon: coldWarIcon,
 					url: 'https://coldwar.vercel.app',
 				},
 				{
 					title: 'Modern Warfare',
-					icon: './src/assets/damascus.png',
+					icon: damascusIcon,
 					url: 'https://damascus.vercel.app',
 				},
 			],
