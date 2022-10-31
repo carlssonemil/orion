@@ -1,0 +1,29 @@
+@mixin base-camouflage-background {
+	background: $base-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin gold-camouflage-background {
+	background: $gold-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin platinum-camouflage-background {
+	background: $platinum-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin polyatomic-camouflage-background {
+	background: $polyatomic-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin orion-camouflage-background {
+	background: $orion-gradient;
+	background-position: center center;
+	background-size: cover;
+}

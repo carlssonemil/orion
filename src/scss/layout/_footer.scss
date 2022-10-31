@@ -1,0 +1,43 @@
+footer {
+	cursor: default;
+	display: flex;
+	justify-content: space-between;
+	opacity: 0.35;
+	padding: 50px 0 75px;
+	text-align: center;
+	transition: $transition;
+
+	@media (max-width: $tablet) {
+		flex-direction: column-reverse;
+		font-size: 14px;
+		padding: 30px 0 50px;
+
+		> div:first-child {
+			font-size: 12px;
+			margin-top: 30px;
+		}
+	}
+
+	&:hover {
+		opacity: 0.85;
+	}
+
+	a {
+		color: $text-color;
+		text-decoration: none;
+		transition: $transition;
+
+		&:hover {
+			opacity: 1;
+			text-decoration: underline;
+		}
+
+		+ a {
+			margin-left: 50px;
+
+			@media (max-width: $tablet) {
+				margin-left: 35px;
+			}
+		}
+	}
+}

@@ -1,0 +1,68 @@
+a {
+	color: $blue;
+	text-decoration: none;
+	transition: $transition;
+
+	&:hover {
+		@media (min-width: $tablet) {
+			opacity: 1;
+			text-decoration: underline;
+		}
+	}
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 25px;
+
+	@media (max-width: $tablet) {
+		font-size: 22px;
+		margin: 20px 0 25px;
+	}
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 50px 0 25px;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 15px;
+	}
+}
+
+p {
+	line-height: 1.5;
+}
+
+i {
+	font-style: italic;
+	margin-right: 2px;
+}
+
+em,
+b,
+strong {
+	font-weight: 600;
+}
+
+ul {
+	margin: 15px 0 15px 30px;
+	line-height: 1.5;
+
+	li {
+		line-height: 2;
+		list-style: disc;
+	}
+}

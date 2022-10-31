@@ -1,0 +1,36 @@
+export default {
+	'P890': {
+		'Sand': false,
+		'Muddied': false,
+		'Blue Digital': false,
+		'Pixel Land': false,
+	},
+
+	'.50 GS': {
+		'Blades': false,
+		'Foliage': false,
+		'Leopard': false,
+		'8-Bit Static': false,
+	},
+
+	'X12': {
+		'Bio Static Digital': false,
+		'Desert Wave': false,
+		'Garter Snake': false,
+		'Azul': false,
+	},
+
+	'Basilisk': {
+		'Outcrop': false,
+		'Countryside': false,
+		'Dark Denim': false,
+		'Chrysolite': false,
+	},
+
+	'X13 Auto': {
+		'Void and Light': false,
+		'Asphalt Digital': false,
+		'Dark Echo': false,
+		'Party Time': false,
+	},
+}

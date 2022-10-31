@@ -1,0 +1,46 @@
+$table-border-color: $elevation-4-color;
+$table-body-color: $elevation-2-color;
+
+table {
+	border-radius: $border-radius;
+	margin: 15px 0;
+	overflow: hidden;
+
+	thead {
+		background: $table-border-color;
+		border: 2px solid $table-border-color;
+	}
+
+	tbody {
+		background: $table-body-color;
+		border: 2px solid $table-border-color;
+	}
+
+	th,
+	td {
+		padding: 10px;
+	}
+
+	tr {
+		&:not(:first-child) {
+			border-top: 2px solid $table-border-color;
+		}
+
+		th {
+			color: darken(white, 20%);
+			font-size: 12px;
+			font-weight: 600;
+			text-align: left;
+		}
+
+		td {
+			line-height: 1.75;
+			vertical-align: top;
+
+			&:first-child {
+				font-weight: 600;
+				padding-right: 20px;
+			}
+		}
+	}
+}

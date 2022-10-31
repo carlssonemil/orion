@@ -1,0 +1,17 @@
+textarea {
+	appearance: none;
+	background: $elevation-6-color;
+	border: none;
+	border-radius: $border-radius;
+	color: white;
+	margin: 10px 0;
+	min-height: 150px;
+	padding: 15px;
+	resize: vertical;
+	transition: background-color $transition;
+	width: 100%;
+
+	&:focus {
+		background-color: $elevation-7-color;
+	}
+}

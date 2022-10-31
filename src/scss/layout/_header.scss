@@ -1,0 +1,206 @@
+nav {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0 30px;
+
+	@media (max-width: $tablet) {
+		padding: 30px 0;
+	}
+
+	.logo {
+		align-items: center;
+		display: flex;
+		font-size: 26px;
+		font-weight: 600;
+		opacity: 0.85;
+
+		@media (max-width: $tablet) {
+			font-size: 18px;
+		}
+
+		&.router-link-exact-active {
+			opacity: 0.85;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		.icon {
+			$size: 35px;
+			@include orion-camouflage-background;
+			border-radius: $border-radius * 2;
+			display: block;
+			height: $size;
+			width: $size;
+		}
+
+		p {
+			margin-left: 10px;
+
+			@media (max-width: $mobile) {
+				margin-left: 10px;
+			}
+		}
+	}
+
+	a {
+		color: $text-color;
+		opacity: 0.5;
+		text-decoration: none;
+		transition: $transition;
+
+		@media (max-width: $tablet) {
+			font-size: 14px;
+		}
+
+		&:hover {
+			@media (min-width: $tablet) {
+				opacity: 1;
+				text-decoration: underline;
+			}
+
+			&.settings .icon-component {
+				transform: rotate(45deg);
+			}
+		}
+
+		&.router-link-exact-active {
+			opacity: 1;
+		}
+
+		&.coming-soon {
+			opacity: 1;
+			pointer-events: none;
+			position: relative;
+
+			span {
+				opacity: 0.5;
+			}
+
+			&::after {
+				bottom: 0;
+				color: $blue;
+				content: 'Coming soon!';
+				font-size: 10px;
+				left: 50%;
+				position: absolute;
+				text-align: center;
+				transform: translate(-50%, calc(100% + 4px));
+				width: 100%;
+			}
+		}
+
+		.icon-component {
+			transition: $transition;
+		}
+	}
+
+	> div {
+		align-items: center;
+		display: flex;
+
+		@media (max-width: $tablet) {
+			display: none;
+		}
+
+		a + a {
+			margin-left: 50px;
+
+			@media (max-width: $tablet) {
+				margin-left: 35px;
+			}
+		}
+	}
+
+	.mobile-nav-toggle {
+		cursor: pointer;
+		display: none !important;
+
+		@media (max-width: $tablet) {
+			display: inline-flex !important;
+		}
+	}
+}
+
+nav.mobile {
+	align-items: flex-start;
+	background: $elevation-1-color;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 30px 5% 100px;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+
+	a + a {
+		margin-left: 0;
+	}
+
+	.header {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+		width: 100%;
+	}
+
+	> div:not([class]) {
+		align-items: flex-start;
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		height: 100%;
+
+		a {
+			font-size: 20px;
+			opacity: 1;
+			text-decoration: none;
+
+			+ a {
+				margin-top: 30px;
+			}
+
+			&.coming-soon {
+				&::after {
+					left: 0;
+					text-align: left;
+					transform: translate(0%, calc(100% + 4px));
+				}
+			}
+		}
+	}
+
+	.footer {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		width: 100%;
+
+		a {
+			font-size: 16px;
+
+			+ a {
+				margin-top: 25px;
+			}
+
+			&.button {
+				background: $purple;
+				color: white;
+				margin-top: 35px;
+				opacity: 1;
+				text-align: center;
+				width: 100%;
+
+				.icon-component {
+					margin-right: 10px;
+					position: relative;
+					top: 2px;
+				}
+			}
+		}
+	}
+}
