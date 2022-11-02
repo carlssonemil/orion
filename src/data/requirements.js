@@ -1,92 +1,43 @@
+import assaultRiflesRequiresments from './requirements/assaultRifles'
+import battleRiflesRequirements from './requirements/battleRifles'
+import subMachineGunsRequirements from './requirements/subMachineGuns'
+import shotgunsRequirements from './requirements/shotguns'
+import lightMachineGunsRequirements from './requirements/lightMachineGuns'
+import marksmanRiflesRequirements from './requirements/marksmanRifles'
+import sniperRiflesRequirements from './requirements/sniperRifles'
+import handgunsRequirements from './requirements/handguns'
+import launchersRequirements from './requirements/launchers'
+import meleeRequirements from './requirements/melee'
+
 export default {
 	'Assault Rifles': {
-		1: 'Get 50 kills',
-		2: 'Get 50 kills while ADS',
-		3: 'Get 10 double kills',
-		4: 'Get 10 kills from behind',
-		Gold: null,
-		Platinum: null,
-		Polyatomic: null,
+		...assaultRiflesRequiresments,
 	},
 	'Battle Rifles': {
-		1: null,
-		2: null,
-		3: null,
-		4: null,
-		Gold: null,
-		Platinum: null,
-		Polyatomic: null,
+		...battleRiflesRequirements,
 	},
 	'Sub Machine Guns': {
-		1: null,
-		2: null,
-		3: null,
-		4: null,
-		Gold: null,
-		Platinum: null,
-		Polyatomic: null,
+		...subMachineGunsRequirements,
 	},
 	'Shotguns': {
-		1: null,
-		2: null,
-		3: null,
-		4: null,
-		Gold: null,
-		Platinum: null,
-		Polyatomic: null,
+		...shotgunsRequirements,
 	},
 	'Light Machine Guns': {
-		1: null,
-		2: null,
-		3: null,
-		4: null,
-		Gold: null,
-		Platinum: null,
-		Polyatomic: null,
+		...lightMachineGunsRequirements,
 	},
 	'Marksman Rifles': {
-		1: null,
-		2: null,
-		3: null,
-		4: null,
-		Gold: null,
-		Platinum: null,
-		Polyatomic: null,
+		...marksmanRiflesRequirements,
 	},
 	'Sniper Rifles': {
-		1: null,
-		2: null,
-		3: null,
-		4: null,
-		Gold: null,
-		Platinum: null,
-		Polyatomic: null,
+		...sniperRiflesRequirements,
 	},
 	'Handguns': {
-		1: null,
-		2: null,
-		3: null,
-		4: null,
-		Gold: null,
-		Platinum: null,
-		Polyatomic: null,
+		...handgunsRequirements,
 	},
 	'Launchers': {
-		1: null,
-		2: null,
-		3: null,
-		4: null,
-		Gold: null,
-		Platinum: null,
-		Polyatomic: null,
+		...launchersRequirements,
 	},
 	'Melee': {
-		1: null,
-		2: null,
-		3: null,
-		4: null,
-		Gold: null,
-		Platinum: null,
-		Polyatomic: null,
+		...meleeRequirements,
 	},
 }

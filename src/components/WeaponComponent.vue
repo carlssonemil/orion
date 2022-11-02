@@ -19,11 +19,11 @@
 				'grid-template-columns': `repeat(${Object.keys(baseCamouflages).length}, 1fr)`,
 			}">
 			<div
-				v-for="(completed, camouflage, index) in baseCamouflages"
+				v-for="(completed, camouflage) in baseCamouflages"
 				:key="camouflage"
 				:class="['camouflage']"
 				@click="toggleCamouflageCompleted(weapon, camouflage, completed)"
-				:content="requirementTooltip(weapon, camouflage, index + 1)"
+				:content="requirementTooltip(weapon, camouflage)"
 				v-tippy="{ placement: 'bottom' }">
 				<div
 					:class="[
@@ -116,8 +116,8 @@ export default {
 			return img.height !== 0
 		},
 
-		requirementTooltip(weapon, camouflage, index) {
-			const requirement = this.requirements[weapon.category][index || camouflage]
+		requirementTooltip(weapon, camouflage) {
+			const requirement = this.requirements[weapon.category][weapon.name][camouflage]
 			return `${camouflage} - ${requirement || 'TBA'}`
 		},
 	},
