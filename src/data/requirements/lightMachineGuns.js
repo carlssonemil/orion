@@ -50,10 +50,10 @@ export default {
 	},
 
 	'Rapp H': {
-		'Desert Snake': null,
-		'Classic Digital': null,
-		'Quarry': null,
-		'Blue Tiger': null,
+		'Desert Snake': 'Get 50 kills',
+		'Classic Digital': 'Get 10 point blank kills',
+		'Quarry': 'Get 20 kills while mounted',
+		'Blue Tiger': 'Get 50 kills while ADS',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
 		'Polyatomic': null,

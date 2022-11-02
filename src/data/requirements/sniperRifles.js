@@ -20,10 +20,10 @@ export default {
 	},
 
 	'LA-B 330': {
-		'Shark Net': null,
-		'Dirt': null,
-		'Leafless': null,
-		'Teal Tiger': null,
+		'Shark Net': 'Get 50 kills',
+		'Dirt': 'Get 2 kills within 10 seconds of each other 10 times',
+		'Leafless': 'Get 25 one-shot kills',
+		'Teal Tiger': 'Get 50 kills using a suppressor',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
 		'Polyatomic': null,

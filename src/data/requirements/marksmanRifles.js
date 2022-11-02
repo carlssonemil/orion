@@ -10,10 +10,10 @@ export default {
 	},
 
 	'SP-R 208': {
-		'Dark Canopy': null,
-		'Desert Digital': null,
-		'Ferns': null,
-		'Crimson Streak': null,
+		'Dark Canopy': 'Get 50 kills',
+		'Desert Digital': 'Get 50 kills while ADS',
+		'Ferns': 'Get 30 kills while prone',
+		'Crimson Streak': 'Get 20 kills while mounted',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
 		'Polyatomic': null,
@@ -30,20 +30,20 @@ export default {
 	},
 
 	'LM-S': {
-		'Commando Digital': null,
-		'Abominable': null,
-		'Autumnal': null,
-		'Coral Snake': null,
+		'Commando Digital': 'Get 40 kills',
+		'Abominable': 'Get 20 kills while mounted',
+		'Autumnal': 'Get 20 one-shot kills',
+		'Coral Snake': 'Get 30 kills while crouched',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
 		'Polyatomic': null,
 	},
 
 	'SA-B 50': {
-		'Urban Digital': null,
-		'Bullsnake': null,
-		'Toxicity': null,
-		'Splintered Asphalt': null,
+		'Urban Digital': 'Get 50 kills',
+		'Bullsnake': 'Get 25 one-shot kills',
+		'Toxicity': 'Get 10 double kills',
+		'Splintered Asphalt': 'Get 10 kills while mounted',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
 		'Polyatomic': null,

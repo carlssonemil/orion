@@ -1,9 +1,9 @@
 export default {
 	'VEL 46': {
-		'Arid Digital': null,
-		'Midnight Bay': null,
-		'Tagged': null,
-		'Whiteout': null,
+		'Arid Digital': 'Get 50 kills',
+		'Midnight Bay': 'Get 50 kills while ADS',
+		'Tagged': 'Get 15 hipfire kills',
+		'Whiteout': 'Get 10 double kills',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
 		'Polyatomic': null,

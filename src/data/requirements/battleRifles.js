@@ -2,8 +2,8 @@ export default {
 	'Lachmann-762': {
 		'Day Marsh': 'Get 50 kills',
 		'Desert Oil Digital': 'Get 50 kills while ADS',
-		'Stalking Cat': null,
-		'Internal Flame': null,
+		'Stalking Cat': 'Get 20 kills while mounted',
+		'Internal Flame': 'Get 10 double kills',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
 		'Polyatomic': null,
