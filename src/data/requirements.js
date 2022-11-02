@@ -8,7 +8,7 @@ export default {
 		Polyatomic: null,
 	},
 	'Battle Rifles': {
-		1: 'test',
+		1: null,
 		2: null,
 		3: null,
 		4: null,
