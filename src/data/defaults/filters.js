@@ -1,7 +1,8 @@
 export default {
 	category: null,
 	hideNonRequired: false,
-	hideCompleted: false,
 	hideGold: false,
+	hidePlatinum: false,
+	hidePolyatomic: false,
 	hideFilters: false,
 }
