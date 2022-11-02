@@ -1,7 +1,7 @@
 export default {
 	'Lachmann-762': {
-		'Day Marsh': null,
-		'Desert Oil Digital': null,
+		'Day Marsh': 'Get 50 kills',
+		'Desert Oil Digital': 'Get 50 kills while ADS',
 		'Stalking Cat': null,
 		'Internal Flame': null,
 		'Gold': 'Get 3 kills without dying 10 times',
@@ -30,10 +30,10 @@ export default {
 	},
 
 	'FTAC Recon': {
-		'Beached': null,
-		'Torn Scales': null,
-		'Desert Cat': null,
-		'Haunting': null,
+		'Beached': 'Get 50 kills',
+		'Torn Scales': 'Get 10 double kills',
+		'Desert Cat': 'Get 50 kills using a suppressor',
+		'Haunting': 'Get 30 kills while crouched',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
 		'Polyatomic': null,

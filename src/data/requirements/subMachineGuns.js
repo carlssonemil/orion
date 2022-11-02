@@ -40,10 +40,10 @@ export default {
 	},
 
 	'FSS Hurricane': {
-		'Green Woods': null,
-		'Python': null,
-		'Moon Shadow': null,
-		'Neon Loud': null,
+		'Green Woods': 'Get 50 kills',
+		'Python': 'Get 50 kills using a suppressor',
+		'Moon Shadow': 'Get 50 kills while ADS',
+		'Neon Loud': 'Get 30 kills while prone',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
 		'Polyatomic': null,

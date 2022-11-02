@@ -1,6 +1,6 @@
 export default {
 	'P890': {
-		'Sand': null,
+		'Sand': 'Get 40 kills',
 		'Muddied': null,
 		'Blue Digital': null,
 		'Pixel Land': null,

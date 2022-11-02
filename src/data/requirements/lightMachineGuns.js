@@ -20,10 +20,10 @@ export default {
 	},
 
 	'556 Icarus': {
-		'Olive': null,
-		'What Skulls?': null,
-		'Night Quarry': null,
-		'Autumn Dazzle': null,
+		'Olive': 'Get 50 kills',
+		'What Skulls?': 'Get 10 double kills',
+		'Night Quarry': 'Get 20 kills while mounted',
+		'Autumn Dazzle': 'Get 30 kills while crouched',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
 		'Polyatomic': null,

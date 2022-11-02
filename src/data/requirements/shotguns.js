@@ -10,7 +10,7 @@ export default {
 	},
 
 	'Expedite 12': {
-		'Forest Shadow': null,
+		'Forest Shadow': 'Get 40 kills',
 		'Tiger Stripes': null,
 		'Snowed In': null,
 		'Violent Orchid': null,
