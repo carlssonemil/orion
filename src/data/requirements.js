@@ -5,6 +5,7 @@ export default {
 		3: 'Get 10 double kills',
 		4: 'Get 10 kills from behind',
 		Gold: null,
+		Platinum: null,
 		Polyatomic: null,
 	},
 	'Battle Rifles': {
@@ -13,6 +14,7 @@ export default {
 		3: null,
 		4: null,
 		Gold: null,
+		Platinum: null,
 		Polyatomic: null,
 	},
 	'Sub Machine Guns': {
@@ -21,6 +23,7 @@ export default {
 		3: null,
 		4: null,
 		Gold: null,
+		Platinum: null,
 		Polyatomic: null,
 	},
 	'Shotguns': {
@@ -29,6 +32,7 @@ export default {
 		3: null,
 		4: null,
 		Gold: null,
+		Platinum: null,
 		Polyatomic: null,
 	},
 	'Light Machine Guns': {
@@ -37,6 +41,7 @@ export default {
 		3: null,
 		4: null,
 		Gold: null,
+		Platinum: null,
 		Polyatomic: null,
 	},
 	'Marksman Rifles': {
@@ -45,6 +50,7 @@ export default {
 		3: null,
 		4: null,
 		Gold: null,
+		Platinum: null,
 		Polyatomic: null,
 	},
 	'Sniper Rifles': {
@@ -53,6 +59,7 @@ export default {
 		3: null,
 		4: null,
 		Gold: null,
+		Platinum: null,
 		Polyatomic: null,
 	},
 	'Handguns': {
@@ -61,6 +68,7 @@ export default {
 		3: null,
 		4: null,
 		Gold: null,
+		Platinum: null,
 		Polyatomic: null,
 	},
 	'Launchers': {
@@ -69,6 +77,7 @@ export default {
 		3: null,
 		4: null,
 		Gold: null,
+		Platinum: null,
 		Polyatomic: null,
 	},
 	'Melee': {
@@ -77,6 +86,7 @@ export default {
 		3: null,
 		4: null,
 		Gold: null,
+		Platinum: null,
 		Polyatomic: null,
 	},
 }
