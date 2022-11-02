@@ -6,14 +6,9 @@
 				:key="title"
 				:data-index="index"
 				class="category">
+				<!-- TODO: Add double-click functionality -->
 				<h2>
-					<span
-						v-tippy="{
-							content: `Double-click to ${
-								categoryCompleted(category) ? 'reset' : 'complete'
-							} category`,
-						}"
-						@dblclick="toggleCategoryCompleted(category, categoryCompleted(category))">
+					<span>
 						{{ title }}
 					</span>
 					<span v-tippy content="Required for Platinum camouflage">
@@ -124,10 +119,6 @@ export default {
 			font-weight: 600;
 			margin-bottom: 25px;
 			width: 100%;
-
-			span:first-child {
-				cursor: pointer;
-			}
 
 			span:last-child {
 				color: $elevation-9-color;

@@ -31,13 +31,24 @@
 				</div>
 
 				<div class="checkbox">
-					<label for="hideCompleted" :class="{ checked: filters.hideCompleted }">
+					<label for="hidePlatinum" :class="{ checked: filters.hidePlatinum }">
 						<input
-							id="hideCompleted"
+							id="hidePlatinum"
 							type="checkbox"
-							v-model="filters.hideCompleted"
+							v-model="filters.hidePlatinum"
 							@change="updateFilters(filters)" />
-						<span>Hide completed</span>
+						<span>Hide Platinum</span>
+					</label>
+				</div>
+
+				<div class="checkbox">
+					<label for="hidePolyatomic" :class="{ checked: filters.hidePolyatomic }">
+						<input
+							id="hidePolyatomic"
+							type="checkbox"
+							v-model="filters.hidePolyatomic"
+							@change="updateFilters(filters)" />
+						<span>Hide Polyatomic</span>
 					</label>
 				</div>
 

@@ -1,9 +1,15 @@
 <template>
 	<div class="weapon">
+		<!-- TODO: Add double-click functionality -->
 		<div
-			:class="['name', { gold: goldCompleted, polyatomic: polyatomicCompleted }]"
-			@dblclick="toggleGoldCamouflageCompleted(weapon, goldCompleted)"
-			v-tippy="{ content: `Double-click to ${polyatomicCompleted ? 'reset' : 'complete'} weapon` }">
+			:class="[
+				'name',
+				{
+					gold: goldCompleted,
+					platinum: platinumCompleted,
+					polyatomic: polyatomicCompleted,
+				},
+			]">
 			{{ weapon.name }}
 		</div>
 
@@ -13,13 +19,17 @@
 				'grid-template-columns': `repeat(${Object.keys(baseCamouflages).length}, 1fr)`,
 			}">
 			<div
-				v-for="(completed, camouflage, index) in baseCamouflages"
+				v-for="(completed, camouflage) in baseCamouflages"
 				:key="camouflage"
-				:class="['camouflage', { gold: camouflage === 'Gold' }]"
-				@click="handleCamouflageCompletedToggle(weapon, camouflage, completed)"
-				:content="requirementTooltip(weapon, camouflage, index + 1)"
+				:class="['camouflage']"
+				@click="toggleCamouflageCompleted(weapon, camouflage, completed)"
+				:content="requirementTooltip(weapon, camouflage)"
 				v-tippy="{ placement: 'bottom' }">
-				<div :class="['inner', { completed, base: !['Gold', 'Polyatomic'].includes(camouflage) }]">
+				<div
+					:class="[
+						'inner',
+						{ completed, base: !['Gold', 'Platinum', 'Polyatomic'].includes(camouflage) },
+					]">
 					<IconComponent class="complete" name="check" fill="#10ac84" />
 					<IconComponent class="remove" name="times" fill="#ee5253" />
 					<img :src="imageUrl(camouflage)" :alt="camouflage" />
@@ -64,7 +74,11 @@ export default {
 		...mapState(useStore, ['requirements']),
 
 		goldCompleted() {
-			return Object.values(this.baseCamouflages).every(Boolean)
+			return this.weapon.progress['Gold']
+		},
+
+		platinumCompleted() {
+			return this.weapon.progress['Platinum']
 		},
 
 		polyatomicCompleted() {
@@ -79,14 +93,6 @@ export default {
 	methods: {
 		...mapActions(useStore, ['toggleCamouflageCompleted', 'toggleGoldCamouflageCompleted']),
 
-		handleCamouflageCompletedToggle(weapon, camouflage, completed) {
-			if (camouflage === 'Gold') {
-				this.toggleGoldCamouflageCompleted(weapon, completed)
-			} else {
-				this.toggleCamouflageCompleted(weapon, camouflage, completed)
-			}
-		},
-
 		imageUrl(camouflage) {
 			// TODO: Maybe add each camouflage image?
 			//return `../assets/camouflages/${convertToKebabCase(camouflage)}.png`
@@ -94,6 +100,8 @@ export default {
 			switch (camouflage) {
 				case 'Gold':
 					return new URL('/gold-gradient.svg', import.meta.url)
+				case 'Platinum':
+					return new URL('/platinum-gradient.svg', import.meta.url)
 				case 'Polyatomic':
 					return new URL('/polyatomic-gradient.svg', import.meta.url)
 				default:
@@ -108,8 +116,8 @@ export default {
 			return img.height !== 0
 		},
 
-		requirementTooltip(weapon, camouflage, index) {
-			const requirement = this.requirements[weapon.category][index || camouflage]
+		requirementTooltip(weapon, camouflage) {
+			const requirement = this.requirements[weapon.category][weapon.name][camouflage]
 			return `${camouflage} - ${requirement || 'TBA'}`
 		},
 	},
@@ -125,7 +133,6 @@ export default {
 		align-items: center;
 		background: $elevation-3-color;
 		border-radius: $border-radius;
-		cursor: pointer;
 		display: flex;
 		font-weight: 600;
 		justify-content: center;
@@ -141,6 +148,11 @@ export default {
 
 		&.gold {
 			@include gold-camouflage-background;
+			color: black;
+		}
+
+		&.platinum {
+			@include platinum-camouflage-background;
 			color: black;
 		}
 

@@ -36,19 +36,34 @@ export default {
 
 		filteredWeapons() {
 			let filteredWeapons = this.weapons
-			const { hideGold, hideCompleted, hideNonRequired, category } = this.filters
+			const { hideGold, hidePlatinum, hidePolyatomic, hideNonRequired, category } = this.filters
 
-			if (hideNonRequired) filteredWeapons = filteredWeapons.filter((weapon) => !weapon.dlc)
-			if (hideGold)
+			if (hideNonRequired) {
+				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.dlc)
+			}
+
+			if (hideGold) {
+				filteredWeapons = filteredWeapons.filter(
+					(weapon) =>
+						!Object.values(filterObject(weapon.progress, ['Platinum', 'Polyatomic'])).every(Boolean)
+				)
+			}
+
+			if (hidePlatinum) {
 				filteredWeapons = filteredWeapons.filter(
 					(weapon) => !Object.values(filterObject(weapon.progress, ['Polyatomic'])).every(Boolean)
 				)
-			if (hideCompleted)
+			}
+
+			if (hidePolyatomic) {
 				filteredWeapons = filteredWeapons.filter(
 					(weapon) => !Object.values(weapon.progress).every(Boolean)
 				)
-			if (category && category !== 'null')
+			}
+
+			if (category && category !== 'null') {
 				filteredWeapons = filteredWeapons.filter((weapon) => weapon.category === category)
+			}
 
 			return groupBy(filteredWeapons, (weapon) => weapon.category)
 		},

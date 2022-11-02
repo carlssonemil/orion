@@ -11,6 +11,7 @@ export default [...base, ...dlc].map((weapon) => ({
 	progress: {
 		...defaultMarksmanRiflesProgress[weapon],
 		Gold: false,
+		Platinum: false,
 		Polyatomic: false,
 	},
 }))
