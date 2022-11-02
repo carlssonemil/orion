@@ -86,9 +86,7 @@
 						</div>
 					</td>
 					<td>
-						Platinum is automatically unlocked once you get the required amount of Gold camouflages
-						for a specific category. The required amount is determined by how many weapons of that
-						category was released at launch.
+						After completing all Gold camouflage challenges for a specific category, you unlock the Platinum camouflage challenge for that specific weapon.
 					</td>
 				</tr>
 				<tr>
