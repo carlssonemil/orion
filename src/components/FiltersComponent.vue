@@ -58,14 +58,14 @@
 						name="question-circle"
 						fill="white"
 						v-tippy="{ placement: 'bottom' }"
-						:content="'You only need to complete the number of base guns there are for each category to earn the Platinum camouflage. For example, the Assault Rifles requires a total of 8 Gold camouflages to reward the Platinum camouflage for all weapons in that category. Press this icon to read more.'"
+						:content="'You only need to complete the number of base guns there are for each category to earn the Platinum camouflage challenge. For example, the Assault Rifles requires a total of 8 Gold camouflages to unlock the Platinum camouflage challenge for all weapons in that category. Press this icon to read more.'"
 						@click="$router.push('/requirements')" />
 					<div class="mobile">
 						<IconComponent name="question-circle" fill="white"></IconComponent>
 						<p>
 							You only need to complete the number of base guns there are for each category to earn
-							the Platinum camouflage. For example, the Assault Rifles requires a total of 8 Gold
-							camouflages to reward the Platinum camouflage for all weapons in that category. Read
+							the Platinum camouflage challenge. For example, the Assault Rifles requires a total of 8 Gold
+							camouflages to unlock the Platinum camouflage challenge for all weapons in that category. Read
 							more
 							<router-link to="/requirements">here</router-link>.
 						</p>

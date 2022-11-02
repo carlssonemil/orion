@@ -4,15 +4,15 @@ export default {
 		2: 'Get 50 kills while ADS',
 		3: 'Get 10 double kills',
 		4: 'Get 10 kills from behind',
-		Gold: null,
+		Gold: 'Get 3 kills without dying 10 times',
 		Polyatomic: null,
 	},
 	'Battle Rifles': {
-		1: null,
+		1: 'test',
 		2: null,
 		3: null,
 		4: null,
-		Gold: null,
+		Gold: 'Get 3 kills without dying 10 times',
 		Polyatomic: null,
 	},
 	'Sub Machine Guns': {
@@ -20,7 +20,7 @@ export default {
 		2: null,
 		3: null,
 		4: null,
-		Gold: null,
+		Gold: 'Get 3 kills without dying 10 times',
 		Polyatomic: null,
 	},
 	'Shotguns': {
@@ -28,7 +28,7 @@ export default {
 		2: null,
 		3: null,
 		4: null,
-		Gold: null,
+		Gold: 'Get 3 kills without dying 10 times',
 		Polyatomic: null,
 	},
 	'Light Machine Guns': {
@@ -36,7 +36,7 @@ export default {
 		2: null,
 		3: null,
 		4: null,
-		Gold: null,
+		Gold: 'Get 3 kills without dying 10 times',
 		Polyatomic: null,
 	},
 	'Marksman Rifles': {
@@ -44,7 +44,7 @@ export default {
 		2: null,
 		3: null,
 		4: null,
-		Gold: null,
+		Gold: 'Get 3 kills without dying 10 times',
 		Polyatomic: null,
 	},
 	'Sniper Rifles': {
@@ -52,7 +52,7 @@ export default {
 		2: null,
 		3: null,
 		4: null,
-		Gold: null,
+		Gold: 'Get 3 kills without dying 10 times',
 		Polyatomic: null,
 	},
 	'Handguns': {
@@ -60,7 +60,7 @@ export default {
 		2: null,
 		3: null,
 		4: null,
-		Gold: null,
+		Gold: 'Get 3 kills without dying 5 times',
 		Polyatomic: null,
 	},
 	'Launchers': {
