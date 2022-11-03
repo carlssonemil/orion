@@ -90,6 +90,7 @@ export default {
 	},
 
 	methods: {
+		convertToKebabCase,
 		...mapActions(useStore, ['toggleCamouflageCompleted', 'toggleGoldCamouflageCompleted']),
 
 		imageUrl(camouflage) {
@@ -101,7 +102,7 @@ export default {
 				return new URL('/polyatomic-gradient.svg', import.meta.url)
 			}
 
-			return `./src/assets/camouflages/${convertToKebabCase(camouflage)}.png`
+			return new URL(`/camouflages/${convertToKebabCase(camouflage)}.png`, import.meta.url)
 		},
 
 		requirementTooltip(weapon, camouflage) {
