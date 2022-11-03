@@ -1,4 +1,4 @@
-import defaultShotgunsProgress from '../defaults/progress/shotguns'
+import defaultShotgunsProgress from '../defaults/progress/weapons/shotguns'
 
 const base = ['Lockwood 300', 'Expedite 12', 'Bryson 800', 'Bryson 890']
 

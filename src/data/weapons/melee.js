@@ -1,4 +1,4 @@
-import defaultMeleeProgress from '../defaults/progress/melee'
+import defaultMeleeProgress from '../defaults/progress/weapons/melee'
 
 const base = ['Combat Knife', 'Riot Shield']
 

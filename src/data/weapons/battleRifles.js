@@ -1,4 +1,4 @@
-import defaultBattleRiflesProgress from '../defaults/progress/battleRifles'
+import defaultBattleRiflesProgress from '../defaults/progress/weapons/battleRifles'
 
 const base = ['Lachmann-762', 'SO-14', 'TAQ-V', 'FTAC Recon']
 

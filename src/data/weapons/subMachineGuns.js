@@ -1,4 +1,4 @@
-import defaultSubmachineGunsProgress from '../defaults/progress/subMachineGuns'
+import defaultSubmachineGunsProgress from '../defaults/progress/weapons/subMachineGuns'
 
 const base = [
 	'VEL 46',

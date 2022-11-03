@@ -1,9 +1,9 @@
-import Vue from 'vue'
 import { defineStore } from 'pinia'
-import { filterObject } from '../utils/utils'
-import defaultWeapons from '../data/weapons'
+import Vue from 'vue'
 import defaultFilters from '../data/defaults/filters'
 import requirements from '../data/requirements'
+import defaultWeapons from '../data/weapons'
+import { filterObject } from '../utils/utils'
 
 const token = import.meta.env.MODE === 'production' ? 'orion' : 'orion-dev'
 
@@ -30,6 +30,7 @@ export const useStore = defineStore({
 					const index = this.weapons.findIndex((w) => w.name === weapon.name)
 
 					if (index !== -1) {
+						// TODO : Handle imports from old data model
 						Object.keys(weapon.progress).forEach((camouflage) => {
 							if (camouflage in this.weapons[index].progress) {
 								this.weapons[index].progress[camouflage] = weapon.progress[camouflage]

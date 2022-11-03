@@ -1,4 +1,4 @@
-import defaultLaunchersProgress from '../defaults/progress/launchers'
+import defaultLaunchersProgress from '../defaults/progress/weapons/launchers'
 
 const base = ['PILA', 'STRELA-P', 'JOKR', 'RPG-7']
 
