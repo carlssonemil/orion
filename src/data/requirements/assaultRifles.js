@@ -50,10 +50,10 @@ export default {
 	},
 
 	'M16': {
-		'Modern Woodland': null,
-		'Marsh Digital': null,
-		'Dank Forest': null,
-		'Intoxicate': null,
+		'Modern Woodland': 'Get 50 kills',
+		'Marsh Digital': 'Get 10 double kills',
+		'Dank Forest': 'Get 30 kills while crouched',
+		'Intoxicate': 'Get 20 kills while mounted',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
 		'Polyatomic': null,
@@ -70,10 +70,10 @@ export default {
 	},
 
 	'Kastov 545': {
-		'Snowdrift': null,
-		'Mudslide': null,
-		'Savannah': null,
-		'Petri Digital': null,
+		'Snowdrift': 'Get 50 kills',
+		'Mudslide': 'Get 10 hipfire kills',
+		'Savannah': 'Get 50 kills while ADS',
+		'Petri Digital': 'Get 50 kills using a suppressor',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
 		'Polyatomic': null,

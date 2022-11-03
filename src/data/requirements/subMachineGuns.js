@@ -20,10 +20,10 @@ export default {
 	},
 
 	'Lachmann Sub': {
-		'Darkfall': null,
-		'Arctic Digital': null,
-		'Crime Scene': null,
-		'Poison': null,
+		'Darkfall': 'Get 50 kills',
+		'Arctic Digital': 'Get 10 double kills',
+		'Crime Scene': 'Get 50 kills using a suppressor',
+		'Poison': 'Get 10 hipfire kills',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
 		'Polyatomic': null,
