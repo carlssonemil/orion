@@ -102,7 +102,7 @@ export default {
 				return new URL('/polyatomic-gradient.svg', import.meta.url)
 			}
 
-			return new URL(`/camouflages/${convertToKebabCase(camouflage)}.png`, import.meta.url)
+			return new URL(`../assets/camouflages/${convertToKebabCase(camouflage)}.png`, import.meta.url)
 		},
 
 		requirementTooltip(weapon, camouflage) {
