@@ -1,4 +1,4 @@
-import { solidColours, stripes } from "../camo";
+import { solidColours, stripes } from "../camo/_index";
 
 const goldChallengeText = 'Get 2 kills without dying 10 times';
 const platinumChallengeText = 'Get 2 kills within 10 seconds of each other 10 times';

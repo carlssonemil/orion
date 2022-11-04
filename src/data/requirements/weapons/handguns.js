@@ -1,4 +1,4 @@
-import { digital, dragon, foliage, fun, geometric, reptile, solidColours, tiger, woodland } from "../camo";
+import { digital, dragon, foliage, fun, geometric, reptile, solidColours, tiger, woodland } from "../camo/_index";
 
 const goldChallengeText = 'Get 3 kills without dying 5 times';
 const platinumChallengeText = null;

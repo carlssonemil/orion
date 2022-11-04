@@ -1,4 +1,4 @@
-import { digital, foliage, woodland } from "../camo";
+import { digital, foliage, woodland } from "../camo/_index";
 
 export default {
 	'PILA': {

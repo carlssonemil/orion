@@ -1,4 +1,4 @@
-import { cliffside, digital, foliage, geometric, reptile, solidColours, sprayPaint, stripes, tiger, woodland } from "../camo";
+import { cliffside, digital, foliage, geometric, reptile, solidColours, sprayPaint, stripes, tiger, woodland } from "../camo/_index";
 
 const goldChallengeText = 'Get 3 kills without dying 10 times';
 const platinumChallengeText = null;

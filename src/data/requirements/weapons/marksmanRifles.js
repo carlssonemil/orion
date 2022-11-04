@@ -1,6 +1,6 @@
 import {
 	classic, cliffside, digital, dragon, foliage, fun, geometric, reptile, sprayPaint, stripes, tiger, woodland
-} from "../camo";
+} from "../camo/_index";
 
 const goldChallengeText = 'Get 3 kills without dying 10 times';
 const platinumChallengeText = null;
