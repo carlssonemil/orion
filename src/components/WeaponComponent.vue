@@ -25,14 +25,13 @@
 				@click="toggleCamouflageCompleted(weapon, camouflage, completed)"
 				:content="requirementTooltip(weapon, camouflage)"
 				v-tippy="{ placement: 'bottom' }">
-				<div
-					:class="[
-						'inner',
-						{ completed, base: !['Gold', 'Platinum', 'Polyatomic'].includes(camouflage) },
-					]">
+				<div :class="['inner', { completed }]">
 					<IconComponent class="complete" name="check" fill="#10ac84" />
 					<IconComponent class="remove" name="times" fill="#ee5253" />
-					<img :src="imageUrl(camouflage)" :alt="camouflage" />
+					<img
+						:src="imageUrl(camouflage)"
+						:alt="camouflage"
+						onerror="javascript:this.src='/base-gradient.svg'" />
 				</div>
 			</div>
 			<div
@@ -55,7 +54,7 @@
 <script>
 import { mapActions, mapState } from 'pinia'
 import { useStore } from '@/stores/store'
-import { filterObject } from '@/utils/utils'
+import { convertToKebabCase, filterObject } from '@/utils/utils'
 
 export default {
 	props: {
@@ -91,29 +90,19 @@ export default {
 	},
 
 	methods: {
+		convertToKebabCase,
 		...mapActions(useStore, ['toggleCamouflageCompleted', 'toggleGoldCamouflageCompleted']),
 
 		imageUrl(camouflage) {
-			// TODO: Maybe add each camouflage image?
-			//return `../assets/camouflages/${convertToKebabCase(camouflage)}.png`
-
-			switch (camouflage) {
-				case 'Gold':
-					return new URL('/gold-gradient.svg', import.meta.url)
-				case 'Platinum':
-					return new URL('/platinum-gradient.svg', import.meta.url)
-				case 'Polyatomic':
-					return new URL('/polyatomic-gradient.svg', import.meta.url)
-				default:
-					return new URL('/base-gradient.svg', import.meta.url)
+			if (camouflage === 'Gold') {
+				return new URL('/gold-gradient.svg', import.meta.url)
+			} else if (camouflage === 'Platinum') {
+				return new URL('/platinum-gradient.svg', import.meta.url)
+			} else if (camouflage === 'Polyatomic') {
+				return new URL('/polyatomic-gradient.svg', import.meta.url)
 			}
-		},
 
-		imageExists(camouflage) {
-			const url = this.imageUrl(camouflage)
-			const img = new Image()
-			img.src = url
-			return img.height !== 0
+			return new URL(`../assets/camouflages/${convertToKebabCase(camouflage)}.png`, import.meta.url)
 		},
 
 		requirementTooltip(weapon, camouflage) {
@@ -197,28 +186,6 @@ export default {
 					}
 				}
 
-				&.base {
-					&::before {
-						content: 'TBA';
-						color: white;
-						display: block;
-						font-size: 11px;
-						font-weight: 500;
-						left: 50%;
-						opacity: 0.75;
-						position: absolute;
-						top: 50%;
-						transform: translate(-50%, -50%);
-						z-index: 2;
-					}
-
-					&:hover {
-						&::before {
-							opacity: 0;
-						}
-					}
-				}
-
 				&.completed {
 					&:hover {
 						@media (min-width: $tablet) {
@@ -229,10 +196,6 @@ export default {
 								opacity: 1;
 							}
 						}
-					}
-
-					&::before {
-						display: none;
 					}
 
 					img,
@@ -277,16 +240,11 @@ export default {
 				}
 
 				img {
-					height: auto;
-					max-height: 80px;
+					height: 100%;
 					object-fit: cover;
 					position: relative;
 					width: 100%;
 					z-index: 1;
-
-					@media (min-width: $tablet) {
-						max-height: 35px;
-					}
 				}
 
 				p {
