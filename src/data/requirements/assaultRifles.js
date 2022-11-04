@@ -6,7 +6,7 @@ export default {
 		'Urban Renewal': 'Get 15 kills from behind',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': 'Get 25 longshots kills',
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 
 	'TAQ-56': {
@@ -16,7 +16,7 @@ export default {
 		'Back in Blue': 'Get 15 hipfire kills',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': 'Get 25 longshots kills',
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 
 	'Kastov 762': {
@@ -26,7 +26,7 @@ export default {
 		'Red Tiger': 'Get 15 kills from behind',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': 'Get 25 longshots kills',
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 
 	'Lachmann-556': {
@@ -36,7 +36,7 @@ export default {
 		'Cthulhu': 'Get 10 hipfire kills',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': 'Get 25 longshots kills',
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 
 	'STB 556': {
@@ -46,7 +46,7 @@ export default {
 		'Neon Pink': 'Get 30 kills while crouched',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': 'Get 25 longshots kills',
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 
 	'M16': {
@@ -56,7 +56,7 @@ export default {
 		'Intoxicate': 'Get 20 kills while mounted',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': 'Get 25 longshots kills',
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 
 	'Kastov-74U': {
@@ -66,7 +66,7 @@ export default {
 		'Chemical Reaction': 'Get 30 kills while crouched',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': 'Get 25 longshots kills',
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 
 	'Kastov 545': {
@@ -76,6 +76,6 @@ export default {
 		'Petri Digital': 'Get 50 kills using a suppressor',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': 'Get 25 longshots',
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 }

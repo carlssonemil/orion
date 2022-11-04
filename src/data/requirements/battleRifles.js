@@ -16,7 +16,7 @@ export default {
 		'Tendrils': 'Get 30 kills while prone',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': 'Get 25 longshots kills',
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 
 	'TAQ-V': {
@@ -26,7 +26,7 @@ export default {
 		'Slime Time': 'Get 20 kills while mounted',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': 'Get 25 longshots kills',
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 
 	'FTAC Recon': {
@@ -36,6 +36,6 @@ export default {
 		'Haunting': 'Get 30 kills while crouched',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': 'Get 25 longshots kills',
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 }
