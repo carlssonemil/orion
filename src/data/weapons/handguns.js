@@ -1,4 +1,4 @@
-import defaultHandgunsProgress from '../defaults/progress/weapons/handguns'
+import defaultHandgunsProgress from '../defaults/progress/handguns'
 
 const base = ['P890', '.50 GS', 'X12', 'Basilisk', 'X13 Auto']
 

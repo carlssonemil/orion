@@ -1,4 +1,4 @@
-import defaultLightMachineGunsProgress from '../defaults/progress/weapons/lightMachineGuns'
+import defaultLightMachineGunsProgress from '../defaults/progress/lightMachineGuns'
 
 const base = ['Sakin MG38', 'HCR 56', '556 Icarus', 'Raal MG', 'RPK', 'Rapp H']
 

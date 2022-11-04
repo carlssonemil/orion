@@ -1,4 +1,4 @@
-import defaultSniperRiflesProgress from '../defaults/progress/weapons/sniperRifles'
+import defaultSniperRiflesProgress from '../defaults/progress/sniperRifles'
 
 const base = ['MCPR-300', 'Signal 50', 'LA-B 330', 'SP-X 80']
 

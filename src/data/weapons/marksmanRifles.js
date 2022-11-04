@@ -1,4 +1,4 @@
-import defaultMarksmanRiflesProgress from '../defaults/progress/weapons/marksmanRifles'
+import defaultMarksmanRiflesProgress from '../defaults/progress/marksmanRifles'
 
 const base = ['EBR-14', 'SP-R 208', 'Lockwood MK2', 'LM-S', 'SA-B 50', 'TAQ-M']
 
