@@ -49,7 +49,7 @@ export default {
 	},
 	'Modern Woodland': {
 		'Weapon Level': 'Get the M16 to level 2',
-		'Challenge': '?',
+		'Challenge': 'Get 50 kills',
 	},
 	'Kill Brush': {
 		'Weapon Level': 'Get the Vaznev-9K to level 6',
