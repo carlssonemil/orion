@@ -5,7 +5,7 @@ export default {
 	},
 	'Anaconda': {
 		'Weapon Level': 'Get the TAQ-V to level 14',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Python': {
 		'Weapon Level': 'Get the FSS Hurricane to level 6',
@@ -13,7 +13,7 @@ export default {
 	},
 	'Rattlesnake': {
 		'Weapon Level': 'Get the Minibak to level 6',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Bullsnake': {
 		'Weapon Level': 'Get the SA-B 50 to level 8',
@@ -21,15 +21,15 @@ export default {
 	},
 	'Gecko': {
 		'Weapon Level': 'Get the PDSW 528 to level 11',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Garter Snake': {
 		'Weapon Level': 'Get the X12 to level 13',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Dark Echo': {
 		'Weapon Level': 'Get the X13 Auto to level 15',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Toxicity': {
 		'Weapon Level': 'Get the SA-B 50 to level 14',
@@ -37,23 +37,23 @@ export default {
 	},
 	'Shedding': {
 		'Weapon Level': 'Get the Bryson 890 to level 14',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Skin And Scales': {
 		'Weapon Level': 'Get the TAQ-M to level 17',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Heavy Commando': {
 		'Weapon Level': 'Get the SO-14 to level 15',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Night Terror': {
 		'Weapon Level': 'Get the RAAL MG to level 19',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Muddied': {
 		'Weapon Level': 'Get the P890 to level 10',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Torn Scales': {
 		'Weapon Level': 'Get the FTAC Recon to level 9',

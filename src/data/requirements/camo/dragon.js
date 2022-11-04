@@ -13,11 +13,11 @@ export default {
 	},
 	'Black Top': {
 		'Weapon Level': 'Get the STB 556 to level 8',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Asphalt': {
 		'Weapon Level': 'Get the RPK to level 13',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Crime Scene': {
 		'Weapon Level': 'Get the Lachmann Sub to level 13',
@@ -25,19 +25,19 @@ export default {
 	},
 	'Neon Pink': {
 		'Weapon Level': 'Get the STB 556 to level 20',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Trailblazer': {
 		'Weapon Level': 'Get the RAAL MG to level 10',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Foliage': {
 		'Weapon Level': 'Get the .50 GS to level 10',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Reptilian': {
 		'Weapon Level': 'Get the SO-14 to level 8',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Dark Leaves': {
 		'Weapon Level': 'Get the M4 to level ?',
@@ -49,11 +49,11 @@ export default {
 	},
 	'Omnihex': {
 		'Weapon Level': 'Get the Vaznev-9K to level 13',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Tessellation': {
 		'Weapon Level': 'Get the HCR 56 to level 18',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Moon Shadow': {
 		'Weapon Level': 'Get the FSS Hurricane to level 10',

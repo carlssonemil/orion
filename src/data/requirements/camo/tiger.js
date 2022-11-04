@@ -1,7 +1,7 @@
 export default {
 	'Overgrown': {
 		'Weapon Level': 'Get the MX9 to level 11',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Mudslide': {
 		'Weapon Level': 'Get the Kastov 545 to level 7',
@@ -17,15 +17,15 @@ export default {
 	},
 	'Faded Veil': {
 		'Weapon Level': 'Get the TAQ-V to level 8',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Feral Beast': {
 		'Weapon Level': 'Get the Fennec 45 to level 18',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Tiger Stripes': {
 		'Weapon Level': 'Get the Expedite 12 to level 11',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Desert Cat': {
 		'Weapon Level': 'Get the FTAC Recon to level 15',
@@ -41,11 +41,11 @@ export default {
 	},
 	'Desert Wave': {
 		'Weapon Level': 'Get the X12 to level 8',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Neon Shards': {
 		'Weapon Level': 'Get the MCPR-300 to level 18',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Teal Tiger': {
 		'Weapon Level': 'Get the LA to level ?',
@@ -57,7 +57,7 @@ export default {
 	},
 	'Eclipse': {
 		'Weapon Level': 'Get the Fennec 45 to level 10',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Sunlit Croc': {
 		'Weapon Level': 'Get the EBR-14 to level ?',

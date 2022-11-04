@@ -5,7 +5,7 @@ export default {
 	},
 	'Sponge Tac': {
 		'Weapon Level': 'Get the STB 556 to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Forest Shadow': {
 		'Weapon Level': 'Get the Expedite 12 to level 2',
@@ -13,7 +13,7 @@ export default {
 	},
 	'Surface Tension': {
 		'Weapon Level': 'Get the HCR 56 to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Gladiator': {
 		'Weapon Level': 'Get the Signal 50 to level 2',
@@ -21,11 +21,11 @@ export default {
 	},
 	'Dead Hive': {
 		'Weapon Level': 'Get the TAQ-M to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Scratch': {
 		'Weapon Level': 'Get the SP-X 80 to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Scales': {
 		'Weapon Level': 'Get the M4 to level 2',
@@ -57,10 +57,10 @@ export default {
 	},
 	'Ripple Effect': {
 		'Weapon Level': 'Get the Kastov-74u to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Unearthed': {
 		'Weapon Level': 'Get the Signal 50 to level 9',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 }

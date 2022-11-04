@@ -9,11 +9,11 @@ export default {
 	},
 	'Dry Field': {
 		'Weapon Level': 'Get the SP-X 80 to level 7',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Countryside': {
 		'Weapon Level': 'Get the Basilisk to level 11',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Snow Grass': {
 		'Weapon Level': 'Get the MCPR-300 to level ?',
@@ -21,7 +21,7 @@ export default {
 	},
 	'Aspen': {
 		'Weapon Level': 'Get the SP-X 80 to level 13',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Bamboo': {
 		'Weapon Level': 'Get the Bryson 800 to level ?',

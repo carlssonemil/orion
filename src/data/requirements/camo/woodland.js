@@ -17,7 +17,7 @@ export default {
 	},
 	'Dune Stalker': {
 		'Weapon Level': 'Get the SO-14 to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Urban Foliage': {
 		'Weapon Level': 'Get the Kastov 762 to level 2',
@@ -33,11 +33,11 @@ export default {
 	},
 	'Void And Light': {
 		'Weapon Level': 'Get the X13 to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Arctic Chill': {
 		'Weapon Level': 'Get the Bryson 890 to level 21',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Azure Fray': {
 		'Weapon Level': 'Get the JOKR to level 11',
@@ -45,7 +45,7 @@ export default {
 	},
 	'Jungle Cat': {
 		'Weapon Level': 'Get the Lockwood 300 to level 10',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Modern Woodland': {
 		'Weapon Level': 'Get the M16 to level 2',
@@ -53,11 +53,11 @@ export default {
 	},
 	'Kill Brush': {
 		'Weapon Level': 'Get the Vaznev-9K to level 6',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Rocky Desert': {
 		'Weapon Level': 'Get the RAAL MG to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Desert Hybrid': {
 		'Weapon Level': 'Get the M4 to level ?',
@@ -69,10 +69,10 @@ export default {
 	},
 	'Outcrop': {
 		'Weapon Level': 'Get the Basilisk to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Forest Water': {
 		'Weapon Level': 'Get the TAQ-M to level 10',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 }

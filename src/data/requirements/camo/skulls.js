@@ -5,15 +5,15 @@ export default {
 	},
 	'Necropolis': {
 		'Weapon Level': 'Get the Sakin MG38 to level 8',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Cthulhu': {
 		'Weapon Level': 'Get the Lachmann-556 to level 19',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Lichyard': {
 		'Weapon Level': 'Get the SP-X 80 to level 18',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Haunting': {
 		'Weapon Level': 'Get the FTAC Recon to level 22',

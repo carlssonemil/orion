@@ -5,11 +5,11 @@ export default {
 	},
 	'Motley': {
 		'Weapon Level': 'Get the Fennec 45 to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Dune Sea': {
 		'Weapon Level': 'Get the TAQ-V to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Forest Ice': {
 		'Weapon Level': 'Get the Kastov 762 to level ?',
@@ -17,7 +17,7 @@ export default {
 	},
 	'Stone Guard': {
 		'Weapon Level': 'Get the Bryson 890 to level 8',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Iceland': {
 		'Weapon Level': 'Get the TAQ-56 to level ?',
@@ -25,19 +25,19 @@ export default {
 	},
 	'Shale': {
 		'Weapon Level': 'Get the PDSW 528 to level 20',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Lodge': {
 		'Weapon Level': 'Get the RAAL MG to level 27',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Canary Stone': {
 		'Weapon Level': 'Get the Kastov-74u to level 14',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Skyfire': {
 		'Weapon Level': 'Get the Minibak to level 14',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Autumn Dazzle': {
 		'Weapon Level': 'Get the 556 Icarus to level 15',
@@ -49,11 +49,11 @@ export default {
 	},
 	'Granite': {
 		'Weapon Level': 'Get the Lockwood Mk2 to level 28',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Chrysolite': {
 		'Weapon Level': 'Get the Basilisk to level 28',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Splintered Asphalt': {
 		'Weapon Level': 'Get the SA-B 50 to level 20',
@@ -61,6 +61,6 @@ export default {
 	},
 	'Sunset': {
 		'Weapon Level': 'Get the HCR 56 to level 13',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 }

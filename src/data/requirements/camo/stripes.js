@@ -1,7 +1,7 @@
 export default {
 	'Commando Paint': {
 		'Weapon Level': 'Get the Sakin MG38 to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Marshland': {
 		'Weapon Level': 'Get the Lachmann-556 to level ?',
@@ -25,7 +25,7 @@ export default {
 	},
 	'Ground Cover': {
 		'Weapon Level': 'Get the Bryson 800 to level 14',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Urban Zebra': {
 		'Weapon Level': 'Get the Riot Shield to level 11',
@@ -33,11 +33,11 @@ export default {
 	},
 	'Wild Zebra': {
 		'Weapon Level': 'Get the Lockwood Mk2 to level 19',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Tendrils': {
 		'Weapon Level': 'Get the SO-14 to level 21',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Beached': {
 		'Weapon Level': 'Get the FTAC Recon to level ?',
@@ -45,11 +45,11 @@ export default {
 	},
 	'Timber': {
 		'Weapon Level': 'Get the Minibak to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Snowed In': {
 		'Weapon Level': 'Get the Expedite 12 to level 20',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Stalking Cat': {
 		'Weapon Level': 'Get the Lachmann-762 to level 13',

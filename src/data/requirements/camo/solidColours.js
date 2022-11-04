@@ -13,7 +13,7 @@ export default {
 	},
 	'Slate': {
 		'Weapon Level': 'Get the STB 556 to level 14',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Pine': {
 		'Weapon Level': 'Get the Lachmann-556 to level 8',
@@ -25,15 +25,15 @@ export default {
 	},
 	'Hunting Orange': {
 		'Weapon Level': 'Get the Lockwood 300 to level 27',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Azul': {
 		'Weapon Level': 'Get the X12 to level 19',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Aqua': {
 		'Weapon Level': 'Get the Bryson 800 to level 20',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Crimson': {
 		'Weapon Level': 'Get the Combat Knife to level 11',
@@ -41,11 +41,11 @@ export default {
 	},
 	'Dark Denim': {
 		'Weapon Level': 'Get the Basilisk to level 19',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Power Pink': {
 		'Weapon Level': 'Get the PDSW 528 to level 29',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Whiteout': {
 		'Weapon Level': 'Get the VEL 46 to level 28',

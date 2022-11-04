@@ -1,11 +1,11 @@
 export default {
 	'Forest Rain': {
 		'Weapon Level': 'Get the Vaznev-9K to level 9',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Desert Rain': {
 		'Weapon Level': 'Get the Lockwood Mk2 to level 11',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Quarry': {
 		'Weapon Level': 'Get the Rapp H to level 13',
@@ -17,26 +17,26 @@ export default {
 	},
 	'Rupture': {
 		'Weapon Level': 'Get the RPK to level 18',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Chemical Reaction': {
 		'Weapon Level': 'Get the Kastov-74u to level 20',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Fractal Mud': {
 		'Weapon Level': 'Get the Sakin MG38 to level 13',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Slime Time': {
 		'Weapon Level': 'Get the TAQ-V to level 20',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Violent Orchid': {
 		'Weapon Level': 'Get the Expedite 12 to level 29',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Earthbound': {
 		'Weapon Level': 'Get the Signal 50 to level 16',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 }

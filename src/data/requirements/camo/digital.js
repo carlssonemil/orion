@@ -25,11 +25,11 @@ export default {
 	},
 	'Snowstorm Digital': {
 		'Weapon Level': 'Get the Bryson 890 to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Snow Melt Digital': {
 		'Weapon Level': 'Get the Vaznev-9K to level 2',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Commando Digital': {
 		'Weapon Level': 'Get the LM-S to level 2',
@@ -37,7 +37,7 @@ export default {
 	},
 	'Jungle Digital': {
 		'Weapon Level': 'Get the Kastov-74u to level 8',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Arctic Digital': {
 		'Weapon Level': 'Get the Lachmann Sub to level 7',
@@ -45,7 +45,7 @@ export default {
 	},
 	'Forest Digital': {
 		'Weapon Level': 'Get the MX9 to level 7',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Dark Tiger Digital': {
 		'Weapon Level': 'Get the Lachmann-556 to level 14',
@@ -61,23 +61,23 @@ export default {
 	},
 	'Chemist Digital': {
 		'Weapon Level': 'Get the TAQ-M to level 25',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Asphalt Digital': {
 		'Weapon Level': 'Get the X13 Auto to level 8',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Magma Digital': {
 		'Weapon Level': 'Get the Sakin MG38 to level 19',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Red Cell': {
 		'Weapon Level': 'Get the Lockwood 300 to level 19',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Green Digital': {
 		'Weapon Level': 'Get the Minibak to level 10',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Marsh Digital': {
 		'Weapon Level': 'Get the M16 to level 6',
@@ -85,7 +85,7 @@ export default {
 	},
 	'Blue Digital': {
 		'Weapon Level': 'Get the P890 to level 18',
-		'Challenge': '?',
+		'Challenge': 'TBA',
 	},
 	'Classic Digital': {
 		'Weapon Level': 'Get the Rapp H to level 7',
