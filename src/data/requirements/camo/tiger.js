@@ -5,11 +5,11 @@ export default {
 	},
 	'Mudslide': {
 		'Weapon Level': 'Get the Kastov 545 to level 7',
-		'Challenge': '?',
+		'Challenge': 'Get 10 hipfire kills',
 	},
 	'Dank Forest': {
 		'Weapon Level': 'Get the M16 to level 11',
-		'Challenge': '?',
+		'Challenge': 'Get 30 kills while crouched',
 	},
 	'Abominable': {
 		'Weapon Level': 'Get the LM-S to level 5',
@@ -53,7 +53,7 @@ export default {
 	},
 	'Intoxicate': {
 		'Weapon Level': 'Get the M16 to level 15',
-		'Challenge': '?',
+		'Challenge': 'Get 20 kills while mounted',
 	},
 	'Eclipse': {
 		'Weapon Level': 'Get the Fennec 45 to level 10',

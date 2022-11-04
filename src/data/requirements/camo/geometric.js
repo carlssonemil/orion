@@ -45,7 +45,7 @@ export default {
 	},
 	'Poison': {
 		'Weapon Level': 'Get the Lachmann Sub to level 18',
-		'Challenge': '?',
+		'Challenge': 'Get 10 hipfire kills',
 	},
 	'Granite': {
 		'Weapon Level': 'Get the Lockwood Mk2 to level 28',

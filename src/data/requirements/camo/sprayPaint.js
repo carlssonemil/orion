@@ -33,7 +33,7 @@ export default {
 	},
 	'Darkfall': {
 		'Weapon Level': 'Get the Lachmann Sub to level 2',
-		'Challenge': '?',
+		'Challenge': 'Get 50 kills',
 	},
 	'Shark Net': {
 		'Weapon Level': 'Get the LA-B 330 to level 2',

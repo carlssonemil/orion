@@ -41,7 +41,7 @@ export default {
 	},
 	'Arctic Digital': {
 		'Weapon Level': 'Get the Lachmann Sub to level 7',
-		'Challenge': '?',
+		'Challenge': 'Get 10 double kills',
 	},
 	'Forest Digital': {
 		'Weapon Level': 'Get the MX9 to level 7',
@@ -53,7 +53,7 @@ export default {
 	},
 	'Petri Digital': {
 		'Weapon Level': 'Get the Kastov 545 to level 18',
-		'Challenge': '?',
+		'Challenge': 'Get 50 kills using a suppressor',
 	},
 	'Stonewall Digital': {
 		'Weapon Level': 'Get the TAQ-56 to level ?',
@@ -81,7 +81,7 @@ export default {
 	},
 	'Marsh Digital': {
 		'Weapon Level': 'Get the M16 to level 6',
-		'Challenge': '?',
+		'Challenge': 'Get 10 double kills',
 	},
 	'Blue Digital': {
 		'Weapon Level': 'Get the P890 to level 18',

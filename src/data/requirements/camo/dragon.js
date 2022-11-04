@@ -21,7 +21,7 @@ export default {
 	},
 	'Crime Scene': {
 		'Weapon Level': 'Get the Lachmann Sub to level 13',
-		'Challenge': '?',
+		'Challenge': 'Get 50 kills using a suppressor',
 	},
 	'Neon Pink': {
 		'Weapon Level': 'Get the STB 556 to level 20',

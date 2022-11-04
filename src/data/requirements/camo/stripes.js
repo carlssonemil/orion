@@ -9,7 +9,7 @@ export default {
 	},
 	'Savannah': {
 		'Weapon Level': 'Get the Kastov 545 to level 13',
-		'Challenge': '?',
+		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Mud Bath': {
 		'Weapon Level': 'Get the Bryson 800 to level ?',
