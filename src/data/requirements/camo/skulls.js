@@ -1,22 +1,22 @@
 export default {
 	'What Skulls?': {
-		'Weapon Level': 'Get the 556 Icarus to level 6',
+		'WeaponLevel': '6',
 		'Challenge': 'Get 10 double kills',
 	},
 	'Necropolis': {
-		'Weapon Level': 'Get the Sakin MG38 to level 8',
+		'WeaponLevel': '8',
 		'Challenge': 'TBA',
 	},
 	'Cthulhu': {
-		'Weapon Level': 'Get the Lachmann-556 to level 19',
+		'WeaponLevel': '19',
 		'Challenge': 'TBA',
 	},
 	'Lichyard': {
-		'Weapon Level': 'Get the SP-X 80 to level 18',
+		'WeaponLevel': '18',
 		'Challenge': 'TBA',
 	},
 	'Haunting': {
-		'Weapon Level': 'Get the FTAC Recon to level 22',
+		'WeaponLevel': '22',
 		'Challenge': 'Get 30 kills while crouched',
 	},
 }

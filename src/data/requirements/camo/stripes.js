@@ -1,58 +1,58 @@
 export default {
 	'Commando Paint': {
-		'Weapon Level': 'Get the Sakin MG38 to level 2',
+		'WeaponLevel': '2',
 		'Challenge': 'TBA',
 	},
 	'Marshland': {
-		'Weapon Level': 'Get the Lachmann-556 to level ?',
+		'WeaponLevel': 'TBA',
 		'Challenge': 'Get 50 kills',
 	},
 	'Savannah': {
-		'Weapon Level': 'Get the Kastov 545 to level 13',
+		'WeaponLevel': '13',
 		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Mud Bath': {
-		'Weapon Level': 'Get the Bryson 800 to level ?',
+		'WeaponLevel': 'TBA',
 		'Challenge': 'Get 40 kills',
 	},
 	'Dark Rainforest': {
-		'Weapon Level': 'Get the RPK to level ?',
+		'WeaponLevel': 'TBA',
 		'Challenge': 'Get 50 kills',
 	},
 	'Shadow Stalker': {
-		'Weapon Level': 'Get the PDSW 528 to level ?',
+		'WeaponLevel': 'TBA',
 		'Challenge': 'Get 50 kills',
 	},
 	'Ground Cover': {
-		'Weapon Level': 'Get the Bryson 800 to level 14',
+		'WeaponLevel': '14',
 		'Challenge': 'TBA',
 	},
 	'Urban Zebra': {
-		'Weapon Level': 'Get the Riot Shield to level 11',
+		'WeaponLevel': '11',
 		'Challenge': 'Get 40 kills',
 	},
 	'Wild Zebra': {
-		'Weapon Level': 'Get the Lockwood Mk2 to level 19',
+		'WeaponLevel': '19',
 		'Challenge': 'TBA',
 	},
 	'Tendrils': {
-		'Weapon Level': 'Get the SO-14 to level 21',
+		'WeaponLevel': '21',
 		'Challenge': 'TBA',
 	},
 	'Beached': {
-		'Weapon Level': 'Get the FTAC Recon to level ?',
+		'WeaponLevel': 'TBA',
 		'Challenge': 'Get 50 kills',
 	},
 	'Timber': {
-		'Weapon Level': 'Get the Minibak to level 2',
+		'WeaponLevel': '2',
 		'Challenge': 'TBA',
 	},
 	'Snowed In': {
-		'Weapon Level': 'Get the Expedite 12 to level 20',
+		'WeaponLevel': '20',
 		'Challenge': 'TBA',
 	},
 	'Stalking Cat': {
-		'Weapon Level': 'Get the Lachmann-762 to level 13',
+		'WeaponLevel': '13',
 		'Challenge': 'Get 20 kills while mounted',
 	},
 }
