@@ -52,9 +52,9 @@
 </template>
 
 <script>
-import { mapActions, mapState } from 'pinia'
 import { useStore } from '@/stores/store'
 import { convertToKebabCase, filterObject } from '@/utils/utils'
+import { mapActions, mapState } from 'pinia'
 
 export default {
 	props: {
@@ -107,6 +107,8 @@ export default {
 
 		requirementTooltip(weapon, camouflage) {
 			const requirement = this.requirements[weapon.category][weapon.name][camouflage]
+			if (requirement && requirement.Challenge) return `${camouflage} - ${requirement.Challenge || 'TBA'}`
+				
 			return `${camouflage} - ${requirement || 'TBA'}`
 		},
 	},

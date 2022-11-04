@@ -16,7 +16,7 @@ export default {
 		'Desert Hybrid': woodland["Desert Hybrid"],
 		'Dark Leaves': dragon["Dark Leaves"],
 		'Urban Renewal': classic["Urban Renewal"],
-
+		...masteryChallenges
 	},
 
 	'TAQ-56': {
