@@ -6,7 +6,7 @@ export default {
 		'Sunlit Croc': null,
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 
 	'SP-R 208': {

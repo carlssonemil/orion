@@ -26,7 +26,7 @@ export default {
 		'Azul': null,
 		'Gold': 'Get 3 kills without dying 5 times',
 		'Platinum': null,
-		'Polyatomic': null,
+		'Polyatomic': 'Get 20 headshot kills',
 	},
 
 	'Basilisk': {

@@ -46,7 +46,7 @@ export default {
 		'Neon Loud': 'Get 30 kills while prone',
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 
 	'Minibak': {
@@ -66,7 +66,7 @@ export default {
 		'Power Pink': null,
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
-		'Polyatomic': null,
+		'Polyatomic': 'Get 25 headshot kills',
 	},
 
 	'Fennec 45': {

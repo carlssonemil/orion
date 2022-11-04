@@ -6,7 +6,7 @@ export default {
 		'Hunting Orange': null,
 		'Gold': 'Get 3 kills without dying 10 times',
 		'Platinum': null,
-		'Polyatomic': null,
+		'Polyatomic': 'Get 20 headshot kills',
 	},
 
 	'Expedite 12': {
