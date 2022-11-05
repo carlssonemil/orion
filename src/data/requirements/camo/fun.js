@@ -1,30 +1,37 @@
 export default {
 	'Pixel Land': {
-		'Weapon Level': 'Get the P890 to level 26',
+		'Weapon': 'P890',
+		'Level': '26',
 		'Challenge': 'TBA',
 	},
 	'Bloodied': {
-		'Weapon Level': 'Get the MCPR-300 to level 26',
+		'Weapon': 'MCPR-300',
+		'Level': '26',
 		'Challenge': 'TBA',
 	},
 	'Crimson Streak': {
-		'Weapon Level': 'Get the SP-R 208 to level 14',
+		'Weapon': 'SP-R 208',
+		'Level': '14',
 		'Challenge': 'Get 20 kills while mounted',
 	},
 	'Rainbow Tiger': {
-		'Weapon Level': 'Get the MX9 to level 16',
+		'Weapon': 'MX9',
+		'Level': '16',
 		'Challenge': 'TBA',
 	},
 	'8-Bit Static': {
-		'Weapon Level': 'Get the .50 GS to level 26',
+		'Weapon': '.50 GS',
+		'Level': '26',
 		'Challenge': 'TBA',
 	},
 	'Party Time': {
-		'Weapon Level': 'Get the X13 to level 21',
+		'Weapon': 'X13',
+		'Level': '21',
 		'Challenge': 'TBA',
 	},
 	'Leopard': {
-		'Weapon Level': 'Get the .50 GS to level 18',
+		'Weapon': '.50 GS',
+		'Level': '18',
 		'Challenge': 'TBA',
 	},
 }

@@ -1,62 +1,77 @@
 export default {
 	'Dirt': {
-		'Weapon Level': 'Get the LA-B 330 to level 8',
+		'Weapon': 'LA-B 330',
+		'Level': '8',
 		'Challenge': 'Get 2 kills within 10 seconds of each other 10 times',
 	},
 	'Moss': {
-		'Weapon Level': 'Get the EBR-14 to level ?',
+		'Weapon': 'EBR-14',
+		'Level': '?',
 		'Challenge': 'Get 30 Kills',
 	},
 	'Tagged': {
-		'Weapon Level': 'Get the VEL 46 to level 19',
+		'Weapon': 'VEL 46',
+		'Level': '19',
 		'Challenge': 'Get 15 hipfire kills',
 	},
 	'Black Top': {
-		'Weapon Level': 'Get the STB 556 to level 8',
+		'Weapon': 'STB 556',
+		'Level': '8',
 		'Challenge': 'TBA',
 	},
 	'Asphalt': {
-		'Weapon Level': 'Get the RPK to level 13',
+		'Weapon': 'RPK',
+		'Level': '13',
 		'Challenge': 'TBA',
 	},
 	'Crime Scene': {
-		'Weapon Level': 'Get the Lachmann Sub to level 13',
+		'Weapon': 'Lachmann Sub',
+		'Level': '13',
 		'Challenge': 'Get 50 kills using a suppressor',
 	},
 	'Neon Pink': {
-		'Weapon Level': 'Get the STB 556 to level 20',
+		'Weapon': 'STB 556',
+		'Level': '20',
 		'Challenge': 'TBA',
 	},
 	'Trailblazer': {
-		'Weapon Level': 'Get the RAAL MG to level 10',
+		'Weapon': 'RAAL MG',
+		'Level': '10',
 		'Challenge': 'TBA',
 	},
 	'Foliage': {
-		'Weapon Level': 'Get the .50 GS to level 10',
+		'Weapon': '.50 GS',
+		'Level': '10',
 		'Challenge': 'TBA',
 	},
 	'Reptilian': {
-		'Weapon Level': 'Get the SO-14 to level 8',
+		'Weapon': 'SO-14',
+		'Level': '8',
 		'Challenge': 'TBA',
 	},
 	'Dark Leaves': {
-		'Weapon Level': 'Get the M4 to level ?',
+		'Weapon': 'M4',
+		'Level': '?',
 		'Challenge': 'Get 10 double kills',
 	},
 	'Internal Flame': {
-		'Weapon Level': 'Get the Lachmann-762 to level 18',
+		'Weapon': 'Lachmann-762',
+		'Level': '18',
 		'Challenge': 'Get 10 double kills',
 	},
 	'Omnihex': {
-		'Weapon Level': 'Get the Vaznev-9K to level 13',
+		'Weapon': 'Vaznev-9K',
+		'Level': '13',
 		'Challenge': 'TBA',
 	},
 	'Tessellation': {
-		'Weapon Level': 'Get the HCR 56 to level 18',
+		'Weapon': 'HCR 56',
+		'Level': '18',
 		'Challenge': 'TBA',
 	},
 	'Moon Shadow': {
-		'Weapon Level': 'Get the FSS Hurricane to level 10',
+		'Weapon': 'FSS Hurricane',
+		'Level': '10',
 		'Challenge': 'Get 50 kills while ADS',
 	},
 }

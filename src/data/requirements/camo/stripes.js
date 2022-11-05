@@ -1,58 +1,72 @@
 export default {
 	'Commando Paint': {
-		'Weapon Level': 'Get the Sakin MG38 to level 2',
+		'Weapon': 'Sakin MG38',
+		'Level': '2',
 		'Challenge': 'TBA',
 	},
 	'Marshland': {
-		'Weapon Level': 'Get the Lachmann-556 to level ?',
+		'Weapon': 'Lachmann-556',
+		'Level': '?',
 		'Challenge': 'Get 50 kills',
 	},
 	'Savannah': {
-		'Weapon Level': 'Get the Kastov 545 to level 13',
+		'Weapon': 'Kastov 545',
+		'Level': '13',
 		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Mud Bath': {
-		'Weapon Level': 'Get the Bryson 800 to level ?',
+		'Weapon': 'Bryson 800',
+		'Level': '?',
 		'Challenge': 'Get 40 kills',
 	},
 	'Dark Rainforest': {
-		'Weapon Level': 'Get the RPK to level ?',
+		'Weapon': 'RPK',
+		'Level': '?',
 		'Challenge': 'Get 50 kills',
 	},
 	'Shadow Stalker': {
-		'Weapon Level': 'Get the PDSW 528 to level ?',
+		'Weapon': 'PDSW 528',
+		'Level': '?',
 		'Challenge': 'Get 50 kills',
 	},
 	'Ground Cover': {
-		'Weapon Level': 'Get the Bryson 800 to level 14',
+		'Weapon': 'Bryson 800',
+		'Level': '14',
 		'Challenge': 'TBA',
 	},
 	'Urban Zebra': {
-		'Weapon Level': 'Get the Riot Shield to level 11',
+		'Weapon': 'Riot Shield',
+		'Level': '11',
 		'Challenge': 'Get 40 kills',
 	},
 	'Wild Zebra': {
-		'Weapon Level': 'Get the Lockwood Mk2 to level 19',
+		'Weapon': 'Lockwood Mk2',
+		'Level': '19',
 		'Challenge': 'TBA',
 	},
 	'Tendrils': {
-		'Weapon Level': 'Get the SO-14 to level 21',
+		'Weapon': 'SO-14',
+		'Level': '21',
 		'Challenge': 'TBA',
 	},
 	'Beached': {
-		'Weapon Level': 'Get the FTAC Recon to level ?',
+		'Weapon': 'FTAC Recon',
+		'Level': '?',
 		'Challenge': 'Get 50 kills',
 	},
 	'Timber': {
-		'Weapon Level': 'Get the Minibak to level 2',
+		'Weapon': 'Minibak',
+		'Level': '2',
 		'Challenge': 'TBA',
 	},
 	'Snowed In': {
-		'Weapon Level': 'Get the Expedite 12 to level 20',
+		'Weapon': 'Expedite 12',
+		'Level': '20',
 		'Challenge': 'TBA',
 	},
 	'Stalking Cat': {
-		'Weapon Level': 'Get the Lachmann-762 to level 13',
+		'Weapon': 'Lachmann-762',
+		'Level': '13',
 		'Challenge': 'Get 20 kills while mounted',
 	},
 }

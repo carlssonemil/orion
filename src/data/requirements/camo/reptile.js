@@ -1,62 +1,77 @@
 export default {
 	'Coral Snake': {
-		'Weapon Level': 'Get the LM-S to level 12',
+		'Weapon': 'LM-S',
+		'Level': '12',
 		'Challenge': 'Get 30 kills while crouched',
 	},
 	'Anaconda': {
-		'Weapon Level': 'Get the TAQ-V to level 14',
+		'Weapon': 'TAQ-V',
+		'Level': '14',
 		'Challenge': 'TBA',
 	},
 	'Python': {
-		'Weapon Level': 'Get the FSS Hurricane to level 6',
+		'Weapon': 'FSS Hurricane',
+		'Level': '6',
 		'Challenge': 'Get 50 kills using a suppressor',
 	},
 	'Rattlesnake': {
-		'Weapon Level': 'Get the Minibak to level 6',
+		'Weapon': 'Minibak',
+		'Level': '6',
 		'Challenge': 'TBA',
 	},
 	'Bullsnake': {
-		'Weapon Level': 'Get the SA-B 50 to level 8',
+		'Weapon': 'SA-B 50',
+		'Level': '8',
 		'Challenge': 'Get 25 one-shot kills',
 	},
 	'Gecko': {
-		'Weapon Level': 'Get the PDSW 528 to level 11',
+		'Weapon': 'PDSW 528',
+		'Level': '11',
 		'Challenge': 'TBA',
 	},
 	'Garter Snake': {
-		'Weapon Level': 'Get the X12 to level 13',
+		'Weapon': 'X12',
+		'Level': '13',
 		'Challenge': 'TBA',
 	},
 	'Dark Echo': {
-		'Weapon Level': 'Get the X13 Auto to level 15',
+		'Weapon': 'X13 Auto',
+		'Level': '15',
 		'Challenge': 'TBA',
 	},
 	'Toxicity': {
-		'Weapon Level': 'Get the SA-B 50 to level 14',
+		'Weapon': 'SA-B 50',
+		'Level': '14',
 		'Challenge': 'Get 10 double kills',
 	},
 	'Shedding': {
-		'Weapon Level': 'Get the Bryson 890 to level 14',
+		'Weapon': 'Bryson 890',
+		'Level': '14',
 		'Challenge': 'TBA',
 	},
 	'Skin And Scales': {
-		'Weapon Level': 'Get the TAQ-M to level 17',
+		'Weapon': 'TAQ-M',
+		'Level': '17',
 		'Challenge': 'TBA',
 	},
 	'Heavy Commando': {
-		'Weapon Level': 'Get the SO-14 to level 15',
+		'Weapon': 'SO-14',
+		'Level': '15',
 		'Challenge': 'TBA',
 	},
 	'Night Terror': {
-		'Weapon Level': 'Get the RAAL MG to level 19',
+		'Weapon': 'RAAL MG',
+		'Level': '19',
 		'Challenge': 'TBA',
 	},
 	'Muddied': {
-		'Weapon Level': 'Get the P890 to level 10',
+		'Weapon': 'P890',
+		'Level': '10',
 		'Challenge': 'TBA',
 	},
 	'Torn Scales': {
-		'Weapon Level': 'Get the FTAC Recon to level 9',
+		'Weapon': 'FTAC Recon',
+		'Level': '9',
 		'Challenge': 'Get 10 double kills',
 	},
 }
