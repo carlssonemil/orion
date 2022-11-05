@@ -7,6 +7,7 @@ const masteryChallenges = {
 	'Platinum': 'Get 25 longshot kills',
 	'Polyatomic': 'Get 25 headshot kills',
 };
+
 export default {
 	'M4': {
 		'Scales': sprayPaint["Scales"],
