@@ -1,27 +1,27 @@
 export default {
 	'What Skulls?': {
-		'Weapon': '556 Icarus',
-		'Level': '6',
-		'Challenge': 'Get 10 double kills',
+		'weapon': '556 Icarus',
+		'level': '6',
+		'challenge': 'Get 10 double kills',
 	},
 	'Necropolis': {
-		'Weapon': 'Sakin MG38',
-		'Level': '8',
-		'Challenge': 'Get 30 kills while prone',
+		'weapon': 'Sakin MG38',
+		'level': '8',
+		'challenge': 'Get 30 kills while prone',
 	},
 	'Cthulhu': {
-		'Weapon': 'Lachmann-556',
-		'Level': '19',
-		'Challenge': 'Get 10 hipfire kills',
+		'weapon': 'Lachmann-556',
+		'level': '19',
+		'challenge': 'Get 10 hipfire kills',
 	},
 	'Lichyard': {
-		'Weapon': 'SP-X 80',
-		'Level': '18',
-		'Challenge': 'Get 50 kills using a suppressor',
+		'weapon': 'SP-X 80',
+		'level': '18',
+		'challenge': 'Get 50 kills using a suppressor',
 	},
 	'Haunting': {
-		'Weapon': 'FTAC Recon',
-		'Level': '22',
-		'Challenge': 'Get 30 kills while crouched',
+		'weapon': 'FTAC Recon',
+		'level': '22',
+		'challenge': 'Get 30 kills while crouched',
 	},
 }

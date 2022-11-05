@@ -107,7 +107,7 @@ export default {
 
 		requirementTooltip(weapon, camouflage) {
 			const requirement = this.requirements[weapon.category][weapon.name][camouflage]
-			if (requirement && requirement.Challenge) return `${camouflage} - Level ${requirement.Level} - ${requirement.Challenge}`
+			if (requirement && requirement.challenge) return `${camouflage} - Level ${requirement.level} - ${requirement.challenge}`
 				
 			return `${camouflage} - ${requirement || 'TBA'}`
 		},
