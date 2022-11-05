@@ -1,13 +1,13 @@
-import assaultRiflesRequiresments from './requirements/assaultRifles'
-import battleRiflesRequirements from './requirements/battleRifles'
-import subMachineGunsRequirements from './requirements/subMachineGuns'
-import shotgunsRequirements from './requirements/shotguns'
-import lightMachineGunsRequirements from './requirements/lightMachineGuns'
-import marksmanRiflesRequirements from './requirements/marksmanRifles'
-import sniperRiflesRequirements from './requirements/sniperRifles'
-import handgunsRequirements from './requirements/handguns'
-import launchersRequirements from './requirements/launchers'
-import meleeRequirements from './requirements/melee'
+import assaultRiflesRequiresments from './requirements/weapons/assaultRifles'
+import battleRiflesRequirements from './requirements/weapons/battleRifles'
+import handgunsRequirements from './requirements/weapons/handguns'
+import launchersRequirements from './requirements/weapons/launchers'
+import lightMachineGunsRequirements from './requirements/weapons/lightMachineGuns'
+import marksmanRiflesRequirements from './requirements/weapons/marksmanRifles'
+import meleeRequirements from './requirements/weapons/melee'
+import shotgunsRequirements from './requirements/weapons/shotguns'
+import sniperRiflesRequirements from './requirements/weapons/sniperRifles'
+import subMachineGunsRequirements from './requirements/weapons/subMachineGuns'
 
 export default {
 	'Assault Rifles': {

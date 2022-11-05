@@ -4,7 +4,7 @@ const base = [
 	'VEL 46',
 	'MX9',
 	'Lachmann Sub',
-	'Vaznek-9K',
+	'Vaznev-9K',
 	'FSS Hurricane',
 	'Minibak',
 	'PDSW 528',

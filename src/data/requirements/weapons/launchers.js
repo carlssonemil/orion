@@ -1,27 +1,29 @@
+import { digital, foliage, woodland } from '../camo/_index'
+
 export default {
 	'PILA': {
-		'Dead Leaves': 'Get 40 kills',
+		'Dead Leaves': woodland['Dead Leaves'],
 		'Gold': 'Get 2 kills without dying 5 times',
 		'Platinum': 'Destroy 15 streaks',
 		'Polyatomic': 'Get 15 double kills',
 	},
 
 	'STRELA-P': {
-		'Deep Jungle': 'Get 40 kills',
+		'Deep Jungle': foliage['Deep Jungle'],
 		'Gold': 'Get 2 kills without dying 5 times',
 		'Platinum': 'Destroy 25 streaks',
 		'Polyatomic': 'Get 15 double kills',
 	},
 
 	'JOKR': {
-		'Azure Fray': 'Get 40 kills',
-		'Gold': 'Get 2 kills without dying 5 times',
+		'Azure Fray': woodland['Azure Fray'],
+		'Gold': 'Get 2 kills without dying 10 times',
 		'Platinum': 'Destroy 10 streaks',
 		'Polyatomic': 'Get 15 double kills',
 	},
 
 	'RPG-7': {
-		'Jungle Digital': 'Get 40 kills',
+		'Jungle Digital': digital['Jungle Digital (RPG)'],
 		'Gold': 'Get 2 kills without dying 5 times',
 		'Platinum': 'Destroy 10 streaks',
 		'Polyatomic': 'Get 15 double kills',

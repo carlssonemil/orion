@@ -20,7 +20,7 @@ export default {
 		'Poison': false,
 	},
 
-	'Vaznek-9K': {
+	'Vaznev-9K': {
 		'Snow Melt Digital': false,
 		'Kill Brush': false,
 		'Forest Rain': false,
