@@ -5,7 +5,7 @@ export default {
 		'Challenge': 'Get 10 double kills',
 	},
 	'Desert Rain': {
-		'Weapon': 'Lockwood Mk2',
+		'Weapon': 'Lockwood MK2',
 		'Level': '11',
 		'Challenge': 'Get 15 kills from behind',
 	},
@@ -25,7 +25,7 @@ export default {
 		'Challenge': 'Get 20 kills while mounted',
 	},
 	'Chemical Reaction': {
-		'Weapon': 'Kastov-74u',
+		'Weapon': 'Kastov-74U',
 		'Level': '20',
 		'Challenge': 'Get 30 kills while crouched',
 	},

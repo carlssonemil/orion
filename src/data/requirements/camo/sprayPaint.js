@@ -55,7 +55,7 @@ export default {
 		'Challenge': 'Get 50 kills',
 	},
 	'Sand Viper': {
-		'Weapon': 'Lockwood Mk2',
+		'Weapon': 'Lockwood MK2',
 		'Level': '2',
 		'Challenge': 'Get 50 kills',
 	},
@@ -70,7 +70,7 @@ export default {
 		'Challenge': 'Get 10 double kills',
 	},
 	'Ripple Effect': {
-		'Weapon': 'Kastov-74u',
+		'Weapon': 'Kastov-74U',
 		'Level': '2',
 		'Challenge': 'Get 50 kills',
 	},

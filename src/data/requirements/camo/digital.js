@@ -25,7 +25,7 @@ export default {
 		'Challenge': 'Get 50 kills',
 	},
 	'Jungle Digital (RPG)': {
-		'Weapon': 'RPG',
+		'Weapon': 'RPG-7',
 		'Level': '11',
 		'Challenge': 'Get 40 kills',
 	},
@@ -45,7 +45,7 @@ export default {
 		'Challenge': 'Get 40 kills',
 	},
 	'Jungle Digital': {
-		'Weapon': 'Kastov-74u',
+		'Weapon': 'Kastov-74U',
 		'Level': '8',
 		'Challenge': 'Get 15 point blank kills',
 	},

@@ -33,7 +33,7 @@ export default {
 		...masteryChallenges
 	},
 
-	'Vaznek-9K': {
+	'Vaznev-9K': {
 		'Snow Melt Digital': digital["Snow Melt Digital"],
 		'Kill Brush': woodland["Kill Brush"],
 		'Forest Rain': cliffside["Forest Rain"],

@@ -40,7 +40,7 @@ export default {
 		'Challenge': 'Get 40 kills',
 	},
 	'Wild Zebra': {
-		'Weapon': 'Lockwood Mk2',
+		'Weapon': 'Lockwood MK2',
 		'Level': '19',
 		'Challenge': 'Get 25 one-shot kills',
 	},

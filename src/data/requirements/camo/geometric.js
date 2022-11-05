@@ -40,7 +40,7 @@ export default {
 		'Challenge': 'Get 20 kills while mounted',
 	},
 	'Canary Stone': {
-		'Weapon': 'Kastov-74u',
+		'Weapon': 'Kastov-74U',
 		'Level': '14',
 		'Challenge': 'Get 10 double kills',
 	},
@@ -60,7 +60,7 @@ export default {
 		'Challenge': 'Get 10 hipfire kills',
 	},
 	'Granite': {
-		'Weapon': 'Lockwood Mk2',
+		'Weapon': 'Lockwood MK2',
 		'Level': '28',
 		'Challenge': 'Get 10 point blank kills',
 	},
