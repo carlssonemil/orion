@@ -11,7 +11,7 @@ const masteryChallenges = {
 export default {
 	'EBR-14': {
 		'Sandstorm Digital': digital["Sandstorm Digital"],
-		'Moss': dragon.Moss,
+		'Moss': dragon["Moss"],
 		'Autumn Return': classic["Autumn Return"],
 		'Sunlit Croc': tiger["Sunlit Croc"],
 		...masteryChallenges
@@ -20,7 +20,7 @@ export default {
 	'SP-R 208': {
 		'Dark Canopy': woodland["Dark Canopy"],
 		'Desert Digital': digital["Desert Digital"],
-		'Ferns': foliage.Ferns,
+		'Ferns': foliage["Ferns"],
 		'Crimson Streak': fun["Crimson Streak"],
 		...masteryChallenges
 	},
@@ -29,22 +29,22 @@ export default {
 		'Sand Viper': sprayPaint["Sand Viper"],
 		'Desert Rain': cliffside["Desert Rain"],
 		'Wild Zebra': stripes["Wild Zebra"],
-		'Granite': geometric.Granite,
+		'Granite': geometric["Granite"],
 		...masteryChallenges
 	},
 
 	'LM-S': {
 		'Commando Digital': digital["Commando Digital"],
-		'Abominable': tiger.Abominable,
-		'Autumnal': foliage.Autumnal,
+		'Abominable': tiger["Abominable"],
+		'Autumnal': foliage["Autumnal"],
 		'Coral Snake': reptile["Coral Snake"],
 		...masteryChallenges
 	},
 
 	'SA-B 50': {
 		'Urban Digital': digital["Urban Digital"],
-		'Bullsnake': reptile.Bullsnake,
-		'Toxicity': reptile.Toxicity,
+		'Bullsnake': reptile["Bullsnake"],
+		'Toxicity': reptile["Toxicity"],
 		'Splintered Asphalt': geometric["Splintered Asphalt"],
 		...masteryChallenges
 	},

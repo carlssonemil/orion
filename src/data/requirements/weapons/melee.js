@@ -7,7 +7,7 @@ const masteryChallenges = {
 
 export default {
 	'Combat Knife': {
-		Crimson: solidColours.Crimson,
+		Crimson: solidColours["Crimson"],
 		...masteryChallenges,
 		'Polyatomic': 'Get 20 kills from behind',
 	},

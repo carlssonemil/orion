@@ -8,17 +8,17 @@ const masteryChallenges = {
 
 export default {
 	'P890': {
-		'Sand': solidColours.Sand,
-		'Muddied': reptile.Muddied,
+		'Sand': solidColours["Sand"],
+		'Muddied': reptile["Muddied"],
 		'Blue Digital': digital["Blue Digital"],
 		'Pixel Land': fun["Pixel Land"],
 		...masteryChallenges
 	},
 
 	'.50 GS': {
-		'Blades': geometric.Blades,
-		'Foliage': dragon.Foliage,
-		'Leopard': fun.Leopard,
+		'Blades': geometric["Blades"],
+		'Foliage': dragon["Foliage"],
+		'Leopard': fun["Leopard"],
 		'8-Bit Static': fun["8-Bit Static"],
 		...masteryChallenges
 	},
@@ -27,15 +27,15 @@ export default {
 		'Bio Static Digital': digital["Bio Static Digital"],
 		'Desert Wave': tiger["Desert Wave"],
 		'Garter Snake': reptile["Garter Snake"],
-		'Azul': solidColours.Azul,
+		'Azul': solidColours["Azul"],
 		...masteryChallenges
 	},
 
 	'Basilisk': {
-		'Outcrop': woodland.Outcrop,
-		'Countryside': foliage.Countryside,
+		'Outcrop': woodland["Outcrop"],
+		'Countryside': foliage["Countryside"],
 		'Dark Denim': solidColours["Dark Denim"],
-		'Chrysolite': geometric.Chrysolite,
+		'Chrysolite': geometric["Chrysolite"],
 		...masteryChallenges
 	},
 

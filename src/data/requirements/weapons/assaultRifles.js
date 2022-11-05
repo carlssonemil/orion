@@ -9,7 +9,7 @@ const masteryChallenges = {
 };
 export default {
 	'M4': {
-		'Scales': sprayPaint.Scales,
+		'Scales': sprayPaint["Scales"],
 		'Desert Hybrid': woodland["Desert Hybrid"],
 		'Dark Leaves': dragon["Dark Leaves"],
 		'Urban Renewal': classic["Urban Renewal"],
@@ -18,7 +18,7 @@ export default {
 
 	'TAQ-56': {
 		'Hidden Snake': woodland["Hidden Snake"],
-		'Iceland': geometric.Iceland,
+		'Iceland': geometric["Iceland"],
 		'Stonewall Digital': digital["Stonewall Digital"],
 		'Back in Blue': classic["Back in Blue"],
 		...masteryChallenges
@@ -33,17 +33,17 @@ export default {
 	},
 
 	'Lachmann-556': {
-		'Marshland': stripes.Marshland,
-		'Pine': solidColours.Pine,
+		'Marshland': stripes["Marshland"],
+		'Pine': solidColour["Pine"],
 		'Dark Tiger Digital': digital["Dark Tiger Digital"],
-		'Cthulhu': skulls.Cthulhu,
+		'Cthulhu': skulls["Cthulhu"],
 		...masteryChallenges
 	},
 
 	'STB 556': {
 		'Sponge Tac': sprayPaint["Sponge Tac"],
 		'Black Top': dragon["Black Top"],
-		'Slate': solidColours.Slate,
+		'Slate': solidColours["Slate"],
 		'Neon Pink': dragon["Neon Pink"],
 		...masteryChallenges
 	},
@@ -52,7 +52,7 @@ export default {
 		'Modern Woodland': woodland["Modern Woodland"],
 		'Marsh Digital': digital["Marsh Digital"],
 		'Dank Forest': tiger["Dank Forest"],
-		'Intoxicate': tiger.Intoxicate,
+		'Intoxicate': tiger["Intoxicate"],
 		...masteryChallenges
 	},
 
@@ -65,9 +65,9 @@ export default {
 	},
 
 	'Kastov 545': {
-		'Snowdrift': woodland.Snowdrift,
-		'Mudslide': tiger.Mudslide,
-		'Savannah': stripes.Savannah,
+		'Snowdrift': woodland["Snowdrift"],
+		'Mudslide': tiger["Mudslide"],
+		'Savannah': stripes["Savannah"],
 		'Petri Digital': digital["Petri Digital"],
 		...masteryChallenges
 	},

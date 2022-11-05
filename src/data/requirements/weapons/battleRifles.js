@@ -17,25 +17,25 @@ export default {
 
 	'SO-14': {
 		'Dune Stalker': woodland["Dune Stalker"],
-		'Reptilian': dragon.Reptilian,
+		'Reptilian': dragon["Reptilian"],
 		'Heavy Command': reptile["Heavy Commando"],
-		'Tendrils': stripes.Tendrils,
+		'Tendrils': stripes["Tendrils"],
 		...masteryChallenges
 	},
 
 	'TAQ-V': {
 		'Dune Sea': geometric["Dune Sea"],
 		'Faded Veil': tiger["Faded Veil"],
-		'Anaconda': reptile.Anaconda,
+		'Anaconda': reptile["Anaconda"],
 		'Slime Time': cliffside["Slime Time"],
 		...masteryChallenges
 	},
 
 	'FTAC Recon': {
-		'Beached': stripes.Beached,
+		'Beached': stripes["Beached"],
 		'Torn Scales': reptile["Torn Scales"],
 		'Desert Cat': tiger["Desert Cat"],
-		'Haunting': skulls.Haunting,
+		'Haunting': skulls["Haunting"],
 		...masteryChallenges
 	},
 }

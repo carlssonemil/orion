@@ -8,7 +8,7 @@ const masteryChallenges = {
 
 export default {
 	'Lockwood 300': {
-		'Mosswood': foliage.Mosswood,
+		'Mosswood': foliage["Mosswood"],
 		'Jungle Cat': woodland["Jungle Cat"],
 		'Red Cell': digital["Red Cell"],
 		'Hunting Orange': solidColours["Hunting Orange"],
@@ -25,16 +25,16 @@ export default {
 
 	'Bryson 800': {
 		'Mud Bath': stripes["Mud Bath"],
-		'Bamboo': foliage.Bamboo,
+		'Bamboo': foliage["Bamboo"],
 		'Ground Cover': stripes["Ground Cover"],
-		'Aqua': solidColours.Aqua,
+		'Aqua': solidColours["Aqua"],
 		...masteryChallenges
 	},
 
 	'Bryson 890': {
 		'Snowstorm Digital': digital["Snowstorm Digital"],
 		'Stone Guard': geometric["Stone Guard"],
-		'Shedding': reptile.Shedding,
+		'Shedding': reptile["Shedding"],
 		'Arctic Chill': woodland["Arctic Chill"],
 		...masteryChallenges
 	},

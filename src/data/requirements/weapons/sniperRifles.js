@@ -10,34 +10,34 @@ const masteryChallenges = {
 
 export default {
 	'MCPR-300': {
-		'Clay': solidColours.Clay,
+		'Clay': solidColour["Clay"],
 		'Snow Grass': foliage["Snow Grass"],
 		'Neon Shards': tiger["Neon Shards"],
-		'Bloodied': fun.Bloodied,
+		'Bloodied': fun.["Bloodied"],
 		...masteryChallenges
 	},
 
 	'Signal 50': {
-		'Gladiator': sprayPaint.Gladiator,
-		'Unearthed': sprayPaint.Unearthed,
-		'Earthbound': cliffside.Earthbound,
-		'Spectrums': classic.Spectrums,
+		'Gladiator': sprayPaint["Gladiator"],
+		'Unearthed': sprayPaint["Unearthed"],
+		'Earthbound': cliffside.["Earthbound"],
+		'Spectrums': classic["Spectrums"],
 		...masteryChallenges
 	},
 
 	'LA-B 330': {
 		'Shark Net': sprayPaint["Shark Net"],
-		'Dirt': dragon.Dirt,
-		'Leafless': foliage.Leafless,
+		'Dirt': dragon["Dirt"],
+		'Leafless': foliage["Leafless"],
 		'Teal Tiger': tiger["Teal Tiger"],
 		...masteryChallenges
 	},
 
 	'SP-X 80': {
-		'Scratch': sprayPaint.Scratch,
+		'Scratch': sprayPaint["Scratch"],
 		'Dry Field': foliage["Dry Field"],
-		'Aspen': foliage.Aspen,
-		'Lichyard': skulls.Lichyard,
+		'Aspen': foliage["Aspen"],
+		'Lichyard': skulls["Lichyard"],
 		...masteryChallenges
 	},
 }
