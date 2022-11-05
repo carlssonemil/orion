@@ -34,7 +34,7 @@ export default {
 
 	'Lachmann-556': {
 		'Marshland': stripes["Marshland"],
-		'Pine': solidColour["Pine"],
+		'Pine': solidColours["Pine"],
 		'Dark Tiger Digital': digital["Dark Tiger Digital"],
 		'Cthulhu': skulls["Cthulhu"],
 		...masteryChallenges

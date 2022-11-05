@@ -10,17 +10,17 @@ const masteryChallenges = {
 
 export default {
 	'MCPR-300': {
-		'Clay': solidColour["Clay"],
+		'Clay': solidColours["Clay"],
 		'Snow Grass': foliage["Snow Grass"],
 		'Neon Shards': tiger["Neon Shards"],
-		'Bloodied': fun.["Bloodied"],
+		'Bloodied': fun["Bloodied"],
 		...masteryChallenges
 	},
 
 	'Signal 50': {
 		'Gladiator': sprayPaint["Gladiator"],
 		'Unearthed': sprayPaint["Unearthed"],
-		'Earthbound': cliffside.["Earthbound"],
+		'Earthbound': cliffside["Earthbound"],
 		'Spectrums': classic["Spectrums"],
 		...masteryChallenges
 	},
