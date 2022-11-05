@@ -1,12 +1,9 @@
 import { digital, dragon, foliage, fun, geometric, reptile, solidColours, tiger, woodland } from "../camo/_index";
 
-const goldChallengeText = 'Get 3 kills without dying 5 times';
-const platinumChallengeText = null;
-const polyatomicChallengeText = null;
 const masteryChallenges = {
-	'Gold': goldChallengeText,
-	'Platinum': platinumChallengeText,
-	'Polyatomic': polyatomicChallengeText,
+	'Gold': 'Get 3 kills without dying 5 times',
+	'Platinum': 'Get 15 longshot kills',
+	'Polyatomic': 'Get 20 headshot kills',
 };
 
 export default {

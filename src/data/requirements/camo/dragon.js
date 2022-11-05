@@ -7,7 +7,7 @@ export default {
 	'Moss': {
 		'Weapon': 'EBR-14',
 		'Level': '?',
-		'Challenge': 'Get 30 Kills',
+		'Challenge': 'Get 30 kills while crouched',
 	},
 	'Tagged': {
 		'Weapon': 'VEL 46',
@@ -17,12 +17,12 @@ export default {
 	'Black Top': {
 		'Weapon': 'STB 556',
 		'Level': '8',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 20 kills while mounted',
 	},
 	'Asphalt': {
 		'Weapon': 'RPK',
 		'Level': '13',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills using a suppressor',
 	},
 	'Crime Scene': {
 		'Weapon': 'Lachmann Sub',
@@ -32,22 +32,22 @@ export default {
 	'Neon Pink': {
 		'Weapon': 'STB 556',
 		'Level': '20',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 30 kills while crouched',
 	},
 	'Trailblazer': {
-		'Weapon': 'RAAL MG',
+		'Weapon': 'Raal MG',
 		'Level': '10',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 15 kills from behind',
 	},
 	'Foliage': {
 		'Weapon': '.50 GS',
 		'Level': '10',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 5 double kills',
 	},
 	'Reptilian': {
 		'Weapon': 'SO-14',
 		'Level': '8',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Dark Leaves': {
 		'Weapon': 'M4',
@@ -62,12 +62,12 @@ export default {
 	'Omnihex': {
 		'Weapon': 'Vaznev-9K',
 		'Level': '13',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 15 hipfire kills',
 	},
 	'Tessellation': {
 		'Weapon': 'HCR 56',
 		'Level': '18',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 20 kills while mounted',
 	},
 	'Moon Shadow': {
 		'Weapon': 'FSS Hurricane',

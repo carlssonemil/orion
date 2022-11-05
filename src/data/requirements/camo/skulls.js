@@ -7,17 +7,17 @@ export default {
 	'Necropolis': {
 		'Weapon': 'Sakin MG38',
 		'Level': '8',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 30 kills while prone',
 	},
 	'Cthulhu': {
 		'Weapon': 'Lachmann-556',
 		'Level': '19',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 hipfire kills',
 	},
 	'Lichyard': {
 		'Weapon': 'SP-X 80',
 		'Level': '18',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills using a suppressor',
 	},
 	'Haunting': {
 		'Weapon': 'FTAC Recon',

@@ -12,12 +12,12 @@ export default {
 	'Dry Field': {
 		'Weapon': 'SP-X 80',
 		'Level': '7',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 20 kills while mounted',
 	},
 	'Countryside': {
 		'Weapon': 'Basilisk',
 		'Level': '11',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 30 kills while ADS',
 	},
 	'Snow Grass': {
 		'Weapon': 'MCPR-300',
@@ -27,7 +27,7 @@ export default {
 	'Aspen': {
 		'Weapon': 'SP-X 80',
 		'Level': '13',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 25 one-shot kills',
 	},
 	'Bamboo': {
 		'Weapon': 'Bryson 800',

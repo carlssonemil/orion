@@ -22,7 +22,7 @@ export default {
 	'Dune Stalker': {
 		'Weapon': 'SO-14',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills',
 	},
 	'Urban Foliage': {
 		'Weapon': 'Kastov 762',
@@ -42,12 +42,12 @@ export default {
 	'Void And Light': {
 		'Weapon': 'X13',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 40 kills',
 	},
 	'Arctic Chill': {
 		'Weapon': 'Bryson 890',
 		'Level': '21',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 25 kills while crouched',
 	},
 	'Azure Fray': {
 		'Weapon': 'JOKR',
@@ -57,7 +57,7 @@ export default {
 	'Jungle Cat': {
 		'Weapon': 'Lockwood 300',
 		'Level': '10',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 40 kills using a suppressor',
 	},
 	'Modern Woodland': {
 		'Weapon': 'M16',
@@ -67,12 +67,12 @@ export default {
 	'Kill Brush': {
 		'Weapon': 'Vaznev-9K',
 		'Level': '6',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Rocky Desert': {
-		'Weapon': 'RAAL MG',
+		'Weapon': 'Raal MG',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills',
 	},
 	'Desert Hybrid': {
 		'Weapon': 'M4',
@@ -87,11 +87,11 @@ export default {
 	'Outcrop': {
 		'Weapon': 'Basilisk',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 40 kills',
 	},
 	'Forest Water': {
 		'Weapon': 'TAQ-M',
 		'Level': '10',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 5 hipfire kills',
 	},
 }

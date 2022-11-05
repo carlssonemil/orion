@@ -7,7 +7,7 @@ export default {
 	'Sponge Tac': {
 		'Weapon': 'STB 556',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills',
 	},
 	'Forest Shadow': {
 		'Weapon': 'Expedite 12',
@@ -17,7 +17,7 @@ export default {
 	'Surface Tension': {
 		'Weapon': 'HCR 56',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills',
 	},
 	'Gladiator': {
 		'Weapon': 'Signal 50',
@@ -27,12 +27,12 @@ export default {
 	'Dead Hive': {
 		'Weapon': 'TAQ-M',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills',
 	},
 	'Scratch': {
 		'Weapon': 'SP-X 80',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills',
 	},
 	'Scales': {
 		'Weapon': 'M4',
@@ -67,16 +67,16 @@ export default {
 	'China Lake': {
 		'Weapon': 'RPK',
 		'Level': '?',
-		'Challenge': 'Get 10 Double Kills',
+		'Challenge': 'Get 10 double kills',
 	},
 	'Ripple Effect': {
 		'Weapon': 'Kastov-74u',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills',
 	},
 	'Unearthed': {
 		'Weapon': 'Signal 50',
 		'Level': '9',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 2 kills within 10 seconds of each other 10 times',
 	},
 }

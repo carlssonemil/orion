@@ -7,7 +7,7 @@ export default {
 	'Anaconda': {
 		'Weapon': 'TAQ-V',
 		'Level': '14',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 15 kills from behind',
 	},
 	'Python': {
 		'Weapon': 'FSS Hurricane',
@@ -17,7 +17,7 @@ export default {
 	'Rattlesnake': {
 		'Weapon': 'Minibak',
 		'Level': '6',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 double kills',
 	},
 	'Bullsnake': {
 		'Weapon': 'SA-B 50',
@@ -27,17 +27,17 @@ export default {
 	'Gecko': {
 		'Weapon': 'PDSW 528',
 		'Level': '11',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Garter Snake': {
 		'Weapon': 'X12',
 		'Level': '13',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 hipfire kills',
 	},
 	'Dark Echo': {
 		'Weapon': 'X13 Auto',
 		'Level': '15',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 5 double kills',
 	},
 	'Toxicity': {
 		'Weapon': 'SA-B 50',
@@ -47,27 +47,27 @@ export default {
 	'Shedding': {
 		'Weapon': 'Bryson 890',
 		'Level': '14',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 double kills',
 	},
-	'Skin And Scales': {
+	'Skin and Scales': {
 		'Weapon': 'TAQ-M',
 		'Level': '17',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 double kills',
 	},
 	'Heavy Commando': {
 		'Weapon': 'SO-14',
 		'Level': '15',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 double kills',
 	},
 	'Night Terror': {
-		'Weapon': 'RAAL MG',
+		'Weapon': 'Raal MG',
 		'Level': '19',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 20 kills while mounted',
 	},
 	'Muddied': {
 		'Weapon': 'P890',
 		'Level': '10',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 40 kills using a suppressor',
 	},
 	'Torn Scales': {
 		'Weapon': 'FTAC Recon',

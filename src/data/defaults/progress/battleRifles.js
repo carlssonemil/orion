@@ -9,13 +9,13 @@ export default {
 	'SO-14': {
 		'Dune Stalker': false,
 		'Reptilian': false,
-		'Heavy Command': false,
+		'Heavy Commando': false,
 		'Tendrils': false,
 	},
 
 	'TAQ-V': {
 		'Dune Sea': false,
-		'Faded Evil': false,
+		'Faded Veil': false,
 		'Anaconda': false,
 		'Slime Time': false,
 	},

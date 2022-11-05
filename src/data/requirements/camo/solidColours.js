@@ -17,7 +17,7 @@ export default {
 	'Slate': {
 		'Weapon': 'STB 556',
 		'Level': '14',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 double kills',
 	},
 	'Pine': {
 		'Weapon': 'Lachmann-556',
@@ -32,17 +32,17 @@ export default {
 	'Hunting Orange': {
 		'Weapon': 'Lockwood 300',
 		'Level': '27',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 20 kills while mounted',
 	},
 	'Azul': {
 		'Weapon': 'X12',
 		'Level': '19',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 40 kills with Akimbo',
 	},
 	'Aqua': {
 		'Weapon': 'Bryson 800',
 		'Level': '20',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 25 one-shot kills',
 	},
 	'Crimson': {
 		'Weapon': 'Combat Knife',
@@ -52,12 +52,12 @@ export default {
 	'Dark Denim': {
 		'Weapon': 'Basilisk',
 		'Level': '19',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 point blank kills',
 	},
 	'Power Pink': {
 		'Weapon': 'PDSW 528',
 		'Level': '29',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 point blank kills',
 	},
 	'Whiteout': {
 		'Weapon': 'VEL 46',

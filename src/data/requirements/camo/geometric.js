@@ -7,12 +7,12 @@ export default {
 	'Motley': {
 		'Weapon': 'Fennec 45',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills',
 	},
 	'Dune Sea': {
 		'Weapon': 'TAQ-V',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills',
 	},
 	'Forest Ice': {
 		'Weapon': 'Kastov 762',
@@ -22,32 +22,32 @@ export default {
 	'Stone Guard': {
 		'Weapon': 'Bryson 890',
 		'Level': '8',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 15 point blank kills',
 	},
 	'Iceland': {
 		'Weapon': 'TAQ-56',
 		'Level': '?',
-		'Challenge': 'Get 10 Double Kills',
+		'Challenge': 'Get 10 double kills',
 	},
 	'Shale': {
 		'Weapon': 'PDSW 528',
 		'Level': '20',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 15 hipfire kills',
 	},
 	'Lodge': {
-		'Weapon': 'RAAL MG',
+		'Weapon': 'Raal MG',
 		'Level': '27',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 20 kills while mounted',
 	},
 	'Canary Stone': {
 		'Weapon': 'Kastov-74u',
 		'Level': '14',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 double kills',
 	},
 	'Skyfire': {
 		'Weapon': 'Minibak',
 		'Level': '14',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 15 point blank kills',
 	},
 	'Autumn Dazzle': {
 		'Weapon': '556 Icarus',
@@ -62,12 +62,12 @@ export default {
 	'Granite': {
 		'Weapon': 'Lockwood Mk2',
 		'Level': '28',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 point blank kills',
 	},
 	'Chrysolite': {
 		'Weapon': 'Basilisk',
 		'Level': '28',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 30 kills with Akimbo',
 	},
 	'Splintered Asphalt': {
 		'Weapon': 'SA-B 50',
@@ -77,6 +77,6 @@ export default {
 	'Sunset': {
 		'Weapon': 'HCR 56',
 		'Level': '13',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 double kills',
 	},
 }

@@ -12,7 +12,7 @@ export default {
 	'Bio Static Digital': {
 		'Weapon': 'X12',
 		'Level': '2',
-		'Challenge': 'Get 30 Kills',
+		'Challenge': 'Get 30 kills',
 	},
 	'Urban Digital': {
 		'Weapon': 'SA-B 50',
@@ -32,12 +32,12 @@ export default {
 	'Snowstorm Digital': {
 		'Weapon': 'Bryson 890',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 40 kills',
 	},
 	'Snow Melt Digital': {
 		'Weapon': 'Vaznev-9K',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills',
 	},
 	'Commando Digital': {
 		'Weapon': 'LM-S',
@@ -47,7 +47,7 @@ export default {
 	'Jungle Digital': {
 		'Weapon': 'Kastov-74u',
 		'Level': '8',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 15 point blank kills',
 	},
 	'Arctic Digital': {
 		'Weapon': 'Lachmann Sub',
@@ -57,7 +57,7 @@ export default {
 	'Forest Digital': {
 		'Weapon': 'MX9',
 		'Level': '7',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 double kills',
 	},
 	'Dark Tiger Digital': {
 		'Weapon': 'Lachmann-556',
@@ -72,32 +72,32 @@ export default {
 	'Stonewall Digital': {
 		'Weapon': 'TAQ-56',
 		'Level': '?',
-		'Challenge': 'Get 50 Kills While ADS',
+		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Chemist Digital': {
 		'Weapon': 'TAQ-M',
 		'Level': '25',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 20 kills while mounted',
 	},
 	'Asphalt Digital': {
 		'Weapon': 'X13 Auto',
 		'Level': '8',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 hipfire kills',
 	},
 	'Magma Digital': {
 		'Weapon': 'Sakin MG38',
 		'Level': '19',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills using a suppressor',
 	},
 	'Red Cell': {
 		'Weapon': 'Lockwood 300',
 		'Level': '19',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 25 one-shot kills',
 	},
 	'Green Digital': {
 		'Weapon': 'Minibak',
 		'Level': '10',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Marsh Digital': {
 		'Weapon': 'M16',
@@ -107,7 +107,7 @@ export default {
 	'Blue Digital': {
 		'Weapon': 'P890',
 		'Level': '18',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 5 double kills',
 	},
 	'Classic Digital': {
 		'Weapon': 'Rapp H',

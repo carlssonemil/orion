@@ -2,7 +2,7 @@ export default {
 	'Overgrown': {
 		'Weapon': 'MX9',
 		'Level': '11',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 20 kills while mounted',
 	},
 	'Mudslide': {
 		'Weapon': 'Kastov 545',
@@ -22,17 +22,17 @@ export default {
 	'Faded Veil': {
 		'Weapon': 'TAQ-V',
 		'Level': '8',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 15 point blank kills',
 	},
 	'Feral Beast': {
 		'Weapon': 'Fennec 45',
 		'Level': '18',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 15 kills from behind',
 	},
 	'Tiger Stripes': {
 		'Weapon': 'Expedite 12',
 		'Level': '11',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 15 hipfire kills',
 	},
 	'Desert Cat': {
 		'Weapon': 'FTAC Recon',
@@ -52,12 +52,12 @@ export default {
 	'Desert Wave': {
 		'Weapon': 'X12',
 		'Level': '8',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 25 kills while ADS',
 	},
 	'Neon Shards': {
 		'Weapon': 'MCPR-300',
 		'Level': '18',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 30 kills while prone',
 	},
 	'Teal Tiger': {
 		'Weapon': 'LA',
@@ -72,7 +72,7 @@ export default {
 	'Eclipse': {
 		'Weapon': 'Fennec 45',
 		'Level': '10',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 30 kills while crouched',
 	},
 	'Sunlit Croc': {
 		'Weapon': 'EBR-14',

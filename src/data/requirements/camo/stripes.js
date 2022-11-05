@@ -2,7 +2,7 @@ export default {
 	'Commando Paint': {
 		'Weapon': 'Sakin MG38',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills',
 	},
 	'Marshland': {
 		'Weapon': 'Lachmann-556',
@@ -32,7 +32,7 @@ export default {
 	'Ground Cover': {
 		'Weapon': 'Bryson 800',
 		'Level': '14',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 10 double kills',
 	},
 	'Urban Zebra': {
 		'Weapon': 'Riot Shield',
@@ -42,12 +42,12 @@ export default {
 	'Wild Zebra': {
 		'Weapon': 'Lockwood Mk2',
 		'Level': '19',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 25 one-shot kills',
 	},
 	'Tendrils': {
 		'Weapon': 'SO-14',
 		'Level': '21',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 30 kills while prone',
 	},
 	'Beached': {
 		'Weapon': 'FTAC Recon',
@@ -57,12 +57,12 @@ export default {
 	'Timber': {
 		'Weapon': 'Minibak',
 		'Level': '2',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 50 kills',
 	},
 	'Snowed In': {
 		'Weapon': 'Expedite 12',
 		'Level': '20',
-		'Challenge': 'TBA',
+		'Challenge': 'Get 25 kills while prone',
 	},
 	'Stalking Cat': {
 		'Weapon': 'Lachmann-762',

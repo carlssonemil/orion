@@ -2,13 +2,10 @@ import {
 	classic, cliffside, dragon, foliage, fun, skulls, solidColours, sprayPaint, tiger
 } from "../camo/_index";
 
-const goldChallengeText = 'Get 3 kills without dying 10 times';
-const platinumChallengeText = null;
-const polyatomicChallengeText = null;
 const masteryChallenges = {
-	'Gold': goldChallengeText,
-	'Platinum': platinumChallengeText,
-	'Polyatomic': polyatomicChallengeText,
+	'Gold': 'Get 3 kills without dying 10 times',
+	'Platinum': 'Get 20 longshot kills',
+	'Polyatomic': 'Get 20 headshot kills',
 };
 
 export default {
