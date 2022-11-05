@@ -6,12 +6,12 @@ export default {
 	},
 	'Autumn Return': {
 		'Weapon': 'EBR-14',
-		'Level': '?',
+		'Level': '10',
 		'Challenge': 'Get 20 kills while mounted',
 	},
 	'Back in Blue': {
 		'Weapon': 'TAQ-56',
-		'Level': '?',
+		'Level': '19',
 		'Challenge': 'Get 15 hipfire kills',
 	},
 	'Hexed': {

@@ -6,12 +6,12 @@ export default {
 	},
 	'Hidden Snake': {
 		'Weapon': 'TAQ-56',
-		'Level': '?',
+		'Level': '2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Dark Canopy': {
 		'Weapon': 'SP-R 208',
-		'Level': '?',
+		'Level': '2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Snowdrift': {
@@ -76,7 +76,7 @@ export default {
 	},
 	'Desert Hybrid': {
 		'Weapon': 'M4',
-		'Level': '?',
+		'Level': '8',
 		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Midnight Bay': {

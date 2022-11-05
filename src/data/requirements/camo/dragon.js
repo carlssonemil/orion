@@ -6,7 +6,7 @@ export default {
 	},
 	'Moss': {
 		'Weapon': 'EBR-14',
-		'Level': '?',
+		'Level': '6',
 		'Challenge': 'Get 30 kills while crouched',
 	},
 	'Tagged': {
@@ -51,7 +51,7 @@ export default {
 	},
 	'Dark Leaves': {
 		'Weapon': 'M4',
-		'Level': '?',
+		'Level': '13',
 		'Challenge': 'Get 10 double kills',
 	},
 	'Internal Flame': {

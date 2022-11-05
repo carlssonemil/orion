@@ -21,7 +21,7 @@ export default {
 	},
 	'Snow Grass': {
 		'Weapon': 'MCPR-300',
-		'Level': '?',
+		'Level': '10',
 		'Challenge': 'Get 2 kills within 10 seconds of each other 10 times',
 	},
 	'Aspen': {
@@ -31,12 +31,12 @@ export default {
 	},
 	'Bamboo': {
 		'Weapon': 'Bryson 800',
-		'Level': '?',
+		'Level': '8',
 		'Challenge': 'Get 15 hipfire kills',
 	},
 	'Mosswood': {
 		'Weapon': 'Lockwood 300',
-		'Level': '?',
+		'Level': '2',
 		'Challenge': 'Get 40 kills',
 	},
 	'Ferns': {

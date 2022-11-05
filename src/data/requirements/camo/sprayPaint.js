@@ -66,7 +66,7 @@ export default {
 	},
 	'China Lake': {
 		'Weapon': 'RPK',
-		'Level': '?',
+		'Level': '7',
 		'Challenge': 'Get 10 double kills',
 	},
 	'Ripple Effect': {

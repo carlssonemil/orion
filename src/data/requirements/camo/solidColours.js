@@ -1,7 +1,7 @@
 export default {
 	'Sand': {
 		'Weapon': 'P890',
-		'Level': '?',
+		'Level': '2',
 		'Challenge': 'Get 40 kills',
 	},
 	'Olive': {
@@ -11,7 +11,7 @@ export default {
 	},
 	'Clay': {
 		'Weapon': 'MCPR-300',
-		'Level': '?',
+		'Level': '2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Slate': {

@@ -60,8 +60,8 @@ export default {
 		'Challenge': 'Get 30 kills while prone',
 	},
 	'Teal Tiger': {
-		'Weapon': 'LA',
-		'Level': '?',
+		'Weapon': 'LA-B 330',
+		'Level': '21',
 		'Challenge': 'Get 50 kills using a suppressor',
 	},
 	'Intoxicate': {
@@ -76,7 +76,7 @@ export default {
 	},
 	'Sunlit Croc': {
 		'Weapon': 'EBR-14',
-		'Level': '?',
+		'Level': '14',
 		'Challenge': 'Get 10 double kills',
 	},
 }

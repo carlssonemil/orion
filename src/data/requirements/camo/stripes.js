@@ -6,7 +6,7 @@ export default {
 	},
 	'Marshland': {
 		'Weapon': 'Lachmann-556',
-		'Level': '?',
+		'Level': '2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Savannah': {
@@ -16,17 +16,17 @@ export default {
 	},
 	'Mud Bath': {
 		'Weapon': 'Bryson 800',
-		'Level': '?',
+		'Level': '2',
 		'Challenge': 'Get 40 kills',
 	},
 	'Dark Rainforest': {
 		'Weapon': 'RPK',
-		'Level': '?',
+		'Level': '2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Shadow Stalker': {
 		'Weapon': 'PDSW 528',
-		'Level': '?',
+		'Level': '2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Ground Cover': {
@@ -51,7 +51,7 @@ export default {
 	},
 	'Beached': {
 		'Weapon': 'FTAC Recon',
-		'Level': '?',
+		'Level': '2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Timber': {

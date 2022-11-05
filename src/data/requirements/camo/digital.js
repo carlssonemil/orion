@@ -71,7 +71,7 @@ export default {
 	},
 	'Stonewall Digital': {
 		'Weapon': 'TAQ-56',
-		'Level': '?',
+		'Level': '13',
 		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Chemist Digital': {
@@ -116,7 +116,7 @@ export default {
 	},
 	'Desert Digital': {
 		'Weapon': 'SP-R 208',
-		'Level': '?',
+		'Level': '6',
 		'Challenge': 'Get 50 kills while ADS',
 	},
 }

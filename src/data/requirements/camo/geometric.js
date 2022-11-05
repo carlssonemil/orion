@@ -26,7 +26,7 @@ export default {
 	},
 	'Iceland': {
 		'Weapon': 'TAQ-56',
-		'Level': '?',
+		'Level': '8',
 		'Challenge': 'Get 10 double kills',
 	},
 	'Shale': {
