@@ -1,66 +1,66 @@
 export default {
 	'Desert Snake': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the Rapp H to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Sponge Tac': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the STB 556 to level 2',
 		'Challenge': 'TBA',
 	},
 	'Forest Shadow': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the Expedite 12 to level 2',
 		'Challenge': 'Get 40 kills',
 	},
 	'Surface Tension': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the HCR 56 to level 2',
 		'Challenge': 'TBA',
 	},
 	'Gladiator': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the Signal 50 to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Dead Hive': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the TAQ-M to level 2',
 		'Challenge': 'TBA',
 	},
 	'Scratch': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the SP-X 80 to level 2',
 		'Challenge': 'TBA',
 	},
 	'Scales': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the M4 to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Darkfall': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the Lachmann Sub to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Shark Net': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the LA-B 330 to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Day Marsh': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the Lachmann-762 to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Sand Viper': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the Lockwood Mk2 to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	"Rip N' Tear": {
-		'WeaponLevel': '8',
+		'Weapon Level': 'Get the Kastov 762 to level 8',
 		'Challenge': 'Get 20 kills while mounted',
 	},
 	'China Lake': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the RPK to level ?',
 		'Challenge': 'Get 10 Double Kills',
 	},
 	'Ripple Effect': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the Kastov-74u to level 2',
 		'Challenge': 'TBA',
 	},
 	'Unearthed': {
-		'WeaponLevel': '9',
+		'Weapon Level': 'Get the Signal 50 to level 9',
 		'Challenge': 'TBA',
 	},
 }

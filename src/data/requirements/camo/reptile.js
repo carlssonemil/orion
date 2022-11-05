@@ -1,62 +1,62 @@
 export default {
 	'Coral Snake': {
-		'WeaponLevel': '12',
+		'Weapon Level': 'Get the LM-S to level 12',
 		'Challenge': 'Get 30 kills while crouched',
 	},
 	'Anaconda': {
-		'WeaponLevel': '14',
+		'Weapon Level': 'Get the TAQ-V to level 14',
 		'Challenge': 'TBA',
 	},
 	'Python': {
-		'WeaponLevel': '6',
+		'Weapon Level': 'Get the FSS Hurricane to level 6',
 		'Challenge': 'Get 50 kills using a suppressor',
 	},
 	'Rattlesnake': {
-		'WeaponLevel': '6',
+		'Weapon Level': 'Get the Minibak to level 6',
 		'Challenge': 'TBA',
 	},
 	'Bullsnake': {
-		'WeaponLevel': '8',
+		'Weapon Level': 'Get the SA-B 50 to level 8',
 		'Challenge': 'Get 25 one-shot kills',
 	},
 	'Gecko': {
-		'WeaponLevel': '11',
+		'Weapon Level': 'Get the PDSW 528 to level 11',
 		'Challenge': 'TBA',
 	},
 	'Garter Snake': {
-		'WeaponLevel': '13',
+		'Weapon Level': 'Get the X12 to level 13',
 		'Challenge': 'TBA',
 	},
 	'Dark Echo': {
-		'WeaponLevel': '15',
+		'Weapon Level': 'Get the X13 Auto to level 15',
 		'Challenge': 'TBA',
 	},
 	'Toxicity': {
-		'WeaponLevel': '14',
+		'Weapon Level': 'Get the SA-B 50 to level 14',
 		'Challenge': 'Get 10 double kills',
 	},
 	'Shedding': {
-		'WeaponLevel': '14',
+		'Weapon Level': 'Get the Bryson 890 to level 14',
 		'Challenge': 'TBA',
 	},
 	'Skin And Scales': {
-		'WeaponLevel': '17',
+		'Weapon Level': 'Get the TAQ-M to level 17',
 		'Challenge': 'TBA',
 	},
 	'Heavy Commando': {
-		'WeaponLevel': '15',
+		'Weapon Level': 'Get the SO-14 to level 15',
 		'Challenge': 'TBA',
 	},
 	'Night Terror': {
-		'WeaponLevel': '19',
+		'Weapon Level': 'Get the RAAL MG to level 19',
 		'Challenge': 'TBA',
 	},
 	'Muddied': {
-		'WeaponLevel': '10',
+		'Weapon Level': 'Get the P890 to level 10',
 		'Challenge': 'TBA',
 	},
 	'Torn Scales': {
-		'WeaponLevel': '9',
+		'Weapon Level': 'Get the FTAC Recon to level 9',
 		'Challenge': 'Get 10 double kills',
 	},
 }

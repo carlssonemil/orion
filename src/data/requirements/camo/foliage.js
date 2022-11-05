@@ -1,42 +1,42 @@
 export default {
 	'Deep Jungle': {
-		'WeaponLevel': '11',
+		'Weapon Level': 'Get the STRELA-P to level 11',
 		'Challenge': 'Get 40 kills',
 	},
 	'Autumnal': {
-		'WeaponLevel': '9',
+		'Weapon Level': 'Get the LM-S to level 9',
 		'Challenge': 'Get 20 one-shot kills',
 	},
 	'Dry Field': {
-		'WeaponLevel': '7',
+		'Weapon Level': 'Get the SP-X 80 to level 7',
 		'Challenge': 'TBA',
 	},
 	'Countryside': {
-		'WeaponLevel': '11',
+		'Weapon Level': 'Get the Basilisk to level 11',
 		'Challenge': 'TBA',
 	},
 	'Snow Grass': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the MCPR-300 to level ?',
 		'Challenge': 'Get 2 kills within 10 seconds of each other 10 times',
 	},
 	'Aspen': {
-		'WeaponLevel': '13',
+		'Weapon Level': 'Get the SP-X 80 to level 13',
 		'Challenge': 'TBA',
 	},
 	'Bamboo': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the Bryson 800 to level ?',
 		'Challenge': 'Get 15 hipfire kills',
 	},
 	'Mosswood': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the Lockwood 300 to level ?',
 		'Challenge': 'Get 40 kills',
 	},
 	'Ferns': {
-		'WeaponLevel': '11',
+		'Weapon Level': 'Get the SP-R 208 to level 11',
 		'Challenge': 'Get 30 kills while prone',
 	},
 	'Leafless': {
-		'WeaponLevel': '15',
+		'Weapon Level': 'Get the LA-B 330 to level 15',
 		'Challenge': 'Get 25 one-shot kills',
 	},
 }

@@ -1,78 +1,78 @@
 export default {
 	'Green Woods': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the FSS Hurricane to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Hidden Snake': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the TAQ-56 to level ?',
 		'Challenge': 'Get 50 kills',
 	},
 	'Dark Canopy': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the SP-R 208 to level ?',
 		'Challenge': 'Get 50 kills',
 	},
 	'Snowdrift': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the Kastov 545 to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Dune Stalker': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the SO-14 to level 2',
 		'Challenge': 'TBA',
 	},
 	'Urban Foliage': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the Kastov 762 to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Concrete Jungle': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the MX9 to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Dead Leaves': {
-		'WeaponLevel': '11',
+		'Weapon Level': 'Get the PILA to level 11',
 		'Challenge': 'Get 40 kills',
 	},
 	'Void And Light': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the X13 to level 2',
 		'Challenge': 'TBA',
 	},
 	'Arctic Chill': {
-		'WeaponLevel': '21',
+		'Weapon Level': 'Get the Bryson 890 to level 21',
 		'Challenge': 'TBA',
 	},
 	'Azure Fray': {
-		'WeaponLevel': '11',
+		'Weapon Level': 'Get the JOKR to level 11',
 		'Challenge': 'Get 40 kills',
 	},
 	'Jungle Cat': {
-		'WeaponLevel': '10',
+		'Weapon Level': 'Get the Lockwood 300 to level 10',
 		'Challenge': 'TBA',
 	},
 	'Modern Woodland': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the M16 to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Kill Brush': {
-		'WeaponLevel': '6',
+		'Weapon Level': 'Get the Vaznev-9K to level 6',
 		'Challenge': 'TBA',
 	},
 	'Rocky Desert': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the RAAL MG to level 2',
 		'Challenge': 'TBA',
 	},
 	'Desert Hybrid': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the M4 to level ?',
 		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Midnight Bay': {
-		'WeaponLevel': '11',
+		'Weapon Level': 'Get the VEL 46 to level 11',
 		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Outcrop': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the Basilisk to level 2',
 		'Challenge': 'TBA',
 	},
 	'Forest Water': {
-		'WeaponLevel': '10',
+		'Weapon Level': 'Get the TAQ-M to level 10',
 		'Challenge': 'TBA',
 	},
 }

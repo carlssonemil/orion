@@ -1,54 +1,54 @@
 export default {
 	'Sand': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the P890 to level ?',
 		'Challenge': 'Get 40 kills',
 	},
 	'Olive': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the 556 Icarus to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Clay': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the MCPR-300 to level ?',
 		'Challenge': 'Get 50 kills',
 	},
 	'Slate': {
-		'WeaponLevel': '14',
+		'Weapon Level': 'Get the STB 556 to level 14',
 		'Challenge': 'TBA',
 	},
 	'Pine': {
-		'WeaponLevel': '8',
+		'Weapon Level': 'Get the Lachmann-556 to level 8',
 		'Challenge': 'Get 10 double kills',
 	},
 	'Neon Loud': {
-		'WeaponLevel': '14',
+		'Weapon Level': 'Get the FSS Hurricane to level 14',
 		'Challenge': 'Get 30 kills while prone',
 	},
 	'Hunting Orange': {
-		'WeaponLevel': '27',
+		'Weapon Level': 'Get the Lockwood 300 to level 27',
 		'Challenge': 'TBA',
 	},
 	'Azul': {
-		'WeaponLevel': '19',
+		'Weapon Level': 'Get the X12 to level 19',
 		'Challenge': 'TBA',
 	},
 	'Aqua': {
-		'WeaponLevel': '20',
+		'Weapon Level': 'Get the Bryson 800 to level 20',
 		'Challenge': 'TBA',
 	},
 	'Crimson': {
-		'WeaponLevel': '11',
+		'Weapon Level': 'Get the Combat Knife to level 11',
 		'Challenge': 'Get 50 kills',
 	},
 	'Dark Denim': {
-		'WeaponLevel': '19',
+		'Weapon Level': 'Get the Basilisk to level 19',
 		'Challenge': 'TBA',
 	},
 	'Power Pink': {
-		'WeaponLevel': '29',
+		'Weapon Level': 'Get the PDSW 528 to level 29',
 		'Challenge': 'TBA',
 	},
 	'Whiteout': {
-		'WeaponLevel': '28',
+		'Weapon Level': 'Get the VEL 46 to level 28',
 		'Challenge': 'Get 10 double kills',
 	},
 }

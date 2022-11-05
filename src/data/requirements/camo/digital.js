@@ -1,98 +1,98 @@
 export default {
 	'Desert Oil Digital': {
-		'WeaponLevel': '7',
+		'Weapon Level': 'Get the Lachmann-762 to level 7',
 		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Arid Digital': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the VEL-46 to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Bio Static Digital': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the X12 to level 2',
 		'Challenge': 'Get 30 Kills',
 	},
 	'Urban Digital': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the SA-B 50 to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Sandstorm Digital': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the EBR-14 to level 2',
 		'Challenge': 'Get 50 kills',
 	},
 	'Jungle Digital (RPG)': {
-		'WeaponLevel': '11',
+		'Weapon Level': 'Get the RPG to level 11',
 		'Challenge': 'Get 40 kills',
 	},
 	'Snowstorm Digital': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the Bryson 890 to level 2',
 		'Challenge': 'TBA',
 	},
 	'Snow Melt Digital': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the Vaznev-9K to level 2',
 		'Challenge': 'TBA',
 	},
 	'Commando Digital': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the LM-S to level 2',
 		'Challenge': 'Get 40 kills',
 	},
 	'Jungle Digital': {
-		'WeaponLevel': '8',
+		'Weapon Level': 'Get the Kastov-74u to level 8',
 		'Challenge': 'TBA',
 	},
 	'Arctic Digital': {
-		'WeaponLevel': '7',
+		'Weapon Level': 'Get the Lachmann Sub to level 7',
 		'Challenge': 'Get 10 double kills',
 	},
 	'Forest Digital': {
-		'WeaponLevel': '7',
+		'Weapon Level': 'Get the MX9 to level 7',
 		'Challenge': 'TBA',
 	},
 	'Dark Tiger Digital': {
-		'WeaponLevel': '14',
+		'Weapon Level': 'Get the Lachmann-556 to level 14',
 		'Challenge': 'Get 50 kills using a suppressor',
 	},
 	'Petri Digital': {
-		'WeaponLevel': '18',
+		'Weapon Level': 'Get the Kastov 545 to level 18',
 		'Challenge': 'Get 50 kills using a suppressor',
 	},
 	'Stonewall Digital': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the TAQ-56 to level ?',
 		'Challenge': 'Get 50 Kills While ADS',
 	},
 	'Chemist Digital': {
-		'WeaponLevel': '25',
+		'Weapon Level': 'Get the TAQ-M to level 25',
 		'Challenge': 'TBA',
 	},
 	'Asphalt Digital': {
-		'WeaponLevel': '8',
+		'Weapon Level': 'Get the X13 Auto to level 8',
 		'Challenge': 'TBA',
 	},
 	'Magma Digital': {
-		'WeaponLevel': '19',
+		'Weapon Level': 'Get the Sakin MG38 to level 19',
 		'Challenge': 'TBA',
 	},
 	'Red Cell': {
-		'WeaponLevel': '19',
+		'Weapon Level': 'Get the Lockwood 300 to level 19',
 		'Challenge': 'TBA',
 	},
 	'Green Digital': {
-		'WeaponLevel': '10',
+		'Weapon Level': 'Get the Minibak to level 10',
 		'Challenge': 'TBA',
 	},
 	'Marsh Digital': {
-		'WeaponLevel': '6',
+		'Weapon Level': 'Get the M16 to level 6',
 		'Challenge': 'Get 10 double kills',
 	},
 	'Blue Digital': {
-		'WeaponLevel': '18',
+		'Weapon Level': 'Get the P890 to level 18',
 		'Challenge': 'TBA',
 	},
 	'Classic Digital': {
-		'WeaponLevel': '7',
+		'Weapon Level': 'Get the Rapp H to level 7',
 		'Challenge': 'Get 10 point blank kills',
 	},
 	'Desert Digital': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the SP-R 208 to level ?',
 		'Challenge': 'Get 50 kills while ADS',
 	},
 }

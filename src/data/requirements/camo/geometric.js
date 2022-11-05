@@ -1,66 +1,66 @@
 export default {
 	'Blades': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the .50 GS to level 2',
 		'Challenge': 'Get 40 kills',
 	},
 	'Motley': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the Fennec 45 to level 2',
 		'Challenge': 'TBA',
 	},
 	'Dune Sea': {
-		'WeaponLevel': '2',
+		'Weapon Level': 'Get the TAQ-V to level 2',
 		'Challenge': 'TBA',
 	},
 	'Forest Ice': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the Kastov 762 to level ?',
 		'Challenge': 'Get 50 kills while ADS',
 	},
 	'Stone Guard': {
-		'WeaponLevel': '8',
+		'Weapon Level': 'Get the Bryson 890 to level 8',
 		'Challenge': 'TBA',
 	},
 	'Iceland': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the TAQ-56 to level ?',
 		'Challenge': 'Get 10 Double Kills',
 	},
 	'Shale': {
-		'WeaponLevel': '20',
+		'Weapon Level': 'Get the PDSW 528 to level 20',
 		'Challenge': 'TBA',
 	},
 	'Lodge': {
-		'WeaponLevel': '27',
+		'Weapon Level': 'Get the RAAL MG to level 27',
 		'Challenge': 'TBA',
 	},
 	'Canary Stone': {
-		'WeaponLevel': '14',
+		'Weapon Level': 'Get the Kastov-74u to level 14',
 		'Challenge': 'TBA',
 	},
 	'Skyfire': {
-		'WeaponLevel': '14',
+		'Weapon Level': 'Get the Minibak to level 14',
 		'Challenge': 'TBA',
 	},
 	'Autumn Dazzle': {
-		'WeaponLevel': '15',
+		'Weapon Level': 'Get the 556 Icarus to level 15',
 		'Challenge': 'Get 30 kills while crouched',
 	},
 	'Poison': {
-		'WeaponLevel': '18',
+		'Weapon Level': 'Get the Lachmann Sub to level 18',
 		'Challenge': 'Get 10 hipfire kills',
 	},
 	'Granite': {
-		'WeaponLevel': '28',
+		'Weapon Level': 'Get the Lockwood Mk2 to level 28',
 		'Challenge': 'TBA',
 	},
 	'Chrysolite': {
-		'WeaponLevel': '28',
+		'Weapon Level': 'Get the Basilisk to level 28',
 		'Challenge': 'TBA',
 	},
 	'Splintered Asphalt': {
-		'WeaponLevel': '20',
+		'Weapon Level': 'Get the SA-B 50 to level 20',
 		'Challenge': 'Get 10 kills while mounted',
 	},
 	'Sunset': {
-		'WeaponLevel': '13',
+		'Weapon Level': 'Get the HCR 56 to level 13',
 		'Challenge': 'TBA',
 	},
 }

@@ -1,62 +1,62 @@
 export default {
 	'Dirt': {
-		'WeaponLevel': '8',
+		'Weapon Level': 'Get the LA-B 330 to level 8',
 		'Challenge': 'Get 2 kills within 10 seconds of each other 10 times',
 	},
 	'Moss': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the EBR-14 to level ?',
 		'Challenge': 'Get 30 Kills',
 	},
 	'Tagged': {
-		'WeaponLevel': '19',
+		'Weapon Level': 'Get the VEL 46 to level 19',
 		'Challenge': 'Get 15 hipfire kills',
 	},
 	'Black Top': {
-		'WeaponLevel': '8',
+		'Weapon Level': 'Get the STB 556 to level 8',
 		'Challenge': 'TBA',
 	},
 	'Asphalt': {
-		'WeaponLevel': '13',
+		'Weapon Level': 'Get the RPK to level 13',
 		'Challenge': 'TBA',
 	},
 	'Crime Scene': {
-		'WeaponLevel': '13',
+		'Weapon Level': 'Get the Lachmann Sub to level 13',
 		'Challenge': 'Get 50 kills using a suppressor',
 	},
 	'Neon Pink': {
-		'WeaponLevel': '20',
+		'Weapon Level': 'Get the STB 556 to level 20',
 		'Challenge': 'TBA',
 	},
 	'Trailblazer': {
-		'WeaponLevel': '10',
+		'Weapon Level': 'Get the RAAL MG to level 10',
 		'Challenge': 'TBA',
 	},
 	'Foliage': {
-		'WeaponLevel': '10',
+		'Weapon Level': 'Get the .50 GS to level 10',
 		'Challenge': 'TBA',
 	},
 	'Reptilian': {
-		'WeaponLevel': '8',
+		'Weapon Level': 'Get the SO-14 to level 8',
 		'Challenge': 'TBA',
 	},
 	'Dark Leaves': {
-		'WeaponLevel': 'TBA',
+		'Weapon Level': 'Get the M4 to level ?',
 		'Challenge': 'Get 10 double kills',
 	},
 	'Internal Flame': {
-		'WeaponLevel': '18',
+		'Weapon Level': 'Get the Lachmann-762 to level 18',
 		'Challenge': 'Get 10 double kills',
 	},
 	'Omnihex': {
-		'WeaponLevel': '13',
+		'Weapon Level': 'Get the Vaznev-9K to level 13',
 		'Challenge': 'TBA',
 	},
 	'Tessellation': {
-		'WeaponLevel': '18',
+		'Weapon Level': 'Get the HCR 56 to level 18',
 		'Challenge': 'TBA',
 	},
 	'Moon Shadow': {
-		'WeaponLevel': '10',
+		'Weapon Level': 'Get the FSS Hurricane to level 10',
 		'Challenge': 'Get 50 kills while ADS',
 	},
 }
