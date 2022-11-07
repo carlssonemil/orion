@@ -11,7 +11,9 @@
 					<span>
 						{{ title }}
 					</span>
-					<span v-tippy content="Required for Platinum camouflage">
+					<span
+						v-tippy
+						content="Gold camouflages required to unlock the Platinum camouflage challenge">
 						{{ categoryProgress(title) }}
 					</span>
 				</h2>
