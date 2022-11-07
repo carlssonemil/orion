@@ -1,6 +1,5 @@
 <template>
 	<div class="weapon">
-		<!-- TODO: Add double-click functionality -->
 		<div
 			:class="[
 				'name',
