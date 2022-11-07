@@ -3,7 +3,8 @@ import { defineStore } from 'pinia'
 import { filterObject } from '../utils/utils'
 import defaultWeapons from '../data/weapons'
 import defaultFilters from '../data/defaults/filters'
-import requirements from '../data/requirements'
+import weaponRequirements from '../data/weaponRequirements'
+import camoRequirements from '../data/camoRequirements'
 
 const token = import.meta.env.MODE === 'production' ? 'orion' : 'orion-dev'
 
@@ -11,7 +12,8 @@ export const useStore = defineStore({
 	id: 'store',
 
 	state: () => ({
-		requirements: { ...requirements },
+		weaponRequirements: { ...weaponRequirements },
+		camoRequirements: { ...camoRequirements },
 		filters: {},
 		weapons: [],
 		beganGrind: null,

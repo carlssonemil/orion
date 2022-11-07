@@ -70,7 +70,7 @@ export default {
 	},
 
 	computed: {
-		...mapState(useStore, ['requirements']),
+		...mapState(useStore, ['weaponRequirements']),
 
 		goldCompleted() {
 			return this.weapon.progress['Gold']
@@ -106,7 +106,7 @@ export default {
 		},
 
 		requirementTooltip(weapon, camouflage) {
-			const requirement = this.requirements[weapon.category][weapon.name][camouflage]
+			const requirement = this.weaponRequirements[weapon.category][weapon.name][camouflage]
 			if (requirement && requirement.challenge)
 				return `${camouflage} - Level ${requirement.level} - ${requirement.challenge}`
 
