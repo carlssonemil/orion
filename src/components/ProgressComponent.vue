@@ -60,11 +60,18 @@ export default {
 
 			this.categories.forEach((category) => {
 				const categoryWeapons = this.weapons.filter((weapon) => weapon.category === category)
-				const required = categoryWeapons.filter((weapon) => !weapon.dlc).length
-				const completed = categoryWeapons.reduce(
-					(a, weapon) => a + Object.values(weapon.progress).every(Boolean),
-					0
-				)
+
+				const required = categoryWeapons.filter((weapon) => !weapon.dlc).length * 3
+
+				const goldCompleted = categoryWeapons.filter((weapon) => weapon.progress['Gold']).length
+				const platinumCompleted = categoryWeapons.filter(
+					(weapon) => weapon.progress['Platinum']
+				).length
+				const polyatomicCompleted = categoryWeapons.filter(
+					(weapon) => weapon.progress['Polyatomic']
+				).length
+
+				const completed = goldCompleted + platinumCompleted + polyatomicCompleted
 				progress[category] = completed / required > 1 ? 1 : completed / required
 			})
 
