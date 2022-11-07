@@ -95,20 +95,6 @@ export const useStore = defineStore({
 			this.storeProgress()
 		},
 
-		toggleGoldCamouflageCompleted(weapon, current) {
-			const selectedWeapon = this.weapons.find((w) => w.name === weapon.name)
-
-			Object.keys(selectedWeapon.progress).forEach((camouflage) => {
-				if (!current && !['Gold', 'Polyatomic'].includes(camouflage)) {
-					selectedWeapon.progress[camouflage] = true
-				}
-
-				selectedWeapon.progress['Gold'] = !current
-			})
-
-			this.storeProgress()
-		},
-
 		toggleWeaponCompleted(weapon, current) {
 			const selectedWeapon = this.weapons.find((w) => w.name === weapon.name)
 			Object.keys(selectedWeapon.progress).forEach(

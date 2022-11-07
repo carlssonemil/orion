@@ -9,17 +9,19 @@
 					platinum: platinumCompleted,
 					polyatomic: polyatomicCompleted,
 				},
-			]">
+			]"
+			@dblclick="toggleWeaponCompleted(weapon, completed)"
+			v-tippy="{ content: `Double-click to ${completed ? 'reset' : 'complete'} weapon` }">
 			{{ weapon.name }}
 		</div>
 
 		<div
 			class="progress"
 			:style="{
-				'grid-template-columns': `repeat(${Object.keys(baseCamouflages).length}, 1fr)`,
+				'grid-template-columns': `repeat(${Object.keys(camouflages).length}, 1fr)`,
 			}">
 			<div
-				v-for="(completed, camouflage) in baseCamouflages"
+				v-for="(completed, camouflage) in camouflages"
 				:key="camouflage"
 				:class="['camouflage']"
 				@click="toggleCamouflageCompleted(weapon, camouflage, completed)"
@@ -34,26 +36,13 @@
 						onerror="javascript:this.src='/base-gradient.svg'" />
 				</div>
 			</div>
-			<div
-				v-if="polyatomicUnlocked"
-				class="camouflage polyatomic"
-				@click="toggleCamouflageCompleted(weapon, 'Polyatomic', weapon.progress['Polyatomic'])"
-				:content="requirementTooltip(weapon, 'Polyatomic')"
-				v-tippy="{ placement: 'bottom' }"
-				:style="{ 'grid-column': `span ${Object.keys(baseCamouflages).length}` }">
-				<div :class="['inner', { completed: weapon.progress['Polyatomic'] }]">
-					<IconComponent class="complete" name="check" fill="#10ac84" />
-					<IconComponent class="remove" name="times" fill="#ee5253" />
-					<img :src="imageUrl('Polyatomic')" :alt="'Polyatomic'" />
-				</div>
-			</div>
 		</div>
 	</div>
 </template>
 
 <script>
 import { useStore } from '@/stores/store'
-import { convertToKebabCase, filterObject } from '@/utils/utils'
+import { convertToKebabCase } from '@/utils/utils'
 import { mapActions, mapState } from 'pinia'
 
 export default {
@@ -72,6 +61,14 @@ export default {
 	computed: {
 		...mapState(useStore, ['requirements']),
 
+		camouflages() {
+			return this.weapon.progress
+		},
+
+		completed() {
+			return Object.values(this.camouflages).every(Boolean)
+		},
+
 		goldCompleted() {
 			return this.weapon.progress['Gold']
 		},
@@ -83,15 +80,11 @@ export default {
 		polyatomicCompleted() {
 			return this.weapon.progress['Polyatomic']
 		},
-
-		baseCamouflages() {
-			return filterObject(this.weapon.progress, ['Polyatomic'])
-		},
 	},
 
 	methods: {
 		convertToKebabCase,
-		...mapActions(useStore, ['toggleCamouflageCompleted', 'toggleGoldCamouflageCompleted']),
+		...mapActions(useStore, ['toggleCamouflageCompleted', 'toggleWeaponCompleted']),
 
 		imageUrl(camouflage) {
 			if (camouflage === 'Gold') {
@@ -125,6 +118,7 @@ export default {
 		align-items: center;
 		background: $elevation-3-color;
 		border-radius: $border-radius;
+		cursor: pointer;
 		display: flex;
 		font-weight: 600;
 		justify-content: center;
