@@ -31,7 +31,7 @@ export default {
 	},
 
 	computed: {
-		...mapState(useStore, ['camoRequirements', 'weapons', 'filters']),
+		...mapState(useStore, ['weapons', 'filters']),
 
 		filteredCamos() {
 			let filteredWeapons = this.weapons
@@ -72,8 +72,6 @@ export default {
 				return acc
 			}, {})
 
-			let weaponNames = filteredWeapons.map((item) => item.name)
-
 			var allCamoCategories = [
 				'Spray Paint',
 				'Woodland',
@@ -93,13 +91,13 @@ export default {
 			var filteredCamos = allCamos.filter(
 				(camo) =>
 					allCamoCategories.some((s) => s == camo.category) &&
-					!weaponNames.some((s) => s == camo.weapon)
+					Object.keys(allCamoProgress).some((s) => s == camo.name)
 			)
 			filteredCamos = filteredCamos.map((camo) => {
 				camo.isCompleted = allCamoProgress[camo.name] ?? false
 				return camo
 			})
-
+			
 			var returnVal = groupBy(filteredCamos, (camo) => camo.category)
 			return returnVal
 		},
