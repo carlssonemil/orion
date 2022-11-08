@@ -11,7 +11,7 @@
 					<span>
 						{{ title }}
 					</span>
-					<span v-tippy content="Required for Platinum camouflage">
+					<span v-tippy content="Camouflage progress for category">
 						{{ categoryProgress(title) }}
 					</span>
 				</h2>
