@@ -52,7 +52,7 @@ export default {
 	'Skin and Scales': {
 		weapon: 'TAQ-M',
 		level: '17',
-		challenge: 'Get 10 double kills',
+		challenge: 'Get 5 hipfire kills',
 	},
 	'Heavy Commando': {
 		weapon: 'SO-14',

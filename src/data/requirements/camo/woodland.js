@@ -92,6 +92,6 @@ export default {
 	'Forest Water': {
 		weapon: 'TAQ-M',
 		level: '10',
-		challenge: 'Get 5 hipfire kills',
+		challenge: 'Get 20 kills while mounted',
 	},
 }

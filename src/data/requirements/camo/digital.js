@@ -77,7 +77,7 @@ export default {
 	'Chemist Digital': {
 		weapon: 'TAQ-M',
 		level: '25',
-		challenge: 'Get 20 kills while mounted',
+		challenge: 'Get 10 double kills',
 	},
 	'Asphalt Digital': {
 		weapon: 'X13 Auto',
