@@ -1,22 +1,20 @@
 <template>
-	<div class="camo">
-		<div
-			:key="camo.name"
-			:class="['camouflage']"
-			@click="handleToggleCompleted(camo)"
-			:content="requirementTooltip(camo)"
-			v-tippy="{ placement: 'bottom' }">
-			<div :class="['inner', this.isCompleted ? 'completed' : '']">
-				<img
+	<div
+		:key="camo.name"
+		:class="['camouflage']"
+		@click="handleToggleCompleted(camo)"
+		:content="requirementTooltip(camo)"
+		v-tippy="{ placement: 'bottom' }">
+		<div :class="['inner', this.isCompleted ? 'completed' : '']">
+			<img
 				:src="imageUrl(camo.name)"
 				:alt="camo.name"
 				onerror="javascript:this.src='/base-gradient.svg'" />
-				<IconComponent class="complete" name="check" fill="#10ac84" />
-				<IconComponent class="remove" name="times" fill="#ee5253" />
-				<span>
-					{{ camo.name }}
-				</span>
-			</div>
+			<IconComponent class="complete" name="check" fill="#10ac84" />
+			<IconComponent class="remove" name="times" fill="#ee5253" />
+			<span>
+				{{ camo.name }}
+			</span>
 		</div>
 	</div>
 </template>
@@ -85,126 +83,103 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.camo {
-	position: relative;
+.camouflage {
+	user-select: none;
 
-	.name {
-		$padding: 25px;
+	.inner {
 		align-items: center;
-		background: $elevation-3-color;
+		background: $elevation-2-color;
 		border-radius: $border-radius;
+		cursor: pointer;
 		display: flex;
-		font-weight: 600;
+		height: 100%;
 		justify-content: center;
-		padding: $padding 0;
+		overflow: hidden;
 		position: relative;
 		transition: $transition;
-		user-select: none;
+		width: 100%;
+		flex-direction: column;
 
-		@media (max-width: $tablet) {
-			font-size: 18px;
-			padding: #{$padding * 2} $padding;
+		span {
+			padding: 10px;
 		}
-	}
 
-	.camouflage {
-		user-select: none;
-
-		.inner {
-			align-items: center;
-			background: $elevation-2-color;
-			border-radius: $border-radius;
-			cursor: pointer;
-			display: flex;
-			height: 100%;
-			justify-content: center;
-			overflow: hidden;
-			position: relative;
-			transition: $transition;
-			width: 100%;
-			flex-direction: column;
-
-			span {
-				padding: 10px;
-			}
-
-			&:hover {
-				@media (min-width: $tablet) {
-					img,
-					p {
-						opacity: 0.25;
-					}
-
-					.icon-component.complete {
-						opacity: 1;
-					}
-				}
-			}
-
-			&.completed {
-				&:hover {
-					@media (min-width: $tablet) {
-						.icon-component.complete {
-							opacity: 0;
-						}
-						.icon-component.remove {
-							opacity: 1;
-						}
-					}
-				}
-
+		&:hover {
+			@media (min-width: $tablet) {
 				img,
 				p {
 					opacity: 0.25;
 				}
 
-				.icon-component {
-					&.complete {
-						opacity: 1;
-					}
+				.icon-component.complete {
+					opacity: 1;
+				}
+			}
+		}
 
-					&.remove {
+		&.completed {
+			&:hover {
+				@media (min-width: $tablet) {
+					.icon-component.complete {
 						opacity: 0;
+					}
+					.icon-component.remove {
+						opacity: 1;
 					}
 				}
 			}
 
-			&.disabled {
-				cursor: not-allowed;
-
-				&:hover {
-					img,
-					p {
-						opacity: 1;
-					}
-
-					.icon-component {
-						opacity: 0;
-					}
-				}
+			img,
+			p {
+				opacity: 0.25;
 			}
 
 			.icon-component {
-				left: 50%;
-				opacity: 0;
-				position: absolute;
-				transform: translate(-50%, -50%);
-				transition: $transition;
-				top: 35%;
-				z-index: 2;
-			}
+				&.complete {
+					opacity: 1;
+				}
 
-			img {
-				height: 80px;
-				object-fit: cover;
-				position: relative;
-				width: 100%;
-				z-index: 1;
+				&.remove {
+					opacity: 0;
+				}
 			}
+		}
 
-			p {
-				font-size: 14px;
+		&.disabled {
+			cursor: not-allowed;
+
+			&:hover {
+				img,
+				p {
+					opacity: 1;
+				}
+
+				.icon-component {
+					opacity: 0;
+				}
 			}
+		}
+
+		.icon-component {
+			left: 50%;
+			opacity: 0;
+			position: absolute;
+			transform: translate(-50%, -50%);
+			transition: $transition;
+			top: 35%;
+			z-index: 2;
+		}
+
+		img {
+			height: 80px;
+			object-fit: cover;
+			position: relative;
+			width: 100%;
+			z-index: 1;
+		}
+
+		p {
+			font-size: 14px;
 		}
 	}
 }
