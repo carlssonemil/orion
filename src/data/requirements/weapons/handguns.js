@@ -5,7 +5,7 @@ import {
 	fun,
 	geometric,
 	reptile,
-	solidColours,
+	solidColors,
 	tiger,
 	woodland,
 } from '../camo/_index'
@@ -18,7 +18,7 @@ const masteryChallenges = {
 
 export default {
 	'P890': {
-		'Sand': solidColours['Sand'],
+		'Sand': solidColors['Sand'],
 		'Muddied': reptile['Muddied'],
 		'Blue Digital': digital['Blue Digital'],
 		'Pixel Land': fun['Pixel Land'],
@@ -37,14 +37,14 @@ export default {
 		'Bio Static Digital': digital['Bio Static Digital'],
 		'Desert Wave': tiger['Desert Wave'],
 		'Garter Snake': reptile['Garter Snake'],
-		'Azul': solidColours['Azul'],
+		'Azul': solidColors['Azul'],
 		...masteryChallenges,
 	},
 
 	'Basilisk': {
 		'Outcrop': woodland['Outcrop'],
 		'Countryside': foliage['Countryside'],
-		'Dark Denim': solidColours['Dark Denim'],
+		'Dark Denim': solidColors['Dark Denim'],
 		'Chrysolite': geometric['Chrysolite'],
 		...masteryChallenges,
 	},

@@ -1,10 +1,10 @@
-import classic from '../requirements/camo/classic'
-const base = Object.keys(classic)
+import fun from '../requirements/camo/fun'
+const base = Object.keys(fun)
 
 const dlc = []
 
 export default [...base, ...dlc].map((camo) => ({
-	category: 'Classic',
+	category: 'Fun',
 	name: camo,
 	dlc: dlc.includes(camo),
 	isCompleted: false

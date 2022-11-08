@@ -1,4 +1,4 @@
-import { solidColours, stripes } from '../camo/_index'
+import { solidColors, stripes } from '../camo/_index'
 
 const masteryChallenges = {
 	Gold: 'Get 2 kills without dying 10 times',
@@ -7,7 +7,7 @@ const masteryChallenges = {
 
 export default {
 	'Combat Knife': {
-		Crimson: solidColours['Crimson'],
+		Crimson: solidColors['Crimson'],
 		...masteryChallenges,
 		Polyatomic: 'Get 20 kills from behind',
 	},

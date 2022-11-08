@@ -9,7 +9,7 @@ import skulls from './requirements/camo/skulls'
 import tiger from './requirements/camo/tiger'
 import stripes from './requirements/camo/stripes'
 import reptile from './requirements/camo/reptile'
-import solidColours from './requirements/camo/solidColours'
+import solidColors from './requirements/camo/solidColors'
 import classic from './requirements/camo/classic'
 import cliffside from './requirements/camo/cliffside'
 
@@ -49,7 +49,7 @@ export default {
 		...reptile,
 	},
 	'Solid Colors': {
-		...solidColours,
+		...solidColors,
 	},
 	'Classic': {
 		...classic,

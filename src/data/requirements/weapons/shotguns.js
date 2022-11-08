@@ -4,7 +4,7 @@ import {
 	foliage,
 	geometric,
 	reptile,
-	solidColours,
+	solidColors,
 	sprayPaint,
 	stripes,
 	tiger,
@@ -22,7 +22,7 @@ export default {
 		'Mosswood': foliage['Mosswood'],
 		'Jungle Cat': woodland['Jungle Cat'],
 		'Red Cell': digital['Red Cell'],
-		'Hunting Orange': solidColours['Hunting Orange'],
+		'Hunting Orange': solidColors['Hunting Orange'],
 		...masteryChallenges,
 	},
 
@@ -38,7 +38,7 @@ export default {
 		'Mud Bath': stripes['Mud Bath'],
 		'Bamboo': foliage['Bamboo'],
 		'Ground Cover': stripes['Ground Cover'],
-		'Aqua': solidColours['Aqua'],
+		'Aqua': solidColors['Aqua'],
 		...masteryChallenges,
 	},
 

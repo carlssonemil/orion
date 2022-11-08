@@ -1,10 +1,10 @@
-import classic from '../requirements/camo/classic'
-const base = Object.keys(classic)
+import tiger from '../requirements/camo/tiger'
+const base = Object.keys(tiger)
 
 const dlc = []
 
 export default [...base, ...dlc].map((camo) => ({
-	category: 'Classic',
+	category: 'Tiger',
 	name: camo,
 	dlc: dlc.includes(camo),
 	isCompleted: false
