@@ -92,8 +92,8 @@ export const useStore = defineStore({
 			})
 		},
 
-		toggleCamouflageCompleted(weapon, camouflage, current) {
-			this.weapons.find((w) => w.name === weapon.name).progress[camouflage] = !current
+		toggleCamouflageCompleted(weaponName, camouflage, current) {
+			this.weapons.find((w) => w.name === weaponName).progress[camouflage] = !current
 			this.storeProgress()
 		},
 

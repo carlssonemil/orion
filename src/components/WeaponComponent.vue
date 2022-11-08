@@ -22,7 +22,7 @@
 				v-for="(completed, camouflage) in baseCamouflages"
 				:key="camouflage"
 				:class="['camouflage']"
-				@click="toggleCamouflageCompleted(weapon, camouflage, completed)"
+				@click="toggleCamouflageCompleted(weapon.name, camouflage, completed)"
 				:content="requirementTooltip(weapon, camouflage)"
 				v-tippy="{ placement: 'bottom' }">
 				<div :class="['inner', { completed }]">
@@ -37,7 +37,7 @@
 			<div
 				v-if="polyatomicUnlocked"
 				class="camouflage polyatomic"
-				@click="toggleCamouflageCompleted(weapon, 'Polyatomic', weapon.progress['Polyatomic'])"
+				@click="toggleCamouflageCompleted(weapon.name, 'Polyatomic', weapon.progress['Polyatomic'])"
 				:content="requirementTooltip(weapon, 'Polyatomic')"
 				v-tippy="{ placement: 'bottom' }"
 				:style="{ 'grid-column': `span ${Object.keys(baseCamouflages).length}` }">
