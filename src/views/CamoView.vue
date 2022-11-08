@@ -7,7 +7,7 @@
 			<a href="https://github.com/carlssonemil/orion/issues/new">GitHub</a>. Thanks and good luck
 			with the grind! ✌
 		</AlertComponent>
-		<FiltersComponent />
+		<!-- <FiltersComponent /> TODO: Add filtering -->
 		<CamosComponent :camos="filteredCamos" />
 		<ProgressComponent />
 	</div>
@@ -20,14 +20,12 @@ import { groupBy, filterObject } from '@/utils/utils'
 import allCamos from '../data/camos'
 
 import AlertComponent from '@/components/AlertComponent.vue'
-import FiltersComponent from '@/components/FiltersComponent.vue'
 import CamosComponent from '@/components/CamosComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
 
 export default {
 	components: {
 		AlertComponent,
-		FiltersComponent,
 		CamosComponent,
 		ProgressComponent,
 	},

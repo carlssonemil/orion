@@ -6,14 +6,16 @@
 			@click="handleToggleCompleted(camo)"
 			:content="requirementTooltip(camo)"
 			v-tippy="{ placement: 'bottom' }">
-			{{ camo.name }}
 			<div :class="['inner', this.isCompleted ? 'completed' : '']">
+				<img
+				:src="imageUrl(camo.name)"
+				:alt="camo.name"
+				onerror="javascript:this.src='/base-gradient.svg'" />
 				<IconComponent class="complete" name="check" fill="#10ac84" />
 				<IconComponent class="remove" name="times" fill="#ee5253" />
-				<img
-					:src="imageUrl(camo.name)"
-					:alt="camo.name"
-					onerror="javascript:this.src='/base-gradient.svg'" />
+				<span>
+					{{ camo.name }}
+				</span>
 			</div>
 		</div>
 	</div>
@@ -73,10 +75,10 @@ export default {
 		handleToggleCompleted(camo) {
 			const weaponName = this.camoRequirements[camo.category][camo.name].weapon
 			this.toggleCamouflageCompleted(weaponName, camo.name, this.isCompleted)
-			this.toggleIsCompleted();
+			this.toggleIsCompleted()
 		},
 		toggleIsCompleted() {
-			this.isCompleted = !this.isCompleted;
+			this.isCompleted = !this.isCompleted
 		},
 	},
 }
@@ -120,6 +122,11 @@ export default {
 			position: relative;
 			transition: $transition;
 			width: 100%;
+			flex-direction: column;
+
+			span {
+				padding: 10px;
+			}
 
 			&:hover {
 				@media (min-width: $tablet) {
@@ -183,12 +190,12 @@ export default {
 				position: absolute;
 				transform: translate(-50%, -50%);
 				transition: $transition;
-				top: 50%;
+				top: 35%;
 				z-index: 2;
 			}
 
 			img {
-				height: 100%;
+				height: 80px;
 				object-fit: cover;
 				position: relative;
 				width: 100%;
