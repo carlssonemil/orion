@@ -29,7 +29,7 @@ export default {
 	'SO-14': {
 		'Dune Stalker': woodland['Dune Stalker'],
 		'Reptilian': dragon['Reptilian'],
-		'Heavy Command': reptile['Heavy Commando'],
+		'Heavy Commando': reptile['Heavy Commando'],
 		'Tendrils': stripes['Tendrils'],
 		...masteryChallenges,
 	},

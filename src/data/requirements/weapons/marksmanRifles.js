@@ -63,7 +63,7 @@ export default {
 	'TAQ-M': {
 		'Dead Hive': sprayPaint['Dead Hive'],
 		'Forest Water': woodland['Forest Water'],
-		'Skin and Scales': reptile['Skin And Scales'],
+		'Skin and Scales': reptile['Skin and Scales'],
 		'Chemist Digital': digital['Chemist Digital'],
 		...masteryChallenges,
 	},
