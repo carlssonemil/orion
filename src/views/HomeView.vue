@@ -43,22 +43,15 @@ export default {
 			}
 
 			if (hideGold) {
-				filteredWeapons = filteredWeapons.filter(
-					(weapon) =>
-						!Object.values(filterObject(weapon.progress, ['Platinum', 'Polyatomic'])).every(Boolean)
-				)
+				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress['Gold'])
 			}
 
 			if (hidePlatinum) {
-				filteredWeapons = filteredWeapons.filter(
-					(weapon) => !Object.values(filterObject(weapon.progress, ['Polyatomic'])).every(Boolean)
-				)
+				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress['Platinum'])
 			}
 
 			if (hidePolyatomic) {
-				filteredWeapons = filteredWeapons.filter(
-					(weapon) => !Object.values(weapon.progress).every(Boolean)
-				)
+				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress['Polyatomic'])
 			}
 
 			if (category && category !== 'null') {
