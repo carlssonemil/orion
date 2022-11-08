@@ -65,22 +65,16 @@ export default {
 			if (category && category !== 'null') {
 				filteredWeapons = filteredWeapons.filter((weapon) => weapon.category === category)
 			}
-			// console.log({ filteredWeapons })
 			let allCamoProgress = filteredWeapons.map((item) => item.progress)
 			//Can filter by % mastery here
 
 			// Flattens the object array
 			allCamoProgress = allCamoProgress.reduce(function (acc, x) {
-				for (var key in x) acc[key] = x[key]
+			for (var key in x) acc[key] = x[key]
 				return acc
 			}, {})
 
-			console.log({ allCamoProgress })
-
 			let weaponNames = filteredWeapons.map((item) => item.name)
-
-			// console.log('camoRequirements: ', this.camoRequirements)
-			// console.log('allCamos: ', allCamos)
 
 			var allCamoCategories = [
 				'Spray Paint',
@@ -103,14 +97,12 @@ export default {
 					allCamoCategories.some((s) => s == camo.category) &&
 					!weaponNames.some((s) => s == camo.weapon)
 			)
-			// console.log(filteredCamos)
 			filteredCamos = filteredCamos.map((camo) => {
 				camo.isCompleted = allCamoProgress[camo.name] ?? false
 				return camo
 			})
 
 			var returnVal = groupBy(filteredCamos, (camo) => camo.category)
-			console.log('CAMOS FILTERED: ', returnVal)
 			return returnVal
 		},
 	},

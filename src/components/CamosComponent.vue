@@ -11,16 +11,13 @@
 					<span>
 						{{ title }}
 					</span>
-					<!-- <span v-tippy content="Required for Platinum camouflage">
+					<span v-tippy content="Required for Platinum camouflage">
 						{{ categoryProgress(title) }}
-					</span> -->
+					</span>
 				</h2>
 
 				<transition-group name="fade" tag="div" class="camos">
-					<CamoComponent
-						v-for="camo in category"
-						:key="camo.name"
-						:camo="camo" />
+					<CamoComponent v-for="camo in category" :key="camo.name" :camo="camo" />
 				</transition-group>
 			</div>
 		</transition-group>
@@ -32,9 +29,9 @@
 </template>
 
 <script>
-import { mapActions } from 'pinia'
+import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
-import { filterObject } from '@/utils/utils'
+// import allCamos from '../data/camos'
 import CamoComponent from '@/components/CamoComponent.vue'
 
 export default {
@@ -50,35 +47,31 @@ export default {
 	},
 
 	computed: {
-
+		...mapState(useStore, ['weapons']),
 	},
 
 	methods: {
-		...mapActions(useStore, ['toggleCategoryCompleted']),
+		categoryProgress(categoryTitle) {
+			let completed = 0
+			const categoryCamos = this.camos[categoryTitle].map((catCamo) => catCamo.name)
+			const totalCamos = categoryCamos.length
+			// get all completed camos in category
+			let allCamoProgress = this.getAllCamoProgress()
 
-		categoryProgress(title) {
-			const categoryWeapons = this.camos[title]
-			const required = categoryWeapons.filter((weapon) => !weapon.dlc).length
-			const completed = categoryWeapons.reduce(
-				(a, weapon) =>
-					a + Object.values(filterObject(weapon.progress, ['Polyatomic'])).every(Boolean),
-				0
-			)
+			categoryCamos.forEach((camo) => {
+				// Reference camo by name to get current state. Id would be better here
+				if (allCamoProgress[camo]) completed++
+			})
 
-			return completed > required
-				? `${required}/${required}`
-				: `${Math.floor(completed)}/${required}`
+			return `${completed}/${totalCamos}`
 		},
-
-		categoryCompleted(category) {
-			const required = category.filter((weapon) => !weapon.dlc).length
-			const completed = category.reduce(
-				(a, weapon) =>
-					a + Object.values(filterObject(weapon.progress, ['Polyatomic'])).every(Boolean),
-				0
-			)
-
-			return completed >= required
+		getAllCamoProgress() {
+			return this.weapons
+				.map((item) => item.progress)
+				.reduce(function (acc, x) {
+					for (var key in x) acc[key] = x[key]
+					return acc
+				}, {})
 		},
 	},
 }
