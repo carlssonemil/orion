@@ -25,7 +25,7 @@ export default {
 		challenge: 'Get 40 kills with Akimbo',
 	},
 	'Party Time': {
-		weapon: 'X13',
+		weapon: 'X13 Auto',
 		level: '21',
 		challenge: 'Get 40 kills with Akimbo',
 	},

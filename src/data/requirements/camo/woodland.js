@@ -39,8 +39,8 @@ export default {
 		level: '11',
 		challenge: 'Get 40 kills',
 	},
-	'Void And Light': {
-		weapon: 'X13',
+	'Void and Light': {
+		weapon: 'X13 Auto',
 		level: '2',
 		challenge: 'Get 40 kills',
 	},

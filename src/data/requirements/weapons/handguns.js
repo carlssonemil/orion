@@ -50,7 +50,7 @@ export default {
 	},
 
 	'X13 Auto': {
-		'Void and Light': woodland['Void And Light'],
+		'Void and Light': woodland['Void and Light'],
 		'Asphalt Digital': digital['Asphalt Digital'],
 		'Dark Echo': reptile['Dark Echo'],
 		'Party Time': fun['Party Time'],
