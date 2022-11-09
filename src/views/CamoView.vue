@@ -24,7 +24,7 @@ export default {
 	},
 
 	computed: {
-		...mapState(useStore, ['camoRequirements', 'weapons', 'filters']),
+		...mapState(useStore, ['camouflageRequirements', 'weapons', 'filters']),
 
 		camouflages() {
 			let allCamoProgress = this.weapons.map((item) => item.progress)
@@ -36,7 +36,7 @@ export default {
 				return acc
 			}, {})
 
-			var allCamoCategories = Object.keys(this.camoRequirements)
+			var allCamoCategories = Object.keys(this.camouflageRequirements)
 			var filteredCamos = allCamos.filter(
 				(camo) =>
 					allCamoCategories.some((s) => s == camo.category) &&

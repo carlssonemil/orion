@@ -4,7 +4,7 @@ import { filterObject } from '../utils/utils'
 import defaultWeapons from '../data/weapons'
 import defaultFilters from '../data/defaults/filters'
 import weaponRequirements from '../data/weaponRequirements'
-import camoRequirements from '../data/camoRequirements'
+import camouflageRequirements from '../data/camouflageRequirements'
 
 const token = import.meta.env.MODE === 'production' ? 'orion' : 'orion-dev'
 
@@ -13,7 +13,7 @@ export const useStore = defineStore({
 
 	state: () => ({
 		weaponRequirements: { ...weaponRequirements },
-		camoRequirements: { ...camoRequirements },
+		camouflageRequirements: { ...camouflageRequirements },
 		filters: {},
 		weapons: [],
 		beganGrind: null,

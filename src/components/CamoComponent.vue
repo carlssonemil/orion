@@ -37,7 +37,7 @@ export default {
 		},
 	},
 	computed: {
-		...mapState(useStore, ['camoRequirements']),
+		...mapState(useStore, ['camouflageRequirements']),
 	},
 
 	methods: {
@@ -64,14 +64,14 @@ export default {
 		},
 
 		requirementTooltip(camouflage) {
-			const requirement = this.camoRequirements[camouflage.category][camouflage.name]
+			const requirement = this.camouflageRequirements[camouflage.category][camouflage.name]
 			return `Get the ${requirement.weapon} to level ${requirement.level} - ${
 				requirement.challenge || 'TBA'
 			}`
 		},
 
 		handleToggleCompleted(camouflage) {
-			const weaponName = this.camoRequirements[camouflage.category][camouflage.name].weapon
+			const weaponName = this.camouflageRequirements[camouflage.category][camouflage.name].weapon
 			this.toggleCamouflageCompleted(weaponName, camouflage.name, this.isCompleted)
 			this.toggleIsCompleted()
 		},
