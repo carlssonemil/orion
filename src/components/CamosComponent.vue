@@ -17,7 +17,7 @@
 				</h2>
 
 				<transition-group name="fade" tag="div" class="camouflages">
-					<CamoComponent v-for="camouflage in category" :key="camouflage.name" :camouflage="camouflage" />
+					<CamouflageComponent v-for="camouflage in category" :key="camouflage.name" :camouflage="camouflage" />
 				</transition-group>
 			</div>
 		</transition-group>
@@ -32,11 +32,11 @@
 import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
 // import allCamos from '../data/camouflages'
-import CamoComponent from '@/components/CamoComponent.vue'
+import CamouflageComponent from '@/components/CamouflageComponent.vue'
 
 export default {
 	components: {
-		CamoComponent,
+		CamouflageComponent,
 	},
 
 	props: {
