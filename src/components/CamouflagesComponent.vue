@@ -6,7 +6,6 @@
 				:key="title"
 				:data-index="index"
 				class="category">
-				<!-- TODO: Add double-click functionality -->
 				<h2>
 					<span>
 						{{ title }}
