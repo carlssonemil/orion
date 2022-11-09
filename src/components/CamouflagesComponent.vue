@@ -30,7 +30,6 @@
 <script>
 import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
-// import allCamos from '../data/camouflages'
 import CamouflageComponent from '@/components/CamouflageComponent.vue'
 
 export default {
