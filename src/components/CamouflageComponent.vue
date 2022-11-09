@@ -1,7 +1,6 @@
 <template>
 	<div
-		:key="camouflage.name"
-		:class="['camouflage']"
+		class="camouflage"
 		@click="handleToggleCompleted(camouflage)"
 		:content="requirementTooltip(camouflage)"
 		v-tippy="{ placement: 'bottom' }">
@@ -44,16 +43,16 @@ export default {
 		convertToKebabCase,
 		...mapActions(useStore, ['toggleCamouflageCompleted', 'toggleGoldCamouflageCompleted']),
 
-		imageUrl(camoName) {
-			if (camoName === 'Gold') {
+		imageUrl(camouflageName) {
+			if (camouflageName === 'Gold') {
 				return new URL('/gold-gradient.svg', import.meta.url)
-			} else if (camoName === 'Platinum') {
+			} else if (camouflageName === 'Platinum') {
 				return new URL('/platinum-gradient.svg', import.meta.url)
-			} else if (camoName === 'Polyatomic') {
+			} else if (camouflageName === 'Polyatomic') {
 				return new URL('/polyatomic-gradient.svg', import.meta.url)
 			}
 
-			return new URL(`../assets/camouflages/${convertToKebabCase(camoName)}.png`, import.meta.url)
+			return new URL(`../assets/camouflages/${convertToKebabCase(camouflageName)}.png`, import.meta.url)
 		},
 
 		requirementTooltip(camouflage) {

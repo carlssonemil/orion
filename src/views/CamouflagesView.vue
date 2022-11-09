@@ -38,16 +38,16 @@ export default {
 
 			var allCamoCategories = Object.keys(this.camouflageRequirements)
 			var filteredCamos = allCamos.filter(
-				(camo) =>
-					allCamoCategories.some((s) => s == camo.category) &&
-					Object.keys(allCamoProgress).some((s) => s == camo.name)
+				(camouflage) =>
+					allCamoCategories.some((s) => s == camouflage.category) &&
+					Object.keys(allCamoProgress).some((s) => s == camouflage.name)
 			)
-			filteredCamos = filteredCamos.map((camo) => {
-				camo.isCompleted = allCamoProgress[camo.name] ?? false
-				return camo
+			filteredCamos = filteredCamos.map((camouflage) => {
+				camouflage.isCompleted = allCamoProgress[camouflage.name] ?? false
+				return camouflage
 			})
 
-			return groupBy(filteredCamos, (camo) => camo.category)
+			return groupBy(filteredCamos, (camouflage) => camouflage.category)
 		},
 	},
 }
