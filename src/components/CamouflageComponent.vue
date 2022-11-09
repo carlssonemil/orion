@@ -56,13 +56,6 @@ export default {
 			return new URL(`../assets/camouflages/${convertToKebabCase(camoName)}.png`, import.meta.url)
 		},
 
-		imageExists(camoName) {
-			const url = this.imageUrl(camoName)
-			const img = new Image()
-			img.src = url
-			return img.height !== 0
-		},
-
 		requirementTooltip(camouflage) {
 			const requirement = this.camouflageRequirements[camouflage.category][camouflage.name]
 			return `Get the ${requirement.weapon} to level ${requirement.level} - ${
