@@ -2,7 +2,7 @@
 	<div>
 		<transition-group name="fade" tag="div" class="container">
 			<div
-				v-for="(category, title, index) in camos"
+				v-for="(category, title, index) in camouflages"
 				:key="title"
 				:data-index="index"
 				class="category">
@@ -16,13 +16,13 @@
 					</span>
 				</h2>
 
-				<transition-group name="fade" tag="div" class="camos">
-					<CamoComponent v-for="camo in category" :key="camo.name" :camo="camo" />
+				<transition-group name="fade" tag="div" class="camouflages">
+					<CamoComponent v-for="camouflage in category" :key="camouflage.name" :camouflage="camouflage" />
 				</transition-group>
 			</div>
 		</transition-group>
 
-		<div v-if="Object.keys(camos).length === 0" class="finished-placeholder">
+		<div v-if="Object.keys(camouflages).length === 0" class="finished-placeholder">
 			<p>You have completed all camouflage challenges 👏</p>
 		</div>
 	</div>
@@ -31,7 +31,7 @@
 <script>
 import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
-// import allCamos from '../data/camos'
+// import allCamos from '../data/camouflages'
 import CamoComponent from '@/components/CamoComponent.vue'
 
 export default {
@@ -40,7 +40,7 @@ export default {
 	},
 
 	props: {
-		camos: {
+		camouflages: {
 			type: Object,
 			required: true,
 		},
@@ -53,14 +53,14 @@ export default {
 	methods: {
 		categoryProgress(categoryTitle) {
 			let completed = 0
-			const categoryCamos = this.camos[categoryTitle].map((catCamo) => catCamo.name)
+			const categoryCamos = this.camouflages[categoryTitle].map((catCamo) => catCamo.name)
 			const totalCamos = categoryCamos.length
-			// get all completed camos in category
+			// get all completed camouflages in category
 			let allCamoProgress = this.getAllCamoProgress()
 
-			categoryCamos.forEach((camo) => {
-				// Reference camo by name to get current state. Id would be better here
-				if (allCamoProgress[camo]) completed++
+			categoryCamos.forEach((camouflage) => {
+				// Reference camouflage by name to get current state. Id would be better here
+				if (allCamoProgress[camouflage]) completed++
 			})
 
 			return `${completed}/${totalCamos}`
@@ -112,7 +112,7 @@ export default {
 			}
 		}
 
-		.camos {
+		.camouflages {
 			display: grid;
 			gap: 30px;
 			grid-template-columns: repeat(5, 1fr);

@@ -1,14 +1,7 @@
 <template>
 	<div class="container">
-		<AlertComponent style="margin-bottom: 30px">
-			This tracker is currently under development and more content will be added continuously during
-			the coming weeks. Please report any bugs or issues by emailing me at
-			<a href="mailto:hello@emilcarlsson.se">hello@emilcarlsson.se</a>, or opening issues on
-			<a href="https://github.com/carlssonemil/orion/issues/new">GitHub</a>. Thanks and good luck
-			with the grind! ✌
-		</AlertComponent>
 		<FiltersComponent />
-		<CamosComponent :camos="filteredCamos" />
+		<CamosComponent :camouflages="camouflages" />
 		<ProgressComponent />
 	</div>
 </template>
@@ -16,80 +9,34 @@
 <script>
 import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
-import { groupBy, filterObject } from '@/utils/utils'
+import { groupBy } from '@/utils/utils'
 import allCamos from '../data/camos'
 
-import AlertComponent from '@/components/AlertComponent.vue'
 import FiltersComponent from '@/components/FiltersComponent.vue'
 import CamosComponent from '@/components/CamosComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
 
 export default {
 	components: {
-		AlertComponent,
 		FiltersComponent,
 		CamosComponent,
 		ProgressComponent,
 	},
 
 	computed: {
-		...mapState(useStore, ['weapons', 'filters']),
+		...mapState(useStore, ['camoRequirements', 'weapons', 'filters']),
 
-		filteredCamos() {
-			let filteredWeapons = this.weapons
-			const { hideGold, hidePlatinum, hidePolyatomic, hideNonRequired, category } = this.filters
-
-			if (hideNonRequired) {
-				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.dlc)
-			}
-
-			if (hideGold) {
-				filteredWeapons = filteredWeapons.filter(
-					(weapon) =>
-						!Object.values(filterObject(weapon.progress, ['Platinum', 'Polyatomic'])).every(Boolean)
-				)
-			}
-
-			if (hidePlatinum) {
-				filteredWeapons = filteredWeapons.filter(
-					(weapon) => !Object.values(filterObject(weapon.progress, ['Polyatomic'])).every(Boolean)
-				)
-			}
-
-			if (hidePolyatomic) {
-				filteredWeapons = filteredWeapons.filter(
-					(weapon) => !Object.values(weapon.progress).every(Boolean)
-				)
-			}
-
-			if (category && category !== 'null') {
-				filteredWeapons = filteredWeapons.filter((weapon) => weapon.category === category)
-			}
-			let allCamoProgress = filteredWeapons.map((item) => item.progress)
+		camouflages() {
+			let allCamoProgress = this.weapons.map((item) => item.progress)
 			//Can filter by % mastery here
 
 			// Flattens the object array
 			allCamoProgress = allCamoProgress.reduce(function (acc, x) {
-			for (var key in x) acc[key] = x[key]
+				for (var key in x) acc[key] = x[key]
 				return acc
 			}, {})
 
-			var allCamoCategories = [
-				'Spray Paint',
-				'Woodland',
-				'Digital',
-				'Dragon',
-				'Geometric',
-				'Fun',
-				'Foliage',
-				'Skulls',
-				'Tiger',
-				'Stripes',
-				'Reptile',
-				'Solid Colors',
-				'Classic',
-				'Cliffside',
-			]
+			var allCamoCategories = Object.keys(this.camoRequirements)
 			var filteredCamos = allCamos.filter(
 				(camo) =>
 					allCamoCategories.some((s) => s == camo.category) &&
@@ -99,9 +46,8 @@ export default {
 				camo.isCompleted = allCamoProgress[camo.name] ?? false
 				return camo
 			})
-			
-			var returnVal = groupBy(filteredCamos, (camo) => camo.category)
-			return returnVal
+
+			return groupBy(filteredCamos, (camo) => camo.category)
 		},
 	},
 }

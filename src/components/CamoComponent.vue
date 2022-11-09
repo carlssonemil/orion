@@ -1,19 +1,19 @@
 <template>
 	<div
-		:key="camo.name"
+		:key="camouflage.name"
 		:class="['camouflage']"
-		@click="handleToggleCompleted(camo)"
-		:content="requirementTooltip(camo)"
+		@click="handleToggleCompleted(camouflage)"
+		:content="requirementTooltip(camouflage)"
 		v-tippy="{ placement: 'bottom' }">
 		<div :class="['inner', this.isCompleted ? 'completed' : '']">
 			<img
-				:src="imageUrl(camo.name)"
-				:alt="camo.name"
+				:src="imageUrl(camouflage.name)"
+				:alt="camouflage.name"
 				onerror="javascript:this.src='/base-gradient.svg'" />
 			<IconComponent class="complete" name="check" fill="#10ac84" />
 			<IconComponent class="remove" name="times" fill="#ee5253" />
 			<span>
-				{{ camo.name }}
+				{{ camouflage.name }}
 			</span>
 		</div>
 	</div>
@@ -27,11 +27,11 @@ import { mapActions, mapState } from 'pinia'
 export default {
 	data() {
 		return {
-			isCompleted: this.camo.isCompleted,
+			isCompleted: this.camouflage.isCompleted,
 		}
 	},
 	props: {
-		camo: {
+		camouflage: {
 			type: Object,
 			required: true,
 		},
@@ -63,16 +63,16 @@ export default {
 			return img.height !== 0
 		},
 
-		requirementTooltip(camo) {
-			const requirement = this.camoRequirements[camo.category][camo.name]
+		requirementTooltip(camouflage) {
+			const requirement = this.camoRequirements[camouflage.category][camouflage.name]
 			return `Get the ${requirement.weapon} to level ${requirement.level} - ${
 				requirement.challenge || 'TBA'
 			}`
 		},
 
-		handleToggleCompleted(camo) {
-			const weaponName = this.camoRequirements[camo.category][camo.name].weapon
-			this.toggleCamouflageCompleted(weaponName, camo.name, this.isCompleted)
+		handleToggleCompleted(camouflage) {
+			const weaponName = this.camoRequirements[camouflage.category][camouflage.name].weapon
+			this.toggleCamouflageCompleted(weaponName, camouflage.name, this.isCompleted)
 			this.toggleIsCompleted()
 		},
 		toggleIsCompleted() {
