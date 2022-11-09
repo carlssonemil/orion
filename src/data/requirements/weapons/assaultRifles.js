@@ -5,7 +5,7 @@ import {
 	dragon,
 	geometric,
 	skulls,
-	solidColours,
+	solidColors,
 	sprayPaint,
 	stripes,
 	tiger,
@@ -45,7 +45,7 @@ export default {
 
 	'Lachmann-556': {
 		'Marshland': stripes['Marshland'],
-		'Pine': solidColours['Pine'],
+		'Pine': solidColors['Pine'],
 		'Dark Tiger Digital': digital['Dark Tiger Digital'],
 		'Cthulhu': skulls['Cthulhu'],
 		...masteryChallenges,
@@ -54,7 +54,7 @@ export default {
 	'STB 556': {
 		'Sponge Tac': sprayPaint['Sponge Tac'],
 		'Black Top': dragon['Black Top'],
-		'Slate': solidColours['Slate'],
+		'Slate': solidColors['Slate'],
 		'Neon Pink': dragon['Neon Pink'],
 		...masteryChallenges,
 	},

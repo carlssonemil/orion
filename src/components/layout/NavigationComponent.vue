@@ -5,7 +5,8 @@
 			<p><span>Orion</span></p>
 		</router-link>
 		<div>
-			<router-link to="/">Camouflages</router-link>
+			<router-link to="/">Weapons</router-link>
+			<router-link to="/camouflages">Camouflages</router-link>
 			<router-link
 				to="/settings"
 				class="icon settings"

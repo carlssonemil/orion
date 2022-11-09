@@ -12,6 +12,6 @@ export default {
 	},
 
 	'RPG-7': {
-		'Jungle Digital': false,
+		'Jungle Digital (RPG)': false,
 	},
 }

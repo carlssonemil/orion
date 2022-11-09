@@ -7,7 +7,7 @@ import fun from './fun'
 import geometric from './geometric'
 import reptile from './reptile'
 import skulls from './skulls'
-import solidColours from './solidColours'
+import solidColors from './solidColors'
 import sprayPaint from './sprayPaint'
 import stripes from './stripes'
 import tiger from './tiger'
@@ -23,7 +23,7 @@ export {
 	geometric,
 	reptile,
 	skulls,
-	solidColours,
+	solidColors,
 	sprayPaint,
 	stripes,
 	tiger,

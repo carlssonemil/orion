@@ -23,7 +23,7 @@
 				v-for="(completed, camouflage) in camouflages"
 				:key="camouflage"
 				:class="['camouflage']"
-				@click="toggleCamouflageCompleted(weapon, camouflage, completed)"
+				@click="toggleCamouflageCompleted(weapon.name, camouflage, completed)"
 				:content="requirementTooltip(weapon, camouflage)"
 				v-tippy="{ placement: 'bottom' }">
 				<div :class="['inner', { completed }]">
@@ -58,7 +58,7 @@ export default {
 	},
 
 	computed: {
-		...mapState(useStore, ['requirements']),
+		...mapState(useStore, ['weaponRequirements']),
 
 		camouflages() {
 			return this.weapon.progress
@@ -98,7 +98,7 @@ export default {
 		},
 
 		requirementTooltip(weapon, camouflage) {
-			const requirement = this.requirements[weapon.category][weapon.name][camouflage]
+			const requirement = this.weaponRequirements[weapon.category][weapon.name][camouflage]
 			if (requirement && requirement.challenge)
 				return `${camouflage} - Level ${requirement.level} - ${requirement.challenge}`
 

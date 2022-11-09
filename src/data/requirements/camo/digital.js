@@ -5,7 +5,7 @@ export default {
 		challenge: 'Get 50 kills while ADS',
 	},
 	'Arid Digital': {
-		weapon: 'VEL-46',
+		weapon: 'VEL 46',
 		level: '2',
 		challenge: 'Get 50 kills',
 	},

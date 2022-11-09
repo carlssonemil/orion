@@ -6,7 +6,7 @@ import {
 	fun,
 	geometric,
 	reptile,
-	solidColours,
+	solidColors,
 	sprayPaint,
 	stripes,
 	tiger,
@@ -24,7 +24,7 @@ export default {
 		'Arid Digital': digital['Arid Digital'],
 		'Midnight Bay': woodland['Midnight Bay'],
 		'Tagged': dragon['Tagged'],
-		'Whiteout': solidColours['Whiteout'],
+		'Whiteout': solidColors['Whiteout'],
 		...masteryChallenges,
 	},
 
@@ -56,7 +56,7 @@ export default {
 		'Green Woods': woodland['Green Woods'],
 		'Python': reptile['Python'],
 		'Moon Shadow': dragon['Moon Shadow'],
-		'Neon Loud': solidColours['Neon Loud'],
+		'Neon Loud': solidColors['Neon Loud'],
 		...masteryChallenges,
 	},
 
@@ -72,7 +72,7 @@ export default {
 		'Shadow Stalker': stripes['Shadow Stalker'],
 		'Gecko': reptile['Gecko'],
 		'Shale': geometric['Shale'],
-		'Power Pink': solidColours['Power Pink'],
+		'Power Pink': solidColors['Power Pink'],
 		...masteryChallenges,
 	},
 

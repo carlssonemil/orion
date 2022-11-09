@@ -5,7 +5,7 @@ import {
 	foliage,
 	fun,
 	skulls,
-	solidColours,
+	solidColors,
 	sprayPaint,
 	tiger,
 } from '../camo/_index'
@@ -18,7 +18,7 @@ const masteryChallenges = {
 
 export default {
 	'MCPR-300': {
-		'Clay': solidColours['Clay'],
+		'Clay': solidColors['Clay'],
 		'Snow Grass': foliage['Snow Grass'],
 		'Neon Shards': tiger['Neon Shards'],
 		'Bloodied': fun['Bloodied'],

@@ -21,6 +21,11 @@ const router = new VueRouter({
 			component: NotFoundView,
 		},
 		{
+			path: '/camouflages',
+			name: 'camouflages',
+			component: () => import('../views/CamouflagesView.vue'),
+		},
+		{
 			path: '/about',
 			name: 'about',
 			component: () => import('../views/AboutView.vue'),

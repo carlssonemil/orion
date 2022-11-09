@@ -6,7 +6,7 @@ import {
 	geometric,
 	reptile,
 	skulls,
-	solidColours,
+	solidColors,
 	sprayPaint,
 	stripes,
 	tiger,
@@ -37,7 +37,7 @@ export default {
 	},
 
 	'556 Icarus': {
-		'Olive': solidColours['Olive'],
+		'Olive': solidColors['Olive'],
 		'What Skulls?': skulls['What Skulls?'],
 		'Night Quarry': cliffside['Night Quarry'],
 		'Autumn Dazzle': geometric['Autumn Dazzle'],

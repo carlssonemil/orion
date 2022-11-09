@@ -3,7 +3,8 @@ import { defineStore } from 'pinia'
 import { filterObject } from '../utils/utils'
 import defaultWeapons from '../data/weapons'
 import defaultFilters from '../data/defaults/filters'
-import requirements from '../data/requirements'
+import weaponRequirements from '../data/weaponRequirements'
+import camouflageRequirements from '../data/camouflageRequirements'
 
 const token = import.meta.env.MODE === 'production' ? 'orion' : 'orion-dev'
 
@@ -11,7 +12,8 @@ export const useStore = defineStore({
 	id: 'store',
 
 	state: () => ({
-		requirements: { ...requirements },
+		weaponRequirements: { ...weaponRequirements },
+		camouflageRequirements: { ...camouflageRequirements },
 		filters: {},
 		weapons: [],
 		beganGrind: null,
@@ -90,8 +92,8 @@ export const useStore = defineStore({
 			})
 		},
 
-		toggleCamouflageCompleted(weapon, camouflage, current) {
-			this.weapons.find((w) => w.name === weapon.name).progress[camouflage] = !current
+		toggleCamouflageCompleted(weaponName, camouflage, current) {
+			this.weapons.find((w) => w.name === weaponName).progress[camouflage] = !current
 			this.storeProgress()
 		},
 
