@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import CamoView from '../views/CamoView.vue'
 import NotFoundView from '../views/NotFoundView.vue'
 
 Vue.use(VueRouter)
@@ -22,9 +21,9 @@ const router = new VueRouter({
 			component: NotFoundView,
 		},
 		{
-			path: '/camo',
-			name: 'camo',
-			component: CamoView,
+			path: '/camouflages',
+			name: 'camouflages',
+			component: () => import('../views/CamouflagesView.vue'),
 		},
 		{
 			path: '/about',

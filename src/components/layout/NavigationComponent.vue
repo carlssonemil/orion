@@ -6,7 +6,7 @@
 		</router-link>
 		<div>
 			<router-link to="/">Weapons</router-link>
-			<router-link to="/camo">Camouflages</router-link>
+			<router-link to="/camouflages">Camouflages</router-link>
 			<router-link
 				to="/settings"
 				class="icon settings"
