@@ -1,6 +1,5 @@
 <template>
 	<div class="container">
-		<FiltersComponent />
 		<CamouflagesComponent :camouflages="camouflages" />
 		<ProgressComponent />
 	</div>
@@ -12,13 +11,11 @@ import { useStore } from '@/stores/store'
 import { groupBy } from '@/utils/utils'
 import allCamos from '../data/camos'
 
-import FiltersComponent from '@/components/FiltersComponent.vue'
 import CamouflagesComponent from '@/components/CamouflagesComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
 
 export default {
 	components: {
-		FiltersComponent,
 		CamouflagesComponent,
 		ProgressComponent,
 	},
