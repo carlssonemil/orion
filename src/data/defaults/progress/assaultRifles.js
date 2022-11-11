@@ -54,4 +54,18 @@ export default {
 		'Savannah': false,
 		'Petri Digital': false,
 	},
+
+	'Chimera': {
+		'TBA': false,
+		'TBA': false,
+		'TBA': false,
+		'TBA': false,
+	},
+
+	'M13B': {
+		'TBA': false,
+		'TBA': false,
+		'TBA': false,
+		'TBA': false,
+	},
 }

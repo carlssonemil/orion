@@ -48,4 +48,12 @@ export default {
 		'Lichyard': skulls['Lichyard'],
 		...masteryChallenges,
 	},
+	
+	'Victus XMR': {
+		'TBA': sprayPaint['TBA'],
+		'TBA': foliage['TBA'],
+		'TBA': foliage['TBA'],
+		'TBA': skulls['TBA'],
+		...masteryChallenges,
+	},
 }

@@ -54,4 +54,11 @@ export default {
 		'Feral Beast': false,
 		'2087': false,
 	},
+
+	'BAS-P': {
+		'TBA': false,
+		'TBA': false,
+		'TBA': false,
+		'TBA': false,
+	},
 }

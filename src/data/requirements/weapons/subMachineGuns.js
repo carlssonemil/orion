@@ -83,4 +83,12 @@ export default {
 		'2087': classic['2087'],
 		...masteryChallenges,
 	},
+
+	'BAS-P': {
+		'TBA': geometric['TBA'],
+		'TBA': tiger['TBA'],
+		'TBA': tiger['TBA'],
+		'TBA': classic['TBA'],
+		...masteryChallenges,
+	},
 }

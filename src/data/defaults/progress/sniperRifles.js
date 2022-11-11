@@ -26,4 +26,11 @@ export default {
 		'Aspen': false,
 		'Lichyard': false,
 	},
+
+	'Victus XMR': {
+		'TBA': false,
+		'TBA': false,
+		'TBA': false,
+		'TBA': false,
+	},
 }

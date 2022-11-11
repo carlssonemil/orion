@@ -82,4 +82,20 @@ export default {
 		'Petri Digital': digital['Petri Digital'],
 		...masteryChallenges,
 	},
+
+	'Chimera': {
+		'TBA': woodland['TBA'],
+		'TBA': tiger['TBA'],
+		'TBA': stripes['TBA'],
+		'TBA': digital['TBA'],
+		...masteryChallenges,
+	},
+
+	'M13B': {
+		'TBA': woodland['TBA'],
+		'TBA': tiger['TBA'],
+		'TBA': stripes['TBA'],
+		'TBA': digital['TBA'],
+		...masteryChallenges,
+	},
 }

@@ -11,7 +11,7 @@ const base = [
 	'Fennec 45',
 ]
 
-const dlc = []
+const dlc = ['BAS-P']
 
 export default [...base, ...dlc].map((weapon) => ({
 	category: 'Sub Machine Guns',
