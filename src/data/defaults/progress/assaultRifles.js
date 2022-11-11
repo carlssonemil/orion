@@ -55,17 +55,17 @@ export default {
 		'Petri Digital': false,
 	},
 
-	'Chimera': {
+	'M13B': {
 		'TBA': false,
 		'TBA': false,
 		'TBA': false,
 		'TBA': false,
 	},
 
-	'M13B': {
+	'Chimera': {
+		/*'TBA': false,
 		'TBA': false,
 		'TBA': false,
-		'TBA': false,
-		'TBA': false,
+		'TBA': false,*/
 	},
 }

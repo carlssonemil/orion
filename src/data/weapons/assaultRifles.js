@@ -11,7 +11,7 @@ const base = [
 	'Kastov 545',
 ]
 
-const dlc = ['Chimera', 'M13B']
+const dlc = ['M13B', 'Chimera']
 
 export default [...base, ...dlc].map((weapon) => ({
 	category: 'Assault Rifles',
