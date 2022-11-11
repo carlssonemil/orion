@@ -57,15 +57,15 @@ export default {
 
 	'M13B': {
 		'TBA': false,
-		'TBA': false,
-		'TBA': false,
-		'TBA': false,
+		'TBA2': false,
+		'TBA3': false,
+		'TBA4': false,
 	},
 
 	'Chimera': {
-		/*'TBA': false,
 		'TBA': false,
-		'TBA': false,
-		'TBA': false,*/
+		'TBA2': false,
+		'TBA3': false,
+		'TBA4': false,
 	},
 }

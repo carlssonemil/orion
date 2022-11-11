@@ -86,9 +86,9 @@ export default {
 
 	'BAS-P': {
 		'TBA': geometric['TBA'],
-		'TBA': tiger['TBA'],
-		'TBA': tiger['TBA'],
-		'TBA': classic['TBA'],
+		'TBA2': tiger['TBA'],
+		'TBA3': tiger['TBA'],
+		'TBA4': classic['TBA'],
 		...masteryChallenges,
 	},
 }

@@ -29,8 +29,8 @@ export default {
 
 	'Victus XMR': {
 		'TBA': false,
-		'TBA': false,
-		'TBA': false,
-		'TBA': false,
+		'TBA2': false,
+		'TBA3': false,
+		'TBA4': false,
 	},
 }

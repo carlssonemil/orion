@@ -85,17 +85,17 @@ export default {
 
 	'M13B': {
 		'TBA': woodland['TBA'],
-		'TBA': tiger['TBA'],
-		'TBA': stripes['TBA'],
-		'TBA': digital['TBA'],
+		'TBA2': tiger['TBA'],
+		'TBA3': stripes['TBA'],
+		'TBA4': digital['TBA'],
 		...masteryChallenges,
 	},
 
 	'Chimera': {
-		/*'TBA': woodland['TBA'],
-		'TBA': tiger['TBA'],
-		'TBA': stripes['TBA'],
-		'TBA': digital['TBA'],*/
+		'TBA': woodland['TBA'],
+		'TBA2': tiger['TBA'],
+		'TBA3': stripes['TBA'],
+		'TBA4': digital['TBA'],
 		...masteryChallenges,
 	},
 }
