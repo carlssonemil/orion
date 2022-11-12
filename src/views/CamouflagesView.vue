@@ -9,7 +9,7 @@
 import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
 import { groupBy } from '@/utils/utils'
-import allCamos from '../data/camouflages'
+import camouflages from '../data/camouflages'
 
 import CamouflagesComponent from '@/components/CamouflagesComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
@@ -24,27 +24,16 @@ export default {
 		...mapState(useStore, ['camouflageRequirements', 'weapons', 'filters']),
 
 		camouflages() {
-			let allCamoProgress = this.weapons.map((item) => item.progress)
-			//Can filter by % mastery here
+			const camouflageProgress = this.weapons
+				.map((weapon) => weapon.progress)
+				.flat()
+				.reduce((a, b) => ({ ...a, ...b }), {})
 
-			// Flattens the object array
-			allCamoProgress = allCamoProgress.reduce(function (acc, x) {
-				for (var key in x) acc[key] = x[key]
-				return acc
-			}, {})
-
-			var allCamoCategories = Object.keys(this.camouflageRequirements)
-			var filteredCamos = allCamos.filter(
-				(camouflage) =>
-					allCamoCategories.some((s) => s == camouflage.category) &&
-					Object.keys(allCamoProgress).some((s) => s == camouflage.name)
-			)
-			filteredCamos = filteredCamos.map((camouflage) => {
-				camouflage.isCompleted = allCamoProgress[camouflage.name] ?? false
-				return camouflage
+			camouflages.forEach((camouflage) => {
+				camouflage.isCompleted = camouflageProgress[camouflage.name] || false
 			})
 
-			return groupBy(filteredCamos, (camouflage) => camouflage.category)
+			return groupBy(camouflages, (camouflage) => camouflage.category)
 		},
 	},
 }
