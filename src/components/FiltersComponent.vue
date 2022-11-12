@@ -115,6 +115,7 @@ export default {
 		@media (max-width: $tablet) {
 			flex-direction: column;
 			padding-top: 50px;
+			width: 100%;
 		}
 
 		.info {
