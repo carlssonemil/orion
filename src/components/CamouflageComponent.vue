@@ -29,12 +29,14 @@ export default {
 			isCompleted: this.camouflage.isCompleted,
 		}
 	},
+
 	props: {
 		camouflage: {
 			type: Object,
 			required: true,
 		},
 	},
+
 	computed: {
 		...mapState(useStore, ['camouflageRequirements']),
 	},
@@ -52,7 +54,10 @@ export default {
 				return new URL('/polyatomic-gradient.svg', import.meta.url)
 			}
 
-			return new URL(`../assets/camouflages/${convertToKebabCase(camouflageName)}.png`, import.meta.url)
+			return new URL(
+				`../assets/camouflages/${convertToKebabCase(camouflageName)}.png`,
+				import.meta.url
+			)
 		},
 
 		requirementTooltip(camouflage) {
@@ -67,6 +72,7 @@ export default {
 			this.toggleCamouflageCompleted(weaponName, camouflage.name, this.isCompleted)
 			this.toggleIsCompleted()
 		},
+
 		toggleIsCompleted() {
 			this.isCompleted = !this.isCompleted
 		},
