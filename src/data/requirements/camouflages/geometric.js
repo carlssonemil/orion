@@ -37,7 +37,7 @@ export default {
 	'Lodge': {
 		weapon: 'Raal MG',
 		level: '27',
-		challenge: 'Get 20 kills while mounted',
+		challenge: 'Get 10 hipfire kills',
 	},
 	'Canary Stone': {
 		weapon: 'Kastov-74U',
