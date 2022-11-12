@@ -9,7 +9,7 @@
 import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
 import { groupBy } from '@/utils/utils'
-import allCamos from '../data/camos'
+import allCamos from '../data/camouflages'
 
 import CamouflagesComponent from '@/components/CamouflagesComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'

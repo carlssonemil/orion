@@ -8,7 +8,7 @@ import {
 	solidColors,
 	sprayPaint,
 	tiger,
-} from '../camo/_index'
+} from '../camouflages/_index'
 
 const masteryChallenges = {
 	Gold: 'Get 3 kills without dying 10 times',
