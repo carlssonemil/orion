@@ -16,7 +16,7 @@
 <script>
 import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
-import { groupBy, filterObject } from '@/utils/utils'
+import { groupBy } from '@/utils/utils'
 
 import AlertComponent from '@/components/AlertComponent.vue'
 import FiltersComponent from '@/components/FiltersComponent.vue'
