@@ -20,7 +20,8 @@ export const useStore = defineStore({
 	}),
 
 	getters: {
-		categories: (state) => Array.from(new Set(state.weapons.map((weapon) => weapon.category))),
+		weaponCategories: (state) =>
+			Array.from(new Set(state.weapons.map((weapon) => weapon.category))),
 	},
 
 	actions: {

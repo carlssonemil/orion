@@ -7,7 +7,7 @@
 			<a href="https://github.com/carlssonemil/orion/issues/new">GitHub</a>. Thanks and good luck
 			with the grind! ✌
 		</AlertComponent>
-		<FiltersComponent />
+		<FiltersComponent :options="filterOptions" :show-info="true" />
 		<WeaponsComponent :weapons="filteredWeapons" />
 		<ProgressComponent />
 	</div>
@@ -32,11 +32,38 @@ export default {
 	},
 
 	computed: {
-		...mapState(useStore, ['weapons', 'filters']),
+		...mapState(useStore, ['weapons', 'filters', 'weaponCategories']),
+
+		filterOptions() {
+			return [
+				{
+					label: 'Category',
+					key: 'weaponCategory',
+					type: 'select',
+					options: this.weaponCategories,
+				},
+				{
+					label: 'Hide Gold',
+					key: 'hideGold',
+					type: 'checkbox',
+				},
+				{
+					label: 'Hide Platinum',
+					key: 'hidePlatinum',
+					type: 'checkbox',
+				},
+				{
+					label: 'Hide Polyatomic',
+					key: 'hidePolyatomic',
+					type: 'checkbox',
+				},
+			]
+		},
 
 		filteredWeapons() {
 			let filteredWeapons = this.weapons
-			const { hideGold, hidePlatinum, hidePolyatomic, hideNonRequired, category } = this.filters
+			const { hideGold, hidePlatinum, hidePolyatomic, hideNonRequired, weaponCategory } =
+				this.filters
 
 			if (hideNonRequired) {
 				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.dlc)
@@ -54,8 +81,8 @@ export default {
 				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress['Polyatomic'])
 			}
 
-			if (category && category !== 'null') {
-				filteredWeapons = filteredWeapons.filter((weapon) => weapon.category === category)
+			if (weaponCategory && weaponCategory !== 'null') {
+				filteredWeapons = filteredWeapons.filter((weapon) => weapon.category === weaponCategory)
 			}
 
 			return groupBy(filteredWeapons, (weapon) => weapon.category)
