@@ -1,15 +1,21 @@
 <template>
 	<div>
 		<transition-group name="fade" tag="div" class="container">
-			<div v-if="favorites.length > 0" :key="'favorites'" class="category">
+			<div :key="'favorites'" class="category">
 				<h2>Favorites</h2>
 
-				<transition-group name="fade" tag="div" class="camouflages">
+				<transition-group v-if="favorites.length > 0" name="fade" tag="div" class="camouflages">
 					<CamouflageComponent
 						v-for="camouflage in favorites"
 						:key="camouflage.name"
 						:camouflage="camouflage" />
 				</transition-group>
+
+				<AlertComponent v-else type="empty-state" style="padding: 42px 15px">
+					You don't have any favorites yet. Click the
+					<IconComponent name="star" fill="#feca57" icon-style="solid" size="20" /> icon on a
+					camouflage to add it to your favorites.
+				</AlertComponent>
 			</div>
 
 			<div
@@ -44,10 +50,13 @@
 <script>
 import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
+
+import AlertComponent from '@/components/AlertComponent.vue'
 import CamouflageComponent from '@/components/CamouflageComponent.vue'
 
 export default {
 	components: {
+		AlertComponent,
 		CamouflageComponent,
 	},
 
