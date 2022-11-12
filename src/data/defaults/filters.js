@@ -1,8 +1,10 @@
 export default {
-	category: null,
-	hideNonRequired: false,
+	camouflageCategory: null,
+	hideCompletedCamouflages: false,
+	hideFilters: false,
 	hideGold: false,
+	hideNonRequired: false,
 	hidePlatinum: false,
 	hidePolyatomic: false,
-	hideFilters: false,
+	weaponCategory: null,
 }

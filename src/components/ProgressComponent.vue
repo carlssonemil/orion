@@ -48,7 +48,7 @@ export default {
 	},
 
 	computed: {
-		...mapState(useStore, ['weapons', 'categories', 'beganGrind']),
+		...mapState(useStore, ['weapons', 'weaponCategories', 'beganGrind']),
 
 		daysSinceStart() {
 			const days = daysBetweenDates(this.beganGrind, new Date())
@@ -58,7 +58,7 @@ export default {
 		orionProgress() {
 			const progress = {}
 
-			this.categories.forEach((category) => {
+			this.weaponCategories.forEach((category) => {
 				const categoryWeapons = this.weapons.filter((weapon) => weapon.category === category)
 
 				const required = categoryWeapons.filter((weapon) => !weapon.dlc).length * 3

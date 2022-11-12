@@ -24,9 +24,10 @@ export const useStore = defineStore({
 	}),
 
 	getters: {
-		categories: (state) => Array.from(new Set(state.weapons.map((weapon) => weapon.category))),
 		isFavorite: (state) => (type, name) => state.favorites[type].includes(name),
 		getFavorites: (state) => (type) => state.favorites[type],
+		weaponCategories: (state) =>
+			Array.from(new Set(state.weapons.map((weapon) => weapon.category))),
 	},
 
 	actions: {
