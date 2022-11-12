@@ -12,11 +12,11 @@ export const useStore = defineStore({
 	id: 'store',
 
 	state: () => ({
-		weaponRequirements: { ...weaponRequirements },
+		beganGrind: null,
 		camouflageRequirements: { ...camouflageRequirements },
 		filters: {},
+		weaponRequirements: { ...weaponRequirements },
 		weapons: [],
-		beganGrind: null,
 	}),
 
 	getters: {
