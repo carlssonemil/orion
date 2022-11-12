@@ -1,6 +1,6 @@
 <template>
 	<div class="container">
-		<CamouflagesComponent :camouflages="camouflages" />
+		<CamouflagesComponent :camouflages="camouflages" :favorites="favorites" />
 		<ProgressComponent />
 	</div>
 </template>
@@ -13,6 +13,8 @@ import camouflages from '../data/camouflages'
 
 import CamouflagesComponent from '@/components/CamouflagesComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
+
+const store = useStore()
 
 export default {
 	components: {
@@ -34,6 +36,11 @@ export default {
 			})
 
 			return groupBy(camouflages, (camouflage) => camouflage.category)
+		},
+
+		favorites() {
+			const favorites = store.getFavorites('camouflages')
+			return camouflages.filter((camouflage) => favorites.includes(camouflage.name))
 		},
 	},
 }

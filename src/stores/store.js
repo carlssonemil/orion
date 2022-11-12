@@ -14,6 +14,10 @@ export const useStore = defineStore({
 	state: () => ({
 		beganGrind: null,
 		camouflageRequirements: { ...camouflageRequirements },
+		favorites: {
+			camouflages: [],
+			weapons: [],
+		},
 		filters: {},
 		weaponRequirements: { ...weaponRequirements },
 		weapons: [],
@@ -21,6 +25,8 @@ export const useStore = defineStore({
 
 	getters: {
 		categories: (state) => Array.from(new Set(state.weapons.map((weapon) => weapon.category))),
+		isFavorite: (state) => (type, name) => state.favorites[type].includes(name),
+		getFavorites: (state) => (type) => state.favorites[type],
 	},
 
 	actions: {
@@ -40,6 +46,11 @@ export const useStore = defineStore({
 					}
 				})
 			}
+		},
+
+		setFavorites({ camouflages, weapons }) {
+			this.favorites.camouflages = camouflages || []
+			this.favorites.weapons = weapons || []
 		},
 
 		setFilters(filters) {
@@ -63,11 +74,12 @@ export const useStore = defineStore({
 				return
 			}
 
-			const { weapons, filters, beganGrind } = JSON.parse(storage)
+			const { weapons, filters, beganGrind, favorites } = JSON.parse(storage)
 
 			if (weapons) this.setWeapons(weapons)
 			if (filters) this.setFilters(filters)
 			if (beganGrind) this.beganGrind = beganGrind
+			if (favorites) this.setFavorites(favorites)
 		},
 
 		storeProgress() {
@@ -77,6 +89,7 @@ export const useStore = defineStore({
 					weapons: this.weapons,
 					filters: this.filters,
 					beganGrind: this.beganGrind || new Date(),
+					favorites: this.favorites,
 				})
 			)
 		},
@@ -90,6 +103,18 @@ export const useStore = defineStore({
 				type: 'success',
 				title: 'Progress successfully reset!',
 			})
+		},
+
+		toggleFavorite({ type, name }) {
+			const index = this.favorites[type].findIndex((favorite) => favorite === name)
+
+			if (index === -1) {
+				this.favorites[type].push(name)
+			} else {
+				this.favorites[type].splice(index, 1)
+			}
+
+			this.storeProgress()
 		},
 
 		toggleCamouflageCompleted(weaponName, camouflage, current) {

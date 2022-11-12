@@ -1,6 +1,17 @@
 <template>
 	<div>
 		<transition-group name="fade" tag="div" class="container">
+			<div v-if="favorites.length > 0" :key="'favorites'" class="category">
+				<h2>Favorites</h2>
+
+				<transition-group name="fade" tag="div" class="camouflages">
+					<CamouflageComponent
+						v-for="camouflage in favorites"
+						:key="camouflage.name"
+						:camouflage="camouflage" />
+				</transition-group>
+			</div>
+
 			<div
 				v-for="(category, title, index) in camouflages"
 				:key="title"
@@ -16,7 +27,10 @@
 				</h2>
 
 				<transition-group name="fade" tag="div" class="camouflages">
-					<CamouflageComponent v-for="camouflage in category" :key="camouflage.name" :camouflage="camouflage" />
+					<CamouflageComponent
+						v-for="camouflage in category"
+						:key="camouflage.name"
+						:camouflage="camouflage" />
 				</transition-group>
 			</div>
 		</transition-group>
@@ -40,6 +54,11 @@ export default {
 	props: {
 		camouflages: {
 			type: Object,
+			required: true,
+		},
+
+		favorites: {
+			type: Array,
 			required: true,
 		},
 	},

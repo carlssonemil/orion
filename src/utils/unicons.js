@@ -24,6 +24,7 @@ import {
 	uniMobileAndroid,
 	uniQuestionCircle,
 	uniSave,
+	uniStarSolid,
 	uniTimes,
 	uniTrash,
 } from 'vue-unicons/dist/icons'
@@ -52,6 +53,7 @@ export default [
 	uniMobileAndroid,
 	uniQuestionCircle,
 	uniSave,
+	uniStarSolid,
 	uniTimes,
 	uniTrash,
 ]
