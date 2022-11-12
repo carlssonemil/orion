@@ -124,6 +124,11 @@ export default {
 		transition: $transition;
 		transform: translate(50%, -50%);
 		z-index: 2;
+
+		@media (max-width: $tablet) {
+			opacity: 1 !important;
+			transform: translate(50%, -50%) scale(1.25);
+		}
 	}
 
 	.camouflage {
