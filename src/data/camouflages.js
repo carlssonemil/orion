@@ -14,18 +14,18 @@ import tiger from './camouflages/tiger'
 import woodland from './camouflages/woodland'
 
 export default [
-	...classic,
-	...cliffside,
+	...sprayPaint,
+	...woodland,
 	...digital,
 	...dragon,
-	...foliage,
-	...fun,
 	...geometric,
-	...reptile,
+	...fun,
+	...foliage,
 	...skulls,
-	...solidColors,
-	...sprayPaint,
-	...stripes,
 	...tiger,
-	...woodland,
+	...stripes,
+	...reptile,
+	...solidColors,
+	...classic,
+	...cliffside,
 ]
