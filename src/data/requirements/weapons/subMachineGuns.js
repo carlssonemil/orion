@@ -84,11 +84,5 @@ export default {
 		...masteryChallenges,
 	},
 
-	'BAS-P': {
-		'TBA': geometric['TBA'],
-		'TBA2': tiger['TBA'],
-		'TBA3': tiger['TBA'],
-		'TBA4': classic['TBA'],
-		...masteryChallenges,
-	},
+	'BAS-P': {},
 }

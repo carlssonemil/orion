@@ -13,10 +13,13 @@ const base = [
 
 const dlc = ['BAS-P']
 
+const comingSoon = ['BAS-P']
+
 export default [...base, ...dlc].map((weapon) => ({
 	category: 'Sub Machine Guns',
 	name: weapon,
 	dlc: dlc.includes(weapon),
+	comingSoon: comingSoon.includes(weapon),
 	progress: {
 		...defaultSubmachineGunsProgress[weapon],
 		Gold: false,

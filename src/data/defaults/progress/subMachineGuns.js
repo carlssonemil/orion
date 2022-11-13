@@ -55,10 +55,5 @@ export default {
 		'2087': false,
 	},
 
-	'BAS-P': {
-		'TBA': false,
-		'TBA2': false,
-		'TBA3': false,
-		'TBA4': false,
-	},
+	'BAS-P': {},
 }

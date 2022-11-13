@@ -27,10 +27,5 @@ export default {
 		'Lichyard': false,
 	},
 
-	'Victus XMR': {
-		'TBA': false,
-		'TBA2': false,
-		'TBA3': false,
-		'TBA4': false,
-	},
+	'Victus XMR': {},
 }

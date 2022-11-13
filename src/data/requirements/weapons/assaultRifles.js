@@ -83,19 +83,7 @@ export default {
 		...masteryChallenges,
 	},
 
-	'M13B': {
-		'TBA': woodland['TBA'],
-		'TBA2': tiger['TBA'],
-		'TBA3': stripes['TBA'],
-		'TBA4': digital['TBA'],
-		...masteryChallenges,
-	},
+	'M13B': {},
 
-	'Chimera': {
-		'TBA': woodland['TBA'],
-		'TBA2': tiger['TBA'],
-		'TBA3': stripes['TBA'],
-		'TBA4': digital['TBA'],
-		...masteryChallenges,
-	},
+	'Chimera': {},
 }

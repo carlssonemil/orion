@@ -49,11 +49,5 @@ export default {
 		...masteryChallenges,
 	},
 	
-	'Victus XMR': {
-		'TBA': sprayPaint['TBA'],
-		'TBA2': foliage['TBA'],
-		'TBA3': foliage['TBA'],
-		'TBA4': skulls['TBA'],
-		...masteryChallenges,
-	},
+	'Victus XMR': {},
 }
