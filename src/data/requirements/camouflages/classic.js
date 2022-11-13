@@ -24,7 +24,7 @@ export default {
 		level: '23',
 		challenge: 'Get 25 one-shot kills',
 	},
-	'2087': {
+	'2087 ': {
 		weapon: 'Fennec 45',
 		level: '26',
 		challenge: 'Get 10 double kills',
