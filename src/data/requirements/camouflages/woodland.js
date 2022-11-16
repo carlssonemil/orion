@@ -94,4 +94,9 @@ export default {
 		level: '10',
 		challenge: 'Get 20 kills while mounted',
 	},
+	'Tangographical': {
+		weapon: 'Victus XMR',
+		level: '18',
+		challenge: 'Get 10 double kills',
+	},
 }

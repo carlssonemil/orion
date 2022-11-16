@@ -79,4 +79,14 @@ export default {
 		level: '9',
 		challenge: 'Get 2 kills within 10 seconds of each other 10 times',
 	},
+	'Tarnished': {
+		weapon: 'M13B',
+		level: '2',
+		challenge: 'Get 50 kills',
+	},
+	'Grass Snake': {
+		weapon: 'BAS-P',
+		level: '2',
+		challenge: 'Get 50 kills',
+	},
 }

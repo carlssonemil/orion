@@ -74,4 +74,9 @@ export default {
 		level: '10',
 		challenge: 'Get 50 kills while ADS',
 	},
+	'Burned Edges': {
+		weapon: 'Victus XMR',
+		level: '10',
+		challenge: 'Get 30 one-shot kills',
+	},
 }
