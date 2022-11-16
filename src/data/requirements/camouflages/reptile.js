@@ -37,7 +37,7 @@ export default {
 	'Dark Echo': {
 		weapon: 'X13 Auto',
 		level: '15',
-		challenge: 'Get 5 double kills',
+		challenge: 'Get 10 double kills',
 	},
 	'Toxicity': {
 		weapon: 'SA-B 50',
