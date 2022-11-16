@@ -211,7 +211,8 @@ export default {
 				.requirement {
 					display: block;
 					font-size: 14px;
-					margin-top: 15px;
+					line-height: 1.5;
+					margin-top: 10px;
 				}
 			}
 		}
