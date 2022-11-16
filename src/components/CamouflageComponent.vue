@@ -1,7 +1,7 @@
 <template>
 	<div :class="['camouflage-wrapper', { favorite: isFavorite }]">
 		<div
-			class="camouflage"
+			:class="['camouflage', `camouflage-layout-${layout}`]"
 			@click="handleToggleCompleted(camouflage)"
 			:content="requirementTooltip(camouflage)"
 			v-tippy="{ placement: 'bottom' }">
@@ -10,11 +10,12 @@
 					:src="imageUrl(camouflage.name)"
 					:alt="camouflage.name"
 					onerror="javascript:this.src='/base-gradient.svg'" />
-				<IconComponent class="complete" name="check" fill="#10ac84" />
-				<IconComponent class="remove" name="times" fill="#ee5253" />
-				<span>
-					{{ camouflage.name }}
-				</span>
+				<IconComponent class="complete" name="check" fill="#10ac84" size="30" />
+				<IconComponent class="remove" name="times" fill="#ee5253" size="30" />
+				<div class="info">
+					<span class="name">{{ camouflage.name }}</span>
+					<span class="requirement">{{ requirementTooltip(camouflage) }}</span>
+				</div>
 			</div>
 		</div>
 
@@ -51,7 +52,11 @@ export default {
 	},
 
 	computed: {
-		...mapState(useStore, ['camouflageRequirements']),
+		...mapState(useStore, ['camouflageRequirements', 'preferences']),
+
+		layout() {
+			return this.preferences.layout
+		},
 
 		isFavorite() {
 			return store.isFavorite('camouflages', this.camouflage.name)
@@ -134,6 +139,83 @@ export default {
 	.camouflage {
 		user-select: none;
 
+		&.camouflage-layout-grid > .inner {
+			flex-direction: column;
+			justify-content: center;
+
+			&.completed > .info {
+				opacity: 0.5;
+			}
+
+			img {
+				height: 80px;
+				object-fit: cover;
+				position: relative;
+				width: 100%;
+				z-index: 1;
+			}
+
+			.icon-component {
+				left: 50%;
+				opacity: 0;
+				position: absolute;
+				transform: translate(-50%, -50%);
+				transition: $transition;
+				top: 35%;
+				z-index: 2;
+			}
+
+			.info {
+				padding: 8px;
+
+				.name {
+					font-size: 14px;
+				}
+			}
+		}
+
+		&.camouflage-layout-list > .inner {
+			$image-size: 100px;
+			background: $elevation-1-color;
+			flex-direction: row;
+
+			&.completed > .info {
+				opacity: 0.5;
+			}
+
+			img {
+				height: $image-size;
+				position: relative;
+				width: $image-size;
+				z-index: 1;
+			}
+
+			.icon-component {
+				left: calc($image-size / 2);
+				opacity: 0;
+				position: absolute;
+				transform: translate(-50%, -50%);
+				transition: $transition;
+				top: 50%;
+				z-index: 2;
+			}
+
+			.info {
+				padding: 0 20px;
+				text-align: left;
+
+				.name {
+					font-weight: 500;
+				}
+
+				.requirement {
+					display: block;
+					font-size: 14px;
+					margin-top: 15px;
+				}
+			}
+		}
+
 		.inner {
 			align-items: center;
 			background: $elevation-2-color;
@@ -141,16 +223,10 @@ export default {
 			cursor: pointer;
 			display: flex;
 			height: 100%;
-			justify-content: center;
 			overflow: hidden;
 			position: relative;
 			transition: $transition;
 			width: 100%;
-			flex-direction: column;
-
-			span {
-				padding: 10px;
-			}
 
 			&:hover {
 				@media (min-width: $tablet) {
@@ -208,22 +284,12 @@ export default {
 				}
 			}
 
-			.icon-component {
-				left: 50%;
-				opacity: 0;
-				position: absolute;
-				transform: translate(-50%, -50%);
-				transition: $transition;
-				top: 35%;
-				z-index: 2;
-			}
+			.info {
+				transition: opacity $transition;
 
-			img {
-				height: 80px;
-				object-fit: cover;
-				position: relative;
-				width: 100%;
-				z-index: 1;
+				.requirement {
+					display: none;
+				}
 			}
 
 			p {

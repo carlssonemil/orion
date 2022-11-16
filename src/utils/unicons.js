@@ -2,6 +2,7 @@
 
 import {
 	uniAngleDown,
+	uniAppsSolid,
 	uniArrowDown,
 	uniArrowLeft,
 	uniArrowRight,
@@ -21,6 +22,7 @@ import {
 	uniFilterSlash,
 	uniImageSlash,
 	uniInfoCircle,
+	uniListUl,
 	uniMobileAndroid,
 	uniQuestionCircle,
 	uniSave,
@@ -31,6 +33,7 @@ import {
 
 export default [
 	uniAngleDown,
+	uniAppsSolid,
 	uniArrowDown,
 	uniArrowLeft,
 	uniArrowRight,
@@ -50,6 +53,7 @@ export default [
 	uniFilterSlash,
 	uniImageSlash,
 	uniInfoCircle,
+	uniListUl,
 	uniMobileAndroid,
 	uniQuestionCircle,
 	uniSave,

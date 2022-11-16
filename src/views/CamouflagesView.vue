@@ -1,6 +1,9 @@
 <template>
 	<div class="container">
-		<FiltersComponent :options="filterOptions" />
+		<div style="display: flex; align-items: center">
+			<FiltersComponent :options="filterOptions" />
+			<LayoutToggleComponent />
+		</div>
 		<CamouflagesComponent :camouflages="filteredCamouflages" :favorites="favorites" />
 		<ProgressComponent />
 	</div>
@@ -14,6 +17,7 @@ import camouflages from '../data/camouflages'
 
 import CamouflagesComponent from '@/components/CamouflagesComponent.vue'
 import FiltersComponent from '@/components/FiltersComponent.vue'
+import LayoutToggleComponent from '@/components/LayoutToggleComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
 
 const store = useStore()
@@ -22,6 +26,7 @@ export default {
 	components: {
 		CamouflagesComponent,
 		FiltersComponent,
+		LayoutToggleComponent,
 		ProgressComponent,
 	},
 
@@ -99,5 +104,10 @@ h1 {
 h2 {
 	margin: 30px auto 0;
 	max-width: 450px;
+}
+
+::v-deep .filters-component {
+	flex-grow: 1;
+	margin-right: 25px;
 }
 </style>
