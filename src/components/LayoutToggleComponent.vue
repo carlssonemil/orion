@@ -1,9 +1,9 @@
 <template>
-	<div class="layout-toggle" @click="toggleLayout()" v-tippy="{ content: 'Layout' }">
+	<button class="layout-toggle" @click="toggleLayout()" v-tippy="{ content: 'Toggle layout' }">
 		<IconComponent v-if="layout === 'grid'" name="apps" iconStyle="solid" size="18" />
 		<IconComponent v-else name="list-ul" size="18" />
 		<span>{{ layoutLabel }}</span>
-	</div>
+	</button>
 </template>
 
 <script>
@@ -60,7 +60,7 @@ export default {
 	}
 
 	@media (max-width: $tablet) {
-		margin: 20px 0 25px;
+		margin: 0 0 25px;
 		padding: 15px 0;
 		width: 100%;
 

@@ -115,7 +115,8 @@ h2 {
 		flex-direction: column;
 
 		::v-deep .filters-component {
-			margin: 0;
+			margin-bottom: 20px;
+			margin-right: 0;
 			width: 100%;
 		}
 	}
@@ -123,6 +124,6 @@ h2 {
 
 ::v-deep .filters-component {
 	flex-grow: 1;
-	margin-right: 25px;
+	margin-right: 15px;
 }
 </style>

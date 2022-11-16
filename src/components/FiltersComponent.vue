@@ -1,11 +1,5 @@
 <template>
 	<div class="filters-component">
-		<button @click="toggleFilters()" id="toggle-filter-button">
-			<IconComponent v-if="filters.hideFilters" name="filter" />
-			<IconComponent v-else name="filter-slash" />
-			<span>{{ filters.hideFilters ? 'Show' : 'Hide' }} filters</span>
-		</button>
-
 		<transition name="fade">
 			<div v-if="!filters.hideFilters" class="filters">
 				<FilterComponent
@@ -36,19 +30,14 @@
 			</div>
 		</transition>
 
-		<div id="toggle-filter-icon">
-			<IconComponent
-				@click="toggleFilters()"
-				v-if="filters.hideFilters"
-				name="filter"
-				class="show-icon"
-				v-tippy="{ content: 'Show filters' }" />
-			<IconComponent
-				@click="toggleFilters()"
-				v-else
-				name="filter-slash"
-				v-tippy="{ content: 'Hide filters' }" />
-		</div>
+		<button
+			@click="toggleFilters()"
+			id="toggle-filter-button"
+			v-tippy="{ content: `${filters.hideFilters ? 'Show' : 'Hide'} filters` }">
+			<IconComponent v-if="filters.hideFilters" name="filter" />
+			<IconComponent v-else name="filter-slash" />
+			<span>{{ filters.hideFilters ? 'Show' : 'Hide' }} filters</span>
+		</button>
 	</div>
 </template>
 
@@ -103,7 +92,7 @@ export default {
 	margin: 50px 0;
 
 	@media (max-width: $tablet) {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		margin-top: 0;
 	}
 
@@ -178,47 +167,38 @@ export default {
 
 button#toggle-filter-button {
 	align-items: center;
-	background: $elevation-3-color;
-	color: white;
+	background: $elevation-2-color;
+	border: 2px solid $elevation-4-color;
+	border-radius: $border-radius;
+	color: rgba($text-color, 0.75);
 	display: inline-flex;
-	font-size: 18px;
-	padding: 16px;
+	font-size: 16px;
+	justify-content: center;
+	padding: 15px;
 	width: 100%;
 
 	@media (min-width: $tablet) {
-		display: none;
+		margin-left: auto;
+		padding: 3px 5px;
+		width: auto;
 	}
 
 	.icon-component {
-		margin-right: 15px;
-		opacity: 0.3;
+		margin-right: 5px;
+		opacity: 0.75;
+		width: 18px;
 
-		&.hide-icon {
-			position: relative;
-			top: -7px;
+		@media (min-width: $tablet) {
+			margin-right: 0;
 		}
 	}
-}
 
-div#toggle-filter-icon {
-	cursor: pointer;
-	display: none;
-	margin-left: auto;
-	opacity: 0.5;
-	transition: $transition;
-
-	@media (min-width: $tablet) {
+	span {
 		display: block;
-	}
 
-	&:hover {
-		opacity: 0.75;
-	}
-
-	.show-icon {
-		left: 1px;
-		position: relative;
-		top: 3px;
+		@media (min-width: $tablet) {
+			display: none;
+		}
 	}
 }
 </style>
