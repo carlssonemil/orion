@@ -83,7 +83,7 @@ export default {
 		},
 
 		completed() {
-			return Object.values(this.camouflages).every(Boolean)
+			return Object.values(this.weapon.progress).every(Boolean)
 		},
 
 		goldCompleted() {
