@@ -27,5 +27,10 @@ export default {
 		'Lichyard': false,
 	},
 
-	'Victus XMR': {},
+	'Victus XMR': {
+		'Snowy Nights': false,
+		'Burned Edges': false,
+		'Tangographical': false,
+		'Coral Reef': false,
+	},
 }

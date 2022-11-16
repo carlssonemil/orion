@@ -119,4 +119,9 @@ export default {
 		level: '6',
 		challenge: 'Get 50 kills while ADS',
 	},
+	'Bark Digital': {
+		weapon: 'BAS-P',
+		level: '7',
+		challenge: 'Get 15 hipfire kills',
+	},
 }

@@ -3,6 +3,7 @@ import {
 	cliffside,
 	digital,
 	dragon,
+	foliage,
 	fun,
 	geometric,
 	reptile,
@@ -84,5 +85,11 @@ export default {
 		...masteryChallenges,
 	},
 
-	'BAS-P': {},
+	'BAS-P': {
+		'Grass Snake': sprayPaint['Grass Snake'],
+		'Bark Digital': digital['Bark Digital'],
+		'Urban Dusk': foliage['Urban Dusk'],
+		'Dark Violet': fun['Dark Violet'],
+		...masteryChallenges,
+	},
 }

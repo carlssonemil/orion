@@ -74,4 +74,14 @@ export default {
 		level: '9',
 		challenge: 'Get 10 double kills',
 	},
+	'Ice Cave': {
+		weapon: 'M13B',
+		level: '19',
+		challenge: 'Get 15 kills from behind',
+	},
+	'Snowy Nights': {
+		weapon: 'Victus XMR',
+		level: '2',
+		challenge: 'Get 50 kills',
+	},
 }

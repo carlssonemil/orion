@@ -49,4 +49,9 @@ export default {
 		level: '15',
 		challenge: 'Get 25 one-shot kills',
 	},
+	'Urban Dusk': {
+		weapon: 'BAS-P',
+		level: '11',
+		challenge: 'Get 15 kills from behind',
+	},
 }

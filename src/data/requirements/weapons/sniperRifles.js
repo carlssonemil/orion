@@ -4,10 +4,12 @@ import {
 	dragon,
 	foliage,
 	fun,
+	reptile,
 	skulls,
 	solidColors,
 	sprayPaint,
 	tiger,
+	woodland,
 } from '../camo/_index'
 
 const masteryChallenges = {
@@ -49,5 +51,11 @@ export default {
 		...masteryChallenges,
 	},
 	
-	'Victus XMR': {},
+	'Victus XMR': {
+		'Snowy Nights': reptile['Snowy Nights'],
+		'Burned Edges': dragon['Burned Edges'],
+		'Tangographical': woodland['Tangographical'],
+		'Coral Reef': fun['Coral Reef'],
+		...masteryChallenges,
+	},
 }

@@ -55,5 +55,10 @@ export default {
 		'2087': false,
 	},
 
-	'BAS-P': {},
+	'BAS-P': {
+		'Grass Snake': false,
+		'Bark Digital': false,
+		'Urban Dusk': false,
+		'Dark Violet': false,
+	},
 }
