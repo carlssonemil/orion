@@ -147,9 +147,9 @@ export default {
 		}
 
 		.camouflages {
+			display: grid;
+			gap: 30px;
 			&.layout-grid {
-				display: grid;
-				gap: 30px;
 				grid-template-columns: repeat(5, 1fr);
 
 				@media (max-width: $tablet) {
@@ -158,9 +158,11 @@ export default {
 			}
 
 			&.layout-list {
-				display: flex;
-				flex-direction: column;
-				gap: 30px;
+				grid-template-columns: repeat(2, 1fr);
+
+				@media (max-width: $tablet) {
+					grid-template-columns: 1fr;
+				}
 			}
 		}
 	}
