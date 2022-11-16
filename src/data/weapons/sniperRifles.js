@@ -4,7 +4,7 @@ const base = ['MCPR-300', 'Signal 50', 'LA-B 330', 'SP-X 80']
 
 const dlc = ['Victus XMR']
 
-const comingSoon = ['Victus XMR']
+const comingSoon = []
 
 export default [...base, ...dlc].map((weapon) => ({
 	category: 'Sniper Rifles',

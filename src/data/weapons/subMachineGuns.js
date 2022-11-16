@@ -13,7 +13,7 @@ const base = [
 
 const dlc = ['BAS-P']
 
-const comingSoon = ['BAS-P']
+const comingSoon = []
 
 export default [...base, ...dlc].map((weapon) => ({
 	category: 'Sub Machine Guns',
