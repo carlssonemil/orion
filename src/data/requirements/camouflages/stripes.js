@@ -69,4 +69,9 @@ export default {
 		level: '13',
 		challenge: 'Get 20 kills while mounted',
 	},
+	'Field Ops': {
+		weapon: 'M13B',
+		level: '9',
+		challenge: 'Get 10 double kills',
+	},
 }

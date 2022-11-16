@@ -34,4 +34,19 @@ export default {
 		level: '18',
 		challenge: 'Get 15 kills while mounted',
 	},
+	'Projectile': {
+		weapon: 'M13B',
+		level: '15',
+		challenge: 'Get 15 point blank kills',
+	},
+	'Dark Violet': {
+		weapon: 'BAS-P',
+		level: '16',
+		challenge: 'Get 50 kills using a suppressor',
+	},
+	'Coral Reef': {
+		weapon: 'Victus XMR',
+		level: '26',
+		challenge: 'Get 30 kills while crouched',
+	},
 }

@@ -26,4 +26,11 @@ export default {
 		'Aspen': false,
 		'Lichyard': false,
 	},
+
+	'Victus XMR': {
+		'Snowy Nights': false,
+		'Burned Edges': false,
+		'Tangographical': false,
+		'Coral Reef': false,
+	},
 }

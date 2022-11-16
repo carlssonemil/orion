@@ -3,7 +3,9 @@ import {
 	cliffside,
 	digital,
 	dragon,
+	fun,
 	geometric,
+	reptile,
 	skulls,
 	solidColors,
 	sprayPaint,
@@ -82,4 +84,14 @@ export default {
 		'Petri Digital': digital['Petri Digital'],
 		...masteryChallenges,
 	},
+
+	'M13B': {
+		'Tarnished': sprayPaint['Tarnished'],
+		'Field Ops': stripes['Field Ops'],
+		'Projectile': fun['Projectile'],
+		'Ice Cave': reptile['Ice Cave'],
+		...masteryChallenges
+	},
+
+	'Chimera': {},
 }

@@ -54,4 +54,13 @@ export default {
 		'Savannah': false,
 		'Petri Digital': false,
 	},
+
+	'M13B': {
+		'Tarnished': false,
+		'Field Ops': false,
+		'Projectile': false,
+		'Ice Cave': false,
+	},
+
+	'Chimera': {},
 }
