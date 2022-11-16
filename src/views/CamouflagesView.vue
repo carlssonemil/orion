@@ -1,6 +1,6 @@
 <template>
 	<div class="container">
-		<div style="display: flex; align-items: center">
+		<div class="filter-container">
 			<FiltersComponent :options="filterOptions" />
 			<LayoutToggleComponent />
 		</div>
@@ -104,6 +104,21 @@ h1 {
 h2 {
 	margin: 30px auto 0;
 	max-width: 450px;
+}
+
+.filter-container {
+	align-items: center;
+	display: flex;
+	width: 100%;
+
+	@media (max-width: $tablet) {
+		flex-direction: column;
+
+		::v-deep .filters-component {
+			margin: 0;
+			width: 100%;
+		}
+	}
 }
 
 ::v-deep .filters-component {

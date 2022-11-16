@@ -59,6 +59,16 @@ export default {
 		background: $elevation-3-color;
 	}
 
+	@media (max-width: $tablet) {
+		margin: 20px 0 25px;
+		padding: 15px 0;
+		width: 100%;
+
+		span {
+			font-size: 16px !important;
+		}
+	}
+
 	.icon-component {
 		margin-right: 5px;
 		opacity: 0.75;
