@@ -1,5 +1,5 @@
 <template>
-	<div class="weapon">
+	<div :class="['weapon', { 'coming-soon': weapon.comingSoon }]">
 		<div
 			:class="[
 				'name',
@@ -15,6 +15,7 @@
 		</div>
 
 		<div
+			v-if="!weapon.comingSoon"
 			class="progress"
 			:style="{
 				'grid-template-columns': `repeat(${Object.keys(camouflages).length}, 1fr)`,
@@ -111,6 +112,28 @@ export default {
 <style lang="scss" scoped>
 .weapon {
 	position: relative;
+
+	&.coming-soon {
+		&::before {
+			background: $blue;
+			border: 3px solid $background-color;
+			border-radius: 100px;
+			bottom: 0;
+			content: 'Coming Soon';
+			font-size: 10px;
+			font-weight: 500;
+			left: 50%;
+			padding: 4px 6px;
+			position: absolute;
+			transform: translate(-50%, -75%);
+			z-index: 2;
+		}
+
+		.name {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+	}
 
 	.name {
 		$padding: 25px;
