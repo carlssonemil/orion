@@ -1,6 +1,7 @@
 <template>
 	<div class="container">
-		<CamouflagesComponent :camouflages="camouflages" />
+		<FiltersComponent :options="filterOptions" />
+		<CamouflagesComponent :camouflages="filteredCamouflages" :favorites="favorites" />
 		<ProgressComponent />
 	</div>
 </template>
@@ -9,42 +10,78 @@
 import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
 import { groupBy } from '@/utils/utils'
-import allCamos from '../data/camos'
+import camouflages from '../data/camouflages'
 
 import CamouflagesComponent from '@/components/CamouflagesComponent.vue'
+import FiltersComponent from '@/components/FiltersComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
+
+const store = useStore()
 
 export default {
 	components: {
 		CamouflagesComponent,
+		FiltersComponent,
 		ProgressComponent,
 	},
 
 	computed: {
 		...mapState(useStore, ['camouflageRequirements', 'weapons', 'filters']),
 
+		filterOptions() {
+			return [
+				{
+					label: 'Category',
+					key: 'camouflageCategory',
+					type: 'select',
+					options: this.camouflageCategories,
+				},
+				{
+					label: 'Hide Completed',
+					key: 'hideCompletedCamouflages',
+					type: 'checkbox',
+				},
+			]
+		},
+
+		camouflageCategories() {
+			return Array.from(new Set(camouflages.map((camouflage) => camouflage.category)))
+		},
+
 		camouflages() {
-			let allCamoProgress = this.weapons.map((item) => item.progress)
-			//Can filter by % mastery here
+			const camouflageProgress = this.weapons
+				.map((weapon) => weapon.progress)
+				.flat()
+				.reduce((a, b) => ({ ...a, ...b }), {})
 
-			// Flattens the object array
-			allCamoProgress = allCamoProgress.reduce(function (acc, x) {
-				for (var key in x) acc[key] = x[key]
-				return acc
-			}, {})
-
-			var allCamoCategories = Object.keys(this.camouflageRequirements)
-			var filteredCamos = allCamos.filter(
-				(camouflage) =>
-					allCamoCategories.some((s) => s == camouflage.category) &&
-					Object.keys(allCamoProgress).some((s) => s == camouflage.name)
-			)
-			filteredCamos = filteredCamos.map((camouflage) => {
-				camouflage.isCompleted = allCamoProgress[camouflage.name] ?? false
-				return camouflage
+			camouflages.forEach((camouflage) => {
+				camouflage.isCompleted = camouflageProgress[camouflage.name] || false
 			})
 
-			return groupBy(filteredCamos, (camouflage) => camouflage.category)
+			return camouflages
+		},
+
+		filteredCamouflages() {
+			const { camouflageCategory, hideCompletedCamouflages } = this.filters
+
+			let filteredCamouflages = this.camouflages
+
+			if (camouflageCategory) {
+				filteredCamouflages = filteredCamouflages.filter(
+					(camouflage) => camouflage.category === camouflageCategory
+				)
+			}
+
+			if (hideCompletedCamouflages) {
+				filteredCamouflages = filteredCamouflages.filter((camouflage) => !camouflage.isCompleted)
+			}
+
+			return groupBy(filteredCamouflages, (camouflage) => camouflage.category)
+		},
+
+		favorites() {
+			const favorites = store.getFavorites('camouflages')
+			return camouflages.filter((camouflage) => favorites.includes(camouflage.name))
 		},
 	},
 }

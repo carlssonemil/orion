@@ -1,6 +1,6 @@
 <template>
 	<div :class="['alert', type]">
-		<IconComponent :name="icon || typeIcon" />
+		<IconComponent v-if="icon || typeIcon" :name="icon || typeIcon" />
 		<div class="content">
 			<slot />
 		</div>
@@ -66,12 +66,25 @@ export default {
 		}
 	}
 
-	.icon-component {
+	&.empty-state {
+		.content {
+			color: rgba(white, 0.5);
+			text-align: center;
+		}
+	}
+
+	> .icon-component {
 		margin-right: 10px;
 	}
 
 	.content {
 		line-height: 1.6;
+		width: 100%;
+
+		> .icon-component {
+			position: relative;
+			top: 3px;
+		}
 	}
 }
 </style>

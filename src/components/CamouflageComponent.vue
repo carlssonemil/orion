@@ -1,20 +1,31 @@
 <template>
-	<div
-		class="camouflage"
-		@click="handleToggleCompleted(camouflage)"
-		:content="requirementTooltip(camouflage)"
-		v-tippy="{ placement: 'bottom' }">
-		<div :class="['inner', this.isCompleted ? 'completed' : '']">
-			<img
-				:src="imageUrl(camouflage.name)"
-				:alt="camouflage.name"
-				onerror="javascript:this.src='/base-gradient.svg'" />
-			<IconComponent class="complete" name="check" fill="#10ac84" />
-			<IconComponent class="remove" name="times" fill="#ee5253" />
-			<span>
-				{{ camouflage.name }}
-			</span>
+	<div :class="['camouflage-wrapper', { favorite: isFavorite }]">
+		<div
+			class="camouflage"
+			@click="handleToggleCompleted(camouflage)"
+			:content="requirementTooltip(camouflage)"
+			v-tippy="{ placement: 'bottom' }">
+			<div :class="['inner', this.isCompleted ? 'completed' : '']">
+				<img
+					:src="imageUrl(camouflage.name)"
+					:alt="camouflage.name"
+					onerror="javascript:this.src='/base-gradient.svg'" />
+				<IconComponent class="complete" name="check" fill="#10ac84" />
+				<IconComponent class="remove" name="times" fill="#ee5253" />
+				<span>
+					{{ camouflage.name }}
+				</span>
+			</div>
 		</div>
+
+		<IconComponent
+			class="favorite-icon"
+			name="star"
+			:fill="isFavorite ? '#feca57' : 'gray'"
+			icon-style="solid"
+			size="25"
+			@click="toggleFavorite({ type: 'camouflages', name: camouflage.name })"
+			v-tippy="{ content: `${isFavorite ? 'Remove from' : 'Add to'} favorites` }" />
 	</div>
 </template>
 
@@ -23,25 +34,37 @@ import { useStore } from '@/stores/store'
 import { convertToKebabCase } from '@/utils/utils'
 import { mapActions, mapState } from 'pinia'
 
+const store = useStore()
+
 export default {
 	data() {
 		return {
 			isCompleted: this.camouflage.isCompleted,
 		}
 	},
+
 	props: {
 		camouflage: {
 			type: Object,
 			required: true,
 		},
 	},
+
 	computed: {
 		...mapState(useStore, ['camouflageRequirements']),
+
+		isFavorite() {
+			return store.isFavorite('camouflages', this.camouflage.name)
+		},
 	},
 
 	methods: {
 		convertToKebabCase,
-		...mapActions(useStore, ['toggleCamouflageCompleted', 'toggleGoldCamouflageCompleted']),
+		...mapActions(useStore, [
+			'toggleCamouflageCompleted',
+			'toggleGoldCamouflageCompleted',
+			'toggleFavorite',
+		]),
 
 		imageUrl(camouflageName) {
 			if (camouflageName === 'Gold') {
@@ -52,7 +75,10 @@ export default {
 				return new URL('/polyatomic-gradient.svg', import.meta.url)
 			}
 
-			return new URL(`../assets/camouflages/${convertToKebabCase(camouflageName)}.png`, import.meta.url)
+			return new URL(
+				`../assets/camouflages/${convertToKebabCase(camouflageName)}.png`,
+				import.meta.url
+			)
 		},
 
 		requirementTooltip(camouflage) {
@@ -67,6 +93,7 @@ export default {
 			this.toggleCamouflageCompleted(weaponName, camouflage.name, this.isCompleted)
 			this.toggleIsCompleted()
 		},
+
 		toggleIsCompleted() {
 			this.isCompleted = !this.isCompleted
 		},
@@ -75,103 +102,133 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.camouflage {
-	user-select: none;
+.camouflage-wrapper {
+	position: relative;
 
-	.inner {
-		align-items: center;
-		background: $elevation-2-color;
-		border-radius: $border-radius;
+	&.favorite .favorite-icon {
+		opacity: 1 !important;
+	}
+
+	&:hover {
+		.favorite-icon {
+			opacity: 1;
+		}
+	}
+
+	.favorite-icon {
 		cursor: pointer;
-		display: flex;
-		height: 100%;
-		justify-content: center;
-		overflow: hidden;
-		position: relative;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
 		transition: $transition;
-		width: 100%;
-		flex-direction: column;
+		transform: translate(50%, -50%);
+		z-index: 2;
 
-		span {
-			padding: 10px;
+		@media (max-width: $tablet) {
+			opacity: 1 !important;
+			transform: translate(50%, -50%) scale(1.25);
 		}
+	}
 
-		&:hover {
-			@media (min-width: $tablet) {
-				img,
-				p {
-					opacity: 0.25;
-				}
+	.camouflage {
+		user-select: none;
 
-				.icon-component.complete {
-					opacity: 1;
-				}
+		.inner {
+			align-items: center;
+			background: $elevation-2-color;
+			border-radius: $border-radius;
+			cursor: pointer;
+			display: flex;
+			height: 100%;
+			justify-content: center;
+			overflow: hidden;
+			position: relative;
+			transition: $transition;
+			width: 100%;
+			flex-direction: column;
+
+			span {
+				padding: 10px;
 			}
-		}
 
-		&.completed {
 			&:hover {
 				@media (min-width: $tablet) {
-					.icon-component.complete {
-						opacity: 0;
+					img,
+					p {
+						opacity: 0.25;
 					}
-					.icon-component.remove {
+
+					.icon-component.complete {
 						opacity: 1;
 					}
 				}
 			}
 
-			img,
-			p {
-				opacity: 0.25;
-			}
-
-			.icon-component {
-				&.complete {
-					opacity: 1;
+			&.completed {
+				&:hover {
+					@media (min-width: $tablet) {
+						.icon-component.complete {
+							opacity: 0;
+						}
+						.icon-component.remove {
+							opacity: 1;
+						}
+					}
 				}
 
-				&.remove {
-					opacity: 0;
-				}
-			}
-		}
-
-		&.disabled {
-			cursor: not-allowed;
-
-			&:hover {
 				img,
 				p {
-					opacity: 1;
+					opacity: 0.25;
 				}
 
 				.icon-component {
-					opacity: 0;
+					&.complete {
+						opacity: 1;
+					}
+
+					&.remove {
+						opacity: 0;
+					}
 				}
 			}
-		}
 
-		.icon-component {
-			left: 50%;
-			opacity: 0;
-			position: absolute;
-			transform: translate(-50%, -50%);
-			transition: $transition;
-			top: 35%;
-			z-index: 2;
-		}
+			&.disabled {
+				cursor: not-allowed;
 
-		img {
-			height: 80px;
-			object-fit: cover;
-			position: relative;
-			width: 100%;
-			z-index: 1;
-		}
+				&:hover {
+					img,
+					p {
+						opacity: 1;
+					}
 
-		p {
-			font-size: 14px;
+					.icon-component {
+						opacity: 0;
+					}
+				}
+			}
+
+			.icon-component {
+				left: 50%;
+				opacity: 0;
+				position: absolute;
+				transform: translate(-50%, -50%);
+				transition: $transition;
+				top: 35%;
+				z-index: 2;
+			}
+
+			img {
+				height: 80px;
+				object-fit: cover;
+				position: relative;
+				width: 100%;
+				z-index: 1;
+			}
+
+			p {
+				font-size: 14px;
+			}
 		}
 	}
 }

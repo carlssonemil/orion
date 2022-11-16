@@ -1,4 +1,4 @@
-import { solidColors, stripes } from '../camo/_index'
+import { solidColors, stripes } from '../camouflages/_index'
 
 const masteryChallenges = {
 	Gold: 'Get 2 kills without dying 10 times',

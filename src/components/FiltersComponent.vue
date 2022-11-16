@@ -8,63 +8,14 @@
 
 		<transition name="fade">
 			<div v-if="!filters.hideFilters" class="filters">
-				<div class="select">
-					<label for="category">Category</label>
-					<select id="category" v-model="filters.category" @change="updateFilters(filters)">
-						<option value="null">All</option>
-						<option v-for="(category, index) in categories" :key="index" :value="category">
-							{{ category }}
-						</option>
-					</select>
-					<IconComponent name="angle-down" />
-				</div>
+				<FilterComponent
+					v-for="filter in options"
+					:key="filter.key"
+					:filter="filter"
+					v-model="filters[filter.key]"
+					@change="updateFilters(filters)" />
 
-				<div class="checkbox">
-					<label for="hideGold" :class="{ checked: filters.hideGold }">
-						<input
-							id="hideGold"
-							type="checkbox"
-							v-model="filters.hideGold"
-							@change="updateFilters(filters)" />
-						<span>Hide Gold</span>
-					</label>
-				</div>
-
-				<div class="checkbox">
-					<label for="hidePlatinum" :class="{ checked: filters.hidePlatinum }">
-						<input
-							id="hidePlatinum"
-							type="checkbox"
-							v-model="filters.hidePlatinum"
-							@change="updateFilters(filters)" />
-						<span>Hide Platinum</span>
-					</label>
-				</div>
-
-				<div class="checkbox">
-					<label for="hidePolyatomic" :class="{ checked: filters.hidePolyatomic }">
-						<input
-							id="hidePolyatomic"
-							type="checkbox"
-							v-model="filters.hidePolyatomic"
-							@change="updateFilters(filters)" />
-						<span>Hide Polyatomic</span>
-					</label>
-				</div>
-
-				<!-- TODO: Add this once the first DLC weapons are released -->
-				<!--<div class="checkbox">
-				<label for="hideNonRequired" :class="{ checked: filters.hideNonRequired }">
-						<input
-							id="hideNonRequired"
-							type="checkbox"
-							v-model="filters.hideNonRequired"
-							@change="updateFilters(filters)" />
-						<span>Hide non required</span>
-					</label>
-				</div>-->
-
-				<div class="info">
+				<div class="info" v-if="showInfo">
 					<IconComponent
 						name="question-circle"
 						fill="white"
@@ -75,9 +26,9 @@
 						<IconComponent name="question-circle" fill="white"></IconComponent>
 						<p>
 							You only need to complete the number of base guns there are for each category to earn
-							the Platinum camouflage challenge. For example, the Assault Rifles requires a total of 8 Gold
-							camouflages to unlock the Platinum camouflage challenge for all weapons in that category. Read
-							more
+							the Platinum camouflage challenge. For example, the Assault Rifles requires a total of
+							8 Gold camouflages to unlock the Platinum camouflage challenge for all weapons in that
+							category. Read more
 							<router-link to="/requirements">here</router-link>.
 						</p>
 					</div>
@@ -104,15 +55,28 @@
 <script>
 import { mapState, mapActions } from 'pinia'
 import { useStore } from '@/stores/store'
-import IconComponent from '@/components/IconComponent.vue'
+
+import FilterComponent from '@/components/FilterComponent.vue'
 
 export default {
 	components: {
-		IconComponent,
+		FilterComponent,
+	},
+
+	props: {
+		options: {
+			type: Array,
+			required: true,
+		},
+
+		showInfo: {
+			type: Boolean,
+			default: false,
+		},
 	},
 
 	computed: {
-		...mapState(useStore, ['filters', 'categories']),
+		...mapState(useStore, ['filters']),
 	},
 
 	methods: {
@@ -149,28 +113,14 @@ export default {
 		flex-grow: 1;
 
 		@media (max-width: $tablet) {
-			padding-top: 50px;
-		}
-
-		> div:not(:first-child):not(.info) {
-			margin-left: 30px;
-
-			@media (max-width: $tablet) {
-				margin-left: 0;
-				margin-top: 20px;
-			}
-		}
-
-		> div:nth-last-of-type(2) {
-			flex: 1 1 auto;
-		}
-
-		@media (max-width: $tablet) {
 			flex-direction: column;
+			padding-top: 50px;
+			width: 100%;
 		}
 
 		.info {
 			cursor: pointer;
+			margin-left: auto;
 			margin-right: 25px;
 			transition: $transition;
 
