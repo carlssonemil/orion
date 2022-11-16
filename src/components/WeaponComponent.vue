@@ -21,18 +21,18 @@
 				'grid-template-columns': `repeat(${Object.keys(camouflages).length}, 1fr)`,
 			}">
 			<div
-				v-for="(completed, camouflage) in camouflages"
-				:key="camouflage"
+				v-for="camouflage in camouflages"
+				:key="camouflage.name"
 				:class="['camouflage']"
-				@click="toggleCamouflageCompleted(weapon.name, camouflage, completed)"
-				:content="requirementTooltip(weapon, camouflage)"
+				@click="toggleCamouflageCompleted(weapon.name, camouflage.name, camouflage.completed)"
+				:content="requirementTooltip(weapon, camouflage.name)"
 				v-tippy="{ placement: 'bottom' }">
-				<div :class="['inner', { completed }]">
+				<div :class="['inner', { completed: camouflage.completed }]">
 					<IconComponent class="complete" name="check" fill="#10ac84" />
 					<IconComponent class="remove" name="times" fill="#ee5253" />
 					<img
-						:src="imageUrl(camouflage)"
-						:alt="camouflage"
+						:src="imageUrl(camouflage.name)"
+						:alt="camouflage.name"
 						onerror="javascript:this.src='/base-gradient.svg'" />
 				</div>
 			</div>
@@ -62,7 +62,24 @@ export default {
 		...mapState(useStore, ['weaponRequirements']),
 
 		camouflages() {
-			return this.weapon.progress
+			// This is a bit of a hack to get the camouflages to be in the correct order
+			// TODO: Find a better way to do this
+			const requirements = this.weaponRequirements[this.weapon.category][this.weapon.name]
+			const progress = this.weapon.progress
+			const camouflages = Object.keys(progress)
+				.map((camouflage) => {
+					const completed = progress[camouflage]
+					const requirement = requirements[camouflage]
+
+					return {
+						name: camouflage,
+						completed,
+						level: requirement?.level || 100,
+					}
+				})
+				.sort((a, b) => a.level - b.level)
+
+			return camouflages
 		},
 
 		completed() {
