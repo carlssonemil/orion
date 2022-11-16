@@ -1,5 +1,5 @@
 <template>
-	<div class="filters-container">
+	<div class="filters-component">
 		<button @click="toggleFilters()" id="toggle-filter-button">
 			<IconComponent v-if="filters.hideFilters" name="filter" />
 			<IconComponent v-else name="filter-slash" />
@@ -97,7 +97,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.filters-container {
+.filters-component {
 	align-items: center;
 	display: flex;
 	margin: 50px 0;
