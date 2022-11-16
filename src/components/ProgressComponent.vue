@@ -58,21 +58,41 @@ export default {
 		orionProgress() {
 			const progress = {}
 
+			// Loop over each weapon category
 			this.weaponCategories.forEach((category) => {
 				const categoryWeapons = this.weapons.filter((weapon) => weapon.category === category)
 
-				const required = categoryWeapons.filter((weapon) => !weapon.dlc).length * 3
+				// Set the number of camouflages for each weapon category
+				const camouflageMultiplier = ['Melee', 'Launchers'].includes(category) ? 4 : 7
 
-				const goldCompleted = categoryWeapons.filter((weapon) => weapon.progress['Gold']).length
-				const platinumCompleted = categoryWeapons.filter(
-					(weapon) => weapon.progress['Platinum']
-				).length
-				const polyatomicCompleted = categoryWeapons.filter(
-					(weapon) => weapon.progress['Polyatomic']
-				).length
+				// Set the amount of required weapons to complete the Orion camouflage
+				const requiredWeapons = categoryWeapons.filter((weapon) => !weapon.dlc).length
 
-				const completed = goldCompleted + platinumCompleted + polyatomicCompleted
-				progress[category] = completed / required > 1 ? 1 : completed / required
+				// Set the amount of required camouflages to complete the Orion camouflage
+				const requiredCamouflages = requiredWeapons * camouflageMultiplier
+
+				// Sort and filter out the weapons with the most progress
+				const mostProgressedWeapons = categoryWeapons
+					.map((weapon) => {
+						return {
+							...weapon,
+							camouflagesCompleted: Object.values(weapon.progress).reduce((a, b) => a + b, 0),
+						}
+					})
+					.sort((a, b) => b.camouflagesCompleted - a.camouflagesCompleted)
+					.splice(0, requiredWeapons)
+
+				// Count the amount of camouflages completed for the most progressed weapons
+				const totalCamouflagesCompleted = mostProgressedWeapons.reduce(
+					(a, b) => a + b.camouflagesCompleted,
+					0
+				)
+
+				// Set the progress for the category
+				progress[category] =
+					totalCamouflagesCompleted / requiredCamouflages > 1
+						? 1
+						: totalCamouflagesCompleted / requiredCamouflages
 			})
 
 			return roundToTwoDecimals(this.average(Object.values(progress)) * 100)
