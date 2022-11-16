@@ -3,6 +3,7 @@ import { defineStore } from 'pinia'
 import { filterObject } from '../utils/utils'
 import defaultWeapons from '../data/weapons'
 import defaultFilters from '../data/defaults/filters'
+import defaultPreferences from '../data/defaults/preferences'
 import weaponRequirements from '../data/weaponRequirements'
 import camouflageRequirements from '../data/camouflageRequirements'
 
@@ -21,6 +22,9 @@ export const useStore = defineStore({
 		filters: {},
 		weaponRequirements: { ...weaponRequirements },
 		weapons: [],
+		preferences: {
+			layout: 'grid',
+		},
 	}),
 
 	getters: {
@@ -66,6 +70,18 @@ export const useStore = defineStore({
 			}
 		},
 
+		setPreferences(preferences) {
+			this.preferences = JSON.parse(JSON.stringify(defaultPreferences))
+
+			if (preferences) {
+				Object.keys(preferences).forEach((key) => {
+					if (key in defaultPreferences) {
+						this.preferences[key] = preferences[key]
+					}
+				})
+			}
+		},
+
 		getStoredProgress() {
 			const storage = localStorage.getItem(token)
 
@@ -75,12 +91,13 @@ export const useStore = defineStore({
 				return
 			}
 
-			const { weapons, filters, beganGrind, favorites } = JSON.parse(storage)
+			const { weapons, filters, beganGrind, favorites, preferences } = JSON.parse(storage)
 
 			if (weapons) this.setWeapons(weapons)
 			if (filters) this.setFilters(filters)
 			if (beganGrind) this.beganGrind = beganGrind
 			if (favorites) this.setFavorites(favorites)
+			if (preferences) this.setPreferences(preferences)
 		},
 
 		storeProgress() {
@@ -91,6 +108,7 @@ export const useStore = defineStore({
 					filters: this.filters,
 					beganGrind: this.beganGrind || new Date(),
 					favorites: this.favorites,
+					preferences: this.preferences,
 				})
 			)
 		},

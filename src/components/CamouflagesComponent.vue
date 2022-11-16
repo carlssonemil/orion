@@ -4,7 +4,11 @@
 			<div :key="'favorites'" class="category">
 				<h2>Favorites</h2>
 
-				<transition-group v-if="favorites.length > 0" name="fade" tag="div" class="camouflages">
+				<transition-group
+					v-if="favorites.length > 0"
+					name="fade"
+					tag="div"
+					:class="['camouflages', `layout-${layout}`]">
 					<CamouflageComponent
 						v-for="camouflage in favorites"
 						:key="camouflage.name"
@@ -32,7 +36,7 @@
 					</span>
 				</h2>
 
-				<transition-group name="fade" tag="div" class="camouflages">
+				<transition-group name="fade" tag="div" :class="['camouflages', `layout-${layout}`]">
 					<CamouflageComponent
 						v-for="camouflage in category"
 						:key="camouflage.name"
@@ -73,7 +77,11 @@ export default {
 	},
 
 	computed: {
-		...mapState(useStore, ['weapons']),
+		...mapState(useStore, ['weapons', 'preferences']),
+
+		layout() {
+			return this.preferences.layout
+		},
 	},
 
 	methods: {
@@ -141,11 +149,20 @@ export default {
 		.camouflages {
 			display: grid;
 			gap: 30px;
-			grid-template-columns: repeat(5, 1fr);
-			width: 100%;
+			&.layout-grid {
+				grid-template-columns: repeat(5, 1fr);
 
-			@media (max-width: $tablet) {
-				grid-template-columns: 1fr;
+				@media (max-width: $tablet) {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			&.layout-list {
+				grid-template-columns: repeat(2, 1fr);
+
+				@media (max-width: $tablet) {
+					grid-template-columns: 1fr;
+				}
 			}
 		}
 	}
