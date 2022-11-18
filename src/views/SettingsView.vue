@@ -106,7 +106,7 @@ export default {
 	},
 
 	methods: {
-		...mapActions(useStore, ['setWeapons', 'resetProgress']),
+		...mapActions(useStore, ['setWeapons', 'storeProgress', 'resetProgress']),
 
 		copyCodeToClipboard(e) {
 			const button = e.target
@@ -134,6 +134,11 @@ export default {
 				try {
 					const parsedJson = JSON.parse(this.importJsonCode)
 					await this.setWeapons(parsedJson)
+					await this.storeProgress()
+					this.$notify({
+						type: 'success',
+						title: 'Successfully imported progress!',
+					})
 				} catch (error) {
 					if (error.stack.includes('SyntaxError')) {
 						this.$notify({
@@ -164,6 +169,7 @@ export default {
 							const store = useStore()
 							try {
 								await store.setWeapons(JSON.parse(e.target.result))
+								await store.storeProgress()
 								this.uploading = false
 								event.target.value = null
 								this.$notify({
