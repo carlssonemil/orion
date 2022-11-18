@@ -131,24 +131,26 @@ export default {
 	position: relative;
 
 	&.coming-soon {
-		&::before {
-			background: $blue;
-			border: 3px solid $background-color;
-			border-radius: 100px;
-			bottom: 0;
-			content: 'Coming Soon';
-			font-size: 10px;
-			font-weight: 500;
-			left: 50%;
-			padding: 4px 6px;
-			position: absolute;
-			transform: translate(-50%, -75%);
-			z-index: 2;
-		}
-
 		.name {
-			opacity: 0.5;
+			background: $elevation-1-color;
+			color: rgba($text-color, 0.25);
 			pointer-events: none;
+
+			&::after {
+				background: $blue;
+				border: 3px solid $background-color;
+				border-radius: 100px;
+				bottom: 0;
+				color: $text-color;
+				content: 'Coming Soon';
+				font-size: 10px;
+				font-weight: 500;
+				left: 50%;
+				padding: 4px 6px;
+				position: absolute;
+				transform: translate(-50%, 50%);
+				z-index: 2;
+			}
 		}
 	}
 
