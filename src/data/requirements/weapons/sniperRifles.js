@@ -14,7 +14,7 @@ import {
 
 const masteryChallenges = {
 	Gold: 'Get 3 kills without dying 10 times',
-	Platinum: 'Get 20 longshot kills',
+	Platinum: 'Get 25 longshot kills',
 	Polyatomic: 'Get 20 headshot kills',
 }
 
@@ -54,7 +54,7 @@ export default {
 		'Platinum': 'Get 25 longshot kills',
 		'Polyatomic': 'Get 25 headshot kills',
 	},
-	
+
 	'Victus XMR': {
 		'Snowy Nights': reptile['Snowy Nights'],
 		'Burned Edges': dragon['Burned Edges'],
