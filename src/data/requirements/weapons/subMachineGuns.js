@@ -81,7 +81,7 @@ export default {
 		'Motley': geometric['Motley'],
 		'Eclipse': tiger['Eclipse'],
 		'Feral Beast': tiger['Feral Beast'],
-		'2087': classic['2087'],
+		'80s Fever': classic['80s Fever'],
 		...masteryChallenges,
 	},
 
