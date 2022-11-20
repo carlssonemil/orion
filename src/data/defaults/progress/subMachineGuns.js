@@ -52,7 +52,7 @@ export default {
 		'Motley': false,
 		'Eclipse': false,
 		'Feral Beast': false,
-		'2087': false,
+		'80s Fever': false,
 	},
 
 	'BAS-P': {
