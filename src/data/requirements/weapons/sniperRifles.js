@@ -41,7 +41,6 @@ export default {
 		'Leafless': foliage['Leafless'],
 		'Teal Tiger': tiger['Teal Tiger'],
 		...masteryChallenges,
-		'Platinum': 'Get 25 longshot kills',
 		'Polyatomic': 'Get 25 headshot kills',
 	},
 
@@ -51,7 +50,6 @@ export default {
 		'Aspen': foliage['Aspen'],
 		'Lichyard': skulls['Lichyard'],
 		...masteryChallenges,
-		'Platinum': 'Get 25 longshot kills',
 		'Polyatomic': 'Get 25 headshot kills',
 	},
 
@@ -61,7 +59,6 @@ export default {
 		'Tangographical': woodland['Tangographical'],
 		'Coral Reef': fun['Coral Reef'],
 		...masteryChallenges,
-		'Platinum': 'Get 25 longshot kills',
 		'Polyatomic': 'Get 25 headshot kills',
 	},
 }
