@@ -28,10 +28,10 @@ export default {
 	},
 
 	'Signal 50': {
-		Gladiator: sprayPaint['Gladiator'],
-		Unearthed: sprayPaint['Unearthed'],
-		Earthbound: cliffside['Earthbound'],
-		Spectrums: classic['Spectrums'],
+		'Gladiator': sprayPaint['Gladiator'],
+		'Unearthed': sprayPaint['Unearthed'],
+		'Earthbound': cliffside['Earthbound'],
+		'Spectrums': classic['Spectrums'],
 		...masteryChallenges,
 	},
 
