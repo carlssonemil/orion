@@ -13,9 +13,9 @@ import {
 } from '../camouflages/_index'
 
 const masteryChallenges = {
-	Gold: 'Get 3 kills without dying 10 times',
-	Platinum: 'Get 25 longshot kills',
-	Polyatomic: 'Get 20 headshot kills',
+	Gold: '3 kills without dying 10 times',
+	Platinum: '25 longshot kills',
+	Polyatomic: '20 headshot kills',
 }
 
 export default {
@@ -41,7 +41,7 @@ export default {
 		'Leafless': foliage['Leafless'],
 		'Teal Tiger': tiger['Teal Tiger'],
 		...masteryChallenges,
-		'Polyatomic': 'Get 25 headshot kills',
+		'Polyatomic': '25 headshot kills',
 	},
 
 	'SP-X 80': {
@@ -50,7 +50,7 @@ export default {
 		'Aspen': foliage['Aspen'],
 		'Lichyard': skulls['Lichyard'],
 		...masteryChallenges,
-		'Polyatomic': 'Get 25 headshot kills',
+		'Polyatomic': '25 headshot kills',
 	},
 
 	'Victus XMR': {
@@ -59,6 +59,6 @@ export default {
 		'Tangographical': woodland['Tangographical'],
 		'Coral Reef': fun['Coral Reef'],
 		...masteryChallenges,
-		'Polyatomic': 'Get 25 headshot kills',
+		'Polyatomic': '25 headshot kills',
 	},
 }
