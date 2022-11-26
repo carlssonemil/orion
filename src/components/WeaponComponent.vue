@@ -174,7 +174,7 @@ export default {
 
 	.name {
 		$padding: 25px;
-		$list-padding: 10px;
+		$list-padding: 20px 10px;
 		align-items: center;
 		background: $elevation-3-color;
 		border-radius: $border-radius;
@@ -188,7 +188,7 @@ export default {
 
 		@media (max-width: $tablet) {
 			font-size: 18px;
-			padding: $list-padding $padding;
+			padding: $list-padding;
 		}
 
 		&.gold {
@@ -211,7 +211,7 @@ export default {
 		}
 
 		&.list {
-			padding: $list-padding 0;
+			padding: $list-padding;
 			&::after {
 				bottom: -4px;
 			}
@@ -263,7 +263,7 @@ export default {
 			}
 
 			&.weapon-layout-list > .inner {
-				$image-size: 30px;
+				$image-size: 25px;
 				background: $elevation-1-color;
 				flex-direction: row;
 				justify-content: flex-start;
@@ -291,17 +291,14 @@ export default {
 				}
 
 				.info {
-					padding: 0 5px;
+					padding: 4px 8px;
 					text-align: left;
 
-					.name {
-						font-weight: 500;
-					}
 
 					.requirement {
 						display: block;
 						font-size: 11px;
-						line-height: 1.5;
+						line-height: 1.2;
 					}
 				}
 			}
@@ -385,9 +382,6 @@ export default {
 					z-index: 2;
 				}
 
-				p {
-					font-size: 14px;
-				}
 			}
 		}
 	}
