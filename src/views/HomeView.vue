@@ -7,7 +7,10 @@
 			<a href="https://github.com/carlssonemil/orion/issues/new">GitHub</a>. Thanks and good luck
 			with the grind! ✌
 		</AlertComponent>
-		<FiltersComponent :options="filterOptions" :show-info="true" />
+		<div class="filter-container">
+			<FiltersComponent :options="filterOptions" :show-info="true" />
+			<LayoutToggleComponent />
+		</div>
 		<WeaponsComponent :weapons="filteredWeapons" />
 		<ProgressComponent />
 	</div>
@@ -22,6 +25,7 @@ import AlertComponent from '@/components/AlertComponent.vue'
 import FiltersComponent from '@/components/FiltersComponent.vue'
 import WeaponsComponent from '@/components/WeaponsComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
+import LayoutToggleComponent from '@/components/LayoutToggleComponent.vue'
 
 export default {
 	components: {
@@ -29,6 +33,7 @@ export default {
 		FiltersComponent,
 		WeaponsComponent,
 		ProgressComponent,
+		LayoutToggleComponent,
 	},
 
 	computed: {
@@ -103,5 +108,26 @@ h1 {
 h2 {
 	margin: 30px auto 0;
 	max-width: 450px;
+}
+
+.filter-container {
+	align-items: center;
+	display: flex;
+	width: 100%;
+
+	@media (max-width: $tablet) {
+		flex-direction: column;
+
+		::v-deep .filters-component {
+			margin-bottom: 20px;
+			margin-right: 0;
+			width: 100%;
+		}
+	}
+
+	::v-deep .filters-component {
+		flex-grow: 1;
+		margin-right: 15px;
+	}
 }
 </style>
