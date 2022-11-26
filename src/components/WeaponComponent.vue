@@ -2,7 +2,8 @@
 	<div :class="['weapon', { 'coming-soon': weapon.comingSoon }]">
 		<div
 			:class="[
-				'name', `${layout === 'grid' ? 'grid' : 'list'}`,
+				'name',
+				layout,
 				{
 					gold: goldCompleted,
 					platinum: platinumCompleted,
