@@ -19,8 +19,12 @@
 			v-if="!weapon.comingSoon"
 			class="progress"
 			:style="{
-				'grid-template-rows': `${ layout === 'list' ?  'repeat(' + Object.keys(camouflages).length + ', 1fr)' : ''}`,
-				'grid-template-columns': `${layout === 'grid' ? 'repeat(' + Object.keys(camouflages).length + ', 1fr)' : ''}`,
+				'grid-template-rows': `${
+					layout === 'list' ? 'repeat(' + Object.keys(camouflages).length + ', 1fr)' : ''
+				}`,
+				'grid-template-columns': `${
+					layout === 'grid' ? 'repeat(' + Object.keys(camouflages).length + ', 1fr)' : ''
+				}`,
 			}">
 			<div
 				v-for="camouflage in camouflages"
@@ -294,11 +298,14 @@ export default {
 					padding: 4px 8px;
 					text-align: left;
 
-
 					.requirement {
 						display: block;
 						font-size: 11px;
 						line-height: 1.2;
+
+						@media (max-width: $tablet) {
+							font-size: 15px;
+						}
 					}
 				}
 			}
@@ -381,7 +388,6 @@ export default {
 					top: 50%;
 					z-index: 2;
 				}
-
 			}
 		}
 	}
