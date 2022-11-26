@@ -1,9 +1,9 @@
 import { digital, foliage, woodland } from '../camouflages/_index'
 
 const masteryChallenges = {
-	Gold: 'Get 2 kills without dying 5 times',
+	Gold: '2 kills without dying 5 times',
 	Platinum: 'Destroy 10 enemy streaks, equipment, or vehicles',
-	Polyatomic: 'Get 15 double kills',
+	Polyatomic: '15 double kills',
 }
 
 export default {
@@ -22,7 +22,7 @@ export default {
 	'JOKR': {
 		'Azure Fray': woodland['Azure Fray'],
 		...masteryChallenges,
-		'Gold': 'Get 2 kills without dying 10 times',
+		'Gold': '2 kills without dying 10 times',
 	},
 
 	'RPG-7': {

@@ -3,6 +3,7 @@
 		<div
 			:class="[
 				'name',
+				layout,
 				{
 					gold: goldCompleted,
 					platinum: platinumCompleted,
@@ -18,22 +19,30 @@
 			v-if="!weapon.comingSoon"
 			class="progress"
 			:style="{
-				'grid-template-columns': `repeat(${Object.keys(camouflages).length}, 1fr)`,
+				'grid-template-rows': `${
+					layout === 'list' ? 'repeat(' + Object.keys(camouflages).length + ', 1fr)' : ''
+				}`,
+				'grid-template-columns': `${
+					layout === 'grid' ? 'repeat(' + Object.keys(camouflages).length + ', 1fr)' : ''
+				}`,
 			}">
 			<div
 				v-for="camouflage in camouflages"
 				:key="camouflage.name"
-				:class="['camouflage']"
+				:class="['camouflage', `weapon-layout-${layout}`]"
 				@click="toggleCamouflageCompleted(weapon.name, camouflage.name, camouflage.completed)"
 				:content="requirementTooltip(weapon, camouflage.name)"
 				v-tippy="{ placement: 'bottom' }">
 				<div :class="['inner', { completed: camouflage.completed }]">
-					<IconComponent class="complete" name="check" fill="#10ac84" />
-					<IconComponent class="remove" name="times" fill="#ee5253" />
 					<img
 						:src="imageUrl(camouflage.name)"
 						:alt="camouflage.name"
 						onerror="javascript:this.src='/base-gradient.svg'" />
+					<IconComponent class="complete" name="check" fill="#10ac84" />
+					<IconComponent class="remove" name="times" fill="#ee5253" />
+					<div v-if="layout === 'list'" class="info">
+						<span class="requirement">{{ requirementListText(weapon, camouflage.name) }}</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -59,7 +68,11 @@ export default {
 	},
 
 	computed: {
-		...mapState(useStore, ['weaponRequirements']),
+		...mapState(useStore, ['weaponRequirements', 'preferences']),
+
+		layout() {
+			return this.preferences.layout
+		},
 
 		camouflages() {
 			// This is a bit of a hack to get the camouflages to be in the correct order
@@ -122,6 +135,15 @@ export default {
 
 			return `${camouflage} - ${requirement || 'TBA'}`
 		},
+
+		requirementListText(weapon, camouflage) {
+			const requirement = this.weaponRequirements[weapon.category][weapon.name][camouflage]
+			if (requirement && requirement.challenge)
+				// return `${camouflage} - Level ${requirement.level} - ${requirement.challenge}`
+				return requirement.challenge
+
+			return `${requirement || 'TBA'}`
+		},
 	},
 }
 </script>
@@ -156,6 +178,7 @@ export default {
 
 	.name {
 		$padding: 25px;
+		$list-padding: 20px 10px;
 		align-items: center;
 		background: $elevation-3-color;
 		border-radius: $border-radius;
@@ -163,14 +186,13 @@ export default {
 		display: flex;
 		font-weight: 600;
 		justify-content: center;
-		padding: $padding 0;
 		position: relative;
 		transition: $transition;
 		user-select: none;
 
 		@media (max-width: $tablet) {
 			font-size: 18px;
-			padding: #{$padding * 2} $padding;
+			padding: $list-padding;
 		}
 
 		&.gold {
@@ -187,6 +209,17 @@ export default {
 			@include polyatomic-camouflage-background;
 			color: white;
 		}
+
+		&.grid {
+			padding: $padding 0;
+		}
+
+		&.list {
+			padding: $list-padding;
+			&::after {
+				bottom: -4px;
+			}
+		}
 	}
 
 	.progress {
@@ -197,6 +230,85 @@ export default {
 
 		.camouflage {
 			user-select: none;
+
+			&.weapon-layout-grid > .inner {
+				flex-direction: column;
+				justify-content: center;
+
+				&.completed > .info {
+					opacity: 0.5;
+				}
+
+				img {
+					height: 100%;
+					object-fit: cover;
+					position: relative;
+					width: 100%;
+					z-index: 1;
+				}
+
+				.icon-component {
+					left: 50%;
+					opacity: 0;
+					position: absolute;
+					transform: translate(-50%, -50%);
+					transition: $transition;
+					top: 50%;
+					z-index: 2;
+				}
+
+				.info {
+					padding: 8px;
+
+					.name {
+						font-size: 14px;
+					}
+				}
+			}
+
+			&.weapon-layout-list > .inner {
+				$image-size: 25px;
+				background: $elevation-1-color;
+				flex-direction: row;
+				justify-content: flex-start;
+
+				&.completed > .info {
+					opacity: 0.5;
+				}
+
+				img {
+					height: 100%;
+					object-fit: cover;
+					position: relative;
+					width: $image-size;
+					z-index: 1;
+				}
+
+				.icon-component {
+					left: calc($image-size / 2);
+					opacity: 0;
+					position: absolute;
+					transform: translate(-50%, -50%);
+					transition: $transition;
+					top: 50%;
+					z-index: 2;
+				}
+
+				.info {
+					padding: 4px 8px;
+					text-align: left;
+
+					.requirement {
+						display: block;
+						font-size: 11px;
+						line-height: 1.2;
+
+						@media (max-width: $tablet) {
+							font-size: 15px;
+						}
+					}
+				}
+			}
 
 			.inner {
 				align-items: center;
@@ -275,18 +387,6 @@ export default {
 					transition: $transition;
 					top: 50%;
 					z-index: 2;
-				}
-
-				img {
-					height: 100%;
-					object-fit: cover;
-					position: relative;
-					width: 100%;
-					z-index: 1;
-				}
-
-				p {
-					font-size: 14px;
 				}
 			}
 		}
