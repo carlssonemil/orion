@@ -12,9 +12,9 @@ import {
 } from '../camouflages/_index'
 
 const masteryChallenges = {
-	Gold: '3 kills without dying 10 times',
-	Platinum: '25 longshot kills',
-	Polyatomic: '25 headshot kills',
+	Gold: 'Get 3 kills without dying 10 times',
+	Platinum: 'Get 25 longshot kills',
+	Polyatomic: 'Get 25 headshot kills',
 }
 
 export default {
