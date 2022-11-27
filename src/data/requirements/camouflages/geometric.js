@@ -34,7 +34,7 @@ export default {
 		level: '20',
 		challenge: '15 hipfire kills',
 	},
-	'Lodge': {
+	'Uncheckered': {
 		weapon: 'Raal MG',
 		level: '27',
 		challenge: '10 hipfire kills',
@@ -44,7 +44,7 @@ export default {
 		level: '14',
 		challenge: '10 double kills',
 	},
-	'Skyfire': {
+	'Stoked Flame': {
 		weapon: 'Minibak',
 		level: '14',
 		challenge: '15 point blank kills',

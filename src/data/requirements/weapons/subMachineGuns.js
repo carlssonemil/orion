@@ -65,7 +65,7 @@ export default {
 		'Timber': stripes['Timber'],
 		'Rattlesnake': reptile['Rattlesnake'],
 		'Green Digital': digital['Green Digital'],
-		'Skyfire': geometric['Skyfire'],
+		'Stoked Flame': geometric['Stoked Flame'],
 		...masteryChallenges,
 	},
 
@@ -73,7 +73,7 @@ export default {
 		'Shadow Stalker': stripes['Shadow Stalker'],
 		'Gecko': reptile['Gecko'],
 		'Shale': geometric['Shale'],
-		'Power Pink': solidColors['Power Pink'],
+		'Pinkish': solidColors['Pinkish'],
 		...masteryChallenges,
 	},
 

@@ -38,14 +38,14 @@ export default {
 		'Timber': false,
 		'Rattlesnake': false,
 		'Green Digital': false,
-		'Skyfire': false,
+		'Stoked Flame': false,
 	},
 
 	'PDSW 528': {
 		'Shadow Stalker': false,
 		'Gecko': false,
 		'Shale': false,
-		'Power Pink': false,
+		'Pinkish': false,
 	},
 
 	'Fennec 45': {

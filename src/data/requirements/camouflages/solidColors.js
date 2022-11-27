@@ -54,7 +54,7 @@ export default {
 		level: '19',
 		challenge: '10 point blank kills',
 	},
-	'Power Pink': {
+	'Pinkish': {
 		weapon: 'PDSW 528',
 		level: '29',
 		challenge: '10 point blank kills',

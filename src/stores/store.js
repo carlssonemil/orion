@@ -6,6 +6,7 @@ import defaultFilters from '../data/defaults/filters'
 import defaultPreferences from '../data/defaults/preferences'
 import weaponRequirements from '../data/weaponRequirements'
 import camouflageRequirements from '../data/camouflageRequirements'
+import camouflageNameChanges from '../data/camouflageNameChanges'
 
 const token = import.meta.env.MODE === 'production' ? 'orion' : 'orion-dev'
 
@@ -44,7 +45,10 @@ export const useStore = defineStore({
 
 					if (index !== -1) {
 						Object.keys(weapon.progress).forEach((camouflage) => {
-							if (camouflage in this.weapons[index].progress) {
+							// Handle changes to camouflage names
+							if (camouflage in camouflageNameChanges && weapon.progress[camouflage]) {
+								this.weapons[index].progress[camouflageNameChanges[camouflage]] = true
+							} else if (camouflage in this.weapons[index].progress) {
 								this.weapons[index].progress[camouflage] = weapon.progress[camouflage]
 							}
 						})

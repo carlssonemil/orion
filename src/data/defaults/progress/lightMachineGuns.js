@@ -24,7 +24,7 @@ export default {
 		'Rocky Desert': false,
 		'Trailblazer': false,
 		'Night Terror': false,
-		'Lodge': false,
+		'Uncheckered': false,
 	},
 
 	'RPK': {

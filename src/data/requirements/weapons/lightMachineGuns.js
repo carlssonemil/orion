@@ -48,7 +48,7 @@ export default {
 		'Rocky Desert': woodland['Rocky Desert'],
 		'Trailblazer': dragon['Trailblazer'],
 		'Night Terror': reptile['Night Terror'],
-		'Lodge': geometric['Lodge'],
+		'Uncheckered': geometric['Uncheckered'],
 		...masteryChallenges,
 	},
 
