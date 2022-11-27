@@ -6,7 +6,7 @@
 				Congratulations on finishing the Orion camouflage grind! It's been a long ride! You first
 				started tracking your grind here
 				<b>{{ daysSinceStart }} days ago</b> on
-				{{ new Date(beganGrind).toLocaleDateString('en-US') }}.
+				{{ new Date(this.getBeganGrind).toLocaleDateString('en-US') }}.
 			</p>
 			<p style="margin-top: 15px; font-size: 14px; color: #aaa">
 				If you liked this tracker, show your appreciation by spreading the word about it and if
@@ -50,8 +50,12 @@ export default {
 	computed: {
 		...mapState(useStore, ['weapons', 'weaponCategories', 'beganGrind']),
 
+		getBeganGrind() {
+			return this.beganGrind ?? new Date();
+		},
+
 		daysSinceStart() {
-			const days = daysBetweenDates(this.beganGrind, new Date())
+			const days = daysBetweenDates(this.getBeganGrind, new Date())
 			return days ? days : 1
 		},
 
