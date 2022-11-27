@@ -6,7 +6,7 @@
 				Congratulations on finishing the Orion camouflage grind! It's been a long ride! You first
 				started tracking your grind here
 				<b>{{ daysSinceStart }} days ago</b> on
-				{{ new Date(this.getBeganGrind).toLocaleDateString('en-US') }}.
+				{{ new Date(getBeganGrind).toLocaleDateString('en-US') }}.
 			</p>
 			<p style="margin-top: 15px; font-size: 14px; color: #aaa">
 				If you liked this tracker, show your appreciation by spreading the word about it and if
