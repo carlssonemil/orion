@@ -1,12 +1,12 @@
 import defaultHandgunsProgress from '../defaults/progress/handguns'
 
-const base = ['P890', '.50 GS', 'X12', 'Basilisk', 'X13 Auto']
+const weapons = ['P890', '.50 GS', 'X12', 'Basilisk', 'X13 Auto']
 
 const dlc = []
 
 const comingSoon = []
 
-export default [...base, ...dlc].map((weapon) => ({
+export default weapons.map((weapon) => ({
 	category: 'Handguns',
 	name: weapon,
 	dlc: dlc.includes(weapon),

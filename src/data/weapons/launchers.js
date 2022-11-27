@@ -1,12 +1,12 @@
 import defaultLaunchersProgress from '../defaults/progress/launchers'
 
-const base = ['PILA', 'STRELA-P', 'JOKR', 'RPG-7']
+const weapons = ['PILA', 'STRELA-P', 'JOKR', 'RPG-7']
 
 const dlc = []
 
 const comingSoon = []
 
-export default [...base, ...dlc].map((weapon) => ({
+export default weapons.map((weapon) => ({
 	category: 'Launchers',
 	name: weapon,
 	dlc: dlc.includes(weapon),

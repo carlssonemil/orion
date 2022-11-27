@@ -1,12 +1,12 @@
 import defaultBattleRiflesProgress from '../defaults/progress/battleRifles'
 
-const base = ['Lachmann-762', 'SO-14', 'TAQ-V', 'FTAC Recon']
+const weapons = ['Lachmann-762', 'SO-14', 'TAQ-V', 'FTAC Recon']
 
 const dlc = []
 
 const comingSoon = []
 
-export default [...base, ...dlc].map((weapon) => ({
+export default weapons.map((weapon) => ({
 	category: 'Battle Rifles',
 	name: weapon,
 	dlc: dlc.includes(weapon),

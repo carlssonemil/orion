@@ -1,12 +1,12 @@
 import defaultSniperRiflesProgress from '../defaults/progress/sniperRifles'
 
-const base = ['MCPR-300', 'Signal 50', 'LA-B 330', 'SP-X 80']
+const weapons = ['MCPR-300', 'Victus XMR', 'Signal 50', 'LA-B 330', 'SP-X 80']
 
 const dlc = ['Victus XMR']
 
 const comingSoon = []
 
-export default [...base, ...dlc].map((weapon) => ({
+export default weapons.map((weapon) => ({
 	category: 'Sniper Rifles',
 	name: weapon,
 	dlc: dlc.includes(weapon),

@@ -1,6 +1,6 @@
 import defaultAssaultRiflesProgress from '../defaults/progress/assaultRifles'
 
-const base = [
+const weapons = [
 	'M4',
 	'TAQ-56',
 	'Kastov 762',
@@ -9,13 +9,15 @@ const base = [
 	'M16',
 	'Kastov-74U',
 	'Kastov 545',
+	'M13B',
+	'Chimera',
 ]
 
 const dlc = ['M13B', 'Chimera']
 
 const comingSoon = ['Chimera']
 
-export default [...base, ...dlc].map((weapon) => ({
+export default weapons.map((weapon) => ({
 	category: 'Assault Rifles',
 	name: weapon,
 	dlc: dlc.includes(weapon),

@@ -1,12 +1,12 @@
 import defaultMeleeProgress from '../defaults/progress/melee'
 
-const base = ['Combat Knife', 'Riot Shield']
+const weapons = ['Combat Knife', 'Riot Shield']
 
 const dlc = []
 
 const comingSoon = []
 
-export default [...base, ...dlc].map((weapon) => ({
+export default weapons.map((weapon) => ({
 	category: 'Melee',
 	name: weapon,
 	dlc: dlc.includes(weapon),

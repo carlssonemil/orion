@@ -1,12 +1,12 @@
 import defaultLightMachineGunsProgress from '../defaults/progress/lightMachineGuns'
 
-const base = ['Sakin MG38', 'HCR 56', '556 Icarus', 'Raal MG', 'RPK', 'Rapp H']
+const weapons = ['Sakin MG38', 'HCR 56', '556 Icarus', 'Raal MG', 'RPK', 'Rapp H']
 
 const dlc = []
 
 const comingSoon = []
 
-export default [...base, ...dlc].map((weapon) => ({
+export default weapons.map((weapon) => ({
 	category: 'Light Machine Guns',
 	name: weapon,
 	dlc: dlc.includes(weapon),

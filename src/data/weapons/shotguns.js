@@ -1,12 +1,12 @@
 import defaultShotgunsProgress from '../defaults/progress/shotguns'
 
-const base = ['Lockwood 300', 'Expedite 12', 'Bryson 800', 'Bryson 890']
+const weapons = ['Lockwood 300', 'Expedite 12', 'Bryson 800', 'Bryson 890']
 
 const dlc = []
 
 const comingSoon = []
 
-export default [...base, ...dlc].map((weapon) => ({
+export default weapons.map((weapon) => ({
 	category: 'Shotguns',
 	name: weapon,
 	dlc: dlc.includes(weapon),
