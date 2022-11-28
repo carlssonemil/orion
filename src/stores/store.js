@@ -5,6 +5,7 @@ import defaultWeapons from '../data/weapons'
 import defaultFilters from '../data/defaults/filters'
 import defaultPreferences from '../data/defaults/preferences'
 import weaponRequirements from '../data/weaponRequirements'
+import masteryRequirements from '../data/masteryRequirements'
 import camouflageRequirements from '../data/camouflageRequirements'
 import camouflageNameChanges from '../data/camouflageNameChanges'
 
@@ -22,6 +23,7 @@ export const useStore = defineStore({
 		},
 		filters: {},
 		weaponRequirements: { ...weaponRequirements },
+		masteryRequirements: { ...masteryRequirements },
 		weapons: [],
 		preferences: {
 			layout: 'grid',
@@ -140,15 +142,17 @@ export const useStore = defineStore({
 			this.storeProgress()
 		},
 
-		toggleCamouflageCompleted(weaponName, camouflage, current) {
-			this.weapons.find((w) => w.name === weaponName).progress[camouflage] = !current
+		toggleCamouflageCompleted(weaponName, camouflage, current, mastery) {
+			const progress = mastery ? 'masteryProgress' : 'progress'
+			this.weapons.find((w) => w.name === weaponName)[progress][camouflage] = !current
 			this.storeProgress()
 		},
 
-		toggleWeaponCompleted(weapon, current) {
+		toggleWeaponCompleted(weapon, current, mastery) {
+			const progress = mastery ? 'masteryProgress' : 'progress'
 			const selectedWeapon = this.weapons.find((w) => w.name === weapon.name)
-			Object.keys(selectedWeapon.progress).forEach(
-				(camouflage) => (selectedWeapon.progress[camouflage] = !current)
+			Object.keys(selectedWeapon[progress]).forEach(
+				(camouflage) => (selectedWeapon[progress][camouflage] = !current)
 			)
 
 			this.storeProgress()

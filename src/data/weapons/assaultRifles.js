@@ -1,4 +1,5 @@
 import defaultAssaultRiflesProgress from '../defaults/progress/assaultRifles'
+import defaultMasteryCamouflages from '../defaults/progress/masteryCamouflages'
 
 const weapons = [
 	'M4',
@@ -27,5 +28,8 @@ export default weapons.map((weapon) => ({
 		Gold: false,
 		Platinum: false,
 		Polyatomic: false,
+	},
+	masteryProgress: {
+		...defaultMasteryCamouflages,
 	},
 }))

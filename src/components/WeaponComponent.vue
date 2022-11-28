@@ -10,7 +10,7 @@
 					polyatomic: polyatomicCompleted,
 				},
 			]"
-			@dblclick="toggleWeaponCompleted(weapon, completed)"
+			@dblclick="toggleWeaponCompleted(weapon, completed, mastery)"
 			v-tippy="{ content: `Double-click to ${completed ? 'reset' : 'complete'} weapon` }">
 			{{ weapon.name }}
 		</div>
@@ -30,7 +30,9 @@
 				v-for="camouflage in camouflages"
 				:key="camouflage.name"
 				:class="['camouflage', `weapon-layout-${layout}`]"
-				@click="toggleCamouflageCompleted(weapon.name, camouflage.name, camouflage.completed)"
+				@click="
+					toggleCamouflageCompleted(weapon.name, camouflage.name, camouflage.completed, mastery)
+				"
 				:content="requirementTooltip(weapon, camouflage.name)"
 				v-tippy="{ placement: 'bottom' }">
 				<div :class="['inner', { completed: camouflage.completed }]">
@@ -61,54 +63,49 @@ export default {
 			required: true,
 		},
 
+		camouflages: {
+			type: Array,
+			required: true,
+		},
+
+		mastery: {
+			type: Boolean,
+			required: false,
+			default: false,
+		},
+
 		polyatomicUnlocked: {
 			type: Boolean,
-			required: true,
+			required: false,
+			default: false,
 		},
 	},
 
 	computed: {
-		...mapState(useStore, ['weaponRequirements', 'preferences']),
+		...mapState(useStore, ['weaponRequirements', 'masteryRequirements', 'preferences']),
 
 		layout() {
 			return this.preferences.layout
 		},
 
-		camouflages() {
-			// This is a bit of a hack to get the camouflages to be in the correct order
-			// TODO: Find a better way to do this
-			const requirements = this.weaponRequirements[this.weapon.category][this.weapon.name]
-			const progress = this.weapon.progress
-			const camouflages = Object.keys(progress)
-				.map((camouflage) => {
-					const completed = progress[camouflage]
-					const requirement = requirements[camouflage]
-
-					return {
-						name: camouflage,
-						completed,
-						level: requirement?.level || 100,
-					}
-				})
-				.sort((a, b) => a.level - b.level)
-
-			return camouflages
+		progress() {
+			return this.mastery ? this.weapon.masteryProgress : this.weapon.progress
 		},
 
 		completed() {
-			return Object.values(this.weapon.progress).every(Boolean)
+			return Object.values(this.progress).every(Boolean)
 		},
 
 		goldCompleted() {
-			return this.weapon.progress['Gold']
+			return this.progress['Gold']
 		},
 
 		platinumCompleted() {
-			return this.weapon.progress['Platinum']
+			return this.progress['Platinum']
 		},
 
 		polyatomicCompleted() {
-			return this.weapon.progress['Polyatomic']
+			return this.progress['Polyatomic']
 		},
 	},
 
@@ -123,26 +120,43 @@ export default {
 				return new URL('/platinum-gradient.svg', import.meta.url)
 			} else if (camouflage === 'Polyatomic') {
 				return new URL('/polyatomic-gradient.svg', import.meta.url)
+			} else if (camouflage === 'Orion') {
+				return new URL('/orion-gradient.svg', import.meta.url)
 			}
 
 			return new URL(`../assets/camouflages/${convertToKebabCase(camouflage)}.png`, import.meta.url)
 		},
 
 		requirementTooltip(weapon, camouflage) {
-			const requirement = this.weaponRequirements[weapon.category][weapon.name][camouflage]
-			if (requirement && requirement.challenge)
-				return `${camouflage} - Level ${requirement.level} - ${requirement.challenge}`
+			let requirement = 'TBA'
 
-			return `${camouflage} - ${requirement || 'TBA'}`
+			if (this.mastery) {
+				requirement = this.masteryRequirements[camouflage]
+			} else {
+				const requirement = this.weaponRequirements[weapon.category][weapon.name][camouflage]
+
+				if (requirement && requirement.challenge) {
+					return `${camouflage} - Level ${requirement.level} - ${requirement.challenge}`
+				}
+			}
+
+			return `${camouflage} - ${requirement}`
 		},
 
 		requirementListText(weapon, camouflage) {
-			const requirement = this.weaponRequirements[weapon.category][weapon.name][camouflage]
-			if (requirement && requirement.challenge)
-				// return `${camouflage} - Level ${requirement.level} - ${requirement.challenge}`
-				return requirement.challenge
+			let requirement = 'TBA'
 
-			return `${requirement || 'TBA'}`
+			if (this.mastery) {
+				requirement = this.masteryRequirements[camouflage]
+			} else {
+				const requirement = this.weaponRequirements[weapon.category][weapon.name][camouflage]
+
+				if (requirement && requirement.challenge) {
+					return requirement.challenge
+				}
+			}
+
+			return requirement
 		},
 	},
 }

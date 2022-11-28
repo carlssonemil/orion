@@ -1,4 +1,5 @@
 import defaultLaunchersProgress from '../defaults/progress/launchers'
+import defaultMasteryCamouflages from '../defaults/progress/masteryCamouflages'
 
 const weapons = ['PILA', 'STRELA-P', 'JOKR', 'RPG-7']
 
@@ -16,5 +17,8 @@ export default weapons.map((weapon) => ({
 		Gold: false,
 		Platinum: false,
 		Polyatomic: false,
+	},
+	masteryProgress: {
+		...defaultMasteryCamouflages,
 	},
 }))

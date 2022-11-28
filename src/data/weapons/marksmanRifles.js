@@ -1,4 +1,5 @@
 import defaultMarksmanRiflesProgress from '../defaults/progress/marksmanRifles'
+import defaultMasteryCamouflages from '../defaults/progress/masteryCamouflages'
 
 const weapons = ['EBR-14', 'SP-R 208', 'Lockwood MK2', 'LM-S', 'SA-B 50', 'TAQ-M']
 
@@ -16,5 +17,8 @@ export default weapons.map((weapon) => ({
 		Gold: false,
 		Platinum: false,
 		Polyatomic: false,
+	},
+	masteryProgress: {
+		...defaultMasteryCamouflages,
 	},
 }))
