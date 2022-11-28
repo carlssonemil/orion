@@ -133,7 +133,7 @@ export default {
 			if (this.mastery) {
 				requirement = this.masteryRequirements[camouflage]
 			} else {
-				const requirement = this.weaponRequirements[weapon.category][weapon.name][camouflage]
+				requirement = this.weaponRequirements[weapon.category][weapon.name][camouflage]
 
 				if (requirement && requirement.challenge) {
 					return `${camouflage} - Level ${requirement.level} - ${requirement.challenge}`
@@ -149,7 +149,7 @@ export default {
 			if (this.mastery) {
 				requirement = this.masteryRequirements[camouflage]
 			} else {
-				const requirement = this.weaponRequirements[weapon.category][weapon.name][camouflage]
+				requirement = this.weaponRequirements[weapon.category][weapon.name][camouflage]
 
 				if (requirement && requirement.challenge) {
 					return requirement.challenge
