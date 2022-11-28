@@ -119,8 +119,9 @@ export default {
 		},
 
 		masteryProgress() {
-			const total = this.weapons.length * 4
-			const completed = this.weapons.reduce(
+			const weapons = this.weapons.filter((weapon) => !weapon.comingSoon)
+			const total = weapons.length * 4
+			const completed = weapons.reduce(
 				(acc, weapon) => acc + Object.values(weapon.masteryProgress).reduce((a, b) => a + b, 0),
 				0
 			)
