@@ -1,7 +1,23 @@
 <template>
 	<div class="container">
 		<div class="filter-container">
-			<FiltersComponent :options="filterOptions" />
+			<FiltersComponent :options="filterOptions" :show-info="true">
+				<template #info>
+					<IconComponent
+						name="question-circle"
+						fill="white"
+						v-tippy="{ placement: 'bottom' }"
+						:content="'Once you have unlocked each mastery camouflage, a mastery challenge is unlocked that requires you to get a certain amount of kills while using that specific camouflage to complete it.'" />
+					<div class="mobile">
+						<IconComponent name="question-circle" fill="white"></IconComponent>
+						<p>
+							Once you have unlocked each mastery camouflage, a mastery challenge is unlocked that
+							requires you to get a certain amount of kills while using that specific camouflage to
+							complete it.
+						</p>
+					</div>
+				</template>
+			</FiltersComponent>
 			<LayoutToggleComponent />
 		</div>
 
