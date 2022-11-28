@@ -124,10 +124,10 @@ h2 {
 			width: 100%;
 		}
 	}
+}
 
-	::v-deep .filters-component {
-		flex-grow: 1;
-		margin-right: 15px;
-	}
+::v-deep .filters-component {
+	flex-grow: 1;
+	margin-right: 15px;
 }
 </style>
