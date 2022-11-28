@@ -51,7 +51,7 @@ export default {
 		...mapState(useStore, ['weapons', 'weaponCategories', 'beganGrind']),
 
 		getBeganGrind() {
-			return this.beganGrind ?? new Date();
+			return this.beganGrind ?? new Date()
 		},
 
 		daysSinceStart() {
@@ -60,46 +60,33 @@ export default {
 		},
 
 		orionProgress() {
-			const progress = {}
+			// Set the amount of required weapons to complete the Orion camouflage
+			const requiredWeapons = this.weapons.filter((weapon) => !weapon.dlc).length
 
-			// Loop over each weapon category
-			this.weaponCategories.forEach((category) => {
-				const categoryWeapons = this.weapons.filter((weapon) => weapon.category === category)
+			// Sort and filter out the weapons with the most progress
+			const mostProgressedWeapons = this.weapons
+				.map((weapon) => {
+					let totalCamouflages = Object.keys(weapon.progress).length
+					let completedCamouflages = Object.values(weapon.progress).reduce((a, b) => a + b, 0)
 
-				// Set the number of camouflages for each weapon category
-				const camouflageMultiplier = ['Melee', 'Launchers'].includes(category) ? 4 : 7
+					return {
+						...weapon,
+						completed: Object.values(weapon.progress).reduce((a, b) => a + b, 0),
+						completedPercentage: completedCamouflages / totalCamouflages,
+					}
+				})
+				.sort((a, b) => b.completedPercentage - a.completedPercentage)
+				.splice(0, requiredWeapons)
 
-				// Set the amount of required weapons to complete the Orion camouflage
-				const requiredWeapons = categoryWeapons.filter((weapon) => !weapon.dlc).length
+			// Count the amount of camouflages completed for the most progress weapons
+			const totalCamouflagesCompleted = mostProgressedWeapons.reduce((a, b) => a + b.completed, 0)
 
-				// Set the amount of required camouflages to complete the Orion camouflage
-				const requiredCamouflages = requiredWeapons * camouflageMultiplier
+			// Count the required amount of camouflages to complete the Orion camouflage
+			const requiredCamouflages = mostProgressedWeapons.reduce((a, b) => {
+				return a + Object.keys(b.progress).length
+			}, 0)
 
-				// Sort and filter out the weapons with the most progress
-				const mostProgressedWeapons = categoryWeapons
-					.map((weapon) => {
-						return {
-							...weapon,
-							camouflagesCompleted: Object.values(weapon.progress).reduce((a, b) => a + b, 0),
-						}
-					})
-					.sort((a, b) => b.camouflagesCompleted - a.camouflagesCompleted)
-					.splice(0, requiredWeapons)
-
-				// Count the amount of camouflages completed for the most progressed weapons
-				const totalCamouflagesCompleted = mostProgressedWeapons.reduce(
-					(a, b) => a + b.camouflagesCompleted,
-					0
-				)
-
-				// Set the progress for the category
-				progress[category] =
-					totalCamouflagesCompleted / requiredCamouflages > 1
-						? 1
-						: totalCamouflagesCompleted / requiredCamouflages
-			})
-
-			return roundToTwoDecimals(this.average(Object.values(progress)) * 100)
+			return roundToTwoDecimals((totalCamouflagesCompleted / requiredCamouflages) * 100)
 		},
 	},
 
