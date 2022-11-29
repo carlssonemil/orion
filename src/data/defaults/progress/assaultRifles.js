@@ -8,7 +8,7 @@ export default {
 
 	'TAQ-56': {
 		'Hidden Snake': false,
-		'Iceland': false,
+		'Icepick': false,
 		'Stonewall Digital': false,
 		'Back in Blue': false,
 	},

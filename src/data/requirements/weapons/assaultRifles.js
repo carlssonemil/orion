@@ -31,7 +31,7 @@ export default {
 
 	'TAQ-56': {
 		'Hidden Snake': woodland['Hidden Snake'],
-		'Iceland': geometric['Iceland'],
+		'Icepick': geometric['Icepick'],
 		'Stonewall Digital': digital['Stonewall Digital'],
 		'Back in Blue': classic['Back in Blue'],
 		...masteryChallenges,
