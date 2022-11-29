@@ -79,7 +79,7 @@ export default {
 
 	'Fennec 45': {
 		'Motley': geometric['Motley'],
-		'Eclipse': tiger['Eclipse'],
+		'Shadow Tiger': tiger['Shadow Tiger'],
 		'Feral Beast': tiger['Feral Beast'],
 		'80s Fever': classic['80s Fever'],
 		...masteryChallenges,

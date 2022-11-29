@@ -3,7 +3,7 @@ export default {
 		'Sand': false,
 		'Muddied': false,
 		'Blue Digital': false,
-		'Pixel Land': false,
+		'Pixel Coast': false,
 	},
 
 	'.50 GS': {
@@ -21,10 +21,10 @@ export default {
 	},
 
 	'Basilisk': {
-		'Outcrop': false,
-		'Countryside': false,
-		'Dark Denim': false,
-		'Chrysolite': false,
+		Outcrop: false,
+		Countryside: false,
+		Navy: false,
+		Chrysolite: false,
 	},
 
 	'X13 Auto': {

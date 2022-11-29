@@ -69,7 +69,7 @@ export default {
 		level: '15',
 		challenge: '20 kills while mounted',
 	},
-	'Eclipse': {
+	'Shadow Tiger': {
 		weapon: 'Fennec 45',
 		level: '10',
 		challenge: '30 kills while crouched',

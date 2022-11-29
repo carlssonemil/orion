@@ -3,7 +3,7 @@ export default {
 		'Scales': false,
 		'Desert Hybrid': false,
 		'Dark Leaves': false,
-		'Urban Renewal': false,
+		'New Urban': false,
 	},
 
 	'TAQ-56': {

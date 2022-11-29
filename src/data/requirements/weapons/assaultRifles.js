@@ -25,7 +25,7 @@ export default {
 		'Scales': sprayPaint['Scales'],
 		'Desert Hybrid': woodland['Desert Hybrid'],
 		'Dark Leaves': dragon['Dark Leaves'],
-		'Urban Renewal': classic['Urban Renewal'],
+		'New Urban': classic['New Urban'],
 		...masteryChallenges,
 	},
 
@@ -90,7 +90,7 @@ export default {
 		'Field Ops': stripes['Field Ops'],
 		'Projectile': fun['Projectile'],
 		'Ice Cave': reptile['Ice Cave'],
-		...masteryChallenges
+		...masteryChallenges,
 	},
 
 	'Chimera': {},

@@ -1,5 +1,5 @@
 export default {
-	'Urban Renewal': {
+	'New Urban': {
 		weapon: 'M4',
 		level: '19',
 		challenge: '15 kills from behind',
