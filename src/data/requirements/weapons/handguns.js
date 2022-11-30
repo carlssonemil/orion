@@ -21,7 +21,7 @@ export default {
 		'Sand': solidColors['Sand'],
 		'Muddied': reptile['Muddied'],
 		'Blue Digital': digital['Blue Digital'],
-		'Pixel Land': fun['Pixel Land'],
+		'Pixel Coast': fun['Pixel Coast'],
 		...masteryChallenges,
 	},
 
@@ -42,10 +42,10 @@ export default {
 	},
 
 	'Basilisk': {
-		'Outcrop': woodland['Outcrop'],
-		'Countryside': foliage['Countryside'],
-		'Dark Denim': solidColors['Dark Denim'],
-		'Chrysolite': geometric['Chrysolite'],
+		Outcrop: woodland['Outcrop'],
+		Countryside: foliage['Countryside'],
+		Navy: solidColors['Navy'],
+		Chrysolite: geometric['Chrysolite'],
 		...masteryChallenges,
 	},
 

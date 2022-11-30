@@ -1,5 +1,5 @@
 export default {
-	'Pixel Land': {
+	'Pixel Coast': {
 		weapon: 'P890',
 		level: '26',
 		challenge: '10 point blank kills',

@@ -3,12 +3,12 @@ export default {
 		'Scales': false,
 		'Desert Hybrid': false,
 		'Dark Leaves': false,
-		'Urban Renewal': false,
+		'New Urban': false,
 	},
 
 	'TAQ-56': {
 		'Hidden Snake': false,
-		'Iceland': false,
+		'Icepick': false,
 		'Stonewall Digital': false,
 		'Back in Blue': false,
 	},

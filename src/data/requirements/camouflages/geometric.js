@@ -24,7 +24,7 @@ export default {
 		level: '8',
 		challenge: '15 point blank kills',
 	},
-	'Iceland': {
+	'Icepick': {
 		weapon: 'TAQ-56',
 		level: '8',
 		challenge: '10 double kills',

@@ -25,13 +25,13 @@ export default {
 		'Scales': sprayPaint['Scales'],
 		'Desert Hybrid': woodland['Desert Hybrid'],
 		'Dark Leaves': dragon['Dark Leaves'],
-		'Urban Renewal': classic['Urban Renewal'],
+		'New Urban': classic['New Urban'],
 		...masteryChallenges,
 	},
 
 	'TAQ-56': {
 		'Hidden Snake': woodland['Hidden Snake'],
-		'Iceland': geometric['Iceland'],
+		'Icepick': geometric['Icepick'],
 		'Stonewall Digital': digital['Stonewall Digital'],
 		'Back in Blue': classic['Back in Blue'],
 		...masteryChallenges,
@@ -90,7 +90,7 @@ export default {
 		'Field Ops': stripes['Field Ops'],
 		'Projectile': fun['Projectile'],
 		'Ice Cave': reptile['Ice Cave'],
-		...masteryChallenges
+		...masteryChallenges,
 	},
 
 	'Chimera': {},

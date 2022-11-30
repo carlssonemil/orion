@@ -50,7 +50,7 @@ export default {
 
 	'Fennec 45': {
 		'Motley': false,
-		'Eclipse': false,
+		'Shadow Tiger': false,
 		'Feral Beast': false,
 		'80s Fever': false,
 	},
