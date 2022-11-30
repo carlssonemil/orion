@@ -7,6 +7,7 @@
 		<div>
 			<router-link to="/">Weapons</router-link>
 			<router-link to="/camouflages">Camouflages</router-link>
+			<router-link to="/mastery">Mastery</router-link>
 			<router-link
 				to="/settings"
 				class="icon settings"

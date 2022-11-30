@@ -1,4 +1,5 @@
 import defaultSubmachineGunsProgress from '../defaults/progress/subMachineGuns'
+import defaultMasteryCamouflages from '../defaults/progress/masteryCamouflages'
 
 const weapons = [
 	'VEL 46',
@@ -26,5 +27,8 @@ export default weapons.map((weapon) => ({
 		Gold: false,
 		Platinum: false,
 		Polyatomic: false,
+	},
+	masteryProgress: {
+		...defaultMasteryCamouflages,
 	},
 }))

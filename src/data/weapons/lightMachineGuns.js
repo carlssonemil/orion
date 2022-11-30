@@ -1,4 +1,5 @@
 import defaultLightMachineGunsProgress from '../defaults/progress/lightMachineGuns'
+import defaultMasteryCamouflages from '../defaults/progress/masteryCamouflages'
 
 const weapons = ['Sakin MG38', 'HCR 56', '556 Icarus', 'Raal MG', 'RPK', 'Rapp H']
 
@@ -16,5 +17,8 @@ export default weapons.map((weapon) => ({
 		Gold: false,
 		Platinum: false,
 		Polyatomic: false,
+	},
+	masteryProgress: {
+		...defaultMasteryCamouflages,
 	},
 }))

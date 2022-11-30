@@ -6,5 +6,6 @@ export default {
 	hideNonRequired: false,
 	hidePlatinum: false,
 	hidePolyatomic: false,
+	hideOrion: false,
 	weaponCategory: null,
 }

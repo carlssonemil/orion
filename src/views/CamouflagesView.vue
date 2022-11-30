@@ -4,8 +4,8 @@
 			<FiltersComponent :options="filterOptions" />
 			<LayoutToggleComponent />
 		</div>
+
 		<CamouflagesComponent :camouflages="filteredCamouflages" :favorites="favorites" />
-		<ProgressComponent />
 	</div>
 </template>
 
@@ -18,7 +18,6 @@ import camouflages from '../data/camouflages'
 import CamouflagesComponent from '@/components/CamouflagesComponent.vue'
 import FiltersComponent from '@/components/FiltersComponent.vue'
 import LayoutToggleComponent from '@/components/LayoutToggleComponent.vue'
-import ProgressComponent from '@/components/ProgressComponent.vue'
 
 const store = useStore()
 
@@ -27,7 +26,6 @@ export default {
 		CamouflagesComponent,
 		FiltersComponent,
 		LayoutToggleComponent,
-		ProgressComponent,
 	},
 
 	computed: {

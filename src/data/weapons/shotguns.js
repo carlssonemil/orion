@@ -1,4 +1,5 @@
 import defaultShotgunsProgress from '../defaults/progress/shotguns'
+import defaultMasteryCamouflages from '../defaults/progress/masteryCamouflages'
 
 const weapons = ['Lockwood 300', 'Expedite 12', 'Bryson 800', 'Bryson 890']
 
@@ -16,5 +17,8 @@ export default weapons.map((weapon) => ({
 		Gold: false,
 		Platinum: false,
 		Polyatomic: false,
+	},
+	masteryProgress: {
+		...defaultMasteryCamouflages,
 	},
 }))

@@ -11,9 +11,7 @@
 					<span>
 						{{ title }}
 					</span>
-					<span
-						v-tippy
-						content="Gold camouflages required to unlock the Platinum camouflage challenge">
+					<span v-tippy content="Weapons completed in category">
 						{{ categoryProgress(title) }}
 					</span>
 				</h2>
@@ -23,7 +21,9 @@
 						v-for="weapon in category"
 						:key="weapon.name"
 						:weapon="weapon"
-						:polyatomicUnlocked="polyatomicUnlocked" />
+						:camouflages="camouflages(weapon)"
+						:mastery="mastery"
+						:polyatomicUnlocked="mastery ? null : polyatomicUnlocked" />
 				</transition-group>
 			</div>
 		</transition-group>
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import { mapActions } from 'pinia'
+import { mapActions, mapState } from 'pinia'
 import { useStore } from '@/stores/store'
 import { filterObject } from '@/utils/utils'
 import WeaponComponent from '@/components/WeaponComponent.vue'
@@ -50,9 +50,17 @@ export default {
 			type: Object,
 			required: true,
 		},
+
+		mastery: {
+			type: Boolean,
+			required: false,
+			default: false,
+		},
 	},
 
 	computed: {
+		...mapState(useStore, ['weaponRequirements']),
+
 		polyatomicUnlocked() {
 			const required = 51
 			const completed = Object.values(this.weapons)
@@ -71,28 +79,47 @@ export default {
 		...mapActions(useStore, ['toggleCategoryCompleted']),
 
 		categoryProgress(title) {
+			const progress = this.mastery ? 'masteryProgress' : 'progress'
 			const categoryWeapons = this.weapons[title]
-			const required = categoryWeapons.filter((weapon) => !weapon.dlc).length
+			const total = categoryWeapons.filter((weapon) => !weapon.comingSoon).length
 			const completed = categoryWeapons.reduce(
-				(a, weapon) =>
-					a + Object.values(filterObject(weapon.progress, ['Polyatomic'])).every(Boolean),
+				(a, weapon) => a + Object.values(weapon[progress]).every(Boolean),
 				0
 			)
 
-			return completed > required
-				? `${required}/${required}`
-				: `${Math.floor(completed)}/${required}`
+			return completed > total ? `${total}/${total}` : `${Math.floor(completed)}/${total}`
 		},
 
 		categoryCompleted(category) {
-			const required = category.filter((weapon) => !weapon.dlc).length
+			const progress = this.mastery ? 'masteryProgress' : 'progress'
+			const total = category.filter((weapon) => !weapon.comingSoon).length
 			const completed = category.reduce(
-				(a, weapon) =>
-					a + Object.values(filterObject(weapon.progress, ['Polyatomic'])).every(Boolean),
+				(a, weapon) => a + Object.values(weapon[progress]).every(Boolean),
 				0
 			)
 
-			return completed >= required
+			return completed >= total
+		},
+
+		camouflages(weapon) {
+			// This is a bit of a hack to get the camouflages to be in the correct order
+			// TODO: Find a better way to do this
+			const requirements = this.weaponRequirements[weapon.category][weapon.name]
+			const progress = this.mastery ? weapon.masteryProgress : weapon.progress
+			const camouflages = Object.keys(progress)
+				.map((camouflage) => {
+					const completed = progress[camouflage]
+					const requirement = requirements[camouflage]
+
+					return {
+						name: camouflage,
+						completed,
+						level: requirement?.level || 100,
+					}
+				})
+				.sort((a, b) => a.level - b.level)
+
+			return camouflages
 		},
 	},
 }

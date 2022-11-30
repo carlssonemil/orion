@@ -1,13 +1,5 @@
 <template>
 	<div class="container">
-		<AlertComponent style="margin-bottom: 30px">
-			This tracker is currently under development and more content will be added continuously during
-			the coming weeks. Please report any bugs or issues by emailing me at
-			<a href="mailto:hello@emilcarlsson.se">hello@emilcarlsson.se</a>, or opening issues on
-			<a href="https://github.com/carlssonemil/orion/issues/new">GitHub</a>. Thanks and good luck
-			with the grind! ✌
-		</AlertComponent>
-
 		<div class="filter-container">
 			<FiltersComponent :options="filterOptions" :show-info="true">
 				<template #info>
@@ -15,16 +7,13 @@
 						name="question-circle"
 						fill="white"
 						v-tippy="{ placement: 'bottom' }"
-						:content="'You only need to complete the number of base guns there are for each category to earn the Platinum camouflage challenge. For example, the Assault Rifles requires a total of 8 Gold camouflages to unlock the Platinum camouflage challenge for all weapons in that category. Press this icon to read more.'"
-						@click="$router.push('/requirements')" />
+						:content="'Once you have unlocked each mastery camouflage, a mastery challenge is unlocked that requires you to get a certain amount of kills while using that specific camouflage to complete it.'" />
 					<div class="mobile">
 						<IconComponent name="question-circle" fill="white"></IconComponent>
 						<p>
-							You only need to complete the number of base guns there are for each category to earn
-							the Platinum camouflage challenge. For example, the Assault Rifles requires a total of
-							8 Gold camouflages to unlock the Platinum camouflage challenge for all weapons in that
-							category. Read more
-							<router-link to="/requirements">here</router-link>.
+							Once you have unlocked each mastery camouflage, a mastery challenge is unlocked that
+							requires you to get a certain amount of kills while using that specific camouflage to
+							complete it.
 						</p>
 					</div>
 				</template>
@@ -32,16 +21,16 @@
 			<LayoutToggleComponent />
 		</div>
 
-		<WeaponsComponent :weapons="filteredWeapons" />
+		<WeaponsComponent :weapons="filteredWeapons" :mastery="true" />
 
 		<ProgressComponent
-			:progress="orionProgress"
-			label="Orion progress"
-			tooltip="Progress towards the Orion camouflage">
-			<template #modal-header>Orion unlocked! 👏🥳</template>
+			:progress="masteryProgress"
+			label="Mastery progress"
+			tooltip="Progress towards completing all mastery challenges">
+			<template #modal-header>Mastery challenges completed 👏🥳</template>
 			<template #modal-body>
 				<p>
-					Congratulations on finishing the Orion camouflage grind! It's been a long ride! You first
+					Congratulations on finishing all mastery challenges! That's quite the feat! You first
 					started tracking your grind here
 					<b>{{ daysSinceStart }} days ago</b> on
 					{{ new Date(getBeganGrind).toLocaleDateString('en-US') }}.
@@ -62,7 +51,6 @@ import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
 import { groupBy, daysBetweenDates, roundToTwoDecimals } from '@/utils/utils'
 
-import AlertComponent from '@/components/AlertComponent.vue'
 import FiltersComponent from '@/components/FiltersComponent.vue'
 import WeaponsComponent from '@/components/WeaponsComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
@@ -70,7 +58,6 @@ import LayoutToggleComponent from '@/components/LayoutToggleComponent.vue'
 
 export default {
 	components: {
-		AlertComponent,
 		FiltersComponent,
 		WeaponsComponent,
 		ProgressComponent,
@@ -112,23 +99,32 @@ export default {
 					key: 'hidePolyatomic',
 					type: 'checkbox',
 				},
+				{
+					label: 'Hide Orion',
+					key: 'hideOrion',
+					type: 'checkbox',
+				},
 			]
 		},
 
 		filteredWeapons() {
 			let filteredWeapons = this.weapons
-			const { hideGold, hidePlatinum, hidePolyatomic, weaponCategory } = this.filters
+			const { hideGold, hidePlatinum, hidePolyatomic, hideOrion, weaponCategory } = this.filters
 
 			if (hideGold) {
-				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress['Gold'])
+				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.masteryProgress['Gold'])
 			}
 
 			if (hidePlatinum) {
-				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress['Platinum'])
+				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.masteryProgress['Platinum'])
 			}
 
 			if (hidePolyatomic) {
-				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress['Polyatomic'])
+				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.masteryProgress['Polyatomic'])
+			}
+
+			if (hideOrion) {
+				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.masteryProgress['Orion'])
 			}
 
 			if (weaponCategory && weaponCategory !== 'null') {
@@ -138,34 +134,15 @@ export default {
 			return groupBy(filteredWeapons, (weapon) => weapon.category)
 		},
 
-		orionProgress() {
-			// Set the amount of required weapons to complete the Orion camouflage
-			const requiredWeapons = this.weapons.filter((weapon) => !weapon.dlc).length
+		masteryProgress() {
+			const weapons = this.weapons.filter((weapon) => !weapon.comingSoon)
+			const total = weapons.length * 4
+			const completed = weapons.reduce(
+				(acc, weapon) => acc + Object.values(weapon.masteryProgress).reduce((a, b) => a + b, 0),
+				0
+			)
 
-			// Sort and filter out the weapons with the most progress
-			const mostProgressedWeapons = this.weapons
-				.map((weapon) => {
-					let totalCamouflages = Object.keys(weapon.progress).length
-					let completedCamouflages = Object.values(weapon.progress).reduce((a, b) => a + b, 0)
-
-					return {
-						...weapon,
-						completed: Object.values(weapon.progress).reduce((a, b) => a + b, 0),
-						completedPercentage: completedCamouflages / totalCamouflages,
-					}
-				})
-				.sort((a, b) => b.completedPercentage - a.completedPercentage)
-				.splice(0, requiredWeapons)
-
-			// Count the amount of camouflages completed for the most progress weapons
-			const totalCamouflagesCompleted = mostProgressedWeapons.reduce((a, b) => a + b.completed, 0)
-
-			// Count the required amount of camouflages to complete the Orion camouflage
-			const requiredCamouflages = mostProgressedWeapons.reduce((a, b) => {
-				return a + Object.keys(b.progress).length
-			}, 0)
-
-			return roundToTwoDecimals((totalCamouflagesCompleted / requiredCamouflages) * 100)
+			return roundToTwoDecimals((completed / total) * 100)
 		},
 	},
 }

@@ -11,6 +11,7 @@
 			<div>
 				<router-link to="/">Weapons</router-link>
 				<router-link to="/camouflages">Camouflages</router-link>
+				<router-link to="/mastery">Mastery</router-link>
 				<router-link to="/requirements">Requirements</router-link>
 			</div>
 			<div class="footer">
