@@ -44,12 +44,12 @@ export default {
 		level: '20',
 		challenge: '25 one-shot kills',
 	},
-	'Crimson': {
+	'Scarlet': {
 		weapon: 'Combat Knife',
 		level: '11',
 		challenge: '50 kills',
 	},
-	'Dark Denim': {
+	'Navy': {
 		weapon: 'Basilisk',
 		level: '19',
 		challenge: '10 point blank kills',

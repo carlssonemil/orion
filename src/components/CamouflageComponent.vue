@@ -7,7 +7,7 @@
 			v-tippy="{ placement: 'bottom' }">
 			<div :class="['inner', this.isCompleted ? 'completed' : '']">
 				<img
-					:src="imageUrl(camouflage.name)"
+					:src="`/assets/camouflages/${convertToKebabCase(camouflage.name)}.png`"
 					:alt="camouflage.name"
 					onerror="javascript:this.src='/base-gradient.svg'" />
 				<IconComponent class="complete" name="check" fill="#10ac84" size="30" />
@@ -70,21 +70,6 @@ export default {
 			'toggleGoldCamouflageCompleted',
 			'toggleFavorite',
 		]),
-
-		imageUrl(camouflageName) {
-			if (camouflageName === 'Gold') {
-				return new URL('/gold-gradient.svg', import.meta.url)
-			} else if (camouflageName === 'Platinum') {
-				return new URL('/platinum-gradient.svg', import.meta.url)
-			} else if (camouflageName === 'Polyatomic') {
-				return new URL('/polyatomic-gradient.svg', import.meta.url)
-			}
-
-			return new URL(
-				`../assets/camouflages/${convertToKebabCase(camouflageName)}.png`,
-				import.meta.url
-			)
-		},
 
 		requirementTooltip(camouflage) {
 			const requirement = this.camouflageRequirements[camouflage.category][camouflage.name]

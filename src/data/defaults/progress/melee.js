@@ -1,6 +1,6 @@
 export default {
 	'Combat Knife': {
-		Crimson: false,
+		Scarlet: false,
 	},
 
 	'Riot Shield': {
