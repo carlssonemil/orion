@@ -15,6 +15,11 @@
 			</div>
 			<div class="footer">
 				<router-link to="/settings">Settings</router-link>
+				<a
+					href="https://github.com/carlssonemil/orion/issues/new?title=Bug%20Report%20-%20"
+					target="_blank">
+					Report An Issue
+				</a>
 				<router-link to="/about">About</router-link>
 				<a href="https://github.com/carlssonemil/orion">GitHub</a>
 
