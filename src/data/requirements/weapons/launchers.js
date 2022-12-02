@@ -26,7 +26,7 @@ export default {
 	},
 
 	'RPG-7': {
-		'Jungle Digital': digital['Jungle Digital (RPG)'],
+		'Jungle Digital (RPG)': digital['Jungle Digital (RPG)'],
 		...masteryChallenges,
 	},
 }
