@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<transition-group name="fade" tag="div" class="container">
-			<div :key="'favorites'" class="category">
+			<div v-if="showFavorites" :key="'favorites'" class="category">
 				<h2>
 					<span>Favorites</span>
 					<span v-if="favorites.length > 0" @click="unfavoriteAll('weapons')" class="action"
@@ -92,7 +92,11 @@ export default {
 	},
 
 	computed: {
-		...mapState(useStore, ['weaponRequirements']),
+		...mapState(useStore, ['weaponRequirements', 'preferences']),
+
+		showFavorites() {
+			return this.preferences.favorites
+		},
 
 		polyatomicUnlocked() {
 			const required = 51

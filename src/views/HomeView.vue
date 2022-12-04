@@ -29,7 +29,10 @@
 					</div>
 				</template>
 			</FiltersComponent>
-			<LayoutToggleComponent />
+			<div class="toggles">
+				<FavoritesToggleComponent />
+				<LayoutToggleComponent />
+			</div>
 		</div>
 
 		<WeaponsComponent :weapons="filteredWeapons" :favorites="favorites" />
@@ -67,6 +70,7 @@ import FiltersComponent from '@/components/FiltersComponent.vue'
 import WeaponsComponent from '@/components/WeaponsComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
 import LayoutToggleComponent from '@/components/LayoutToggleComponent.vue'
+import FavoritesToggleComponent from '@/components/FavoritesToggleComponent.vue'
 
 export default {
 	components: {
@@ -75,6 +79,7 @@ export default {
 		WeaponsComponent,
 		ProgressComponent,
 		LayoutToggleComponent,
+		FavoritesToggleComponent,
 	},
 
 	data() {
@@ -209,6 +214,16 @@ h2 {
 			margin-bottom: 20px;
 			margin-right: 0;
 			width: 100%;
+		}
+
+		.toggles {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			> :first-child {
+				margin-right: 20px;
+			}
 		}
 	}
 }

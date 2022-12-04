@@ -2,7 +2,10 @@
 	<div class="container">
 		<div class="filter-container">
 			<FiltersComponent :options="filterOptions" />
-			<LayoutToggleComponent />
+			<div class="toggles">
+				<FavoritesToggleComponent />
+				<LayoutToggleComponent />
+			</div>
 		</div>
 
 		<CamouflagesComponent :camouflages="filteredCamouflages" :favorites="favorites" />
@@ -16,6 +19,7 @@ import { groupBy } from '@/utils/utils'
 import camouflages from '../data/camouflages'
 
 import CamouflagesComponent from '@/components/CamouflagesComponent.vue'
+import FavoritesToggleComponent from '@/components/FavoritesToggleComponent.vue'
 import FiltersComponent from '@/components/FiltersComponent.vue'
 import LayoutToggleComponent from '@/components/LayoutToggleComponent.vue'
 
@@ -24,6 +28,7 @@ const store = useStore()
 export default {
 	components: {
 		CamouflagesComponent,
+		FavoritesToggleComponent,
 		FiltersComponent,
 		LayoutToggleComponent,
 	},
@@ -131,6 +136,16 @@ h2 {
 
 			#search {
 				margin: 8px 0 0;
+			}
+		}
+
+		.toggles {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			> :first-child {
+				margin-right: 20px;
 			}
 		}
 	}

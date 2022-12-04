@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<transition-group name="fade" tag="div" class="container">
-			<div v-if="!haveSearched" :key="'favorites'" class="category">
+			<div v-if="!haveSearched && showFavorites" :key="'favorites'" class="category">
 				<h2>
 					<span>Favorites</span>
 					<span v-if="favorites.length > 0" @click="unfavoriteAll('camouflages')" class="action"
@@ -87,6 +87,10 @@ export default {
 
 		layout() {
 			return this.preferences.layout
+		},
+
+		showFavorites() {
+			return this.preferences.favorites
 		},
 
 		haveSearched() {
