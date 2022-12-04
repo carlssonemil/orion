@@ -48,6 +48,9 @@ git push origin <your-branch>
 ### 7. Submit your changes for review
 If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button and open a new pull request with your changes.
 
+### 8. Visit the preview build
+After the pull request has been opened, [Vercel](https://vercel.com/) will automatically deploy a preview build which can be accessed to see how your added changes would look and function in the final build. Take a minute to test it for any bugs.
+
 ## Camouflage images
 
 If you want to help contribute some images for the camouflages, the process is the same as described above but with a few preferable additions:
