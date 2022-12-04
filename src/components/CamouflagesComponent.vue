@@ -2,7 +2,12 @@
 	<div>
 		<transition-group name="fade" tag="div" class="container">
 			<div v-if="!haveSearched" :key="'favorites'" class="category">
-				<h2>Favorites</h2>
+				<h2>
+					<span>Favorites</span>
+					<span v-if="favorites.length > 0" @click="unfavoriteAll('camouflages')" class="action"
+						>Remove all</span
+					>
+				</h2>
 
 				<transition-group
 					v-if="favorites.length > 0"
@@ -53,7 +58,7 @@
 </template>
 
 <script>
-import { mapState } from 'pinia'
+import { mapActions, mapState } from 'pinia'
 import { useStore } from '@/stores/store'
 
 import AlertComponent from '@/components/AlertComponent.vue'
@@ -90,6 +95,8 @@ export default {
 	},
 
 	methods: {
+		...mapActions(useStore, ['unfavoriteAll']),
+
 		categoryProgress(categoryTitle) {
 			let completed = 0
 			const categoryCamos = this.camouflages[categoryTitle].map((catCamo) => catCamo.name)
@@ -140,10 +147,21 @@ export default {
 			margin-bottom: 25px;
 			width: 100%;
 
-			span:last-child {
+			span:last-child:not(:first-child) {
 				color: $elevation-9-color;
 				font-size: 18px;
 				margin-left: 10px;
+
+				&.action {
+					color: $elevation-9-color;
+					cursor: pointer;
+					font-size: 14px;
+					transition: $transition;
+
+					&:hover {
+						color: lighten($elevation-9-color, 10%);
+					}
+				}
 			}
 
 			@media (max-width: $tablet) {
