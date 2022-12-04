@@ -1,5 +1,5 @@
 <template>
-	<div class="filter">
+	<div :id="filter.id" class="filter">
 		<template v-if="filter.type === 'select'">
 			<div class="select">
 				<label :for="filter.key">{{ filter.label }}</label>
@@ -30,21 +30,36 @@
 				</label>
 			</div>
 		</template>
+
+		<template v-else-if="filter.type === 'search'">
+			<div class="text icon">
+				<IconComponent name="search" height="20" width="20" />
+				<input
+					:id="filter.key"
+					type="text"
+					:value="value"
+					@input="$emit('input', $event.target.value)"
+					@change="$emit('change')"
+					:placeholder="filter.placeholder" />
+			</div>
+		</template>
 	</div>
 </template>
 
 <script>
+import IconComponent from './IconComponent.vue'
+
 export default {
 	props: {
 		filter: {
 			type: Object,
 			required: true,
 		},
-
 		value: {
 			required: true,
 		},
 	},
+	components: { IconComponent },
 }
 </script>
 

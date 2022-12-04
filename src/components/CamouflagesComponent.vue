@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<transition-group name="fade" tag="div" class="container">
-			<div :key="'favorites'" class="category">
+			<div v-if="!haveSearched" :key="'favorites'" class="category">
 				<h2>Favorites</h2>
 
 				<transition-group
@@ -46,7 +46,8 @@
 		</transition-group>
 
 		<div v-if="Object.keys(camouflages).length === 0" class="finished-placeholder">
-			<p>You have completed all camouflage challenges 👏</p>
+			<p v-if="haveSearched">Your search didn't match any camouflages 🤔</p>
+			<p v-else>You have completed all camouflage challenges 👏</p>
 		</div>
 	</div>
 </template>
@@ -77,10 +78,14 @@ export default {
 	},
 
 	computed: {
-		...mapState(useStore, ['weapons', 'preferences']),
+		...mapState(useStore, ['weapons', 'preferences', 'filters']),
 
 		layout() {
 			return this.preferences.layout
+		},
+
+		haveSearched() {
+			return this.filters.search.length > 0
 		},
 	},
 

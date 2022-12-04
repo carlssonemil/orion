@@ -44,6 +44,12 @@ export default {
 					key: 'hideCompletedCamouflages',
 					type: 'checkbox',
 				},
+				{
+					id: 'search',
+					placeholder: 'Search...',
+					key: 'search',
+					type: 'search',
+				},
 			]
 		},
 
@@ -65,7 +71,7 @@ export default {
 		},
 
 		filteredCamouflages() {
-			const { camouflageCategory, hideCompletedCamouflages } = this.filters
+			const { camouflageCategory, hideCompletedCamouflages, search } = this.filters
 
 			let filteredCamouflages = this.camouflages
 
@@ -77,6 +83,12 @@ export default {
 
 			if (hideCompletedCamouflages) {
 				filteredCamouflages = filteredCamouflages.filter((camouflage) => !camouflage.isCompleted)
+			}
+
+			if (search) {
+				filteredCamouflages = filteredCamouflages.filter((camouflage) =>
+					camouflage.name.toLowerCase().includes(search.toLowerCase())
+				)
 			}
 
 			return groupBy(filteredCamouflages, (camouflage) => camouflage.category)
@@ -116,6 +128,10 @@ h2 {
 			margin-bottom: 20px;
 			margin-right: 0;
 			width: 100%;
+
+			#search {
+				margin: 8px 0 0;
+			}
 		}
 	}
 }
@@ -123,5 +139,9 @@ h2 {
 ::v-deep .filters-component {
 	flex-grow: 1;
 	margin-right: 15px;
+
+	#search {
+		margin: 0 10px 0 auto;
+	}
 }
 </style>
