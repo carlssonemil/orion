@@ -32,7 +32,7 @@
 			<LayoutToggleComponent />
 		</div>
 
-		<WeaponsComponent :weapons="filteredWeapons" />
+		<WeaponsComponent :weapons="filteredWeapons" :favorites="favorites" />
 
 		<ProgressComponent
 			:progress="orionProgress"
@@ -75,6 +75,12 @@ export default {
 		WeaponsComponent,
 		ProgressComponent,
 		LayoutToggleComponent,
+	},
+
+	data() {
+		return {
+			store: useStore(),
+		}
 	},
 
 	computed: {
@@ -136,6 +142,12 @@ export default {
 			}
 
 			return groupBy(filteredWeapons, (weapon) => weapon.category)
+		},
+
+		favorites() {
+			if (!this.store) return []
+			const favorites = this.store.getFavorites('weapons')
+			return this.weapons.filter((weapon) => favorites.includes(weapon.name))
 		},
 
 		orionProgress() {

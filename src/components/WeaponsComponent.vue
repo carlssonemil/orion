@@ -1,6 +1,31 @@
 <template>
 	<div>
 		<transition-group name="fade" tag="div" class="container">
+			<div :key="'favorites'" class="category">
+				<h2>
+					<span>Favorites</span>
+					<span v-if="favorites.length > 0" @click="unfavoriteAll('weapons')" class="action"
+						>Remove all</span
+					>
+				</h2>
+
+				<transition-group v-if="favorites.length > 0" name="fade" tag="div" class="weapons">
+					<WeaponComponent
+						v-for="weapon in favorites"
+						:key="weapon.name"
+						:weapon="weapon"
+						:camouflages="camouflages(weapon)"
+						:mastery="mastery"
+						:polyatomicUnlocked="mastery ? null : polyatomicUnlocked" />
+				</transition-group>
+
+				<AlertComponent v-else type="empty-state" style="padding: 32px 15px 31px">
+					You don't have any favorites yet. Click the
+					<IconComponent name="star" fill="#feca57" icon-style="solid" size="20" /> icon on a
+					camouflage to add it to your favorites.
+				</AlertComponent>
+			</div>
+
 			<div
 				v-for="(category, title, index) in weapons"
 				:key="title"
@@ -38,16 +63,24 @@
 import { mapActions, mapState } from 'pinia'
 import { useStore } from '@/stores/store'
 import { filterObject } from '@/utils/utils'
+
+import AlertComponent from '@/components/AlertComponent.vue'
 import WeaponComponent from '@/components/WeaponComponent.vue'
 
 export default {
 	components: {
+		AlertComponent,
 		WeaponComponent,
 	},
 
 	props: {
 		weapons: {
 			type: Object,
+			required: true,
+		},
+
+		favorites: {
+			type: Array,
 			required: true,
 		},
 
@@ -76,7 +109,7 @@ export default {
 	},
 
 	methods: {
-		...mapActions(useStore, ['toggleCategoryCompleted']),
+		...mapActions(useStore, ['toggleCategoryCompleted', 'unfavoriteAll']),
 
 		categoryProgress(title) {
 			const progress = this.mastery ? 'masteryProgress' : 'progress'
@@ -149,10 +182,21 @@ export default {
 			margin-bottom: 25px;
 			width: 100%;
 
-			span:last-child {
+			span:last-child:not(:first-child) {
 				color: $elevation-9-color;
 				font-size: 18px;
 				margin-left: 10px;
+
+				&.action {
+					color: $elevation-9-color;
+					cursor: pointer;
+					font-size: 14px;
+					transition: $transition;
+
+					&:hover {
+						color: lighten($elevation-9-color, 10%);
+					}
+				}
 			}
 
 			@media (max-width: $tablet) {

@@ -142,6 +142,11 @@ export const useStore = defineStore({
 			this.storeProgress()
 		},
 
+		unfavoriteAll(type) {
+			this.favorites[type] = []
+			this.storeProgress()
+		},
+
 		toggleCamouflageCompleted(weaponName, camouflage, current, mastery) {
 			const progress = mastery ? 'masteryProgress' : 'progress'
 			this.weapons.find((w) => w.name === weaponName)[progress][camouflage] = !current
