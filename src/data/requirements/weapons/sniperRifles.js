@@ -25,13 +25,14 @@ export default {
 		'Neon Shards': tiger['Neon Shards'],
 		'Bloodied': fun['Bloodied'],
 		...masteryChallenges,
+		'Platinum': '20 longshot kills',
 	},
 
 	'Signal 50': {
-		'Gladiator': sprayPaint['Gladiator'],
-		'Unearthed': sprayPaint['Unearthed'],
-		'Earthbound': cliffside['Earthbound'],
-		'Spectrums': classic['Spectrums'],
+		Gladiator: sprayPaint['Gladiator'],
+		Unearthed: sprayPaint['Unearthed'],
+		Earthbound: cliffside['Earthbound'],
+		Spectrums: classic['Spectrums'],
 		...masteryChallenges,
 	},
 
