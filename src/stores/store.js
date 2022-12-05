@@ -20,6 +20,7 @@ export const useStore = defineStore({
 		favorites: {
 			camouflages: [],
 			weapons: [],
+			mastery: [],
 		},
 		filters: {},
 		weaponRequirements: { ...weaponRequirements },

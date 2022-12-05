@@ -57,7 +57,7 @@
 			:fill="isFavorite ? '#feca57' : 'gray'"
 			icon-style="solid"
 			size="25"
-			@click="toggleFavorite({ type: 'weapons', name: weapon.name })"
+			@click="toggleFavorite({ type: mastery ? 'mastery' : 'weapons', name: weapon.name })"
 			v-tippy="{ content: `${isFavorite ? 'Remove from' : 'Add to'} favorites` }" />
 	</div>
 </template>
@@ -127,7 +127,8 @@ export default {
 
 		isFavorite() {
 			if (!this.store) return false
-			return this.store.isFavorite('weapons', this.weapon.name)
+			let type = this.mastery ? 'mastery' : 'weapons'
+			return this.store.isFavorite(type, this.weapon.name)
 		},
 	},
 

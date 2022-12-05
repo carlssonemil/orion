@@ -18,10 +18,13 @@
 					</div>
 				</template>
 			</FiltersComponent>
-			<LayoutToggleComponent />
+			<div class="toggles">
+				<FavoritesToggleComponent />
+				<LayoutToggleComponent />
+			</div>
 		</div>
 
-		<WeaponsComponent :weapons="filteredWeapons" :mastery="true" />
+		<WeaponsComponent :weapons="filteredWeapons" :favorites="favorites" :mastery="true" />
 
 		<ProgressComponent
 			:progress="masteryProgress"
@@ -55,6 +58,7 @@ import FiltersComponent from '@/components/FiltersComponent.vue'
 import WeaponsComponent from '@/components/WeaponsComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
 import LayoutToggleComponent from '@/components/LayoutToggleComponent.vue'
+import FavoritesToggleComponent from '@/components/FavoritesToggleComponent.vue'
 
 export default {
 	components: {
@@ -62,6 +66,13 @@ export default {
 		WeaponsComponent,
 		ProgressComponent,
 		LayoutToggleComponent,
+		FavoritesToggleComponent,
+	},
+
+	data() {
+		return {
+			store: useStore(),
+		}
 	},
 
 	computed: {
@@ -132,6 +143,12 @@ export default {
 			}
 
 			return groupBy(filteredWeapons, (weapon) => weapon.category)
+		},
+
+		favorites() {
+			if (!this.store) return []
+			const favorites = this.store.getFavorites('mastery')
+			return this.weapons.filter((weapon) => favorites.includes(weapon.name))
 		},
 
 		masteryProgress() {

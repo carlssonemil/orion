@@ -19,7 +19,10 @@
 						:polyatomicUnlocked="mastery ? null : polyatomicUnlocked" />
 				</transition-group>
 
-				<AlertComponent v-else type="empty-state" style="padding: 32px 15px 31px">
+				<AlertComponent
+					v-else
+					type="empty-state"
+					:style="{ padding: mastery ? '42px 15px' : '32px 15px 31px' }">
 					You don't have any favorites yet. Click the
 					<IconComponent name="star" fill="#feca57" icon-style="solid" size="20" /> icon on a
 					camouflage to add it to your favorites.
