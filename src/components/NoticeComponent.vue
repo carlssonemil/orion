@@ -24,7 +24,7 @@ export default {
 	mounted() {
 		setTimeout(() => {
 			this.showNotice = true
-		}, 100)
+		}, 15000)
 	},
 }
 </script>
