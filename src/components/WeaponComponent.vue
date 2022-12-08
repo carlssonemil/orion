@@ -38,7 +38,9 @@
 					v-tippy="{ placement: 'bottom' }">
 					<div :class="['inner', { completed: camouflage.completed }]">
 						<img
-							:src="`/assets/camouflages/${convertToKebabCase(camouflage.name)}.png`"
+							:src="`https://emilcarlsson.se/orion/camouflages/${convertToKebabCase(
+								camouflage.name
+							)}.png`"
 							:alt="camouflage.name"
 							onerror="javascript:this.src='/base-gradient.svg'" />
 						<IconComponent class="complete" name="check" fill="#10ac84" />
