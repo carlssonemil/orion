@@ -26,7 +26,11 @@
 			icon-style="solid"
 			size="25"
 			@click="toggleFavorite({ type: 'camouflages', name: camouflage.name })"
-			v-tippy="{ content: `${isFavorite ? 'Remove from' : 'Add to'} favorites` }" />
+			v-tippy="{
+				content: $t('filters.toggle_favorite', {
+					state: isFavorite ? $t('general.remove_from') : $t('general.add_to'),
+				}),
+			}" />
 	</div>
 </template>
 
@@ -73,9 +77,12 @@ export default {
 
 		requirementTooltip(camouflage) {
 			const requirement = this.camouflageRequirements[camouflage.category][camouflage.name]
-			return `Get the ${requirement.weapon} to level ${requirement.level} - ${
-				requirement.challenge || 'TBA'
-			}`
+
+			return this.$t('pages.camouflages.requirement_tooltip', {
+				weapon: requirement.weapon,
+				level: requirement.level,
+				challenge: this.translateChallenge(requirement.challenge) || 'TBA',
+			})
 		},
 
 		handleToggleCompleted(camouflage) {
@@ -86,6 +93,18 @@ export default {
 
 		toggleIsCompleted() {
 			this.isCompleted = !this.isCompleted
+		},
+
+		translateChallenge(challenge) {
+			const { amount, type, seconds, times } = challenge
+
+			if (type === 'time_limit') {
+				return this.$t(`challenges.types.${type}`, { amount, seconds, times })
+			} else if (type === 'without_dying') {
+				return this.$t(`challenges.types.${type}`, { amount, times })
+			} else {
+				return this.$t(`challenges.types.${type}`, { amount })
+			}
 		},
 	},
 }

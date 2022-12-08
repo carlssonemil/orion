@@ -2,10 +2,13 @@
 	<button
 		class="favorites-toggle"
 		@click="toggleFavorites()"
-		v-tippy="{ content: 'Toggle favorites' }">
+		v-tippy="{ content: $t('filters.toggle_favorites') }">
 		<IconComponent v-if="visible" name="star" icon-style="solid" size="18" />
 		<IconComponent v-else name="star" size="18" />
-		<span>{{ visible ? 'Hide' : 'Show' }} favorites</span>
+		<span>
+			{{ visible ? $t('general.hide') : $t('general.show') }}
+			{{ $t('general.favorites').toLowerCase() }}
+		</span>
 	</button>
 </template>
 

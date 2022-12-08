@@ -3,10 +3,10 @@
 		<transition-group name="fade" tag="div" class="container">
 			<div v-if="!haveSearched && showFavorites" :key="'favorites'" class="category">
 				<h2>
-					<span>Favorites</span>
-					<span v-if="favorites.length > 0" @click="unfavoriteAll('camouflages')" class="action"
-						>Remove all</span
-					>
+					<span>{{ $t('general.favorites') }}</span>
+					<span v-if="favorites.length > 0" @click="unfavoriteAll('camouflages')" class="action">
+						{{ $t('general.remove_all') }}
+					</span>
 				</h2>
 
 				<transition-group
@@ -21,9 +21,12 @@
 				</transition-group>
 
 				<AlertComponent v-else type="empty-state" style="padding: 42px 15px">
-					You don't have any favorites yet. Click the
-					<IconComponent name="star" fill="#feca57" icon-style="solid" size="20" /> icon on a
-					camouflage to add it to your favorites.
+					<i18n path="general.no_favorites_placeholder">
+						<template #star>
+							<IconComponent name="star" fill="#feca57" icon-style="solid" size="20" />
+						</template>
+						<template #type>{{ $tc('general.camouflage').toLowerCase() }}</template>
+					</i18n>
 				</AlertComponent>
 			</div>
 
@@ -36,7 +39,7 @@
 					<span>
 						{{ title }}
 					</span>
-					<span v-tippy content="Camouflage progress for category">
+					<span v-tippy :content="$t('pages.camouflages.completed_in_category')">
 						{{ categoryProgress(title) }}
 					</span>
 				</h2>
@@ -51,8 +54,8 @@
 		</transition-group>
 
 		<div v-if="Object.keys(camouflages).length === 0" class="finished-placeholder">
-			<p v-if="haveSearched">Your search didn't match any camouflages 🤔</p>
-			<p v-else>You have completed all camouflage challenges 👏</p>
+			<p v-if="haveSearched">{{ $t('pages.camouflages.empty_search') }}</p>
+			<p v-else>{{ $t('pages.camouflages.finished_placeholder') }}</p>
 		</div>
 	</div>
 </template>

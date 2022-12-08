@@ -11,8 +11,15 @@
 						polyatomic: polyatomicCompleted,
 					},
 				]"
+				:data-label="weapon.comingSoon ? $t('general.coming_soon') : null"
 				@dblclick="toggleWeaponCompleted(weapon, completed, mastery)"
-				v-tippy="{ content: `Double-click to ${completed ? 'reset' : 'complete'} weapon` }">
+				v-tippy="{
+					content: $t('pages.weapons.double_click_tooltip', {
+						state: completed
+							? $t('general.reset').toLowerCase()
+							: $t('general.complete').toLowerCase(),
+					}),
+				}">
 				{{ weapon.name }}
 			</div>
 
@@ -58,7 +65,11 @@
 			icon-style="solid"
 			size="25"
 			@click="toggleFavorite({ type: mastery ? 'mastery' : 'weapons', name: weapon.name })"
-			v-tippy="{ content: `${isFavorite ? 'Remove from' : 'Add to'} favorites` }" />
+			v-tippy="{
+				content: $t('filters.toggle_favorite', {
+					state: isFavorite ? $t('general.remove_from') : $t('general.add_to'),
+				}),
+			}" />
 	</div>
 </template>
 
@@ -144,12 +155,18 @@ export default {
 			let requirement = 'TBA'
 
 			if (this.mastery) {
-				requirement = this.masteryRequirements[camouflage]
+				requirement = this.translateChallenge(this.masteryRequirements[camouflage], true)
 			} else {
 				requirement = this.weaponRequirements[weapon.category][weapon.name][camouflage]
 
-				if (requirement && requirement.challenge) {
-					return `${camouflage} - Level ${requirement.level} - ${requirement.challenge}`
+				if (requirement && requirement) {
+					if (requirement.challenge) {
+						return `${camouflage} - Level ${requirement.level} - ${this.translateChallenge(
+							requirement.challenge
+						)}`
+					} else {
+						return `${camouflage} - ${this.translateChallenge(requirement)}`
+					}
 				}
 			}
 
@@ -160,16 +177,36 @@ export default {
 			let requirement = 'TBA'
 
 			if (this.mastery) {
-				requirement = this.masteryRequirements[camouflage]
+				requirement = this.translateChallenge(this.masteryRequirements[camouflage], true)
 			} else {
 				requirement = this.weaponRequirements[weapon.category][weapon.name][camouflage]
 
-				if (requirement && requirement.challenge) {
-					return requirement.challenge
+				if (requirement) {
+					if (requirement.challenge) {
+						return this.translateChallenge(requirement.challenge)
+					} else {
+						return this.translateChallenge(requirement)
+					}
 				}
 			}
 
 			return requirement
+		},
+
+		translateChallenge(challenge, mastery) {
+			const { amount, type, seconds, times, camouflage } = challenge
+
+			if (mastery) {
+				return this.$t('challenges.mastery', { amount, camouflage })
+			}
+
+			if (type === 'time_limit') {
+				return this.$t(`challenges.types.${type}`, { amount, seconds, times })
+			} else if (type === 'without_dying') {
+				return this.$t(`challenges.types.${type}`, { amount, times })
+			} else {
+				return this.$t(`challenges.types.${type}`, { amount })
+			}
 		},
 	},
 }
@@ -220,7 +257,7 @@ export default {
 					border-radius: 100px;
 					bottom: 0;
 					color: $text-color;
-					content: 'Coming Soon';
+					content: attr(data-label);
 					font-size: 10px;
 					font-weight: 500;
 					left: 50%;

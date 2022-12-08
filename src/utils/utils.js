@@ -69,6 +69,16 @@ const roundToTwoDecimals = (num) => {
 	return Math.round((num + Number.EPSILON) * 100) / 100
 }
 
+const getStoredLocale = () => {
+	const token = import.meta.env.MODE === 'production' ? 'orion' : 'orion-dev'
+	const storage = localStorage.getItem(token)
+
+	if (!storage) return 'en-US'
+
+	const { preferences } = JSON.parse(storage)
+	if (preferences) return preferences.locale
+}
+
 export {
 	convertToKebabCase,
 	copyToClipboard,
@@ -77,4 +87,5 @@ export {
 	filterObject,
 	groupBy,
 	roundToTwoDecimals,
+	getStoredLocale,
 }

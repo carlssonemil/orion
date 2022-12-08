@@ -1,4 +1,5 @@
 footer {
+	align-items: center;
 	cursor: default;
 	display: flex;
 	justify-content: space-between;
@@ -22,6 +23,11 @@ footer {
 		opacity: 0.85;
 	}
 
+	> div {
+		align-items: center;
+		display: flex;
+	}
+
 	a {
 		color: $text-color;
 		text-decoration: none;
@@ -30,6 +36,14 @@ footer {
 		&:hover {
 			opacity: 1;
 			text-decoration: underline;
+		}
+
+		&:last-of-type {
+			margin-right: 50px;
+
+			@media (max-width: $tablet) {
+				margin-right: 35px;
+			}
 		}
 
 		+ a {

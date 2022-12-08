@@ -39,19 +39,19 @@ export default {
 		filterOptions() {
 			return [
 				{
-					label: 'Category',
+					label: this.$tc('general.category'),
 					key: 'camouflageCategory',
 					type: 'select',
 					options: this.camouflageCategories,
 				},
 				{
-					label: 'Hide Completed',
+					label: this.$t('filters.hide_completed'),
 					key: 'hideCompletedCamouflages',
 					type: 'checkbox',
 				},
 				{
 					id: 'search',
-					placeholder: 'Search...',
+					placeholder: `${this.$t('general.search')}...`,
 					key: 'search',
 					type: 'search',
 				},

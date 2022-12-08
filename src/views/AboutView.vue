@@ -1,7 +1,7 @@
 <template>
 	<div class="about container">
-		<h3>Simple, lightweight &amp; intuitive</h3>
-		<p>Keep track of your progress to the Orion camouflage with this easy-to-use tracker.</p>
+		<h3>{{ $t('pages.about.title') }}</h3>
+		<p>{{ $t('pages.about.subtitle') }}</p>
 
 		<div class="features">
 			<div class="feature" v-for="feature in features" :key="feature.title">
@@ -15,16 +15,18 @@
 			</div>
 		</div>
 
-		<h4>Open source</h4>
+		<h4>{{ $t('pages.about.open_source') }}</h4>
 		<p>
-			Built with <a href="https://vuejs.org/">Vue</a>, hosted on
-			<a href="https://vercel.com/">Vercel</a> and analytics by
-			<a href="https://plausible.io/">Plausible</a>. The code to this site is available on
-			<a href="https://github.com/carlssonemil/orion">GitHub</a>.
+			<i18n path="pages.about.open_source_description">
+				<a href="https://vuejs.org/">Vue</a>
+				<a href="https://vercel.com/">Vercel</a>
+				<a href="https://plausible.io/">Plausible</a>
+				<a href="https://github.com/carlssonemil/orion">GitHub</a>
+			</i18n>
 		</p>
 
-		<h4>Previous trackers</h4>
-		<p>Looking for camouflage trackers for the previous Call of Duty games going back to 2019?</p>
+		<h4>{{ $t('pages.about.previous_trackers') }}</h4>
+		<p>{{ $t('pages.about.previous_trackers_description') }}</p>
 		<div class="trackers">
 			<a
 				class="tracker"
@@ -38,11 +40,13 @@
 			</a>
 		</div>
 
-		<h4>Support me</h4>
+		<h4>{{ $t('pages.about.support_me') }}</h4>
 		<p>
-			You can support me by
-			<a href="https://www.buymeacoffee.com/emilcarlsson">buying me a beer</a> 🍺, it'd be greatly
-			appreciated!
+			<i18n path="pages.about.support_me_description">
+				<a href="https://www.buymeacoffee.com/emilcarlsson">{{
+					$t('pages.about.support_me_link')
+				}}</a>
+			</i18n>
 		</p>
 	</div>
 </template>
@@ -57,28 +61,28 @@ export default {
 		return {
 			features: [
 				{
-					title: 'Autosaving',
-					description: 'Your progress is automatically saved and stored. No account needed.',
+					title: this.$t('pages.about.features.autosaving.title'),
+					description: this.$t('pages.about.features.autosaving.description'),
 					icon: 'save',
 				},
 				{
-					title: 'Responsive',
-					description: 'Use it on your smartphone while gaming.',
+					title: this.$t('pages.about.features.responsive.title'),
+					description: this.$t('pages.about.features.responsive.description'),
 					icon: 'mobile-android',
 				},
 				{
-					title: 'Export/Import',
-					description: 'Export your progress to another device or browser.',
+					title: this.$t('pages.about.features.export_import.title'),
+					description: this.$t('pages.about.features.export_import.description'),
 					icon: 'file-export',
 				},
 				{
-					title: 'Filterable',
-					description: 'Easily switch between weapon categories and toggle completed on/off.',
+					title: this.$t('pages.about.features.filterable.title'),
+					description: this.$t('pages.about.features.filterable.description'),
 					icon: 'filter',
 				},
 				{
-					title: 'Ad-free',
-					description: 'No annoying ads cluttering the site. Not now, not ever.',
+					title: this.$t('pages.about.features.ad_free.title'),
+					description: this.$t('pages.about.features.ad_free.description'),
 					icon: 'image-slash',
 				},
 			],

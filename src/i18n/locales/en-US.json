@@ -1,0 +1,206 @@
+{
+	"general": {
+		"about": "About",
+		"add_to": "Add to",
+		"all": "All",
+		"camouflage": "Camouflage | Camouflages",
+		"category": "Category | Categories",
+		"change_language": "Change language",
+		"close": "Close",
+		"coming_soon": "Coming soon",
+		"complete": "Complete",
+		"days_ago": "{0} day ago | {0} days ago",
+		"favorites": "Favorites",
+		"filters": "Filters",
+		"grid": "Grid",
+		"hide": "Hide",
+		"list": "List",
+		"made_by": "Made by {0}",
+		"mastery": "Mastery",
+		"mobile_nav_support_link": "Support me by buying me a beer 🍺",
+		"no_favorites_placeholder": "You don't have any favorites yet. Click the {star} icon on a {type} to add it to your favorites.",
+		"remove_all": "Remove all",
+		"remove_from": "Remove from",
+		"report_an_issue": "Report an issue",
+		"requirement": "Requirement | Requirements",
+		"reset": "Reset",
+		"search": "Search",
+		"setting": "Setting | Settings",
+		"show": "Show",
+		"support_notice_link": "buying me a beer",
+		"support_notice": "If you like this tracker, show your appreciation by {link} 🍺",
+		"weapon": "Weapon | Weapons"
+	},
+	"filters": {
+		"hide_completed": "Hide completed",
+		"hide_gold": "Hide Gold",
+		"hide_orion": "Hide Orion",
+		"hide_platinum": "Hide Platinum",
+		"hide_polyatomic": "Hide Polyatomic",
+		"toggle_favorite": "{state} favorites",
+		"toggle_favorites": "Toggle favorites",
+		"toggle_layout": "Toggle layout"
+	},
+	"locales": {
+		"en-US": "English",
+		"sv-SE": "Svenska"
+	},
+	"pages": {
+		"404": {
+			"description": "Dang, looks like you took a wrong turn and ended up on a missing page. 🤔",
+			"link": "Return to home"
+		},
+		"about": {
+			"features": {
+				"autosaving": {
+					"title": "Autosaving",
+					"description": "Your progress is automatically saved and stored. No account needed."
+				},
+				"responsive": {
+					"title": "Responsive",
+					"description": "The tracker works on all devices, from desktop to mobile."
+				},
+				"export_import": {
+					"title": "Export/Import",
+					"description": "Export your progress to a file and import it on another device."
+				},
+				"filterable": {
+					"title": "Filterable",
+					"description": "Easily switch between weapon categories and toggle completed on/off."
+				},
+				"ad_free": {
+					"title": "Ad-free",
+					"description": "No annoying ads cluttering the site. Not now, not ever."
+				}
+			},
+			"open_source_description": "Built with {0}, hosted on {1} and analytics by {2}. The code to this site is available on {3}.",
+			"open_source": "Open source",
+			"previous_trackers_description": "Looking for camouflage trackers for the previous Call of Duty games going back to 2019?",
+			"previous_trackers": "Previous trackers",
+			"subtitle": "Keep track of your progress to the Orion camouflage with this easy-to-use tracker.",
+			"support_me_description": "You can support me by {0} 🍺, it'd be greatly appreciated!",
+			"support_me_link": "buying me a beer",
+			"support_me": "Support me",
+			"title": "Simple, lightweight & intuitive"
+		},
+		"camouflages": {
+			"completed_in_category": "Camouflages completed in category",
+			"empty_search": "Your search didn't match any camouflages 🤔",
+			"finished_placeholder": "You have completed all camouflage challenges 👏",
+			"requirement_tooltip": "Get the {weapon} to level {level} - {challenge}"
+		},
+		"mastery": {
+			"completed_modal": {
+				"body": "Congratulations on finishing all mastery challenges! That's quite the feat! You first started tracking your grind here {duration} on {date}.",
+				"support_link": "buying me a beer",
+				"support": "If you liked this tracker, show your appreciation by spreading the word about it and if you're feeling generous please consider {0} as a thanks. Hope I see you on the battlefield! Cheers! 🍺",
+				"title": "Mastery challenges completed 👏🥳"
+			},
+			"info": "Once you have unlocked each mastery camouflage, a mastery challenge is unlocked that requires you to get a certain amount of kills while using that specific camouflage to complete it.",
+			"progress": {
+				"label": "Mastery progress",
+				"tooltip": "Progress towards completing all mastery challenges"
+			}
+		},
+		"requirements": {
+			"checklist": {
+				"base": "Base camouflages on 51 weapons",
+				"gold": "Gold camouflage on 51 weapons",
+				"platinum": "Platinum camouflage on 51 weapons",
+				"polyatomic": "Polyatomic camouflage on 51 weapons"
+			},
+			"description": "The new camouflage system implemented in Modern Warfare II is quite different from the most recent Call of Duty games and it can be quite hard to get a grasp and understand it at first, at least I thought so. However, it seems to be much easier to grind through compared to the previous games. To unlock the Orion camouflage the following requirements must be met: {checklist} As you progress through the camouflage stages you will unlock the next stage:",
+			"stages": {
+				"base": "Base",
+				"gold": "Gold",
+				"orion": "Orion",
+				"platinum": "Platinum",
+				"polyatomic": "Polyatomic"
+			},
+			"table": {
+				"headers": {
+					"requirement": "Requirement",
+					"stage": "Stage"
+				},
+				"stage_requirements": {
+					"base": "Base camouflages are awarded per their associated weapon base challenge, unlocked by leveling the specific weapon.",
+					"gold": "Once the Base camouflages has been unlocked you unlock the Gold camouflage challenge for that specific weapon.",
+					"orion": "Orion camouflage will automatically unlock when you have unlocked the Polyatomic camouflage on 51 weapons.",
+					"platinum": "After completing all Gold camouflage challenges for a specific category, you unlock the Platinum camouflage challenge for that specific weapon.",
+					"polyatomic": "Once you've unlocked the Platinum camouflage for all categories and weapons you then unlock the Polyatomic camouflage challenge for each weapon."
+				},
+				"subtitle": "To get to the next camouflage stage you need to first unlock the previous stage:",
+				"title": "How do I unlock each camouflage stage?"
+			},
+			"title": "How do I unlock the Orion camouflage?"
+		},
+		"settings": {
+			"export": {
+				"copy_to_clipboard": "Copy to clipboard",
+				"description": "Export your progress to another device, or browser.",
+				"download_as_file": "Download as file",
+				"title": "Export progress"
+			},
+			"import": {
+				"description": "Import your progress from another device, or browser, by either pasting the exported code or uploading the exported file.",
+				"import_code": "Import code",
+				"import_disabled_tooltip": "You need to input code in the field above.",
+				"import_from_file": "Import from file",
+				"placeholder": "Paste code here, or import from file below.",
+				"title": "Import progress"
+			},
+			"reset": {
+				"confirm": {
+					"body": "Are you sure you want to reset all your progress?",
+					"cancel": "Cancel",
+					"reset": "Reset",
+					"title": "Reset all progress"
+				},
+				"description": "This action will reset all your progress and start over from zero.",
+				"reset_my_progress": "Reset my progress",
+				"title": "Reset all progress",
+				"warning": "This action is irreversible if you haven't exported your progress."
+			}
+		},
+		"weapons": {
+			"completed_in_category": "Weapons completed in category",
+			"completed_modal": {
+				"body": "Congratulations on finishing the Orion camouflage grind! It's been a long ride! You first started tracking your grind here {duration} on {date}.",
+				"support_link": "buying me a beer",
+				"support": "If you liked this tracker, show your appreciation by spreading the word about it and if you're feeling generous please consider {0} as a thanks. Hope I see you on the battlefield! Cheers! 🍺",
+				"title": "Orion unlocked! 👏🥳"
+			},
+			"double_click_tooltip": "Double-click to {state} weapon",
+			"finished_placeholder": "You have completed all camouflage challenges 👏",
+			"info_link": "here",
+			"info_tooltip": "You only need to complete the number of base guns there are for each category to earn the Platinum camouflage challenge. For example, the Assault Rifles requires a total of 8 Gold camouflages to unlock the Platinum camouflage challenge for all weapons in that category. Press this icon to read more.",
+			"info": "You only need to complete the number of base guns there are for each category to earn the Platinum camouflage challenge. For example, the Assault Rifles requires a total of 8 Gold camouflages to unlock the Platinum camouflage challenge for all weapons in that category. Read more {link}.",
+			"progress": {
+				"label": "Orion progress",
+				"tooltip": "Progress towards the Orion camouflage"
+			}
+		}
+	},
+	"challenges": {
+		"mastery": "{amount} Kills while using the {camouflage} Camo",
+		"types": {
+			"behind": "{amount} kills from behind",
+			"mounted": "{amount} kills while mounted",
+			"hipfire": "{amount} hipfire kills",
+			"ads": "{amount} kills while aiming down sights",
+			"one_shot": "{amount} one-shot kills",
+			"double": "{amount} double kills",
+			"crouched": "{amount} kills while crouched",
+			"prone": "{amount} kills while prone",
+			"kills": "{amount} kills",
+			"point_blank": "{amount} point blank kills",
+			"suppressor": "{amount} kills using a suppressor",
+			"time_limit": "{amount} kills within {seconds} seconds of each other {times} times",
+			"akimbo": "{amount} kills with Akimbo weapons",
+			"without_dying": "{amount} kills without dying {times} times",
+			"longshot": "{amount} longshot kills",
+			"headshot": "{amount} headshot kills",
+			"destroy_streaks_equipment_or_vehicles": "Destroy {amount} enemy streaks, equipment, or vehicles"
+		}
+	}
+}

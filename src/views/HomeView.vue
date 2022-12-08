@@ -1,5 +1,6 @@
 <template>
 	<div class="container">
+		<!-- TODO: Remove this -->
 		<AlertComponent style="margin-bottom: 30px">
 			This tracker is currently under development and more content will be added continuously during
 			the coming weeks. Please report any bugs or issues by emailing me at
@@ -15,17 +16,15 @@
 						name="question-circle"
 						fill="white"
 						v-tippy="{ placement: 'bottom' }"
-						:content="'You only need to complete the number of base guns there are for each category to earn the Platinum camouflage challenge. For example, the Assault Rifles requires a total of 8 Gold camouflages to unlock the Platinum camouflage challenge for all weapons in that category. Press this icon to read more.'"
+						:content="$t('pages.weapons.info_tooltip')"
 						@click="$router.push('/requirements')" />
 					<div class="mobile">
 						<IconComponent name="question-circle" fill="white"></IconComponent>
-						<p>
-							You only need to complete the number of base guns there are for each category to earn
-							the Platinum camouflage challenge. For example, the Assault Rifles requires a total of
-							8 Gold camouflages to unlock the Platinum camouflage challenge for all weapons in that
-							category. Read more
-							<router-link to="/requirements">here</router-link>.
-						</p>
+						<i18n path="pages.weapons.info" tag="p">
+							<template #link>
+								<router-link to="/requirements">{{ $t('pages.weapons.info_link') }}</router-link>
+							</template>
+						</i18n>
 					</div>
 				</template>
 			</FiltersComponent>
@@ -39,22 +38,28 @@
 
 		<ProgressComponent
 			:progress="orionProgress"
-			label="Orion progress"
-			tooltip="Progress towards the Orion camouflage">
-			<template #modal-header>Orion unlocked! 👏🥳</template>
+			:label="$t('pages.weapons.progress.label')"
+			:tooltip="$t('pages.weapons.progress.tooltip')">
+			<template #modal-header>{{ $t('pages.weapons.completed_modal.title') }}</template>
 			<template #modal-body>
-				<p>
-					Congratulations on finishing the Orion camouflage grind! It's been a long ride! You first
-					started tracking your grind here
-					<b>{{ daysSinceStart }} days ago</b> on
-					{{ new Date(getBeganGrind).toLocaleDateString('en-US') }}.
-				</p>
-				<p style="margin-top: 15px; font-size: 14px; color: #aaa">
-					If you liked this tracker, show your appreciation by spreading the word about it and if
-					you're feeling generous please consider
-					<a href="https://www.buymeacoffee.com/emilcarlsson" target="_blank">buying me a beer</a>
-					as a thanks. Hope I see you on the battlefield! Cheers! 🍺
-				</p>
+				<i18n path="pages.weapons.completed_modal.body" tag="p">
+					<template #duration>
+						<b>{{ daysSinceStart }} {{ $tc('general.days_ago', daysSinceStart) }}</b>
+					</template>
+
+					<template #date>
+						<b>{{ new Date(getBeganGrind).toLocaleDateString('en-US') }}</b>
+					</template>
+				</i18n>
+
+				<i18n
+					path="pages.mastery.completed_modal.support"
+					tag="p"
+					style="margin-top: 15px; font-size: 14px; color: #aaa">
+					<a href="https://www.buymeacoffee.com/emilcarlsson" target="_blank">
+						{{ $t('pages.mastery.completed_modal.support_link') }}
+					</a>
+				</i18n>
 			</template>
 		</ProgressComponent>
 	</div>
@@ -103,23 +108,23 @@ export default {
 		filterOptions() {
 			return [
 				{
-					label: 'Category',
+					label: this.$tc('general.category'),
 					key: 'weaponCategory',
 					type: 'select',
 					options: this.weaponCategories,
 				},
 				{
-					label: 'Hide Gold',
+					label: this.$t('filters.hide_gold'),
 					key: 'hideGold',
 					type: 'checkbox',
 				},
 				{
-					label: 'Hide Platinum',
+					label: this.$t('filters.hide_platinum'),
 					key: 'hidePlatinum',
 					type: 'checkbox',
 				},
 				{
-					label: 'Hide Polyatomic',
+					label: this.$t('filters.hide_polyatomic'),
 					key: 'hidePolyatomic',
 					type: 'checkbox',
 				},

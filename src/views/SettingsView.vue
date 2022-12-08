@@ -1,27 +1,24 @@
 <template>
 	<div class="settings container">
 		<div class="setting">
-			<h3>Export progress</h3>
-			<p class="subtitle">Export your progress to another device, or browser.</p>
+			<h3>{{ $t('pages.settings.export.title') }}</h3>
+			<p class="subtitle">{{ $t('pages.settings.export.description') }}</p>
 			<textarea v-model="weaponsJson" />
 			<div class="actions">
 				<button @click="copyCodeToClipboard($event)">
 					<IconComponent name="clipboard" color="black" size="18" />
-					<span>Copy to clipboard</span>
+					<span>{{ $t('pages.settings.export.copy_to_clipboard') }}</span>
 				</button>
 				<button @click="exportProgressAsFile()">
 					<IconComponent name="file-download" color="black" size="18" />
-					<span>Download as file</span>
+					<span>{{ $t('pages.settings.export.download_as_file') }}</span>
 				</button>
 			</div>
 		</div>
 
 		<div class="setting">
-			<h3>Import progress</h3>
-			<p class="subtitle">
-				Import your progress from another device, or browser, by either pasting the exported code or
-				uploading the exported file.
-			</p>
+			<h3>{{ $t('pages.settings.import.title') }}</h3>
+			<p class="subtitle">{{ $t('pages.settings.import.description') }}</p>
 			<div class="textarea-wrapper">
 				<textarea v-model="importJsonCode" />
 			</div>
@@ -29,17 +26,17 @@
 				<span
 					style="display: inline-block"
 					v-tippy="{
-						content: 'You need to input code in the field above.',
+						content: $t('pages.settings.import.import_disabled_tooltip'),
 						onShow: () => !importJsonCode,
 					}">
 					<button @click="importProgressFromCode()" :disabled="!importJsonCode">
 						<IconComponent name="file-import" color="black" size="18" />
-						<span>Import code</span>
+						<span>{{ $t('pages.settings.import.import_code') }}</span>
 					</button>
 				</span>
 				<label for="import" class="button" :disabled="uploading">
 					<IconComponent name="file-upload" color="black" size="18" />
-					<span>Import from file</span>
+					<span>{{ $t('pages.settings.import.import_from_file') }}</span>
 					<LoaderComponent v-if="uploading" :size="18" />
 				</label>
 			</div>
@@ -47,15 +44,15 @@
 		</div>
 
 		<div class="setting danger">
-			<h3>Reset all progress</h3>
-			<p class="subtitle">This action will reset all your progress and start over from zero.</p>
+			<h3>{{ $t('pages.settings.reset.title') }}</h3>
+			<p class="subtitle">{{ $t('pages.settings.reset.description') }}</p>
 			<button @click="confirmProgressReset()" class="danger">
 				<IconComponent name="trash" size="18" />
-				<span>Reset my progress</span>
+				<span>{{ $t('pages.settings.reset.reset_my_progress') }}</span>
 			</button>
 			<p class="danger">
 				<IconComponent name="exclamation-triangle" color="#ee5253" size="18" />
-				<span>This action is irreversible if you haven't exported your progress.</span>
+				<span>{{ $t('pages.settings.reset.warning') }}</span>
 			</p>
 		</div>
 
@@ -66,9 +63,9 @@
 					size="22"
 					color="#ee5253"
 					style="margin-right: 8px" />
-				<span>Reset all progress</span>
+				<span>{{ $t('pages.settings.reset.confirm.title') }}</span>
 			</template>
-			<p>Are you sure you want to reset all your progress?</p>
+			<p>{{ $t('pages.settings.reset.confirm.body') }}</p>
 			<template #footer>
 				<button
 					@click="
@@ -76,9 +73,11 @@
 						$refs.modal.close()
 					"
 					class="danger">
-					Reset
+					{{ $t('pages.settings.reset.confirm.reset') }}
 				</button>
-				<button @click="$refs.modal.close()" class="secondary">Cancel</button>
+				<button @click="$refs.modal.close()" class="secondary">
+					{{ $t('pages.settings.reset.confirm.cancel') }}
+				</button>
 			</template>
 		</ModalComponent>
 	</div>

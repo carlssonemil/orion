@@ -13,9 +13,19 @@ import {
 } from '../camouflages/_index'
 
 const masteryChallenges = {
-	Gold: '3 kills without dying 10 times',
-	Platinum: '25 longshot kills',
-	Polyatomic: '20 headshot kills',
+	Gold: {
+		amount: 3,
+		type: 'without_dying',
+		times: 10,
+	},
+	Platinum: {
+		amount: 25,
+		type: 'longshot',
+	},
+	Polyatomic: {
+		amount: 20,
+		type: 'headshot',
+	},
 }
 
 export default {
@@ -25,7 +35,10 @@ export default {
 		'Neon Shards': tiger['Neon Shards'],
 		'Bloodied': fun['Bloodied'],
 		...masteryChallenges,
-		'Platinum': '20 longshot kills',
+		'Platinum': {
+			amount: 20,
+			type: 'longshot',
+		},
 	},
 
 	'Signal 50': {
@@ -42,7 +55,10 @@ export default {
 		'Leafless': foliage['Leafless'],
 		'Teal Tiger': tiger['Teal Tiger'],
 		...masteryChallenges,
-		'Polyatomic': '25 headshot kills',
+		'Polyatomic': {
+			amount: 25,
+			type: 'headshot',
+		},
 	},
 
 	'SP-X 80': {
@@ -51,7 +67,10 @@ export default {
 		'Aspen': foliage['Aspen'],
 		'Lichyard': skulls['Lichyard'],
 		...masteryChallenges,
-		'Polyatomic': '25 headshot kills',
+		'Polyatomic': {
+			amount: 25,
+			type: 'headshot',
+		},
 	},
 
 	'Victus XMR': {
@@ -60,6 +79,9 @@ export default {
 		'Tangographical': woodland['Tangographical'],
 		'Coral Reef': fun['Coral Reef'],
 		...masteryChallenges,
-		'Polyatomic': '25 headshot kills',
+		'Polyatomic': {
+			amount: 25,
+			type: 'headshot',
+		},
 	},
 }

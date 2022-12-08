@@ -1,0 +1,206 @@
+{
+	"general": {
+		"about": "Om",
+		"add_to": "Lägg till i",
+		"all": "Alla",
+		"camouflage": "Camouflage | Camouflager",
+		"category": "Kategori | Kategorier",
+		"change_language": "Ändra språk",
+		"close": "Stäng",
+		"coming_soon": "Kommer snart",
+		"complete": "Färdigställa",
+		"days_ago": "{0} dag sedan | {0} dagar sedan",
+		"favorites": "Favoriter",
+		"filters": "Filter",
+		"grid": "Rutnät",
+		"hide": "Dölj",
+		"list": "Lista",
+		"made_by": "Skapad av {0}",
+		"mastery": "Mastery",
+		"mobile_nav_support_link": "Stöd mig genom att köpa en öl till mig 🍺",
+		"no_favorites_placeholder": "Du har inga favoriter än. Klicka på {star} ikonen på ett {type} för att lägga till den i dina favoriter.",
+		"remove_all": "Ta bort alla",
+		"remove_from": "Ta bort från",
+		"report_an_issue": "Rapportera ett problem",
+		"requirement": "Krav | Krav",
+		"reset": "Återställ",
+		"search": "Sök",
+		"setting": "Inställning | Inställningar",
+		"show": "Visa",
+		"support_notice_link": "köpa en öl till mig",
+		"support_notice": "Om du gillar den här hemsidan, visa din uppskattning genom att {link} 🍺",
+		"weapon": "Vapen | Vapen"
+	},
+	"filters": {
+		"hide_completed": "Dölj avklarade",
+		"hide_gold": "Dölj Guld",
+		"hide_orion": "Dölj Orion",
+		"hide_platinum": "Dölj Platinum",
+		"hide_polyatomic": "Dölj Polyatomic",
+		"toggle_favorite": "{state} favoriter",
+		"toggle_favorites": "Växla favoriter",
+		"toggle_layout": "Växla layout"
+	},
+	"locales": {
+		"en-US": "English",
+		"sv-SE": "Svenska"
+	},
+	"pages": {
+		"404": {
+			"description": "Hoppsan, det ser ut som att du tog fel sväng och hamnade på en saknad sida. 🤔",
+			"link": "Återvänd hem"
+		},
+		"about": {
+			"features": {
+				"autosaving": {
+					"title": "Autosparning",
+					"description": "Dina framsteg sparas och lagras automatiskt. Inget konto behövs."
+				},
+				"responsive": {
+					"title": "Responsiv",
+					"description": "Hemsidan fungerar på alla enheter, från dator till mobil."
+				},
+				"export_import": {
+					"title": "Exportera/Importera",
+					"description": "Exportera dina framsteg till en fil och importera den till en annan enhet."
+				},
+				"filterable": {
+					"title": "Filtreringsbar",
+					"description": "Växla enkelt mellan vapenkategorier och växla avklarade på/av."
+				},
+				"ad_free": {
+					"title": "Annonsfri",
+					"description": "Inga irriterande annonser som väsnas på hemsidan. Inte nu, aldrig någonsin."
+				}
+			},
+			"open_source_description": "Byggd med {0}, lagrad på {1} och analys av {2}. Koden till den här webbplatsen är tillgänglig på {3}.",
+			"open_source": "Öppen källkod",
+			"previous_trackers_description": "Letar du efter camouflage trackers för de tidigare Call of Duty-spelen som går tillbaka till 2019?",
+			"previous_trackers": "Tidigare trackers",
+			"subtitle": "Håll koll på dina framsteg till Orion-camouflaget med denna lättanvända tracker.",
+			"support_me_description": "Du kan stötta mig genom att {0} 🍺, det skulle vara mycket uppskattat!",
+			"support_me_link": "köpa en öl",
+			"support_me": "Stötta mig",
+			"title": "Enkel, lätt och intuitiv"
+		},
+		"camouflages": {
+			"completed_in_category": "Camouflager färdiga i kategori",
+			"empty_search": "Din sökning matchade inte några camouflager 🤔",
+			"finished_placeholder": "Du har klarat alla camouflageutmaningar 👏",
+			"requirement_tooltip": "Få {weapon} till level {level} - {challenge}"
+		},
+		"mastery": {
+			"completed_modal": {
+				"body": "Grattis till att du klarat alla mastery utmaningar! Det är riktigt bra! Du började först spåra din grind här {duration} den {date}.",
+				"support_link": "köpa en öl åt mig",
+				"support": "Om du gillade den här trackern, visa din uppskattning genom att sprida budskapet om det och om du känner dig extra generös kan du överväga att {0} som ett tack. Hoppas vi ses på slagfältet! Skål! 🍺",
+				"title": "Mastery utmaningar avklarade 👏🥳"
+			},
+			"info": "När du har låst upp varje mastery-camouflage låses en mastery-utmaning upp som kräver att du får ett visst antal kills medan du använder det specifika camouflaget för att slutföra det.",
+			"progress": {
+				"label": "Mastery framsteg",
+				"tooltip": "Framsteg mot att klara alla mastery utmaningar"
+			}
+		},
+		"requirements": {
+			"checklist": {
+				"base": "Bas camouflager på 51 vapen",
+				"gold": "Guld camouflager på 51 vapen",
+				"platinum": "Platinum camouflager på 51 vapen",
+				"polyatomic": "Polyatomic camouflager på 51 vapen"
+			},
+			"description": "Det nya camouflagesystemet som implementerats i Modern Warfare II skiljer sig ganska mycket från de senaste Call of Duty-spelen och det kan vara ganska svårt att få ett grepp om och förstå det först, åtminstone jag tyckte det. Det verkar dock vara mycket lättare att grinda igenom jämfört med de tidigare spelen. För att låsa upp Orion-camouflaget måste följande krav uppfyllas: {checklist} När du går igenom camouflagestegen kommer du att låsa upp nästa steg:",
+			"stages": {
+				"base": "Bas",
+				"gold": "Guld",
+				"orion": "Orion",
+				"platinum": "Platinum",
+				"polyatomic": "Polyatomic"
+			},
+			"table": {
+				"headers": {
+					"requirement": "Krav",
+					"stage": "Steg"
+				},
+				"stage_requirements": {
+					"base": "Bas camouflager tilldelas per deras tillhörande vapens bas utmaningar, som låses upp genom att levla upp det specifika vapnet.",
+					"gold": "När bas camouflagen har låsts upp låser du upp guld camouflage utmaningen för det specifika vapnet.",
+					"orion": "Orion camouflaget kommer automatiskt att låsas upp när du har låst upp Polyatomic camouflaget på 51 vapen.",
+					"platinum": "Efter att ha slutfört alla guld camouflage utmaningar för en specifik vapenkategori låser du upp Platinum camouflage utmaningen för den kategorin.",
+					"polyatomic": "När du har låst upp alla Platinum camouflager för 51 vapen låser du upp Polyatomic camouflage utmaningen för alla vapen."
+				},
+				"subtitle": "För att komma till nästa camouflagesteg måste du först låsa upp föregående steg:",
+				"title": "Hur låser jag upp varje camouflagesteg?"
+			},
+			"title": "Hur låser jag upp Orion-camouflaget?"
+		},
+		"settings": {
+			"export": {
+				"copy_to_clipboard": "Kopiera till urklipp",
+				"description": "Exportera dina framsteg till en annan enhet eller webbläsare.",
+				"download_as_file": "Ladda ner som fil",
+				"title": "Exportera framsteg"
+			},
+			"import": {
+				"description": "Importera dina framsteg från en annan enhet eller webbläsare genom att antingen klistra in den exporterade koden eller ladda upp den exporterade filen.",
+				"import_code": "Importera kod",
+				"import_disabled_tooltip": "Du måste ange kod i fältet ovan.",
+				"import_from_file": "Importera från fil",
+				"placeholder": "Klistra in koden här, eller importera från filen nedan.",
+				"title": "Importera framsteg"
+			},
+			"reset": {
+				"confirm": {
+					"body": "Är du säker på att du vill återställa alla dina framsteg?",
+					"cancel": "Avbryt",
+					"reset": "Återställ",
+					"title": "Återställ alla framsteg"
+				},
+				"description": "Denna åtgärd återställer alla dina framsteg och börjar om från noll.",
+				"reset_my_progress": "Återställ mina framsteg",
+				"title": "Återställ alla framsteg",
+				"warning": "Denna åtgärd är oåterkallelig om du inte har exporterat dina framsteg."
+			}
+		},
+		"weapons": {
+			"completed_in_category": "Vapen avklarade i kategori",
+			"completed_modal": {
+				"body": "Grattis till att du avslutat Orion camouflage grinden! Det har varit en lång resa! Du började först spåra din grind här {duration} den {date}.",
+				"support_link": "köpa en öl åt mig",
+				"support": "Om du gillade den här trackern, visa din uppskattning genom att sprida budskapet om det och om du känner dig extra generös kan du överväga att {0} som ett tack. Hoppas vi ses på slagfältet! Skål! 🍺",
+				"title": "Orion upplåst! 👏🥳"
+			},
+			"double_click_tooltip": "Dubbelklicka för att {state} vapen",
+			"finished_placeholder": "Du har klarat alla camouflageutmaningar 👏",
+			"info_link": "här",
+			"info_tooltip": "Du behöver bara avklara antalet basvapen som finns för varje kategori för att låsa upp Platinum-camouflageutmaningen. Till exempel kräver Assault Rifles totalt 8 guldcamouflage för att låsa upp Platinum-camouflageutmaningen för alla vapen i den kategorin. Tryck på denna ikon för att läsa mer.",
+			"info": "Du behöver bara avklara antalet basvapen som finns för varje kategori för att låsa upp Platinum-camouflageutmaningen. Till exempel kräver Assault Rifles totalt 8 guldcamouflage för att låsa upp Platinum-camouflageutmaningen för alla vapen i den kategorin. Läs mer {link}.",
+			"progress": {
+				"label": "Orion framsteg",
+				"tooltip": "Framsteg mot Orion-camouflaget"
+			}
+		}
+	},
+	"challenges": {
+		"mastery": "{amount} Kills när du använder {camouflage} camouflaget",
+		"types": {
+			"behind": "{amount} kills bakifrån",
+			"mounted": "{amount} kills när du är monterad",
+			"hipfire": "{amount} kills från höften",
+			"ads": "{amount} kills när du siktar",
+			"one_shot": "{amount} en-skotts kills",
+			"double": "{amount} dubbel kills",
+			"crouched": "{amount} kills när du duckar",
+			"prone": "{amount} kills när du ligger ner",
+			"kills": "{amount} kills",
+			"point_blank": "{amount} kills point blank",
+			"suppressor": "{amount} kills med en ljuddämpare",
+			"time_limit": "{amount} kills inom {seconds} sekunder av varandra {times} gånger",
+			"akimbo": "{amount} kills med Akimbo-vapen",
+			"without_dying": "{amount} kills utan att dö {times} gånger",
+			"longshot": "{amount} långskott kills",
+			"headshot": "{amount} huvudskott kills",
+			"destroy_streaks_equipment_or_vehicles": "Förstör {amount} stycken av fiende streaks, utrustning eller fordon"
+		}
+	}
+}

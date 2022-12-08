@@ -51,6 +51,32 @@ If you go to your repository on GitHub, you'll see a `Compare & pull request` bu
 ### 8. Visit the preview build
 After the pull request has been opened, [Vercel](https://vercel.com/) will automatically deploy a preview build which can be accessed to see how your added changes would look and function in the final build. Take a minute to test it for any bugs.
 
+## I18n - Internationalization and localization
+
+We want the tracker to be as easy to use as possible and have therefore added support for different languages, hopefully making it more easy to understand.
+
+All languages are welcome and to contribute a new language just follow these steps:
+
+1. Follow steps 1-4 above to get the tracker running locally.
+2. Create a new `.json` file in `./src/i18n/locales/` with the desired locale.
+3. Copy the contents of the `en-US.json` file in the same directory.
+4. Translate all values to the desired language.
+5. Add your new locale file in [./i18n/locales.js](https://github.com/carlssonemil/orion/blob/main/src/i18n/locales.js):
+```javascript
+import enUs from './locales/en-US.json'
+import svSE from './locales/sv-SE.json'
+// import [locale] from './locales/[locale].json'
+
+export default {
+	'en-US': enUs,
+	'sv-SE': svSE,
+  // '[locale]': [locale]
+}
+```
+6. Follow steps 6-8 above to finalize your contribution.
+
+We use the [flag-icons](https://flagicons.lipis.dev/) library by [lipis](https://github.com/lipis) for the flags, so make sure that your locale has a supported flag in the library.
+
 ## Camouflage images
 
 If you want to help contribute some images for the camouflages, the process is the same as described above but with a few preferable additions:

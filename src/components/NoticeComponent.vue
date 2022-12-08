@@ -1,10 +1,13 @@
 <template>
 	<transition name="slidedown">
 		<div class="notice" v-if="showNotice">
-			<p>
-				If you like this tracker, show your appreciation by
-				<a href="https://www.buymeacoffee.com/emilcarlsson" target="_blank">buying me a beer</a> 🍺
-			</p>
+			<i18n path="general.support_notice" tag="p">
+				<template #link>
+					<a href="https://www.buymeacoffee.com/emilcarlsson" target="_blank">{{
+						$t('general.support_notice_link')
+					}}</a>
+				</template>
+			</i18n>
 			<IconComponent name="times" width="16" height="16" @click="showNotice = false" />
 		</div>
 	</transition>
@@ -21,7 +24,7 @@ export default {
 	mounted() {
 		setTimeout(() => {
 			this.showNotice = true
-		}, 15000)
+		}, 100)
 	},
 }
 </script>
