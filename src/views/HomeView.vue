@@ -1,14 +1,5 @@
 <template>
 	<div class="container">
-		<!-- TODO: Remove this -->
-		<AlertComponent style="margin-bottom: 30px">
-			This tracker is currently under development and more content will be added continuously during
-			the coming weeks. Please report any bugs or issues by emailing me at
-			<a href="mailto:hello@emilcarlsson.se">hello@emilcarlsson.se</a>, or opening issues on
-			<a href="https://github.com/carlssonemil/orion/issues/new">GitHub</a>. Thanks and good luck
-			with the grind! ✌
-		</AlertComponent>
-
 		<div class="filter-container">
 			<FiltersComponent :options="filterOptions" :show-info="true">
 				<template #info>
@@ -70,7 +61,6 @@ import { mapState } from 'pinia'
 import { useStore } from '@/stores/store'
 import { groupBy, daysBetweenDates, roundToTwoDecimals } from '@/utils/utils'
 
-import AlertComponent from '@/components/AlertComponent.vue'
 import FiltersComponent from '@/components/FiltersComponent.vue'
 import WeaponsComponent from '@/components/WeaponsComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
@@ -79,7 +69,6 @@ import FavoritesToggleComponent from '@/components/FavoritesToggleComponent.vue'
 
 export default {
 	components: {
-		AlertComponent,
 		FiltersComponent,
 		WeaponsComponent,
 		ProgressComponent,
