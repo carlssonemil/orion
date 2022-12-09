@@ -26,9 +26,7 @@ export const useStore = defineStore({
 		weaponRequirements: { ...weaponRequirements },
 		masteryRequirements: { ...masteryRequirements },
 		weapons: [],
-		preferences: {
-			layout: 'grid',
-		},
+		preferences: { ...defaultPreferences },
 	}),
 
 	getters: {

@@ -3,10 +3,10 @@
 		<transition-group name="fade" tag="div" class="container">
 			<div v-if="showFavorites" :key="'favorites'" class="category">
 				<h2>
-					<span>Favorites</span>
-					<span v-if="favorites.length > 0" @click="unfavoriteAll('weapons')" class="action"
-						>Remove all</span
-					>
+					<span>{{ $t('general.favorites') }}</span>
+					<span v-if="favorites.length > 0" @click="unfavoriteAll('weapons')" class="action">
+						{{ $t('general.remove_all') }}
+					</span>
 				</h2>
 
 				<transition-group v-if="favorites.length > 0" name="fade" tag="div" class="weapons">
@@ -23,9 +23,12 @@
 					v-else
 					type="empty-state"
 					:style="{ padding: mastery ? '42px 15px' : '32px 15px 31px' }">
-					You don't have any favorites yet. Click the
-					<IconComponent name="star" fill="#feca57" icon-style="solid" size="20" /> icon on a
-					camouflage to add it to your favorites.
+					<i18n path="general.no_favorites_placeholder">
+						<template #star>
+							<IconComponent name="star" fill="#feca57" icon-style="solid" size="20" />
+						</template>
+						<template #type>{{ $tc('general.weapon').toLowerCase() }}</template>
+					</i18n>
 				</AlertComponent>
 			</div>
 
@@ -39,7 +42,7 @@
 					<span>
 						{{ title }}
 					</span>
-					<span v-tippy content="Weapons completed in category">
+					<span v-tippy :content="$t('pages.weapons.completed_in_category')">
 						{{ categoryProgress(title) }}
 					</span>
 				</h2>
@@ -57,7 +60,7 @@
 		</transition-group>
 
 		<div v-if="Object.keys(weapons).length === 0" class="finished-placeholder">
-			<p>You have completed all camouflage challenges 👏</p>
+			<p>{{ $t('pages.weapons.finished_placeholder') }}</p>
 		</div>
 	</div>
 </template>

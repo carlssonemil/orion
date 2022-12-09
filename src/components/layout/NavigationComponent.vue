@@ -5,20 +5,20 @@
 			<p><span>Orion</span></p>
 		</router-link>
 		<div>
-			<router-link to="/">Weapons</router-link>
-			<router-link to="/camouflages">Camouflages</router-link>
-			<router-link to="/mastery">Mastery</router-link>
+			<router-link to="/">{{ $tc('general.weapon', 2) }}</router-link>
+			<router-link to="/camouflages">{{ $tc('general.camouflage', 2) }}</router-link>
+			<router-link to="/mastery">{{ $t('general.mastery') }}</router-link>
 			<router-link
 				to="/settings"
 				class="icon settings"
-				content="Settings"
+				:content="$tc('general.setting', 2)"
 				v-tippy="{ placement: 'bottom' }">
 				<IconComponent name="cog" />
 			</router-link>
 			<a
 				href="https://github.com/carlssonemil/orion/issues/new?title=[Bug]%20"
 				target="_blank"
-				content="Report An Issue"
+				:content="$t('general.report_an_issue')"
 				v-tippy="{ placement: 'bottom' }">
 				<IconComponent name="bug" />
 			</a>

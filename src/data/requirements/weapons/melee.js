@@ -1,20 +1,35 @@
 import { solidColors, stripes } from '../camouflages/_index'
 
 const masteryChallenges = {
-	Gold: '2 kills without dying 10 times',
-	Platinum: '2 kills within 10 seconds of each other 10 times',
+	Gold: {
+		amount: 2,
+		type: 'without_dying',
+		times: 10,
+	},
+	Platinum: {
+		amount: 2,
+		type: 'time_limit',
+		seconds: 10,
+		times: 10,
+	},
 }
 
 export default {
 	'Combat Knife': {
 		Scarlet: solidColors['Scarlet'],
 		...masteryChallenges,
-		Polyatomic: '20 kills from behind',
+		Polyatomic: {
+			amount: 20,
+			type: 'behind',
+		},
 	},
 
 	'Riot Shield': {
 		'Urban Zebra': stripes['Urban Zebra'],
 		...masteryChallenges,
-		'Polyatomic': '10 kills from behind',
+		'Polyatomic': {
+			amount: 10,
+			type: 'behind',
+		},
 	},
 }

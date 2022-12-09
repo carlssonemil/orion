@@ -18,10 +18,17 @@
 		<button
 			@click="toggleFilters()"
 			id="toggle-filter-button"
-			v-tippy="{ content: `${filters.hideFilters ? 'Show' : 'Hide'} filters` }">
+			v-tippy="{
+				content: `${filters.hideFilters ? $t('general.show') : $t('general.hide')} ${$t(
+					'general.filters'
+				).toLowerCase()}`,
+			}">
 			<IconComponent v-if="filters.hideFilters" name="filter" />
 			<IconComponent v-else name="filter-slash" />
-			<span>{{ filters.hideFilters ? 'Show' : 'Hide' }} filters</span>
+			<span>
+				{{ filters.hideFilters ? $t('general.show') : $t('general.hide') }}
+				{{ $t('general.filters').toLowerCase() }}
+			</span>
 		</button>
 	</div>
 </template>

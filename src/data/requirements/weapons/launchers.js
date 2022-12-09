@@ -1,28 +1,48 @@
 import { digital, foliage, woodland } from '../camouflages/_index'
 
 const masteryChallenges = {
-	Gold: '2 kills without dying 5 times',
-	Platinum: 'Destroy 10 enemy streaks, equipment, or vehicles',
-	Polyatomic: '15 double kills',
+	Gold: {
+		amount: 2,
+		type: 'without_dying',
+		times: 5,
+	},
+	Platinum: {
+		amount: 10,
+		type: 'destroy_streaks_equipment_or_vehicles',
+	},
+	Polyatomic: {
+		amount: 15,
+		type: 'double',
+	},
 }
 
 export default {
 	'PILA': {
 		'Dead Leaves': woodland['Dead Leaves'],
 		...masteryChallenges,
-		'Platinum': 'Destroy 15 enemy streaks, equipment, or vehicles',
+		'Platinum': {
+			amount: 15,
+			type: 'destroy_streaks_equipment_or_vehicles',
+		},
 	},
 
 	'STRELA-P': {
 		'Deep Jungle': foliage['Deep Jungle'],
 		...masteryChallenges,
-		'Platinum': 'Destroy 25 enemy streaks, equipment, or vehicles',
+		'Platinum': {
+			amount: 25,
+			type: 'destroy_streaks_equipment_or_vehicles',
+		},
 	},
 
 	'JOKR': {
 		'Azure Fray': woodland['Azure Fray'],
 		...masteryChallenges,
-		'Gold': '2 kills without dying 10 times',
+		'Gold': {
+			amount: 2,
+			type: 'without_dying',
+			times: 10,
+		},
 	},
 
 	'RPG-7': {

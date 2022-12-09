@@ -2,81 +2,131 @@ export default {
 	'Dirt': {
 		weapon: 'LA-B 330',
 		level: '8',
-		challenge: '2 kills within 10 seconds of each other 10 times',
+		challenge: {
+			amount: 2,
+			type: 'time_limit',
+			seconds: 10,
+			times: 10,
+		},
 	},
 	'Moss': {
 		weapon: 'EBR-14',
 		level: '6',
-		challenge: '30 kills while crouched',
+		challenge: {
+			amount: 30,
+			type: 'crouched',
+		},
 	},
 	'Tagged': {
 		weapon: 'VEL 46',
 		level: '19',
-		challenge: '15 hipfire kills',
+		challenge: {
+			amount: 15,
+			type: 'hipfire',
+		},
 	},
 	'Black Top': {
 		weapon: 'STB 556',
 		level: '8',
-		challenge: '20 kills while mounted',
+		challenge: {
+			amount: 20,
+			type: 'mounted',
+		},
 	},
 	'Asphalt': {
 		weapon: 'RPK',
 		level: '13',
-		challenge: '50 kills using a suppressor',
+		challenge: {
+			amount: 50,
+			type: 'suppressor',
+		},
 	},
 	'Crime Scene': {
 		weapon: 'Lachmann Sub',
 		level: '13',
-		challenge: '50 kills using a suppressor',
+		challenge: {
+			amount: 50,
+			type: 'suppressor',
+		},
 	},
 	'Neon Pink': {
 		weapon: 'STB 556',
 		level: '20',
-		challenge: '30 kills while crouched',
+		challenge: {
+			amount: 30,
+			type: 'crouched',
+		},
 	},
 	'Trailblazer': {
 		weapon: 'Raal MG',
 		level: '10',
-		challenge: '15 kills from behind',
+		challenge: {
+			amount: 15,
+			type: 'behind',
+		},
 	},
 	'Foliage': {
 		weapon: '.50 GS',
 		level: '10',
-		challenge: '5 double kills',
+		challenge: {
+			amount: 5,
+			type: 'double',
+		},
 	},
 	'Reptilian': {
 		weapon: 'SO-14',
 		level: '8',
-		challenge: '50 kills while ADS',
+		challenge: {
+			amount: 50,
+			type: 'ads',
+		},
 	},
 	'Dark Leaves': {
 		weapon: 'M4',
 		level: '13',
-		challenge: '10 double kills',
+		challenge: {
+			amount: 10,
+			type: 'double',
+		},
 	},
 	'Internal Flame': {
 		weapon: 'Lachmann-762',
 		level: '18',
-		challenge: '10 double kills',
+		challenge: {
+			amount: 10,
+			type: 'double',
+		},
 	},
 	'Omnihex': {
 		weapon: 'Vaznev-9K',
 		level: '13',
-		challenge: '15 hipfire kills',
+		challenge: {
+			amount: 15,
+			type: 'hipfire',
+		},
 	},
 	'Tessellation': {
 		weapon: 'HCR 56',
 		level: '18',
-		challenge: '20 kills while mounted',
+		challenge: {
+			amount: 20,
+			type: 'mounted',
+		},
 	},
 	'Moon Shadow': {
 		weapon: 'FSS Hurricane',
 		level: '10',
-		challenge: '50 kills while ADS',
+		challenge: {
+			amount: 50,
+			type: 'ads',
+		},
 	},
 	'Burned Edges': {
 		weapon: 'Victus XMR',
 		level: '10',
-		challenge: '30 one-shot kills',
+		challenge: {
+			amount: 30,
+			type: 'one_shot',
+		},
 	},
 }

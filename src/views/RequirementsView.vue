@@ -1,122 +1,66 @@
 <template>
 	<div class="requirements container">
-		<h3>How do I unlock the Orion camouflage?</h3>
-		<p>
-			The new camouflage system implemented in Modern Warfare II is quite different from the most
-			recent Call of Duty games and it can be quite hard to get a grasp and understand it at first,
-			at least I thought so. However, it seems to be <b><i>much</i></b> easier to grind through
-			compared to the previous games. To unlock the Orion camouflage the following requirements must
-			be met:
-		</p>
-		<ul>
-			<li>
-				<IconComponent name="check" size="26" color="#10ac84" />
-				<span>Base camouflages on 51 weapons</span>
-			</li>
-			<li>
-				<IconComponent name="check" size="26" color="#10ac84" />
-				<span>Gold camouflage on 51 weapons</span>
-			</li>
-			<li>
-				<IconComponent name="check" size="26" color="#10ac84" />
-				<span>Platinum camouflage on 51 weapons</span>
-			</li>
-			<li>
-				<IconComponent name="check" size="26" color="#10ac84" />
-				<span>Polyatomic camouflage on 51 weapons</span>
-			</li>
-		</ul>
+		<h3>{{ $t('pages.requirements.title') }}</h3>
+		<i18n path="pages.requirements.description" tag="p">
+			<template #checklist>
+				<ul>
+					<li v-for="stage in stages.filter((s) => s !== 'orion')" :key="stage">
+						<IconComponent name="check" size="26" color="#10ac84" />
+						<span>{{ $t(`pages.requirements.checklist.${stage}`) }}</span>
+					</li>
+				</ul>
+			</template>
+		</i18n>
 
-		<p>As you progress through the camouflage stages you will unlock the next stage:</p>
 		<div class="stages">
-			<div class="stage base">Base</div>
+			<div class="stage base">{{ $t('pages.requirements.stages.base') }}</div>
 			<IconComponent name="arrow-right" />
 			<IconComponent name="arrow-down" class="mobile" />
-			<div class="stage gold">Gold</div>
+			<div class="stage gold">{{ $t('pages.requirements.stages.gold') }}</div>
 			<IconComponent name="arrow-right" />
 			<IconComponent name="arrow-down" class="mobile" />
-			<div class="stage platinum">Platinum</div>
+			<div class="stage platinum">{{ $t('pages.requirements.stages.platinum') }}</div>
 			<IconComponent name="arrow-right" />
 			<IconComponent name="arrow-down" class="mobile" />
-			<div class="stage polyatomic">Polyatomic</div>
+			<div class="stage polyatomic">{{ $t('pages.requirements.stages.polyatomic') }}</div>
 			<IconComponent name="arrow-right" />
 			<IconComponent name="arrow-down" class="mobile" />
-			<div class="stage orion">Orion</div>
+			<div class="stage orion">{{ $t('pages.requirements.stages.orion') }}</div>
 		</div>
 
-		<h4>How do I unlock each camouflage stage?</h4>
-		<p>To get to the next camouflage stage you need to first unlock the previous stage:</p>
+		<h4>{{ $t('pages.requirements.table.title') }}</h4>
+		<p>{{ $t('pages.requirements.table.subtitle') }}</p>
 		<table>
 			<thead>
 				<tr>
-					<th>Stage</th>
-					<th>Requirement</th>
+					<th>{{ $t('pages.requirements.table.headers.stage') }}</th>
+					<th>{{ $t('pages.requirements.table.headers.requirement') }}</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr v-for="stage in stages" :key="stage">
 					<td>
 						<div class="inner">
-							<div class="icon base"></div>
-							<span>Base</span>
+							<div class="icon" :class="stage"></div>
+							<span>{{ $t(`pages.requirements.stages.${stage}`) }}</span>
 						</div>
 					</td>
-					<td>
-						Base camouflages are awarded per their associated weapon base challenge, unlocked by
-						leveling the specific weapon.
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="inner">
-							<div class="icon gold"></div>
-							<span>Gold</span>
-						</div>
-					</td>
-					<td>
-						Once the Base camouflages has been unlocked you unlock the Gold camouflage challenge for
-						that specific weapon.
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="inner">
-							<div class="icon platinum"></div>
-							<span>Platinum</span>
-						</div>
-					</td>
-					<td>
-						After completing all Gold camouflage challenges for a specific category, you unlock the Platinum camouflage challenge for that specific weapon.
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="inner">
-							<div class="icon polyatomic"></div>
-							<span>Polyatomic</span>
-						</div>
-					</td>
-					<td>
-						Once you've unlocked the Platinum camouflage for all categories and weapons you then
-						unlock the Polyatomic camouflage challenge for each weapon.
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="inner">
-							<div class="icon orion"></div>
-							<span>Orion</span>
-						</div>
-					</td>
-					<td>
-						Orion camouflage will automatically unlock when you have unlocked the Polyatomic
-						camouflage on 51 weapons.
-					</td>
+					<td>{{ $t(`pages.requirements.table.stage_requirements.${stage}`) }}</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 </template>
+
+<script>
+export default {
+	data() {
+		return {
+			stages: ['base', 'gold', 'platinum', 'polyatomic', 'orion'],
+		}
+	},
+}
+</script>
 
 <style lang="scss" scoped>
 p,

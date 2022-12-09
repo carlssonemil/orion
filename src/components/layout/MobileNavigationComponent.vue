@@ -9,22 +9,22 @@
 				<IconComponent name="times" @click="$emit('toggleMobileNavigation')" />
 			</div>
 			<div>
-				<router-link to="/">Weapons</router-link>
-				<router-link to="/camouflages">Camouflages</router-link>
-				<router-link to="/mastery">Mastery</router-link>
-				<router-link to="/requirements">Requirements</router-link>
+				<router-link to="/">{{ $tc('general.weapon', 2) }}</router-link>
+				<router-link to="/camouflages">{{ $tc('general.camouflage', 2) }}</router-link>
+				<router-link to="/mastery">{{ $t('general.mastery') }}</router-link>
+				<router-link to="/requirements">{{ $tc('general.requirement', 2) }}</router-link>
 			</div>
 			<div class="footer">
-				<router-link to="/settings">Settings</router-link>
+				<router-link to="/settings">{{ $tc('general.setting', 2) }}</router-link>
 				<a href="https://github.com/carlssonemil/orion/issues/new?title=[Bug]%20" target="_blank">
-					Report An Issue
+					{{ $t('general.report_an_issue') }}
 				</a>
-				<router-link to="/about">About</router-link>
+				<router-link to="/about">{{ $t('general.about') }}</router-link>
 				<a href="https://github.com/carlssonemil/orion">GitHub</a>
 
-				<a href="https://www.buymeacoffee.com/emilcarlsson" class="button"
-					>Support me by buying me a beer 🍺</a
-				>
+				<a href="https://www.buymeacoffee.com/emilcarlsson" class="button">
+					{{ $t('general.mobile_nav_support_link') }}
+				</a>
 			</div>
 		</nav>
 	</transition>

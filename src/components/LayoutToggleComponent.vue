@@ -1,5 +1,8 @@
 <template>
-	<button class="layout-toggle" @click="toggleLayout()" v-tippy="{ content: 'Toggle layout' }">
+	<button
+		class="layout-toggle"
+		@click="toggleLayout()"
+		v-tippy="{ content: $t('filters.toggle_layout') }">
 		<IconComponent v-if="layout === 'grid'" name="apps" iconStyle="solid" size="18" />
 		<IconComponent v-else name="list-ul" size="18" />
 		<span>{{ layoutLabel }}</span>
@@ -19,7 +22,7 @@ export default {
 		},
 
 		layoutLabel() {
-			return this.layout === 'grid' ? 'Grid' : 'List'
+			return this.layout === 'grid' ? this.$t('general.grid') : this.$t('general.list')
 		},
 	},
 
@@ -50,10 +53,9 @@ export default {
 	cursor: pointer;
 	display: inline-flex;
 	justify-content: center;
-	padding: 5px 0;
+	padding: 5px 8px;
 	transition: $transition;
 	user-select: none;
-	width: 75px;
 
 	&:hover {
 		background: $elevation-3-color;

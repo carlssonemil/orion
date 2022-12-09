@@ -16,7 +16,7 @@
 				</div>
 				<div class="modal-footer">
 					<slot name="footer">
-						<button @click="close()">Close</button>
+						<button @click="close()">{{ $t('general.close') }}</button>
 					</slot>
 				</div>
 			</div>

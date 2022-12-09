@@ -9,6 +9,8 @@ import VueTippy, { TippyComponent } from 'vue-tippy'
 import IconComponent from './components/IconComponent.vue'
 import LoaderComponent from './components/LoaderComponent.vue'
 import ModalComponent from './components/ModalComponent.vue'
+import { i18n } from './i18n/index.js'
+import '/node_modules/flag-icons/css/flag-icons.min.css'
 
 Unicon.add(unicons)
 
@@ -24,6 +26,7 @@ Vue.component('ModalComponent', ModalComponent)
 
 new Vue({
 	router,
+	i18n,
 	pinia: createPinia(),
 	render: (h) => h(App),
 }).$mount('#app')

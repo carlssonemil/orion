@@ -2,10 +2,10 @@
 	<div class="error container">
 		<h1 class="error-title" data-shadow="404">404</h1>
 		<p class="error-subtitle">
-			Dang, looks like you took a wrong turn and ended up on a missing page. 🤔
+			{{ $t('pages.404.description') }}
 		</p>
 		<router-link to="/" class="button">
-			<IconComponent name="arrow-left" fill="black" />Return to home
+			<IconComponent name="arrow-left" fill="black" />{{ $t('pages.404.link') }}
 		</router-link>
 	</div>
 </template>

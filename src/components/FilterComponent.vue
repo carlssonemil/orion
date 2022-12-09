@@ -8,7 +8,7 @@
 					:value="value"
 					@input="$emit('input', $event.target.value)"
 					@change="$emit('change')">
-					<option value="">All</option>
+					<option value="">{{ $t('general.all') }}</option>
 					<option v-for="(option, index) in filter.options" :key="index" :value="option">
 						{{ option }}
 					</option>
