@@ -234,6 +234,12 @@ export default {
 	&.danger {
 		background-color: rgba($red, 0.15);
 		border-color: rgba($red, 0.3);
+
+		button {
+			@media (max-width: $tablet) {
+				width: 100%;
+			}
+		}
 	}
 
 	h3 {
@@ -270,8 +276,37 @@ export default {
 		margin-bottom: 20px;
 	}
 
+	.actions {
+		display: flex;
+
+		@media (max-width: $mobile) {
+			flex-direction: column;
+		}
+
+		> button,
+		> span,
+		> label {
+			@media (max-width: $tablet) {
+				width: 50%;
+
+				> button {
+					width: 100%;
+				}
+			}
+
+			@media (max-width: $mobile) {
+				width: 100%;
+			}
+		}
+	}
+
 	.button {
 		margin-left: 15px;
+
+		@media (max-width: $mobile) {
+			margin-left: 0;
+			margin-top: 15px;
+		}
 
 		.loader {
 			margin-left: 8px;
@@ -281,6 +316,11 @@ export default {
 	button {
 		+ button {
 			margin-left: 15px;
+
+			@media (max-width: $mobile) {
+				margin-left: 0;
+				margin-top: 15px;
+			}
 		}
 
 		span,
