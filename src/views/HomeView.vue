@@ -117,12 +117,17 @@ export default {
 					key: 'hidePolyatomic',
 					type: 'checkbox',
 				},
+				{
+					label: this.$t('filters.hide_dlc'),
+					key: 'hideDlc',
+					type: 'checkbox',
+				},
 			]
 		},
 
 		filteredWeapons() {
 			let filteredWeapons = this.weapons
-			const { hideGold, hidePlatinum, hidePolyatomic, weaponCategory } = this.filters
+			const { hideGold, hidePlatinum, hidePolyatomic, hideDlc, weaponCategory } = this.filters
 
 			if (hideGold) {
 				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress['Gold'])
@@ -134,6 +139,10 @@ export default {
 
 			if (hidePolyatomic) {
 				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress['Polyatomic'])
+			}
+
+			if (hideDlc) {
+				filteredWeapons = filteredWeapons.filter((weapon) => !weapon.dlc)
 			}
 
 			if (weaponCategory && weaponCategory !== 'null') {

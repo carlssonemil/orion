@@ -10,6 +10,7 @@
 		"coming_soon": "Coming soon",
 		"complete": "Complete",
 		"days_ago": "{0} day ago | {0} days ago",
+		"dlc": "DLC",
 		"favorites": "Favorites",
 		"filters": "Filters",
 		"grid": "Grid",
@@ -33,6 +34,7 @@
 	},
 	"filters": {
 		"hide_completed": "Hide completed",
+		"hide_dlc": "Hide DLC",
 		"hide_gold": "Hide Gold",
 		"hide_orion": "Hide Orion",
 		"hide_platinum": "Hide Platinum",

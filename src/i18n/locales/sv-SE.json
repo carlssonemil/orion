@@ -10,6 +10,7 @@
 		"coming_soon": "Kommer snart",
 		"complete": "Färdigställa",
 		"days_ago": "{0} dag sedan | {0} dagar sedan",
+		"dlc": "DLC",
 		"favorites": "Favoriter",
 		"filters": "Filter",
 		"grid": "Rutnät",
@@ -33,6 +34,7 @@
 	},
 	"filters": {
 		"hide_completed": "Dölj avklarade",
+		"hide_dlc": "Dölj DLC",
 		"hide_gold": "Dölj Guld",
 		"hide_orion": "Dölj Orion",
 		"hide_platinum": "Dölj Platinum",
