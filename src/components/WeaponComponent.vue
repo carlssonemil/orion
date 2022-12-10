@@ -1,6 +1,6 @@
 <template>
 	<div :class="['weapon-wrapper', { favorite: isFavorite }]">
-		<div :class="['weapon', { 'coming-soon': weapon.comingSoon }]">
+		<div :class="['weapon', { label, 'coming-soon': weapon.comingSoon }]">
 			<div
 				:class="[
 					'name',
@@ -11,7 +11,7 @@
 						polyatomic: polyatomicCompleted,
 					},
 				]"
-				:data-label="weapon.comingSoon ? $t('general.coming_soon') : null"
+				:data-label="label"
 				@dblclick="toggleWeaponCompleted(weapon, completed, mastery)"
 				v-tippy="{
 					content: $t('pages.weapons.double_click_tooltip', {
@@ -143,6 +143,16 @@ export default {
 			let type = this.mastery ? 'mastery' : 'weapons'
 			return this.store.isFavorite(type, this.weapon.name)
 		},
+
+		label() {
+			if (this.weapon.comingSoon) {
+				return this.$t('general.coming_soon')
+			} else if (this.weapon.dlc) {
+				return this.$t('general.dlc')
+			}
+
+			return null
+		},
 	},
 
 	methods: {
@@ -247,14 +257,20 @@ export default {
 	.weapon {
 		position: relative;
 
-		&.coming-soon {
-			.name {
+		&.label {
+			&.coming-soon .name {
 				background: $elevation-1-color;
 				color: rgba($text-color, 0.25);
 				pointer-events: none;
 
 				&::after {
 					background: $blue;
+				}
+			}
+
+			.name {
+				&::after {
+					background: $purple;
 					border: 3px solid $background-color;
 					border-radius: 100px;
 					bottom: 0;
