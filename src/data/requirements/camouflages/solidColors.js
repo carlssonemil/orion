@@ -103,4 +103,12 @@ export default {
 			type: 'double',
 		},
 	},
+	'Charcoal': {
+		weapon: 'Chimera',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
 }

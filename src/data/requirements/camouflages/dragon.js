@@ -129,4 +129,12 @@ export default {
 			type: 'one_shot',
 		},
 	},
+	'Diabolical': {
+		weapon: 'Chimera',
+		level: '15',
+		challenge: {
+			amount: 10,
+			type: 'double',
+		},
+	},
 }
