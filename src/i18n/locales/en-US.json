@@ -45,7 +45,8 @@
 	},
 	"locales": {
 		"en-US": "English",
-		"sv-SE": "Svenska"
+		"sv-SE": "Svenska",
+		"es-CO": "Español"
 	},
 	"pages": {
 		"404": {

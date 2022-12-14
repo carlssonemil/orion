@@ -1,0 +1,209 @@
+{
+	"general": {
+		"about": "Acerca de",
+		"add_to": "Agregar",
+		"all": "Todos",
+		"camouflage": "Camuflaje | Camuflajes",
+		"category": "Categoría | Categorías",
+		"change_language": "Cambiar lenguaje",
+		"close": "Cerrar",
+		"coming_soon": "Próximamente",
+		"complete": "Completar",
+		"days_ago": "Hace {0} dia | Hace {0} días",
+		"dlc": "DLC",
+		"favorites": "Favoritos",
+		"filters": "Filtros",
+		"grid": "Cuadricula",
+		"hide": "Ocultar",
+		"list": "Lista",
+		"made_by": "Hecho por {0}",
+		"mastery": "Maestría",
+		"mobile_nav_support_link": "Apóyame comprándome una cerveza 🍺",
+		"no_favorites_placeholder": "Todavía no tienes favoritos. Click en el icono {star} en un {type} para agregar a favoritos.",
+		"remove_all": "Quitar todos",
+		"remove_from": "Quitar de",
+		"report_an_issue": "Report an issue",
+		"requirement": "Requerimiento | Requerimientos",
+		"reset": "Reset",
+		"search": "Buscar",
+		"setting": "Opción | Opciones",
+		"show": "Ver",
+		"support_notice_link": "comprándome una cerveza",
+		"support_notice": "Si te gusta el tracker, muestra tu aprecio {link} 🍺",
+		"weapon": "Arma | Armas"
+	},
+	"filters": {
+		"hide_completed": "Ocultar completados",
+		"hide_dlc": "Ocultar DLC",
+		"hide_gold": "Ocultar Oro",
+		"hide_orion": "Ocultar Orion",
+		"hide_platinum": "Ocultar Platino",
+		"hide_polyatomic": "Ocultar Poliatómico",
+		"toggle_favorite": "{state} favoritos",
+		"toggle_favorites": "Mostrar favoritos",
+		"toggle_layout": "Cambiar layout"
+	},
+	"locales": {
+		"en-US": "English",
+		"sv-SE": "Svenska",
+		"es-CO": "Español"
+	},
+	"pages": {
+		"404": {
+			"description": "Uh oh, looks like you took a wrong turn and ended up on a missing page. 🤔",
+			"link": "Volver a inicio"
+		},
+		"about": {
+			"features": {
+				"autosaving": {
+					"title": "Autoguardado",
+					"description": "Tu progreso se guarda automáticamente. Sin necesidad de una cuenta."
+				},
+				"responsive": {
+					"title": "Sensible",
+					"description": "El tracker funciona en todos los dispositivos, desde escritorio hasta celular."
+				},
+				"export_import": {
+					"title": "Exporta/Importa",
+					"description": "Exporta tu progreso a un archivo e impórtalo en otro dispositivo."
+				},
+				"filterable": {
+					"title": "Filtrable",
+					"description": "Cambia fácilmente entre categorías y oculta/muestra las completadas."
+				},
+				"ad_free": {
+					"title": "Sin Anuncios",
+					"description": "Sin anuncios desesperantes. Ni ahora, ni nunca"
+				}
+			},
+			"open_source_description": "Construido con {0}, Alojado en {1} y analizado con {2}. El código esta disponible en {3}.",
+			"open_source": "Código abierto",
+			"previous_trackers_description": "Buscando trackers para los camuflajes de otros juegos de Call of Duty?",
+			"previous_trackers": "Trackers anteriores",
+			"subtitle": "Sigue tu progreso hasta desbloquear Orion con este tracker fácil de usar.",
+			"support_me_description": "Puedes apoyarme {0} 🍺, lo agradecería mucho!",
+			"support_me_link": "comprándome una cerveza",
+			"support_me": "Apóyame",
+			"title": "Simple, ligero e intuitivo"
+		},
+		"camouflages": {
+			"completed_in_category": "Camuflajes completados en categoría",
+			"empty_search": "Tu búsqueda no coincide con ningún camuflaje 🤔",
+			"finished_placeholder": "Completaste todos los camuflajes! 👏",
+			"requirement_tooltip": "Sube la {weapon} a nivel {level} - {challenge}"
+		},
+		"mastery": {
+			"completed_modal": {
+				"body": "Felicitaciones por terminar todas las maestrías! Que hazaña! Empezaste a seguir tu progreso hace {duration} en {date}.",
+				"support_link": "comprarme una cerveza",
+				"support": "Si te gusta el tracker, compártelo con tus amigos y si te sientes generoso podrías {0} como agradecimiento. Nos vemos en el campo de batalla! Salud! 🍺",
+				"title": "Maestrías completadas! 👏🥳"
+			},
+			"info": "Una vez desbloquees cada camuflaje de maestría, se desbloquea un desafío de maestría que requiere que obtengas cierta cantidad de muertes mientras usas ese camuflaje específico para desbloquearlo.",
+			"progress": {
+				"label": "Progreso de maestrías",
+				"tooltip": "Progreso para completar todas las maestrías"
+			}
+		},
+		"requirements": {
+			"checklist": {
+				"base": "Camuflajes básicos en 51 armas",
+				"gold": "Camuflajes de oro en 51 armas",
+				"platinum": "Camuflajes de platino en 51 armas",
+				"polyatomic": "Camuflajes poliatómicos en 51 armas"
+			},
+			"description": "El nuevo sistema de camuflajes en Modern Warfare II es muy diferente al resto de los Call of Duty. Puede ser complicado entenderlo al principio pero es mucho más fácil de lograr comparado con versiones anteriores. Para desbloquear Orion se deben cumplir los siguientes requisitos: {checklist}",
+			"stages": {
+				"base": "Base",
+				"gold": "Oro",
+				"orion": "Orion",
+				"platinum": "Platino",
+				"polyatomic": "Poliatómico"
+			},
+			"table": {
+				"headers": {
+					"requirement": "Requerimiento",
+					"stage": "Etapa"
+				},
+				"stage_requirements": {
+					"base": "Los camuflajes base se obtienen al completar un desafío base, el desafío se desbloquea subiendo un arma de nivel.",
+					"gold": "Una vez los camuflajes base se hayan desbloqueado, se desbloquea el desafío del camuflaje de Oro para esa arma en específico",
+					"orion": "Orion se desbloqueará automáticamente una vez completes 51 camuflajes poliatómicos",
+					"platinum": "Después de completar todos los desafíos de oro para una categoría, se desbloquearan los desafíos de platino",
+					"polyatomic": "Una vez se hayan completado todos los desafíos de platino, se desbloquearan los desafíos poliatómicos para cada arma"
+				},
+				"subtitle": "Para desbloquear la siguiente etapa, debes desbloquear la etapa anterior primero:",
+				"title": "Cómo desbloquear cada etapa de camuflajes?"
+			},
+			"title": "Cómo se desbloquea Orion?"
+		},
+		"settings": {
+			"export": {
+				"copy_to_clipboard": "Copiar al portapapeles",
+				"description": "Exporta tu progreso a otro dispositivo o navegador.",
+				"download_as_file": "Descargar como archivo",
+				"title": "Exportar progreso"
+			},
+			"import": {
+				"description": "Importa tu progreso de otro dispositivo o navegador. Puedes pegar el código exportado o cargar el archivo exportado.",
+				"import_code": "Importar código",
+				"import_disabled_tooltip": "Debes ingresar el código arriba.",
+				"import_from_file": "Importar desde archivo",
+				"placeholder": "Pega el código aquí o importa un archivo.",
+				"title": "Importar progreso"
+			},
+			"reset": {
+				"confirm": {
+					"body": "Estás seguro que quieres reiniciar tu progreso?",
+					"cancel": "Cancelar",
+					"reset": "Reiniciar",
+					"title": "Reiniciar todo el progreso"
+				},
+				"description": "Esta acción reiniciará todo tu progreso para empezar desde cero.",
+				"reset_my_progress": "Reiniciar mi progreso",
+				"title": "Reiniciar todo el progreso",
+				"warning": "Esta acción no se puede deshacer si no has exportado tu progreso."
+			}
+		},
+		"weapons": {
+			"completed_in_category": "Armas completadas en categoría",
+			"completed_modal": {
+				"body": "Felicitaciones por desbloquear Orion! Que hazaña! Empezaste tu progreso {duration} en {date}.",
+				"support_link": "comprarme una cerveza",
+				"support": "Si te gusta el tracker, compártelo con tus amigos y si te sientes generoso podrías {0} como agradecimiento. Nos vemos en el campo de batalla! Salud! 🍺",
+				"title": "Orion desbloqueado! 👏🥳"
+			},
+			"double_click_tooltip": "Doble-click para {state} un arma",
+			"finished_placeholder": "Completaste todos los desafíos 👏",
+			"info_link": "aquí",
+			"info_tooltip": "Sólo necesitas completar el numero base de armas por cada categoría para desbloquear el desafío de platino. Por ejemplo, los rifles de asalto requieren un total de 8 camuflajes para desbloquear el desafío de platino para todas las armas de esa categoría. Click en el ícono para leer más",
+			"info": "Sólo necesitas completar el numero base de armas por cada categoría para desbloquear el desafío de platino. Por ejemplo, los rifles de asalto requieren un total de 8 camuflajes para desbloquear el desafío de platino para todas las armas de esa categoría. Ver más {link}",
+			"progress": {
+				"label": "Progreso para Orion",
+				"tooltip": "Progreso para desbloquear Orion"
+			}
+		}
+	},
+	"challenges": {
+		"mastery": "{amount} bajas usando el camuflaje de {camouflage}",
+		"types": {
+			"behind": "{amount} bajas por la espalda",
+			"mounted": "{amount} bajas con el arma apoyada",
+			"hipfire": "{amount} bajas disparando desde la cadera",
+			"ads": "{amount} bajas mientras apuntas con la mira",
+			"one_shot": "{amount} bajas de un tiro",
+			"double": "{amount} doble bajas",
+			"crouched": "{amount} bajas agachado",
+			"prone": "{amount} bajas estando cuerpo a tierra",
+			"kills": "{amount} bajas",
+			"point_blank": "{amount} bajas a bocajarro",
+			"suppressor": "{amount} bajas con silenciador",
+			"time_limit": "{amount} bajas en menos de {seconds} segundos {times} veces",
+			"akimbo": "{amount} bajas con el accesorio a dos manos",
+			"without_dying": "{amount} bajas sin morir {times} veces",
+			"longshot": "{amount} bajas con tiros lejanos",
+			"headshot": "{amount} bajas con tiros a la cabeza",
+			"destroy_streaks_equipment_or_vehicles": "Destruye {amount} rachas de bajas, equipamiento o vehículos"
+		}
+	}
+}
