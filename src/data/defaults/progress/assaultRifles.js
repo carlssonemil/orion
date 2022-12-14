@@ -62,5 +62,10 @@ export default {
 		'Ice Cave': false,
 	},
 
-	'Chimera': {},
+	'Chimera': {
+		'Charcoal': false,
+		'Aztec': false,
+		'Diabolical': false,
+		'Snow Leopard': false,
+	},
 }

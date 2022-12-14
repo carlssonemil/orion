@@ -199,4 +199,12 @@ export default {
 			type: 'hipfire',
 		},
 	},
+	'Aztec': {
+		weapon: 'Chimera',
+		level: '9',
+		challenge: {
+			amount: 20,
+			type: 'hipfire',
+		},
+	},
 }

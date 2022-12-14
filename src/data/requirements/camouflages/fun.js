@@ -79,4 +79,12 @@ export default {
 			type: 'crouched',
 		},
 	},
+	'Snow Leopard': {
+		weapon: 'Chimera',
+		level: '17',
+		challenge: {
+			amount: 15,
+			type: 'behind',
+		},
+	},
 }

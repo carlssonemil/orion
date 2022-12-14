@@ -103,5 +103,11 @@ export default {
 		...masteryChallenges,
 	},
 
-	'Chimera': {},
+	'Chimera': {
+		'Charcoal': solidColors['Charcoal'],
+		'Aztec': digital['Aztec'],
+		'Diabolical': dragon['Diabolical'],
+		'Snow Leopard': fun['Snow Leopard'],
+		...masteryChallenges,
+	},
 }
