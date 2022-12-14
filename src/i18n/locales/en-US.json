@@ -217,5 +217,21 @@
 		"Shotguns": "Shotguns",
 		"Sniper Rifles": "Sniper Rifles",
 		"Sub Machine Guns": "Sub Machine Guns"
+	},
+	"camouflage_categories": {
+		"Spray Paint": "Spray Paint",
+		"Woodland": "Woodland",
+		"Digital": "Digital",
+		"Dragon": "Dragon",
+		"Geometric": "Geometric",
+		"Fun": "Fun",
+		"Foliage": "Foliage",
+		"Skulls": "Skulls",
+		"Tiger": "Tiger",
+		"Stripes": "Stripes",
+		"Reptile": "Reptile",
+		"Solid Colors": "Solid Colors",
+		"Classic": "Classic",
+		"Cliffside": "Cliffside"
 	}
 }

@@ -23,7 +23,7 @@
 		"remove_all": "Quitar todos",
 		"remove_from": "Quitar de",
 		"report_an_issue": "Report an issue",
-		"requirement": "Requerimiento | Requerimientos",
+		"requirement": "Requisitos",
 		"reset": "Reset",
 		"search": "Buscar",
 		"setting": "Opción | Opciones",
@@ -217,5 +217,21 @@
 		"Shotguns": "Escopetas",
 		"Sniper Rifles": "Fusiles de Precisión",
 		"Sub Machine Guns": "Subfusiles"
+	},
+	"camouflage_categories": {
+		"Spray Paint": "Spray Paint",
+		"Woodland": "Bosque",
+		"Digital": "Digital",
+		"Dragon": "Dragón",
+		"Geometric": "Geométrico",
+		"Fun": "Diversión",
+		"Foliage": "Follaje",
+		"Skulls": "Calaveras",
+		"Tiger": "Tigre",
+		"Stripes": "Rayas",
+		"Reptile": "Reptile",
+		"Solid Colors": "Colores Sólidos",
+		"Classic": "Clásico",
+		"Cliffside": "Acantilado"
 	}
 }
