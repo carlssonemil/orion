@@ -30,7 +30,7 @@ export default {
 	data() {
 		return {
 			open: false,
-			locales: ['en-US', 'sv-SE', 'es-ES'],
+			locales: ['en-US', 'sv-SE', 'es-CO'],
 		}
 	},
 
