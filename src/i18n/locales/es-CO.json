@@ -205,5 +205,17 @@
 			"headshot": "{amount} bajas con tiros a la cabeza",
 			"destroy_streaks_equipment_or_vehicles": "Destruye {amount} rachas de bajas, equipamiento o vehículos"
 		}
+	},
+	"weapon_categories": {
+		"Assault Rifles": "Fusiles de Asalto",
+		"Battle Rifles": "Fusiles de Combate",
+		"Handguns": "Armas Cortas",
+		"Launchers": "Lanzadores",
+		"Light Machine Guns": "Ametralladoras Ligeras",
+		"Marksman Rifles": "Fusiles Tácticos",
+		"Melee": "Cuerpo a Cuerpo",
+		"Shotguns": "Escopetas",
+		"Sniper Rifles": "Fusiles de Precisión",
+		"Sub Machine Guns": "Subfusiles"
 	}
 }

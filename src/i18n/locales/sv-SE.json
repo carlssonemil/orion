@@ -205,5 +205,17 @@
 			"headshot": "{amount} huvudskott kills",
 			"destroy_streaks_equipment_or_vehicles": "Förstör {amount} stycken av fiende streaks, utrustning eller fordon"
 		}
+	},
+	"weapon_categories": {
+		"Assault Rifles": "Assault Rifles",
+		"Battle Rifles": "Battle Rifles",
+		"Handguns": "Handguns",
+		"Launchers": "Launchers",
+		"Light Machine Guns": "Light Machine Guns",
+		"Marksman Rifles": "Marksman Rifles",
+		"Melee": "Melee",
+		"Shotguns": "Shotguns",
+		"Sniper Rifles": "Sniper Rifles",
+		"Sub Machine Guns": "Sub Machine Guns"
 	}
 }

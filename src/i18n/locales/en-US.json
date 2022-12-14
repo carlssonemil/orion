@@ -205,5 +205,17 @@
 			"headshot": "{amount} headshot kills",
 			"destroy_streaks_equipment_or_vehicles": "Destroy {amount} enemy streaks, equipment, or vehicles"
 		}
+	},
+	"weapon_categories": {
+		"Assault Rifles": "Assault Rifles",
+		"Battle Rifles": "Battle Rifles",
+		"Handguns": "Handguns",
+		"Launchers": "Launchers",
+		"Light Machine Guns": "Light Machine Guns",
+		"Marksman Rifles": "Marksman Rifles",
+		"Melee": "Melee",
+		"Shotguns": "Shotguns",
+		"Sniper Rifles": "Sniper Rifles",
+		"Sub Machine Guns": "Sub Machine Guns"
 	}
 }

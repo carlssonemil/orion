@@ -40,7 +40,7 @@
 				<!-- TODO: Add double-click functionality -->
 				<h2>
 					<span>
-						{{ title }}
+						{{ $t('weapon_categories.'+title) }}
 					</span>
 					<span v-tippy :content="$t('pages.weapons.completed_in_category')">
 						{{ categoryProgress(title) }}
