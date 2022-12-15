@@ -37,7 +37,7 @@
 				class="category">
 				<h2>
 					<span>
-						{{ title }}
+						{{ $t('camouflage_categories.' + title) }}
 					</span>
 					<span v-tippy :content="$t('pages.camouflages.completed_in_category')">
 						{{ categoryProgress(title) }}

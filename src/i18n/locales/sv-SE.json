@@ -45,7 +45,8 @@
 	},
 	"locales": {
 		"en-US": "English",
-		"sv-SE": "Svenska"
+		"sv-SE": "Svenska",
+		"es-CO": "Español"
 	},
 	"pages": {
 		"404": {
@@ -204,5 +205,33 @@
 			"headshot": "{amount} huvudskott kills",
 			"destroy_streaks_equipment_or_vehicles": "Förstör {amount} stycken av fiende streaks, utrustning eller fordon"
 		}
+	},
+	"weapon_categories": {
+		"Assault Rifles": "Assault Rifles",
+		"Battle Rifles": "Battle Rifles",
+		"Handguns": "Handguns",
+		"Launchers": "Launchers",
+		"Light Machine Guns": "Light Machine Guns",
+		"Marksman Rifles": "Marksman Rifles",
+		"Melee": "Melee",
+		"Shotguns": "Shotguns",
+		"Sniper Rifles": "Sniper Rifles",
+		"Sub Machine Guns": "Sub Machine Guns"
+	},
+	"camouflage_categories": {
+		"Spray Paint": "Spray Paint",
+		"Woodland": "Woodland",
+		"Digital": "Digital",
+		"Dragon": "Dragon",
+		"Geometric": "Geometric",
+		"Fun": "Fun",
+		"Foliage": "Foliage",
+		"Skulls": "Skulls",
+		"Tiger": "Tiger",
+		"Stripes": "Stripes",
+		"Reptile": "Reptile",
+		"Solid Colors": "Solid Colors",
+		"Classic": "Classic",
+		"Cliffside": "Cliffside"
 	}
 }
