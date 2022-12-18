@@ -45,6 +45,7 @@ export const useStore = defineStore({
 					const index = this.weapons.findIndex((w) => w.name === weapon.name)
 
 					if (index !== -1) {
+						// Set progress
 						Object.keys(weapon.progress).forEach((camouflage) => {
 							// Handle changes to camouflage names
 							if (camouflage in camouflageNameChanges && weapon.progress[camouflage]) {
@@ -52,6 +53,11 @@ export const useStore = defineStore({
 							} else if (camouflage in this.weapons[index].progress) {
 								this.weapons[index].progress[camouflage] = weapon.progress[camouflage]
 							}
+						})
+
+						// Set mastery progress
+						Object.keys(weapon.masteryProgress).forEach((camouflage) => {
+							this.weapons[index].masteryProgress[camouflage] = weapon.masteryProgress[camouflage]
 						})
 					}
 				})
