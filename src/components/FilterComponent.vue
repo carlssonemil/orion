@@ -10,7 +10,7 @@
 					@change="$emit('change')">
 					<option value="">{{ $t('general.all') }}</option>
 					<option v-for="(option, index) in filter.options" :key="index" :value="option">
-						{{ $t('weapon_categories.' + option) }}
+						{{ $t((filter.key === 'weaponCategory' ? 'weapon_categories.' : 'camouflage_categories.') + option) }}
 					</option>
 				</select>
 				<IconComponent name="angle-down" />
