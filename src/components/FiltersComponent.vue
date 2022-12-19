@@ -81,7 +81,7 @@ export default {
 .filters-component {
 	align-items: center;
 	display: flex;
-	margin: 50px 0;
+	margin: 25px 0;
 
 	@media (max-width: $tablet) {
 		flex-direction: column-reverse;
