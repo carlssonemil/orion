@@ -30,7 +30,8 @@
 		"show": "Visa",
 		"support_notice_link": "köpa en öl till mig",
 		"support_notice": "Om du gillar den här hemsidan, visa din uppskattning genom att {link} 🍺",
-		"weapon": "Vapen | Vapen"
+		"weapon": "Vapen | Vapen",
+		"unlocked": "unlocked"
 	},
 	"filters": {
 		"hide_completed": "Dölj avklarade",

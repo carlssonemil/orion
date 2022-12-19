@@ -30,7 +30,8 @@
 		"show": "Ver",
 		"support_notice_link": "comprándome una cerveza",
 		"support_notice": "Si te gusta el tracker, muestra tu aprecio {link} 🍺",
-		"weapon": "Arma | Armas"
+		"weapon": "Arma | Armas",
+		"unlocked": "desbloqueados"
 	},
 	"filters": {
 		"hide_completed": "Ocultar completados",

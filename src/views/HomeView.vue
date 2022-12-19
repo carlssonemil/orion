@@ -25,6 +25,8 @@
 			</div>
 		</div>
 
+		<OverallProgressComponent :options="overallProgress" :totalWeapons="this.weapons.length" />
+
 		<WeaponsComponent :weapons="filteredWeapons" :favorites="favorites" />
 
 		<ProgressComponent
@@ -62,6 +64,7 @@ import { useStore } from '@/stores/store'
 import { groupBy, daysBetweenDates, roundToTwoDecimals } from '@/utils/utils'
 
 import FiltersComponent from '@/components/FiltersComponent.vue'
+import OverallProgressComponent from '@/components/OverallProgressComponent.vue'
 import WeaponsComponent from '@/components/WeaponsComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
 import LayoutToggleComponent from '@/components/LayoutToggleComponent.vue'
@@ -70,6 +73,7 @@ import FavoritesToggleComponent from '@/components/FavoritesToggleComponent.vue'
 export default {
 	components: {
 		FiltersComponent,
+		OverallProgressComponent,
 		WeaponsComponent,
 		ProgressComponent,
 		LayoutToggleComponent,
@@ -186,6 +190,14 @@ export default {
 			}, 0)
 
 			return roundToTwoDecimals((totalCamouflagesCompleted / requiredCamouflages) * 100)
+		},
+
+		overallProgress() {
+			return {
+				Gold: this.weapons.filter((weapon) => weapon.progress.Gold).length,
+				Platinum: this.weapons.filter((weapon) => weapon.progress.Platinum).length,
+				Polyatomic: this.weapons.filter((weapon) => weapon.progress.Polyatomic).length,
+			}
 		},
 	},
 }

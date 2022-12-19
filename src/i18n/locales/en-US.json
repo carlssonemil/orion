@@ -30,7 +30,8 @@
 		"show": "Show",
 		"support_notice_link": "buying me a beer",
 		"support_notice": "If you like this tracker, show your appreciation by {link} 🍺",
-		"weapon": "Weapon | Weapons"
+		"weapon": "Weapon | Weapons",
+		"unlocked": "unlocked"
 	},
 	"filters": {
 		"hide_completed": "Hide completed",
