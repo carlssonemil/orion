@@ -47,6 +47,10 @@ export default {
 		Earthbound: cliffside['Earthbound'],
 		Spectrums: classic['Spectrums'],
 		...masteryChallenges,
+		'Platinum': {
+			amount: 20,
+			type: 'longshot',
+		},
 	},
 
 	'LA-B 330': {
