@@ -1,0 +1,239 @@
+{
+	"general": {
+		"about": "Über",
+		"add_to": "Hinzufügen zu",
+		"all": "Alle",
+		"camouflage": "Tarnung | Tarnungen",
+		"category": "Kategorie | Kategorien",
+		"change_language": "Sprache ändern",
+		"close": "Schließen",
+		"coming_soon": "Coming soon",
+		"complete": "Vollständig",
+		"days_ago": "Tag | vor {0} Tagen",
+		"dlc": "DLC",
+		"favorites": "Favoriten",
+		"filters": "Filter",
+		"grid": "Raster",
+		"hide": "Verstecke",
+		"list": "Liste",
+		"made_by": "von {0}",
+		"mastery": "Mastery",
+		"mobile_nav_support_link": "Unterstütze mich, indem du mir ein Bier kaufst 🍺",
+		"no_favorites_placeholder": "Du hast bis jetzt keine Favoriten. Klicke auf das {star} Symbol einer {type} um sie hinzuzufügen.",
+		"remove_all": "Alle entfernen",
+		"remove_from": "Entferne von",
+		"report_an_issue": "Melde ein Problem",
+		"requirement": "Voraussetzungen | Voraussetzungen",
+		"reset": "Reset",
+		"search": "Suche",
+		"setting": "Einstellung | Einstellungen",
+		"show": "Zeige",
+		"support_notice_link": "du mir ein Bier kaufst",
+		"support_notice": "Wenn Dir dieser Tracker gefällt, würde ich mich freuen wenn {link} 🍺",
+		"weapon": "Waffe | Waffen",
+		"unlocked": "freigeschaltet"
+	},
+	"filters": {
+		"hide_completed": "Vollständige ausblenden",
+		"hide_dlc": "DLC ausblenden",
+		"hide_gold": "Gold ausblenden",
+		"hide_orion": "Orion ausblenden",
+		"hide_platinum": "Platin ausblenden",
+		"hide_polyatomic": "Polyat. ausblenden",
+		"toggle_favorite": "{state} Favoriten",
+		"toggle_favorites": "Favoriten an/aus",
+		"toggle_layout": "Layout wechseln"
+	},
+	"locales": {
+		"en-US": "English",
+		"sv-SE": "Svenska",
+		"es-CO": "Español",
+		"de-DE": "Deutsch"
+	},
+	"pages": {
+		"404": {
+			"description": "Du wolltest wohl auf eine Seite, die gar nicht existiert. 🤔",
+			"link": "Zurück zur Startseite"
+		},
+		"about": {
+			"features": {
+				"autosaving": {
+					"title": "Automatisches speichern",
+					"description": "Dein Fortschritt wird automatisch gespeichert - ganz ohne Account."
+				},
+				"responsive": {
+					"title": "Responsive",
+					"description": "Der Tracker funktioniert auf all Deinen Geräten, von Handy bis Computer."
+				},
+				"export_import": {
+					"title": "Export/Import",
+					"description": "Exportiere Deinen Fortschritt, um ihn auf einem anderen Gerät zu nutzen."
+				},
+				"filterable": {
+					"title": "Filter",
+					"description": "Du kannst einfach zwischen Waffenkategorien wechseln und fertige Waffen an/aus schalten."
+				},
+				"ad_free": {
+					"title": "Ohne Werbung",
+					"description": "Nutze den Tracker ohne Werbung. Er bleibt immer werbefrei."
+				}
+			},
+			"open_source_description": "Gebaut mit {0}, gehosted auf {1} und Analytics von {2}. Der Code ist auf {3} verfügbar.",
+			"open_source": "Open source",
+			"previous_trackers_description": "Auf der Suche nach älteren Camouflage Trackern?",
+			"previous_trackers": "Vorherige Tracker",
+			"subtitle": "Halte den Überblick mit diesem einfach zu nutzenden Tracker.",
+			"support_me_description": "Du kannst mich unterstützen, indem Du mir {0} 🍺, ich würde mich freuen!",
+			"support_me_link": "ein Bier kaufst",
+			"support_me": "Unterstütze mich",
+			"title": "Einfach und intuitiv"
+		},
+		"camouflages": {
+			"completed_in_category": "Tarnungen vervollständigt in der Kategorie",
+			"empty_search": "Für Deine Suche gibt es keine passenden Tarnungen 🤔",
+			"finished_placeholder": "Du hast alle Tarnungsherausforderungen geschafft 👏",
+			"requirement_tooltip": "Bring die {weapon} auf Level {level} - {challenge}"
+		},
+		"mastery": {
+			"completed_modal": {
+				"body": "Glückwunsch zum Erreichen aller Mastery Challenges! Das war echt viel Arbeit. Seit {duration} am {date} (MM/TT/JJJJ) verfolgst du deinen Grind.",
+				"support_link": "ein Bier ausgeben",
+				"support": "Wenn Dir dieser Tracker gefällt, zeige ihn doch Deinen Freunden und wenn du Dich noch großzügiger fühlst, kannst Du mir gerne {0}. Hoffentlich sieht man sich im Spiel! Prost! 🍺",
+				"title": "Mastery Challenges 100% vervollständigt 👏🥳"
+			},
+			"info": "Nachdem du alle Tarnungen freigeschaltet hast, wird eine Mastery Challenge aktiviert. Mache Kills mit dieser Tarnung, um Sie zu erfüllen",
+			"progress": {
+				"label": "Fortschritt Mastery",
+				"tooltip": "Fortschritt aller Mastery Challenges"
+			}
+		},
+		"requirements": {
+			"checklist": {
+				"base": "Standard Tarnungen auf 51 Waffen",
+				"gold": "Gold Tarnung auf 51 Waffen",
+				"platinum": "Platin Tarnung auf 51 Waffen",
+				"polyatomic": "Polyatomar Tarnung auf 51 Waffen"
+			},
+			"description": "Das neue System für Tarnungen unterscheidet sich in Modern Warfare II deutlich von anderen Titeln. Am Anfang kann es etwas unübersichtlich wirken. Letztendlich ist es aber einfacher die Orion Tarnung freizuschalten. Die folgenden Vorrausetzungen müssen dafür erfüllt sein: {checklist} Du schaltest beim beenden der Stufen die nächste frei:",
+			"stages": {
+				"base": "Standard",
+				"gold": "Gold",
+				"orion": "Orion",
+				"platinum": "Platin",
+				"polyatomic": "Polyatomar"
+			},
+			"table": {
+				"headers": {
+					"requirement": "Voraussetzung",
+					"stage": "Stufe"
+				},
+				"stage_requirements": {
+					"base": "Standard Tarnungen werden durch die zugehörigen Standard Challenges einer Waffe freigeschaltet. Diese werden verfügbar mit dem spezifischen Waffenlevel.",
+					"gold": "Nachdem alle Standard Tarnungen freigeschaltet sind, kann die Gold Tarnung für diese Waffe freigeschaltet werden.",
+					"orion": "Orion wird automatisch freigeschaltet, wenn du 51 Polyatomar Challenges freigeschaltet hast.",
+					"platinum": "Nachdem alle Gold Challenges für eine Waffenkategorie vervollständigt sind, werden die Platin Challenges verfügbar für die Waffen in dieser Kategorie.",
+					"polyatomic": "Wenn du die Platin Challenges für alle Kategorien und Waffen hast, werden die Polyatomar Challenges freigeschaltet für alle Waffen."
+				},
+				"subtitle": "Um zur nächsten Stufe zu gelangen, muss die vorherige freigeschaltet und beendet sein:",
+				"title": "Wie schalte ich jede Tarnungsstufe frei?"
+			},
+			"title": "Wie schalte ich die Orion Tarnung frei?"
+		},
+		"settings": {
+			"export": {
+				"copy_to_clipboard": "In Zwischenablage kopieren",
+				"description": "Exportiere Deinen Fortschritt auf ein anderes Gerät.",
+				"download_as_file": "Herunterladen als Datei",
+				"title": "Fortschritt exportieren"
+			},
+			"import": {
+				"description": "Importiere Deinen Fortschritt von einem anderen Gerät, indem Du den exportierten Code hier einfügst oder die Datei hochlädst.",
+				"import_code": "Code importieren",
+				"import_disabled_tooltip": "Du musst den Code im Feld darüber einfügen.",
+				"import_from_file": "Datei importieren",
+				"placeholder": "Füge Code hier ein, oder importiere eine Datei unten.",
+				"title": "Fortschritt importieren"
+			},
+			"reset": {
+				"confirm": {
+					"body": "Bist du sicher, dass du Deinen gesamten Fortschritt löschen willst?",
+					"cancel": "Abbrechen",
+					"reset": "Löschen",
+					"title": "Fortschritt löschen"
+				},
+				"description": "Löscht Deinen Fortschritt und lässt Dich von vorne beginnen.",
+				"reset_my_progress": "Fortschritt zurücksetzen",
+				"title": "Reset all progress",
+				"warning": "Der Fortschritt ist endgültig verloren, wenn Du ihn nicht exportiert hast."
+			}
+		},
+		"weapons": {
+			"completed_in_category": "Freigeschaltete Waffen in der Kategorie",
+			"completed_modal": {
+				"body": "Glückwunsch zum Erreichen der Orion Tarnung! Das war echt viel Arbeit. Seit {duration} am {date} (MM/TT/JJJJ) verfolgst du deinen Grind.",
+				"support_link": "ein Bier kaufen",
+				"support": "Wenn Dir dieser Tracker gefällt, zeige ihn doch Deinen Freunden und wenn du Dich noch großzügiger fühlst, kannst Du mir gerne {0}. Hoffentlich sieht man sich im Spiel! Prost! 🍺",
+				"title": "Orion freigeschaltet! 👏🥳"
+			},
+			"double_click_tooltip": "Doppelklick zum {state} der Waffe",
+			"finished_placeholder": "Du hast alle Tarnungen freigeschaltet 👏",
+			"info_link": "hier",
+			"info_tooltip": "Du musst nur die Grundanzahl an Waffen freischalten in einer Kategorie für die Platin Tarnung. Zum Beispiel brauchen die Sturmgewehre 8 Gold Tarnungen, um  die Platin freizuschalten. Drücke auf das Icon, um mehr zu erfahren.",
+			"info": "Du musst nur die Grundanzahl an Waffen freischalten in einer Kategorie für die Platin Tarnung. Zum Beispiel brauchen die Sturmgewehre 8 Gold Tarnungen, um  die Platin freizuschalten. Lese mehr dazu {link}.",
+			"progress": {
+				"label": "Orion Fortschritt",
+				"tooltip": "Fortschritt zum Erreichen der Orion Tarnung"
+			}
+		}
+	},
+	"challenges": {
+		"mastery": "{amount} Kills mit der {camouflage} Tarnung",
+		"types": {
+			"behind": "{amount} Kills von hinten",
+			"mounted": "{amount} Kills während deine Waffe aufgestützt ist",
+			"hipfire": "{amount} Kills aus der Hüfte",
+			"ads": "{amount} Kills im ZV",
+			"one_shot": "{amount} Oneshot Kills",
+			"double": "{amount} Doppelkills",
+			"crouched": "{amount} geduckte Kills",
+			"prone": "{amount} Kills im Liegen",
+			"kills": "{amount} Kill",
+			"point_blank": "{amount} nahe Kills",
+			"suppressor": "{amount} Kills mit Schalldämpfer",
+			"time_limit": "{amount} Kills innerhalb {seconds} Sekunden - {times} mal",
+			"akimbo": "{amount} Kills mit Akimbos",
+			"without_dying": "{amount} Kills ohne zu sterben - {times} times",
+			"longshot": "{amount} Weitschuss Kills",
+			"headshot": "{amount} Kopfschuss Kills",
+			"destroy_streaks_equipment_or_vehicles": "Zerstöre {amount} Killserien, Ausrüstungen oder Fahrzeuge"
+		}
+	},
+	"weapon_categories": {
+		"Assault Rifles": "Sturmgewehre",
+		"Battle Rifles": "Kampfgewehre",
+		"Handguns": "Handfeuerwaffen",
+		"Launchers": "Werfer",
+		"Light Machine Guns": "LMGs",
+		"Marksman Rifles": "DMRs",
+		"Melee": "Nahkampf",
+		"Shotguns": "Schrotflinten",
+		"Sniper Rifles": "Scharfschützengewehre",
+		"Sub Machine Guns": "MPs"
+	},
+	"camouflage_categories": {
+		"Spray Paint": "Sprühflasche",
+		"Woodland": "Waldung",
+		"Digital": "Digital",
+		"Dragon": "Drache",
+		"Geometric": "Geometrisch",
+		"Fun": "Spaß",
+		"Foliage": "Laub",
+		"Skulls": "Schädel",
+		"Tiger": "Tiger",
+		"Stripes": "Stripes",
+		"Reptile": "Reptil",
+		"Solid Colors": "Unifarben",
+		"Classic": "Klassisch",
+		"Cliffside": "Klippen"
+	}
+}
