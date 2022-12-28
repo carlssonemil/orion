@@ -30,6 +30,7 @@
 		"show": "Show",
 		"support_notice_link": "buying me a beer",
 		"support_notice": "If you like this tracker, show your appreciation by {link} 🍺",
+		"translated_by": ", translated by {0}",
 		"weapon": "Weapon | Weapons",
 		"unlocked": "unlocked"
 	},

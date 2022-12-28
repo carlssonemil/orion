@@ -26,6 +26,10 @@ footer {
 	> div {
 		align-items: center;
 		display: flex;
+
+		&:first-child a {
+			margin-right: 0 !important;
+		}
 	}
 
 	a {
