@@ -19,7 +19,7 @@
 		<div class="setting">
 			<h3>{{ $t('pages.settings.import.title') }}</h3>
 			<p class="subtitle">{{ $t('pages.settings.import.description') }}</p>
-			<div class="textarea-wrapper">
+			<div class="textarea-wrapper" :data-placeholder="$t('pages.settings.import.placeholder')">
 				<textarea v-model="importJsonCode" />
 			</div>
 			<div class="actions">
@@ -334,7 +334,7 @@ export default {
 	position: relative;
 
 	&::before {
-		content: 'Paste code here, or import from file below.';
+		content: attr(data-placeholder);
 		font-size: 14px;
 		left: 50%;
 		opacity: 0.5;
