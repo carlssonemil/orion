@@ -155,7 +155,21 @@ export const useStore = defineStore({
 		toggleCamouflageCompleted(weaponName, camouflage, current, mastery) {
 			const progress = mastery ? 'masteryProgress' : 'progress'
 			this.weapons.find((w) => w.name === weaponName)[progress][camouflage] = !current
+
+			if (camouflage === 'Gold' && !mastery) {
+				this.completeBaseCamouflages(weaponName)
+			}
+
 			this.storeProgress()
+		},
+
+		completeBaseCamouflages(weaponName) {
+			const weapon = this.weapons.find((w) => w.name === weaponName)
+			const baseCamouflages = Object.keys(
+				filterObject(weapon.progress, ['Gold', 'Platinum', 'Polyatomic'])
+			)
+
+			baseCamouflages.forEach((camouflage) => (weapon.progress[camouflage] = true))
 		},
 
 		toggleWeaponCompleted(weapon, current, mastery) {
