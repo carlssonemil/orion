@@ -5,7 +5,9 @@
 				:src="`https://emilcarlsson.se/orion/camouflages/${name.toLowerCase()}.png`"
 				:alt="name"
 				onerror="javascript:this.src='/base-gradient.svg'" />
-			<span>{{ name }} {{ $t("general.unlocked") }} {{ counter }}/{{ totalWeapons }}</span>
+			<p>
+				{{ name }} {{ $t('general.unlocked') }} <span>{{ counter }}/{{ totalWeapons }}</span>
+			</p>
 		</div>
 	</div>
 </template>
@@ -30,33 +32,55 @@ export default {
 .overall-progress-component {
 	align-items: center;
 	display: flex;
-	margin: 0 0 25px;
-	border: 2px solid $elevation-4-color;
-	background: $elevation-2-color;
-	padding: 10px;
 	justify-content: center;
-	border-radius: $border-radius;
+	margin: 0 0 25px;
+	padding: 10px;
 
 	.counter {
-		display: flex;
 		align-items: center;
+		display: flex;
+		font-size: 14px;
 		justify-content: center;
 
+		+ .counter {
+			margin-left: 25px;
+		}
+
 		img {
+			$size: 20px;
+
+			border-radius: $size;
 			height: 100%;
+			margin-right: 8px;
 			object-fit: cover;
 			position: relative;
-			width: 25px;
+			width: $size;
 			z-index: 1;
-			border-radius: $border-radius;
-			margin: 0 5px 0 15px;
+		}
+
+		p {
+			cursor: default;
+			font-weight: 400;
+
+			span {
+				font-weight: 600;
+			}
 		}
 	}
 
 	@media (max-width: $tablet) {
-		flex-direction: column;
+		justify-content: space-between;
+		gap: 10px;
 		margin-top: 0;
-		gap: 5px;
+
+		.counter + .counter {
+			margin-left: 0;
+		}
+	}
+
+	@media (max-width: $mobile) {
+		align-items: flex-start;
+		flex-direction: column;
 	}
 }
 </style>
