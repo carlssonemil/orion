@@ -378,9 +378,10 @@ export default {
 				}
 
 				&.weapon-layout-list > .inner {
-					$image-size: 25px;
+					$image-size: 30px;
 					background: $elevation-1-color;
 					flex-direction: row;
+					height: $image-size;
 					justify-content: flex-start;
 
 					&.completed > .info {
@@ -406,7 +407,7 @@ export default {
 					}
 
 					.info {
-						padding: 4px 8px;
+						padding: 0 8px;
 						text-align: left;
 
 						.requirement {
