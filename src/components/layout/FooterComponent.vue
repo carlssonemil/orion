@@ -35,8 +35,8 @@ export default {
 			if (!translator) return null
 
 			return {
-				url: translator,
-				username: translator.split('/').pop(),
+				url: translator.github,
+				username: translator.name || translator.github.split('/').pop(),
 			}
 		},
 	},
