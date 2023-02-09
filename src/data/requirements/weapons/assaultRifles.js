@@ -110,4 +110,10 @@ export default {
 		'Snow Leopard': fun['Snow Leopard'],
 		...masteryChallenges,
 	},
+
+	'ISO Hemlock': {
+
+	},
+
+	
 }

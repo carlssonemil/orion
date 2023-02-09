@@ -68,4 +68,8 @@ export default {
 		'Diabolical': false,
 		'Snow Leopard': false,
 	},
+
+	'ISO Hemlock': {
+
+	},
 }

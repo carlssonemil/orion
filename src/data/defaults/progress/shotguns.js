@@ -26,4 +26,8 @@ export default {
 		'Shedding': false,
 		'Arctic Chill': false,
 	},
+
+	'KV Broadside': {
+
+	},
 }

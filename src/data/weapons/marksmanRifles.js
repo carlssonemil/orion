@@ -1,11 +1,11 @@
 import defaultMarksmanRiflesProgress from '../defaults/progress/marksmanRifles'
 import defaultMasteryCamouflages from '../defaults/progress/masteryCamouflages'
 
-const weapons = ['EBR-14', 'SP-R 208', 'Lockwood MK2', 'LM-S', 'SA-B 50', 'TAQ-M']
+const weapons = ['EBR-14', 'SP-R 208', 'Lockwood MK2', 'LM-S', 'SA-B 50', 'TAQ-M', 'Crossbow', 'Tempus Torrent']
 
-const dlc = []
+const dlc = ['Crossbow', 'Tempus Torrent']
 
-const comingSoon = []
+const comingSoon = ['Crossbow', 'Tempus Torrent']
 
 export default weapons.map((weapon) => ({
 	category: 'Marksman Rifles',

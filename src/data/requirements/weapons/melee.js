@@ -32,4 +32,8 @@ export default {
 			type: 'behind',
 		},
 	},
+
+	'Dual Kodachis': {
+
+	},
 }

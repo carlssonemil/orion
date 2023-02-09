@@ -59,4 +59,8 @@ export default {
 		'Arctic Chill': woodland['Arctic Chill'],
 		...masteryChallenges,
 	},
+
+	'KV Broadside': {
+
+	},
 }

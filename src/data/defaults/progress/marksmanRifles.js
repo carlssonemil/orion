@@ -40,4 +40,12 @@ export default {
 		'Skin and Scales': false,
 		'Chemist Digital': false,
 	},
+
+	'Crossbow': {
+
+	},
+
+	'Tempus Torrent': {
+
+	},
 }

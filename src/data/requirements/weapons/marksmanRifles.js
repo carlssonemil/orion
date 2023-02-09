@@ -77,4 +77,12 @@ export default {
 		'Chemist Digital': digital['Chemist Digital'],
 		...masteryChallenges,
 	},
+
+	'Crossbow': {
+
+	},
+
+	'Tempus Torrent': {
+
+	},
 }

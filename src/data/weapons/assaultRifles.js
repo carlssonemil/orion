@@ -12,9 +12,10 @@ const weapons = [
 	'Kastov 545',
 	'Chimera',
 	'M13B',
+	'ISO Hemlock',
 ]
 
-const dlc = ['M13B', 'Chimera']
+const dlc = ['M13B', 'Chimera', 'ISO Hemlock']
 
 const comingSoon = []
 
