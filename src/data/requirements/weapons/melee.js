@@ -1,4 +1,4 @@
-import { solidColors, stripes } from '../camouflages/_index'
+import { solidColors, stripes, fun } from '../camouflages/_index'
 
 const masteryChallenges = {
 	Gold: {
@@ -16,9 +16,9 @@ const masteryChallenges = {
 
 export default {
 	'Combat Knife': {
-		Scarlet: solidColors['Scarlet'],
+		'Scarlet': solidColors['Scarlet'],
 		...masteryChallenges,
-		Polyatomic: {
+		'Polyatomic': {
 			amount: 20,
 			type: 'behind',
 		},
@@ -34,6 +34,11 @@ export default {
 	},
 
 	'Dual Kodachis': {
-
+		'Rush Hour': fun['Rush Hour'],
+		...masteryChallenges,
+		'Polyatomic': {
+			amount: 20,
+			type: 'behind',
+		},
 	},
 }

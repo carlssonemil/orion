@@ -79,7 +79,11 @@ export default {
 	},
 
 	'Crossbow': {
-
+		'Deciduous': geometric['Deciduous'],
+		'H20': dragon['H20'],
+		'Unlit Showers': fun['Unlit Showers'],
+		'Rad N Rancid': fun['Rad N Rancid'],
+		...masteryChallenges,
 	},
 
 	'Tempus Torrent': {

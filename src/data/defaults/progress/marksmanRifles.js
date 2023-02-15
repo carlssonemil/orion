@@ -42,7 +42,10 @@ export default {
 	},
 
 	'Crossbow': {
-
+		'Deciduous': false,
+		'H20': false,
+		'Unlit Showers': false,
+		'Rad N Rancid': false,
 	},
 
 	'Tempus Torrent': {

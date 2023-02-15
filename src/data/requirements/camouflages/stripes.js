@@ -119,4 +119,12 @@ export default {
 			type: 'double',
 		},
 	},
+	'Paths Of Light': {
+		weapon: 'ISO Hemlock',
+		level: '26',
+		challenge: {
+			amount: 40,
+			type: 'suppressor',
+		},
+	},
 }

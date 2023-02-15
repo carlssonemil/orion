@@ -5,7 +5,7 @@ const weapons = ['EBR-14', 'SP-R 208', 'Lockwood MK2', 'LM-S', 'SA-B 50', 'TAQ-M
 
 const dlc = ['Crossbow', 'Tempus Torrent']
 
-const comingSoon = ['Crossbow', 'Tempus Torrent']
+const comingSoon = ['Tempus Torrent']
 
 export default weapons.map((weapon) => ({
 	category: 'Marksman Rifles',

@@ -8,6 +8,6 @@ export default {
 	},
 
 	'Dual Kodachis': {
-
+		'Rush Hour': false,
 	},
 }

@@ -9,6 +9,7 @@ import {
 	stripes,
 	tiger,
 	woodland,
+	fun,
 } from '../camouflages/_index'
 
 const masteryChallenges = {
@@ -61,6 +62,18 @@ export default {
 	},
 
 	'KV Broadside': {
-
+		'Unplumbed': solidColors['Unplumbed'],
+		'Conflagration': digital['Conflagration'],
+		'Ethereal Rampage': tiger['Ethereal Rampage'],
+		'Riots Nest': fun['Riots Nest'],
+		...masteryChallenges,
+		'Platinum': {
+			amount: 25,
+			type: 'longshot',
+		},
+		'Polyatomic': {
+			amount: 25,
+			type: 'headshot',
+		},
 	},
 }

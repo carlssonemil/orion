@@ -111,4 +111,12 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Unplumbed': {
+		weapon: 'KV Broadside',
+		level: '3',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
 }

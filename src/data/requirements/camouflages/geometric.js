@@ -25,7 +25,7 @@ export default {
 	},
 	'Forest Ice': {
 		weapon: 'Kastov 762',
-		level: '?',
+		level: '14',
 		challenge: {
 			amount: 50,
 			type: 'ads',
@@ -125,6 +125,14 @@ export default {
 		challenge: {
 			amount: 10,
 			type: 'double',
+		},
+	},
+	'Deciduous': {
+		weapon: 'Crossbow',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
 		},
 	},
 }

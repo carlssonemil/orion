@@ -87,4 +87,52 @@ export default {
 			type: 'behind',
 		},
 	},
+	'Cloud Hopper': {
+		weapon: 'ISO Hemlock',
+		level: '10',
+		challenge: {
+			amount: 40,
+			type: 'ads',
+		},
+	},
+	'Lost Signal': {
+		weapon: 'ISO Hemlock',
+		level: '19',
+		challenge: {
+			amount: 15,
+			type: 'behind',
+		},
+	},
+	'Riots Nest': {
+		weapon: 'KV Broadside',
+		level: '21',
+		challenge: {
+			amount: 20,
+			type: 'one_shot',
+		},
+	},
+	'Rush Hour': {
+		weapon: 'Dual Kodachis',
+		level: '14',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
+	'Unlit Showers': {
+		weapon: 'Crossbow',
+		level: '12',
+		challenge: {
+			amount: 15,
+			type: 'behind',
+		},
+	},
+	'Rad N Rancid': {
+		weapon: 'Crossbow',
+		level: '17',
+		challenge: {
+			amount: 20,
+			type: 'prone',
+		},
+	},
 }

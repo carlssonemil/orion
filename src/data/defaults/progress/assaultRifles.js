@@ -70,6 +70,9 @@ export default {
 	},
 
 	'ISO Hemlock': {
-
+		'Gaseous': false,
+		'Cloud Hopper': false,
+		'Lost Signal': false,
+		'Paths Of Light': false,
 	},
 }
