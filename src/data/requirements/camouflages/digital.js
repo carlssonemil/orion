@@ -207,4 +207,12 @@ export default {
 			type: 'hipfire',
 		},
 	},
+	'Conflagration': {
+		weapon: 'KV Broadside',
+		level: '9',
+		challenge: {
+			amount: 20,
+			type: 'point_blank',
+		},
+	},
 }

@@ -137,4 +137,12 @@ export default {
 			type: 'double',
 		},
 	},
+	'H20': {
+		weapon: 'Crossbow',
+		level: '9',
+		challenge: {
+			amount: 5,
+			type: 'double',
+		},
+	},
 }

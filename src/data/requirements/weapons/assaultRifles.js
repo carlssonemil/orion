@@ -110,4 +110,14 @@ export default {
 		'Snow Leopard': fun['Snow Leopard'],
 		...masteryChallenges,
 	},
+
+	'ISO Hemlock': {
+		'Gaseous': sprayPaint['Gaseous'],
+		'Cloud Hopper': fun['Cloud Hopper'],
+		'Lost Signal': fun['Lost Signal'],
+		'Paths Of Light': stripes['Paths Of Light'],
+		...masteryChallenges,
+	},
+
+	
 }

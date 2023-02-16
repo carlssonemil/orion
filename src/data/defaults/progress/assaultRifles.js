@@ -68,4 +68,11 @@ export default {
 		'Diabolical': false,
 		'Snow Leopard': false,
 	},
+
+	'ISO Hemlock': {
+		'Gaseous': false,
+		'Cloud Hopper': false,
+		'Lost Signal': false,
+		'Paths Of Light': false,
+	},
 }

@@ -6,4 +6,8 @@ export default {
 	'Riot Shield': {
 		'Urban Zebra': false,
 	},
+
+	'Dual Kodachis': {
+		'Rush Hour': false,
+	},
 }

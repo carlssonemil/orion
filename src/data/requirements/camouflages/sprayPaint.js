@@ -145,4 +145,12 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Gaseous': {
+		weapon: 'ISO Hemlock',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
 }

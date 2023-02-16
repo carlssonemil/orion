@@ -40,4 +40,15 @@ export default {
 		'Skin and Scales': false,
 		'Chemist Digital': false,
 	},
+
+	'Crossbow': {
+		'Deciduous': false,
+		'H20': false,
+		'Unlit Showers': false,
+		'Rad N Rancid': false,
+	},
+
+	'Tempus Torrent': {
+
+	},
 }

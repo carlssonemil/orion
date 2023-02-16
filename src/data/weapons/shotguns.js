@@ -1,9 +1,9 @@
 import defaultShotgunsProgress from '../defaults/progress/shotguns'
 import defaultMasteryCamouflages from '../defaults/progress/masteryCamouflages'
 
-const weapons = ['Lockwood 300', 'Expedite 12', 'Bryson 800', 'Bryson 890']
+const weapons = ['Lockwood 300', 'Expedite 12', 'Bryson 800', 'Bryson 890', 'KV Broadside']
 
-const dlc = []
+const dlc = ['KV Broadside']
 
 const comingSoon = []
 

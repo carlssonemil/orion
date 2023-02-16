@@ -26,4 +26,11 @@ export default {
 		'Shedding': false,
 		'Arctic Chill': false,
 	},
+
+	'KV Broadside': {
+		'Unplumbed': false,
+		'Conflagration': false,
+		'Ethereal Rampage': false,
+		'Riots Nest': false,
+	},
 }
