@@ -2,6 +2,7 @@ import Vue from 'vue'
 import { defineStore } from 'pinia'
 import { filterObject } from '../utils/utils'
 import defaultWeapons from '../data/weapons'
+import defaultCallingCards from '../data/defaults/calling_cards'
 import defaultFilters from '../data/defaults/filters'
 import defaultPreferences from '../data/defaults/preferences'
 import weaponRequirements from '../data/weaponRequirements'
@@ -21,11 +22,13 @@ export const useStore = defineStore({
 			camouflages: [],
 			weapons: [],
 			mastery: [],
+			callingCards: [],
 		},
 		filters: {},
 		weaponRequirements: { ...weaponRequirements },
 		masteryRequirements: { ...masteryRequirements },
 		weapons: [],
+		callingCards: {},
 		preferences: { ...defaultPreferences },
 	}),
 
@@ -34,6 +37,7 @@ export const useStore = defineStore({
 		getFavorites: (state) => (type) => state.favorites[type],
 		weaponCategories: (state) =>
 			Array.from(new Set(state.weapons.map((weapon) => weapon.category))),
+		callingCardCompleted: (state) => (card) => state.callingCards[card],
 	},
 
 	actions: {
@@ -64,9 +68,22 @@ export const useStore = defineStore({
 			}
 		},
 
-		setFavorites({ camouflages, weapons }) {
+		setCallingCards(callingCards) {
+			this.callingCards = JSON.parse(JSON.stringify(defaultCallingCards))
+
+			if (callingCards) {
+				Object.keys(callingCards).forEach((card) => {
+					if (card in this.callingCards) {
+						this.callingCards[card] = callingCards[card]
+					}
+				})
+			}
+		},
+
+		setFavorites({ camouflages, weapons, callingCards }) {
 			this.favorites.camouflages = camouflages || []
 			this.favorites.weapons = weapons || []
+			this.favorites.callingCards = callingCards || []
 		},
 
 		setFilters(filters) {
@@ -98,13 +115,16 @@ export const useStore = defineStore({
 
 			if (!storage) {
 				this.setWeapons()
+				this.setCallingCards()
 				this.setFilters()
 				return
 			}
 
-			const { weapons, filters, beganGrind, favorites, preferences } = JSON.parse(storage)
+			const { weapons, callingCards, filters, beganGrind, favorites, preferences } =
+				JSON.parse(storage)
 
 			if (weapons) this.setWeapons(weapons)
+			if (callingCards) this.setCallingCards(callingCards)
 			if (filters) this.setFilters(filters)
 			if (beganGrind) this.beganGrind = beganGrind
 			if (favorites) this.setFavorites(favorites)
@@ -116,6 +136,7 @@ export const useStore = defineStore({
 				token,
 				JSON.stringify({
 					weapons: this.weapons,
+					callingCards: this.callingCards,
 					filters: this.filters,
 					beganGrind: this.beganGrind || new Date(),
 					favorites: this.favorites,
@@ -127,6 +148,7 @@ export const useStore = defineStore({
 		resetProgress() {
 			localStorage.removeItem(token)
 			this.setWeapons()
+			this.setCallingCards()
 			this.beganGrind = null
 
 			Vue.notify({
@@ -195,6 +217,12 @@ export const useStore = defineStore({
 				camouflages.forEach((camouflage) => (weapon.progress[camouflage] = !current))
 			})
 
+			this.storeProgress()
+		},
+
+		toggleCallingCardCompleted(card, current) {
+			console.log(card, current)
+			this.callingCards[card.name] = !current
 			this.storeProgress()
 		},
 	},

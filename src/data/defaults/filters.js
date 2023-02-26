@@ -1,6 +1,8 @@
 export default {
+	callingCardCategory: null,
 	camouflageCategory: null,
 	hideCompletedCamouflages: false,
+	hideCompletedCallingCards: false,
 	hideDlc: false,
 	hideFilters: false,
 	hideGold: false,

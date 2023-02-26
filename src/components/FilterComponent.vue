@@ -10,7 +10,7 @@
 					@change="$emit('change')">
 					<option value="">{{ $t('general.all') }}</option>
 					<option v-for="(option, index) in filter.options" :key="index" :value="option">
-						{{ $t((filter.key === 'weaponCategory' ? 'weapon_categories.' : 'camouflage_categories.') + option) }}
+						{{ $t(translationKey(filter.key) + option) }}
 					</option>
 				</select>
 				<IconComponent name="angle-down" />
@@ -59,7 +59,23 @@ export default {
 			required: true,
 		},
 	},
+
 	components: { IconComponent },
+
+	methods: {
+		translationKey(key) {
+			switch (key) {
+				case 'weaponCategory':
+					return 'weapon_categories.'
+				case 'camouflageCategory':
+					return 'camouflage_categories.'
+				case 'callingCardCategory':
+					return 'calling_card_categories.'
+				default:
+					return ''
+			}
+		},
+	},
 }
 </script>
 

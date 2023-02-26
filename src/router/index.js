@@ -26,6 +26,11 @@ const router = new VueRouter({
 			component: () => import('../views/CamouflagesView.vue'),
 		},
 		{
+			path: '/calling-cards',
+			name: 'calling-cards',
+			component: () => import('../views/CallingCardsView.vue'),
+		},
+		{
 			path: '/mastery',
 			name: 'mastery',
 			component: () => import('../views/MasteryView.vue'),
