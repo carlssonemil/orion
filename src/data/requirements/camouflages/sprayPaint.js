@@ -153,4 +153,12 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Sandfall': {
+		weapon: 'Tempus Torrent',
+		level: '17',
+		challenge: {
+			amount: 40,
+			type: 'suppressor',
+		},
+	},
 }

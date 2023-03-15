@@ -135,4 +135,20 @@ export default {
 			type: 'prone',
 		},
 	},
+	'Speckled': {
+		weapon: 'Tempus Torrent',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
+	'Oxysporum': {
+		weapon: 'Tempus Torrent',
+		level: '10',
+		challenge: {
+			amount: 50,
+			type: 'double',
+		},
+	},
 }
