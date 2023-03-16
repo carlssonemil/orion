@@ -127,4 +127,12 @@ export default {
 			type: 'suppressor',
 		},
 	},
+	'Dire Growth': {
+		weapon: 'Tempus Torrent',
+		level: '13',
+		challenge: {
+			amount: 20,
+			type: 'mounted',
+		},
+	},
 }

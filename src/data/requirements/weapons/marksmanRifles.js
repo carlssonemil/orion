@@ -87,6 +87,10 @@ export default {
 	},
 
 	'Tempus Torrent': {
-
+		'Speckled': fun['Speckled'],
+		'Oxysporum': fun['Oxysporum'],
+		'Dire Growth': stripes['Dire Growth'],
+		'Sandfall': sprayPaint['Sandfall'],
+		...masteryChallenges,
 	},
 }
