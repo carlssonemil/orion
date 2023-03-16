@@ -1,0 +1,242 @@
+{
+	"general": {
+		"about": "À propos",
+		"add_to": "Ajouter à",
+		"all": "Tous",
+		"camouflage": "Camouflage | Camouflages",
+		"category": "Categorie | Categories",
+		"change_language": "Changer de langue",
+		"close": "Fermer",
+		"coming_soon": "Prochainement",
+		"complete": "Terminer",
+		"days_ago": "{0} jour avant | {0} jours avant",
+		"dlc": "DLC",
+		"favorites": "Favoris",
+		"filters": "Filtres",
+		"grid": "Grille",
+		"hide": "Cacher",
+		"list": "Liste",
+		"made_by": "Créé par {0}",
+		"mastery": "Maitrise",
+		"mobile_nav_support_link": "Supportez moi en me payant une bière 🍺",
+		"no_favorites_placeholder": "Vous n'avez pas de favoris actuellement . Cliquez sur l'icone {star} sûr une {type} pour l'ajouter à vos favoris.",
+		"remove_all": "Tout supprimer",
+		"remove_from": "Supprimer des",
+		"report_an_issue": "Signaler un problème",
+		"requirement": "Exigence | Exigences",
+		"reset": "Réinitialiser",
+		"search": "Rechercher",
+		"setting": "Paramètre | Paramètres",
+		"show": "Afficher",
+		"support_notice_link": "me payer une bière 🍺",
+		"support_notice": "Si vous aimez ce tracker, montrez moi votre appreciation avec {link} 🍺",
+		"translated_by": ", traduis par {0}",
+		"weapon": "Arme | Armes",
+		"unlocked": "Débloqué"
+	},
+	"filters": {
+		"hide_completed": "Cacher les terminés",
+		"hide_dlc": "Cacher les DLC",
+		"hide_gold": "Cacher l'or",
+		"hide_orion": "Cacher Orion",
+		"hide_platinum": "Cacher le platine",
+		"hide_polyatomic": "Cacher Polyatomic",
+		"toggle_favorite": "{state} favoris",
+		"toggle_favorites": "Basculer favoris",
+		"toggle_layout": "Changer la disposition"
+	},
+	"locales": {
+		"en-US": "English",
+		"sv-SE": "Svenska",
+		"es-CO": "Español",
+		"de-DE": "Deutsch",
+		"fr-FR": "Français"
+	},
+	"pages": {
+		"404": {
+			"description": "La page que vous recherchez n'existe pas ou a été déplacée.🤔",
+			"link": "Retourner à l'accueil"
+		},
+		"about": {
+			"features": {
+				"autosaving": {
+					"title": "Sauvegarde automatique",
+					"description": "Les changements sont sauvegardés automatiquement."
+				},
+				"responsive": {
+					"title": "Responsive",
+					"description": "Le tracker s'adapte à votre écran, que ce soit sur un ordinateur, une tablette ou un téléphone."
+				},
+				"export_import": {
+					"title": "Exporter/Importer",
+					"description": "Exportez vos données vers un fichier JSON et importez-les à tout moment."
+				},
+				"filterable": {
+					"title": "Filtrable",
+					"description": "Filtrez les armes et les camouflages pour trouver ce que vous recherchez."
+				},
+				"ad_free": {
+					"title": "Sans publicité",
+					"description": "Pas de publicité, pas de suivi, pas de cookies."
+				}
+			},
+			"open_source_description": "Créé avec {0}, Hébergé sur {1} et statistiques avec {2}. Le code de ce site est disponible sûr {3}.",
+			"open_source": "Open source",
+			"previous_trackers_description": "Vous recherchez des trackers de camouflage pour les jeux Call of Duty précédents, jusqu'en 2019 ?",
+			"previous_trackers": "Précédents trackers",
+			"subtitle": "Suivez votre progression vers le camouflage Orion grâce à ce tracker facile à utiliser.",
+			"support_me_description": "Vous pouvez me supporter en {0} 🍺, ce serait très apprécié !",
+			"support_me_link": "me payant une bière",
+			"support_me": "Supportez moi",
+			"title": "Simple, léger & intuitif"
+		},
+		"camouflages": {
+			"completed_in_category": "Camouflages terminés dans la catégorie",
+			"empty_search": "Aucun camouflage ne correspond à votre recherche.🤔",
+			"finished_placeholder": "Vous avez terminé tous les défis de camouflage 👏",
+			"requirement_tooltip": "Monter l'arme {weapon} au niveau {level} - {challenge}"
+		},
+		"mastery": {
+			"completed_modal": {
+				"body": "Félicitations pour avoir terminé tous les défis de maîtrise ! C'est un véritable exploit ! Vous avez commencé à suivre votre progression ici {duration} le {date}.",
+				"support_link": "me payer une bière 🍺",
+				"support": "Si vous avez aimé ce tracker, montrez votre appréciation en le faisant connaître et si vous vous sentez généreux, considérez {0} comme un remerciement. J'espère vous voir sur le champ de bataille ! A la vôtre ! 🍺",
+				"title": "Défis de maîtrise terminés 👏🥳"
+			},
+			"info": "Une fois que vous avez débloqué chaque camouflage de maîtrise, un défi de maîtrise est débloqué et vous devez obtenir un certain nombre d'éliminations en utilisant ce camouflage spécifique pour l'accomplir.",
+			"progress": {
+				"label": "Progression de la maîtrise",
+				"tooltip": "Progrès dans la réalisation de tous les défis de maîtrise"
+			}
+		},
+		"requirements": {
+			"checklist": {
+				"base": "Camouflages de base sur 51 armes",
+				"gold": "Camouflage or sur 51 armes",
+				"platinum": "Camouflage platine sur 51 armes",
+				"polyatomic": "Camouflage polyatomique sur 51 armes"
+			},
+			"description": "Le nouveau système de camouflage mis en place dans Modern Warfare II est assez différent des jeux Call of Duty les plus récents et il peut être assez difficile de le saisir et de le comprendre au début, du moins c'est ce que j'ai pensé. Cependant, il semble qu'il soit beaucoup plus facile à maîtriser que dans les jeux précédents. Pour débloquer le camouflage Orion, les conditions suivantes doivent être remplies : {checklist} Au fur et à mesure que vous progressez dans les étapes de camouflage, vous débloquerez l'étape suivante :",
+			"stages": {
+				"base": "Base",
+				"gold": "Or",
+				"orion": "Orion",
+				"platinum": "Platine",
+				"polyatomic": "Polyatomique"
+			},
+			"table": {
+				"headers": {
+					"requirement": "Conditions",
+					"stage": "Étape"
+				},
+				"stage_requirements": {
+					"base": "Les camouflages de base sont attribués en fonction du défi de base de l'arme associée, débloqué en montant en niveau l'arme spécifique.",
+					"gold": "Une fois que les camouflages de base ont été débloqués, vous débloquez le défi du camouflage d'or pour cette arme spécifique.",
+					"orion": "Le camouflage Orion se débloque automatiquement lorsque vous avez débloqué le camouflage Polyatomique sur 51 armes.",
+					"platinum": "Après avoir relevé tous les défis de camouflage en or pour une catégorie spécifique, vous débloquez le défi de camouflage en platine pour cette arme spécifique.",
+					"polyatomic": "Une fois que vous avez débloqué le camouflage platine pour toutes les catégories et toutes les armes, vous débloquez le défi du camouflage polyatomique pour chaque arme."
+				},
+				"subtitle": "Pour accéder à l'étape de camouflage suivante, vous devez d'abord débloquer l'étape précédente :",
+				"title": "Comment débloquer chaque étape de camouflage ?"
+			},
+			"title": "Comment débloquer le camouflage Orion ?"
+		},
+		"settings": {
+			"export": {
+				"copy_to_clipboard": "Copier dans le presse-papier",
+				"description": "Exporter votre progression vers un autre appareil ou un autre navigateur.",
+				"download_as_file": "Télécharger le fichier",
+				"title": "Exporter la progression"
+			},
+			"import": {
+				"description": "Importez vos progrès à partir d'un autre appareil ou navigateur, en collant le code exporté ou en téléchargeant le fichier exporté.",
+				"import_code": "Importer le code",
+				"import_disabled_tooltip": "Vous devez saisir le code dans le champ ci-dessus.",
+				"import_from_file": "Importer depuis un fichier",
+				"placeholder": "Collez le code ici, ou importez le fichier ci-dessous.",
+				"title": "Importer la progression"
+			},
+			"reset": {
+				"confirm": {
+					"body": "Êtes-vous sûr de vouloir réinitialiser tous vos progrès ?",
+					"cancel": "Annuler",
+					"reset": "Réinitialiser",
+					"title": "Réinitialiser la progression"
+				},
+				"description": "Cette action réinitialisera tous vos progrès et vous fera repartir de zéro.",
+				"reset_my_progress": "Réinitialiser ma progression",
+				"title": "Réinitialiser la progression",
+				"warning": "Cette action est irréversible si vous n'avez pas exporté votre progression."
+			}
+		},
+		"weapons": {
+			"completed_in_category": "Armes terminées dans la catégorie",
+			"completed_modal": {
+				"body": "Félicitations pour l'achèvement du camouflage de l'Orion ! La route a été longue ! Vous avez commencé à suivre votre parcours ici {duration} le {date}.",
+				"support_link": "m'offrir une bière",
+				"support": "Si vous avez aimé ce tracker, montrez votre appréciation en le faisant connaître et si vous vous sentez généreux, considérez {0} comme un remerciement. J'espère vous voir sur le champ de bataille ! A la vôtre ! 🍺",
+				"title": "Orion débloqué ! 👏🥳"
+			},
+			"double_click_tooltip": "Double-clic pour {state} de l'arme",
+			"finished_placeholder": "Vous avez relevé tous les défis de camouflage 👏",
+			"info_link": "",
+			"info_tooltip": "Il vous suffit de compléter le nombre d'armes de base de chaque catégorie pour obtenir le défi de camouflage de platine. Par exemple, les fusils d'assaut nécessitent un total de 8 camouflages d'or pour débloquer le défi de camouflage de platine pour toutes les armes de cette catégorie. Appuyez sur cette icône pour en savoir plus.",
+			"info": "Il vous suffit de compléter le nombre d'armes de base de chaque catégorie pour obtenir le défi de camouflage de platine. Par exemple, les fusils d'assaut nécessitent un total de 8 camouflages d'or pour débloquer le défi de camouflage de platine pour toutes les armes de cette catégorie. En savoir plus {link}.",
+			"progress": {
+				"label": "Progression d'Orion",
+				"tooltip": "Progression du camouflage de l'Orion"
+			}
+		}
+	},
+	"challenges": {
+		"mastery": "{amount} Éliminations en utilisant le camouflage {camouflage}",
+		"types": {
+			"behind": "{amount} éliminations par-derrière",
+			"mounted": "{amount} éliminations en prenant appui",
+			"hipfire": "{amount} éliminations au jugé",
+			"ads": "{amount} éliminations en regardant dans le viseur",
+			"one_shot": "{amount} éliminations une balle, un mort",
+			"double": "{amount} double éliminations",
+			"crouched": "{amount} éliminations en étant accroupi",
+			"prone": "{amount} éliminations en étant allongé",
+			"kills": "{amount} éliminations",
+			"point_blank": "{amount} éliminations à bout portant",
+			"suppressor": "{amount} éliminations en utilisant un silencieux",
+			"time_limit": "{amount} éliminations à {seconds} d'intervalle {times} fois",
+			"akimbo": "{amount} éliminations avec l'accessoire Akimbo",
+			"without_dying": "{amount} éliminations sans mourrir {times} fois",
+			"longshot": "{amount} éliminations à longue distance",
+			"headshot": "{amount} éliminations d'un tir dans la tête",
+			"destroy_streaks_equipment_or_vehicles": "Detruisez {amount} séries d'éliminations, équipements ou vehicules"
+		}
+	},
+	"weapon_categories": {
+		"Assault Rifles": "Fusils d'assaut",
+		"Battle Rifles": "Fusils de combat",
+		"Handguns": "Armes de poing",
+		"Launchers": "Lanceurs",
+		"Light Machine Guns": "Mitrailleuses",
+		"Marksman Rifles": "Fusils tactiques",
+		"Melee": "Corps à corps",
+		"Shotguns": "Fusils à pompe",
+		"Sniper Rifles": "Fusils de précision",
+		"Sub Machine Guns": "Mitraillettes"
+	},
+	"camouflage_categories": {
+		"Spray Paint": "Peinture en spray",
+		"Woodland": "Boisé",
+		"Digital": "Numérique",
+		"Dragon": "Dragon",
+		"Geometric": "Geometrique",
+		"Fun": "Amusement",
+		"Foliage": "Feuillage",
+		"Skulls": "Crânes",
+		"Tiger": "Tigre",
+		"Stripes": "Bandes",
+		"Reptile": "Reptile",
+		"Solid Colors": "Couleurs unies",
+		"Classic": "Classique",
+		"Events": "Événements",
+		"Cliffside": "Falaise"
+	}
+}
