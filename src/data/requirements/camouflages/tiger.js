@@ -127,7 +127,7 @@ export default {
 			type: 'double',
 		},
 	},
-	'Ethereal Rampage': {
+	'Navy': {
 		weapon: 'KV Broadside',
 		level: '15',
 		challenge: {

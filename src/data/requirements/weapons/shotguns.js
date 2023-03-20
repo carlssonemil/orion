@@ -64,7 +64,7 @@ export default {
 	'KV Broadside': {
 		'Unplumbed': solidColors['Unplumbed'],
 		'Conflagration': digital['Conflagration'],
-		'Ethereal Rampage': tiger['Ethereal Rampage'],
+		'Navy': solidColors['Navy'],
 		'Riots Nest': fun['Riots Nest'],
 		...masteryChallenges,
 		'Platinum': {

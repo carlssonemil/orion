@@ -30,7 +30,7 @@ export default {
 	'KV Broadside': {
 		'Unplumbed': false,
 		'Conflagration': false,
-		'Ethereal Rampage': false,
+		'Navy': false,
 		'Riots Nest': false,
 	},
 }
