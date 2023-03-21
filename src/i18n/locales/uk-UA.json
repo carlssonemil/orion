@@ -190,7 +190,7 @@
 		}
 	},
 	"challenges": {
-		"mastery": "{amount} Вбивств використовуючи {camouflage} Камуфляж",
+		"mastery": "{amount} Вбивств з {camouflage} Камуфляжем",
 		"types": {
 			"behind": "{amount} вбивств ззаду",
 			"mounted": "{amount} вбивств від опори",
