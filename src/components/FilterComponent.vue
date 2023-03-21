@@ -75,7 +75,7 @@ export default {
 		width: auto;
 
 		+ .filter {
-			margin-left: 30px;
+			margin-left: 16px;
 			margin-top: 0;
 		}
 	}
