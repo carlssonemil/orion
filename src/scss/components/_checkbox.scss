@@ -24,7 +24,7 @@
 		position: relative;
 		transition: $transition;
 		width: $size;
-        flex-shrink: 0;
+    flex-shrink: 0;
 
 		&::before {
 			$check-size: 8px;
