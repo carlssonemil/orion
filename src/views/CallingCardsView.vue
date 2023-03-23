@@ -43,6 +43,7 @@ export default {
 					key: 'callingCardCategory',
 					type: 'select',
 					options: this.callingCardsCategories,
+					nested_options: true,
 				},
 				{
 					label: this.$t('filters.hide_completed'),
@@ -59,7 +60,25 @@ export default {
 		},
 
 		callingCardsCategories() {
-			return Array.from(new Set(callingCards.map((card) => card.category)))
+			let categories = {}
+
+			Array.from(new Set(callingCards.map((card) => card.category))).forEach((category) => {
+				categories[category] = Array.from(
+					new Set(
+						callingCards
+							.filter((card) => card.category === category)
+							.map((card) => card.subcategory)
+					)
+				)
+			})
+
+			Object.keys(categories).forEach((key) => {
+				if (categories[key][0] === undefined) {
+					this.$set(categories, key, [])
+				}
+			})
+
+			return categories
 		},
 
 		callingCards() {

@@ -1,14 +1,14 @@
 export default [
 	{
 		name: 'Death Wrap',
-		category: 'Twitch',
+		category: 'twitch',
 		requirement: {
 			type: 'death_wrap',
 		},
 	},
 	{
 		name: `Death's Angel`,
-		category: 'Twitch',
+		category: 'twitch',
 		requirement: {
 			type: 'deaths_angel',
 		},

@@ -1,7 +1,8 @@
 export default [
 	{
 		name: `Serpent's Snap`,
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil',
 		requirement: {
 			type: 'exfil',
 			times: 5,
@@ -9,7 +10,8 @@ export default [
 	},
 	{
 		name: 'Copper Scorpion',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil',
 		requirement: {
 			type: 'exfil',
 			times: 10,
@@ -17,7 +19,8 @@ export default [
 	},
 	{
 		name: 'Sharpened Fangs',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil',
 		requirement: {
 			type: 'exfil',
 			times: 25,
@@ -25,7 +28,8 @@ export default [
 	},
 	{
 		name: `Spider's Trap`,
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil',
 		requirement: {
 			type: 'exfil',
 			times: 50,
@@ -33,7 +37,8 @@ export default [
 	},
 	{
 		name: 'Fish Please',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil',
 		requirement: {
 			type: 'exfil',
 			times: 100,
@@ -41,7 +46,8 @@ export default [
 	},
 	{
 		name: 'Bats Flight',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil',
 		requirement: {
 			type: 'exfil',
 			times: 250,
@@ -49,14 +55,16 @@ export default [
 	},
 	{
 		name: 'Crustaceous Disaster',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil',
 		requirement: {
 			type: 'exfil_all',
 		},
 	},
 	{
 		name: 'ZAP BETA',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_cash',
 		requirement: {
 			type: 'exfil_cash',
 			amount: 100000,
@@ -64,7 +72,8 @@ export default [
 	},
 	{
 		name: 'CIRCULAR',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_cash',
 		requirement: {
 			type: 'exfil_cash',
 			amount: 500000,
@@ -72,7 +81,8 @@ export default [
 	},
 	{
 		name: 'EXES BETA',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_cash',
 		requirement: {
 			type: 'exfil_cash',
 			amount: 1000000,
@@ -80,7 +90,8 @@ export default [
 	},
 	{
 		name: 'CIRCULAR BETA',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_cash',
 		requirement: {
 			type: 'exfil_cash',
 			amount: 1500000,
@@ -88,7 +99,8 @@ export default [
 	},
 	{
 		name: 'PASTELS BETA',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_cash',
 		requirement: {
 			type: 'exfil_cash',
 			amount: 2000000,
@@ -96,7 +108,8 @@ export default [
 	},
 	{
 		name: 'SWIRLS',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_cash',
 		requirement: {
 			type: 'exfil_cash',
 			amount: 2500000,
@@ -104,14 +117,16 @@ export default [
 	},
 	{
 		name: 'FIREBALL',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_cash',
 		requirement: {
 			type: 'exfil_cash_all',
 		},
 	},
 	{
 		name: 'Vaulting',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_activate_uav',
 		requirement: {
 			type: 'activate_uav',
 			amount: 1,
@@ -119,7 +134,8 @@ export default [
 	},
 	{
 		name: 'On The MOVE',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_activate_uav',
 		requirement: {
 			type: 'activate_uav',
 			amount: 5,
@@ -127,7 +143,8 @@ export default [
 	},
 	{
 		name: 'Up Top',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_activate_uav',
 		requirement: {
 			type: 'activate_uav',
 			amount: 10,
@@ -135,7 +152,8 @@ export default [
 	},
 	{
 		name: 'HIDDEN',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_activate_uav',
 		requirement: {
 			type: 'activate_uav',
 			amount: 25,
@@ -143,7 +161,8 @@ export default [
 	},
 	{
 		name: 'SLIDING DOWN',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_activate_uav',
 		requirement: {
 			type: 'activate_uav',
 			amount: 50,
@@ -151,7 +170,8 @@ export default [
 	},
 	{
 		name: 'LAST STAND',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_activate_uav',
 		requirement: {
 			type: 'activate_uav',
 			amount: 100,
@@ -159,14 +179,16 @@ export default [
 	},
 	{
 		name: 'Shadow Company',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_activate_uav',
 		requirement: {
 			type: 'activate_uav_all',
 		},
 	},
 	{
 		name: 'Be On Guard',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_complete_contracts',
 		requirement: {
 			type: 'complete_contracts',
 			amount: 10,
@@ -174,7 +196,8 @@ export default [
 	},
 	{
 		name: 'Shady Shooter',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_complete_contracts',
 		requirement: {
 			type: 'complete_contracts',
 			amount: 25,
@@ -182,7 +205,8 @@ export default [
 	},
 	{
 		name: 'Heading Out',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_complete_contracts',
 		requirement: {
 			type: 'complete_contracts',
 			amount: 50,
@@ -190,7 +214,8 @@ export default [
 	},
 	{
 		name: 'Zipline Decline',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_complete_contracts',
 		requirement: {
 			type: 'complete_contracts',
 			amount: 100,
@@ -198,7 +223,8 @@ export default [
 	},
 	{
 		name: 'The Hard Way',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_complete_contracts',
 		requirement: {
 			type: 'complete_contracts',
 			amount: 250,
@@ -206,7 +232,8 @@ export default [
 	},
 	{
 		name: 'Nightly Snipes',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_complete_contracts',
 		requirement: {
 			type: 'complete_contracts',
 			amount: 500,
@@ -214,14 +241,16 @@ export default [
 	},
 	{
 		name: 'Visionary',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_complete_contracts',
 		requirement: {
 			type: 'complete_contracts_all',
 		},
 	},
 	{
 		name: 'Panther Soldier',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_defeat_bosses',
 		requirement: {
 			type: 'defeat_bosses',
 			amount: 1,
@@ -229,7 +258,8 @@ export default [
 	},
 	{
 		name: 'Ancient Relic',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_complete_contracts',
 		requirement: {
 			type: 'defeat_bosses',
 			amount: 5,
@@ -237,7 +267,8 @@ export default [
 	},
 	{
 		name: 'Blue Tengu',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_complete_contracts',
 		requirement: {
 			type: 'defeat_bosses',
 			amount: 10,
@@ -245,7 +276,8 @@ export default [
 	},
 	{
 		name: 'Masked Profile',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_complete_contracts',
 		requirement: {
 			type: 'defeat_bosses',
 			amount: 25,
@@ -253,7 +285,8 @@ export default [
 	},
 	{
 		name: 'Golden Dual Wielder',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_complete_contracts',
 		requirement: {
 			type: 'defeat_bosses',
 			amount: 50,
@@ -261,7 +294,8 @@ export default [
 	},
 	{
 		name: 'Eyes on the Target',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_complete_contracts',
 		requirement: {
 			type: 'defeat_bosses',
 			amount: 100,
@@ -269,14 +303,16 @@ export default [
 	},
 	{
 		name: 'Fractal Freedom',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_complete_contracts',
 		requirement: {
 			type: 'defeat_bosses_all',
 		},
 	},
 	{
 		name: 'Soaring Predator',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_agent_kills',
 		requirement: {
 			type: 'agent_kills',
 			amount: 100,
@@ -284,7 +320,8 @@ export default [
 	},
 	{
 		name: 'Great White',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_agent_kills',
 		requirement: {
 			type: 'agent_kills',
 			amount: 250,
@@ -292,7 +329,8 @@ export default [
 	},
 	{
 		name: 'Constrictor',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_agent_kills',
 		requirement: {
 			type: 'agent_kills',
 			amount: 500,
@@ -300,7 +338,8 @@ export default [
 	},
 	{
 		name: 'King of the Jungle',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_agent_kills',
 		requirement: {
 			type: 'agent_kills',
 			amount: 1000,
@@ -308,7 +347,8 @@ export default [
 	},
 	{
 		name: `Bull's Barrage`,
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_agent_kills',
 		requirement: {
 			type: 'agent_kills',
 			amount: 2500,
@@ -316,7 +356,8 @@ export default [
 	},
 	{
 		name: `Hyena's Howl`,
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_agent_kills',
 		requirement: {
 			type: 'agent_kills',
 			amount: 5000,
@@ -324,14 +365,16 @@ export default [
 	},
 	{
 		name: `Tiger's Tenacity`,
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_agent_kills',
 		requirement: {
 			type: 'agent_kills_all',
 		},
 	},
 	{
 		name: 'Guns at Dawn',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_operator_kills',
 		requirement: {
 			type: 'operator_kills',
 			amount: 10,
@@ -339,7 +382,8 @@ export default [
 	},
 	{
 		name: 'Glaring Intensity',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_operator_kills',
 		requirement: {
 			type: 'operator_kills',
 			amount: 25,
@@ -347,7 +391,8 @@ export default [
 	},
 	{
 		name: 'Al Qatala',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_operator_kills',
 		requirement: {
 			type: 'operator_kills',
 			amount: 50,
@@ -355,7 +400,8 @@ export default [
 	},
 	{
 		name: 'Perspective',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_operator_kills',
 		requirement: {
 			type: 'operator_kills',
 			amount: 100,
@@ -363,7 +409,8 @@ export default [
 	},
 	{
 		name: 'PRICE',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_operator_kills',
 		requirement: {
 			type: 'operator_kills',
 			amount: 250,
@@ -371,7 +418,8 @@ export default [
 	},
 	{
 		name: 'SKETCHED SOLDIER',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_operator_kills',
 		requirement: {
 			type: 'operator_kills',
 			amount: 500,
@@ -379,14 +427,16 @@ export default [
 	},
 	{
 		name: 'Grace Under Pressure',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_operator_kills',
 		requirement: {
 			type: 'operator_kills_all',
 		},
 	},
 	{
 		name: 'Take Flight',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_final_helicopter',
 		requirement: {
 			type: 'exfil_final_helicopter',
 			times: 1,
@@ -394,7 +444,8 @@ export default [
 	},
 	{
 		name: 'Mining Discovery',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_final_helicopter',
 		requirement: {
 			type: 'exfil_final_helicopter',
 			times: 5,
@@ -402,7 +453,8 @@ export default [
 	},
 	{
 		name: 'Robotic Maternity',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_final_helicopter',
 		requirement: {
 			type: 'exfil_final_helicopter',
 			times: 10,
@@ -410,7 +462,8 @@ export default [
 	},
 	{
 		name: 'Cyber Sniper',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_final_helicopter',
 		requirement: {
 			type: 'exfil_final_helicopter',
 			times: 25,
@@ -418,7 +471,8 @@ export default [
 	},
 	{
 		name: 'Evolutionary Spiral',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_final_helicopter',
 		requirement: {
 			type: 'exfil_final_helicopter',
 			times: 50,
@@ -426,7 +480,8 @@ export default [
 	},
 	{
 		name: 'Human Evolution',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_final_helicopter',
 		requirement: {
 			type: 'exfil_final_helicopter',
 			times: 100,
@@ -434,14 +489,16 @@ export default [
 	},
 	{
 		name: 'Robotic Future',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_exfil_final_helicopter',
 		requirement: {
 			type: 'exfil_final_helicopter_all',
 		},
 	},
 	{
 		name: 'Aquatic Presence',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_extract_valuables',
 		requirement: {
 			type: 'extract_valuables',
 			amount: 50,
@@ -449,7 +506,8 @@ export default [
 	},
 	{
 		name: 'Take Flight 2',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_extract_valuables',
 		requirement: {
 			type: 'extract_valuables',
 			amount: 100,
@@ -457,7 +515,8 @@ export default [
 	},
 	{
 		name: 'Chieftain',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_extract_valuables',
 		requirement: {
 			type: 'extract_valuables',
 			amount: 250,
@@ -465,7 +524,8 @@ export default [
 	},
 	{
 		name: 'Advancements',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_extract_valuables',
 		requirement: {
 			type: 'extract_valuables',
 			amount: 500,
@@ -473,7 +533,8 @@ export default [
 	},
 	{
 		name: 'For Honor and Glory',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_extract_valuables',
 		requirement: {
 			type: 'extract_valuables',
 			amount: 1000,
@@ -481,7 +542,8 @@ export default [
 	},
 	{
 		name: 'Mining Discovery 2',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_extract_valuables',
 		requirement: {
 			type: 'extract_valuables',
 			amount: 2000,
@@ -489,14 +551,16 @@ export default [
 	},
 	{
 		name: `Drone's First Flight`,
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_extract_valuables',
 		requirement: {
 			type: 'extract_valuables_all',
 		},
 	},
 	{
 		name: 'Barbed Silhouette',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_clear_strongholds',
 		requirement: {
 			type: 'clear_strongholds',
 			amount: 5,
@@ -504,7 +568,8 @@ export default [
 	},
 	{
 		name: 'Madre Del Mal',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_clear_strongholds',
 		requirement: {
 			type: 'clear_strongholds',
 			amount: 10,
@@ -512,7 +577,8 @@ export default [
 	},
 	{
 		name: 'Flaming Retrospective',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_clear_strongholds',
 		requirement: {
 			type: 'clear_strongholds',
 			amount: 25,
@@ -520,7 +586,8 @@ export default [
 	},
 	{
 		name: `The Band's Back Together`,
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_clear_strongholds',
 		requirement: {
 			type: 'clear_strongholds',
 			amount: 50,
@@ -528,7 +595,8 @@ export default [
 	},
 	{
 		name: 'Aztec Surveillance',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_clear_strongholds',
 		requirement: {
 			type: 'clear_strongholds',
 			amount: 100,
@@ -536,7 +604,8 @@ export default [
 	},
 	{
 		name: 'Bienvenidos',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_clear_strongholds',
 		requirement: {
 			type: 'clear_strongholds',
 			amount: 250,
@@ -544,14 +613,16 @@ export default [
 	},
 	{
 		name: 'Wandering Trio',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_clear_strongholds',
 		requirement: {
 			type: 'clear_strongholds_all',
 		},
 	},
 	{
 		name: 'Magnificent',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_unlock_spaces',
 		requirement: {
 			type: 'unlock_spaces',
 			amount: 5,
@@ -559,7 +630,8 @@ export default [
 	},
 	{
 		name: 'Solider Mosaic',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_unlock_spaces',
 		requirement: {
 			type: 'unlock_spaces',
 			amount: 10,
@@ -567,7 +639,8 @@ export default [
 	},
 	{
 		name: 'Grenade Praise',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_unlock_spaces',
 		requirement: {
 			type: 'unlock_spaces',
 			amount: 25,
@@ -575,7 +648,8 @@ export default [
 	},
 	{
 		name: 'STAINED SWORD',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_unlock_spaces',
 		requirement: {
 			type: 'unlock_spaces',
 			amount: 50,
@@ -583,7 +657,8 @@ export default [
 	},
 	{
 		name: 'KNIGHTLY',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_unlock_spaces',
 		requirement: {
 			type: 'unlock_spaces',
 			amount: 100,
@@ -591,7 +666,8 @@ export default [
 	},
 	{
 		name: 'MAJESTIC GLASS',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_unlock_spaces',
 		requirement: {
 			type: 'unlock_spaces',
 			amount: 250,
@@ -599,14 +675,16 @@ export default [
 	},
 	{
 		name: 'Cyclopes Vacation',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_unlock_spaces',
 		requirement: {
 			type: 'unlock_spaces_all',
 		},
 	},
 	{
 		name: 'Blind Angel',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_armored_agent_kills',
 		requirement: {
 			type: 'armored_agent_kills',
 			amount: 25,
@@ -614,7 +692,8 @@ export default [
 	},
 	{
 		name: 'Cyber Black 2',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_armored_agent_kills',
 		requirement: {
 			type: 'armored_agent_kills',
 			amount: 50,
@@ -622,7 +701,8 @@ export default [
 	},
 	{
 		name: 'Blackened Scorpio',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_armored_agent_kills',
 		requirement: {
 			type: 'armored_agent_kills',
 			amount: 100,
@@ -630,7 +710,8 @@ export default [
 	},
 	{
 		name: 'Scarab Scream',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_armored_agent_kills',
 		requirement: {
 			type: 'armored_agent_kills',
 			amount: 250,
@@ -638,7 +719,8 @@ export default [
 	},
 	{
 		name: 'Carbon Fiber',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_armored_agent_kills',
 		requirement: {
 			type: 'armored_agent_kills',
 			amount: 500,
@@ -646,7 +728,8 @@ export default [
 	},
 	{
 		name: 'Infinite',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_armored_agent_kills',
 		requirement: {
 			type: 'armored_agent_kills',
 			amount: 750,
@@ -654,14 +737,16 @@ export default [
 	},
 	{
 		name: 'Quadruped',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_armored_agent_kills',
 		requirement: {
 			type: 'armored_agent_kills_all',
 		},
 	},
 	{
 		name: 'BRIGHT',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_loot_caches',
 		requirement: {
 			type: 'loot_caches',
 			amount: 25,
@@ -669,7 +754,8 @@ export default [
 	},
 	{
 		name: 'FRAY',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_loot_caches',
 		requirement: {
 			type: 'loot_caches',
 			amount: 50,
@@ -677,7 +763,8 @@ export default [
 	},
 	{
 		name: 'SHOT',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_loot_caches',
 		requirement: {
 			type: 'loot_caches',
 			amount: 100,
@@ -685,7 +772,8 @@ export default [
 	},
 	{
 		name: 'HACK',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_loot_caches',
 		requirement: {
 			type: 'loot_caches',
 			amount: 250,
@@ -693,7 +781,8 @@ export default [
 	},
 	{
 		name: 'WATERMELON',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_loot_caches',
 		requirement: {
 			type: 'loot_caches',
 			amount: 500,
@@ -701,7 +790,8 @@ export default [
 	},
 	{
 		name: 'POINTER',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_loot_caches',
 		requirement: {
 			type: 'loot_caches',
 			amount: 1000,
@@ -709,7 +799,8 @@ export default [
 	},
 	{
 		name: 'SPLICE',
-		category: 'DMZ',
+		category: 'dmz',
+		subcategory: 'dmz_loot_caches',
 		requirement: {
 			type: 'loot_caches_all',
 		},

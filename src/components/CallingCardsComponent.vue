@@ -41,9 +41,23 @@
 					</span>
 				</h2>
 
-				<transition-group name="fade" tag="div" :class="['calling-cards', `layout-${layout}`]">
-					<CallingCardComponent v-for="card in category" :key="card.name" :card="card" />
-				</transition-group>
+				<div
+					v-for="(subcategory, subTitle, index) in subcategory(category)"
+					:key="index"
+					class="subcategory">
+					<h4 v-if="subTitle !== 'undefined'">
+						<span>
+							{{ $t('calling_card_categories.' + subTitle) }}
+						</span>
+						<span v-tippy :content="$t('pages.calling_cards.completed_in_category')">
+							{{ subcategoryProgress(title, subTitle) }}
+						</span>
+					</h4>
+
+					<transition-group name="fade" tag="div" :class="['calling-cards', `layout-${layout}`]">
+						<CallingCardComponent v-for="card in subcategory" :key="card.name" :card="card" />
+					</transition-group>
+				</div>
 			</div>
 		</transition-group>
 
@@ -57,6 +71,7 @@
 <script>
 import { mapActions, mapState } from 'pinia'
 import { useStore } from '@/stores/store'
+import { groupBy } from '@/utils/utils'
 
 import AlertComponent from '@/components/AlertComponent.vue'
 import CallingCardComponent from '@/components/CallingCardComponent.vue'
@@ -113,6 +128,24 @@ export default {
 
 			return `${completed}/${totalCallingCards}`
 		},
+
+		subcategoryProgress(category, subcategory) {
+			let completed = 0
+			const subcategoryCallingCards = this.callingCards[category]
+				.filter((catCallingCard) => catCallingCard.subcategory === subcategory)
+				.map((catCallingCard) => catCallingCard.name)
+			const totalCallingCards = subcategoryCallingCards.length
+
+			subcategoryCallingCards.forEach((callingCard) => {
+				if (store.callingCardCompleted(callingCard)) completed++
+			})
+
+			return `${completed}/${totalCallingCards}`
+		},
+
+		subcategory(callingCards) {
+			return groupBy(callingCards, (card) => card.subcategory)
+		},
 	},
 }
 </script>
@@ -160,6 +193,22 @@ export default {
 
 			@media (max-width: $tablet) {
 				margin-bottom: 35px;
+			}
+		}
+
+		.subcategory {
+			+ .subcategory {
+				margin-top: 50px;
+			}
+
+			h4 {
+				@extend h2;
+				font-size: 20px;
+				margin-top: 0;
+
+				span:last-child:not(:first-child) {
+					font-size: 18px;
+				}
 			}
 		}
 

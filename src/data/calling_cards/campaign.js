@@ -1,28 +1,28 @@
 export default [
 	{
 		name: `Soap's Determination`,
-		category: 'Campaign',
+		category: 'campaign',
 		requirement: {
 			type: 'soaps_determination',
 		},
 	},
 	{
 		name: 'Chainlinked',
-		category: 'Campaign',
+		category: 'campaign',
 		requirement: {
 			type: 'chainlinked',
 		},
 	},
 	{
 		name: 'Gaz',
-		category: 'Campaign',
+		category: 'campaign',
 		requirement: {
 			type: 'gaz',
 		},
 	},
 	{
 		name: 'Shadow Company Ops',
-		category: 'Campaign',
+		category: 'campaign',
 		requirement: {
 			type: 'shadow_company_ops',
 		},

@@ -221,7 +221,6 @@ export const useStore = defineStore({
 		},
 
 		toggleCallingCardCompleted(card, current) {
-			console.log(card, current)
 			this.callingCards[card.name] = !current
 			this.storeProgress()
 		},

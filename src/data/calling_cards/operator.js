@@ -1,23 +1,8 @@
 export default [
 	{
-		name: 'Alejandro',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_kills',
-			amount: 5000,
-		},
-	},
-	{
-		name: 'Delusional Wealth',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_kills',
-			amount: 1000,
-		},
-	},
-	{
 		name: 'Steady Approach',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_kills',
 		requirement: {
 			type: 'operator_kills',
 			amount: 50,
@@ -25,7 +10,8 @@ export default [
 	},
 	{
 		name: 'Ghostly Flame',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_kills',
 		requirement: {
 			type: 'operator_kills',
 			amount: 100,
@@ -33,7 +19,8 @@ export default [
 	},
 	{
 		name: 'The Light at the End',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_kills',
 		requirement: {
 			type: 'operator_kills',
 			amount: 250,
@@ -41,23 +28,44 @@ export default [
 	},
 	{
 		name: `Gun's Still Hot`,
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_kills',
 		requirement: {
 			type: 'operator_kills',
 			amount: 500,
 		},
 	},
 	{
+		name: 'Delusional Wealth',
+		category: 'operator',
+		subcategory: 'operator_kills',
+		requirement: {
+			type: 'operator_kills',
+			amount: 1000,
+		},
+	},
+	{
 		name: `What's Done is Done`,
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_kills',
 		requirement: {
 			type: 'operator_kills',
 			amount: 2500,
 		},
 	},
 	{
+		name: 'Alejandro',
+		category: 'operator',
+		subcategory: 'operator_kills',
+		requirement: {
+			type: 'operator_kills',
+			amount: 5000,
+		},
+	},
+	{
 		name: 'Steady Stare',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_kills',
 		requirement: {
 			type: 'operator_kills',
 			amount: 10000,
@@ -65,22 +73,16 @@ export default [
 	},
 	{
 		name: 'Smoking End',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_kills',
 		requirement: {
 			type: 'operator_kills_all',
 		},
 	},
 	{
-		name: 'Corrupt System',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_assists',
-			amount: 250,
-		},
-	},
-	{
 		name: 'Gritty Face Off',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_assists',
 		requirement: {
 			type: 'operator_assists',
 			amount: 50,
@@ -88,15 +90,26 @@ export default [
 	},
 	{
 		name: 'The Price You Pay',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_assists',
 		requirement: {
 			type: 'operator_assists',
 			amount: 100,
 		},
 	},
 	{
+		name: 'Corrupt System',
+		category: 'operator',
+		subcategory: 'operator_assists',
+		requirement: {
+			type: 'operator_assists',
+			amount: 250,
+		},
+	},
+	{
 		name: 'Skully Ammo',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_assists',
 		requirement: {
 			type: 'operator_assists',
 			amount: 500,
@@ -104,7 +117,8 @@ export default [
 	},
 	{
 		name: 'Shades',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_assists',
 		requirement: {
 			type: 'operator_assists',
 			amount: 1000,
@@ -112,7 +126,8 @@ export default [
 	},
 	{
 		name: 'High Value',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_assists',
 		requirement: {
 			type: 'operator_assists',
 			amount: 2500,
@@ -120,37 +135,16 @@ export default [
 	},
 	{
 		name: 'Watch Your Back',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_assists',
 		requirement: {
 			type: 'operator_assists_all',
 		},
 	},
 	{
-		name: 'Adamant',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_kills_lethals_all',
-		},
-	},
-	{
-		name: 'Aught',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_kills_lethals',
-			amount: 1000,
-		},
-	},
-	{
-		name: 'Danger',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_kills_lethals',
-			amount: 250,
-		},
-	},
-	{
 		name: 'Do Not Enter',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_kills_lethals',
 		requirement: {
 			type: 'operator_kills_lethals',
 			amount: 25,
@@ -158,7 +152,8 @@ export default [
 	},
 	{
 		name: 'Heads Up',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_kills_lethals',
 		requirement: {
 			type: 'operator_kills_lethals',
 			amount: 50,
@@ -166,39 +161,52 @@ export default [
 	},
 	{
 		name: 'Uh Oh',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_kills_lethals',
 		requirement: {
 			type: 'operator_kills_lethals',
 			amount: 100,
 		},
 	},
 	{
+		name: 'Danger',
+		category: 'operator',
+		subcategory: 'operator_kills_lethals',
+		requirement: {
+			type: 'operator_kills_lethals',
+			amount: 250,
+		},
+	},
+	{
 		name: 'Speed Trap',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_kills_lethals',
 		requirement: {
 			type: 'operator_kills_lethals',
 			amount: 500,
 		},
 	},
 	{
-		name: 'Boom Boom',
-		category: 'Operator',
+		name: 'Aught',
+		category: 'operator',
+		subcategory: 'operator_kills_lethals',
 		requirement: {
-			type: 'operator_headshots',
-			amount: 2500,
+			type: 'operator_kills_lethals',
+			amount: 1000,
 		},
 	},
 	{
-		name: 'Dual Skully',
-		category: 'Operator',
+		name: 'Adamant',
+		category: 'operator',
+		subcategory: 'operator_kills_lethals',
 		requirement: {
-			type: 'operator_headshots',
-			amount: 250,
+			type: 'operator_kills_lethals_all',
 		},
 	},
 	{
 		name: 'Triple Threat',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_headshots',
 		requirement: {
 			type: 'operator_headshots',
 			amount: 50,
@@ -206,15 +214,26 @@ export default [
 	},
 	{
 		name: 'Trio De Terror',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_headshots',
 		requirement: {
 			type: 'operator_headshots',
 			amount: 100,
 		},
 	},
 	{
+		name: 'Dual Skully',
+		category: 'operator',
+		subcategory: 'operator_headshots',
+		requirement: {
+			type: 'operator_headshots',
+			amount: 250,
+		},
+	},
+	{
 		name: 'Samurai Skull',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_headshots',
 		requirement: {
 			type: 'operator_headshots',
 			amount: 500,
@@ -222,46 +241,34 @@ export default [
 	},
 	{
 		name: 'Sgt. Ham',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_headshots',
 		requirement: {
 			type: 'operator_headshots',
 			amount: 1000,
 		},
 	},
 	{
+		name: 'Boom Boom',
+		category: 'operator',
+		subcategory: 'operator_headshots',
+		requirement: {
+			type: 'operator_headshots',
+			amount: 2500,
+		},
+	},
+	{
 		name: 'Golden Cranium',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_headshots',
 		requirement: {
 			type: 'operator_headshots_all',
 		},
 	},
 	{
-		name: 'Beast Within',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_double_kills',
-			amount: 1000,
-		},
-	},
-	{
-		name: 'Divine Knighthood',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_double_kills',
-			amount: 500,
-		},
-	},
-	{
-		name: 'Exploding Soldier',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_double_kills',
-			amount: 250,
-		},
-	},
-	{
 		name: 'Man of Action',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_double_kills',
 		requirement: {
 			type: 'operator_double_kills',
 			amount: 25,
@@ -269,7 +276,8 @@ export default [
 	},
 	{
 		name: 'Lady of War',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_double_kills',
 		requirement: {
 			type: 'operator_double_kills',
 			amount: 50,
@@ -277,54 +285,70 @@ export default [
 	},
 	{
 		name: `Smokin' Gun`,
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_double_kills',
 		requirement: {
 			type: 'operator_double_kills',
 			amount: 100,
 		},
 	},
 	{
+		name: 'Exploding Soldier',
+		category: 'operator',
+		subcategory: 'operator_double_kills',
+		requirement: {
+			type: 'operator_double_kills',
+			amount: 250,
+		},
+	},
+	{
+		name: 'Divine Knighthood',
+		category: 'operator',
+		subcategory: 'operator_double_kills',
+		requirement: {
+			type: 'operator_double_kills',
+			amount: 500,
+		},
+	},
+	{
+		name: 'Beast Within',
+		category: 'operator',
+		subcategory: 'operator_double_kills',
+		requirement: {
+			type: 'operator_double_kills',
+			amount: 1000,
+		},
+	},
+	{
 		name: 'Serpent Skull',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_double_kills',
 		requirement: {
 			type: 'operator_double_kills_all',
 		},
 	},
 	{
-		name: 'Battle Ready',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_longshots',
-			amount: 100,
-		},
-	},
-	{
-		name: 'Black Knight',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_longshots',
-			amount: 2500,
-		},
-	},
-	{
-		name: 'Chattering Soldier',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_longshots',
-			amount: 1000,
-		},
-	},
-	{
 		name: `Whadaya Lookin' At!`,
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_longshots',
 		requirement: {
 			type: 'operator_longshots',
 			amount: 50,
 		},
 	},
 	{
+		name: 'Battle Ready',
+		category: 'operator',
+		subcategory: 'operator_longshots',
+		requirement: {
+			type: 'operator_longshots',
+			amount: 100,
+		},
+	},
+	{
 		name: 'Higher Level Elevate',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_longshots',
 		requirement: {
 			type: 'operator_longshots',
 			amount: 250,
@@ -332,37 +356,52 @@ export default [
 	},
 	{
 		name: 'Symbolic End',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_longshots',
 		requirement: {
 			type: 'operator_longshots',
 			amount: 500,
 		},
 	},
 	{
+		name: 'Chattering Soldier',
+		category: 'operator',
+		subcategory: 'operator_longshots',
+		requirement: {
+			type: 'operator_longshots',
+			amount: 1000,
+		},
+	},
+	{
+		name: 'Black Knight',
+		category: 'operator',
+		subcategory: 'operator_longshots',
+		requirement: {
+			type: 'operator_longshots',
+			amount: 2500,
+		},
+	},
+	{
 		name: 'Squad Under Fire',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_longshots',
 		requirement: {
 			type: 'operator_longshots_all',
 		},
 	},
 	{
 		name: 'Clawed Flame',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_hipfire_kills',
 		requirement: {
 			type: 'operator_hipfire_kills',
 			amount: 50,
 		},
 	},
 	{
-		name: 'Cyber Sprint',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_hipfire_kills_all',
-		},
-	},
-	{
 		name: 'Gassy Panel',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_hipfire_kills',
 		requirement: {
 			type: 'operator_hipfire_kills',
 			amount: 100,
@@ -370,7 +409,8 @@ export default [
 	},
 	{
 		name: 'Warfare Assassin',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_hipfire_kills',
 		requirement: {
 			type: 'operator_hipfire_kills',
 			amount: 250,
@@ -378,7 +418,8 @@ export default [
 	},
 	{
 		name: 'What Is It Good For',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_hipfire_kills',
 		requirement: {
 			type: 'operator_hipfire_kills',
 			amount: 500,
@@ -386,7 +427,8 @@ export default [
 	},
 	{
 		name: 'Resist',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_hipfire_kills',
 		requirement: {
 			type: 'operator_hipfire_kills',
 			amount: 1000,
@@ -394,22 +436,25 @@ export default [
 	},
 	{
 		name: 'Paintball Supremacy',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_hipfire_kills',
 		requirement: {
 			type: 'operator_hipfire_kills',
 			amount: 2500,
 		},
 	},
 	{
-		name: '1000 Birds',
-		category: 'Operator',
+		name: 'Cyber Sprint',
+		category: 'operator',
+		subcategory: 'operator_hipfire_kills',
 		requirement: {
-			type: 'operator_melee_all',
+			type: 'operator_hipfire_kills_all',
 		},
 	},
 	{
 		name: 'Robotic Vengeance',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_melee',
 		requirement: {
 			type: 'operator_melee',
 			amount: 25,
@@ -417,7 +462,8 @@ export default [
 	},
 	{
 		name: 'Lounging',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_melee',
 		requirement: {
 			type: 'operator_melee',
 			amount: 50,
@@ -425,7 +471,8 @@ export default [
 	},
 	{
 		name: 'Swinging Into Action',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_melee',
 		requirement: {
 			type: 'operator_melee',
 			amount: 100,
@@ -433,7 +480,8 @@ export default [
 	},
 	{
 		name: 'Pay Attention',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_melee',
 		requirement: {
 			type: 'operator_melee',
 			amount: 250,
@@ -441,7 +489,8 @@ export default [
 	},
 	{
 		name: 'Spark Effects',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_melee',
 		requirement: {
 			type: 'operator_melee',
 			amount: 500,
@@ -449,15 +498,25 @@ export default [
 	},
 	{
 		name: 'Lightning Strike',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_melee',
 		requirement: {
 			type: 'operator_melee',
 			amount: 1000,
 		},
 	},
 	{
+		name: '1000 Birds',
+		category: 'operator',
+		subcategory: 'operator_melee',
+		requirement: {
+			type: 'operator_melee_all',
+		},
+	},
+	{
 		name: 'Battle Robot',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_finishing_moves',
 		requirement: {
 			type: 'operator_finishing_moves',
 			amount: 5,
@@ -465,7 +524,8 @@ export default [
 	},
 	{
 		name: 'Night Raid',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_finishing_moves',
 		requirement: {
 			type: 'operator_finishing_moves',
 			amount: 10,
@@ -473,7 +533,8 @@ export default [
 	},
 	{
 		name: 'Rough Times',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_finishing_moves',
 		requirement: {
 			type: 'operator_finishing_moves',
 			amount: 25,
@@ -481,7 +542,8 @@ export default [
 	},
 	{
 		name: 'Sir Skully',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_finishing_moves',
 		requirement: {
 			type: 'operator_finishing_moves',
 			amount: 50,
@@ -489,7 +551,8 @@ export default [
 	},
 	{
 		name: 'Smoked Him',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_finishing_moves',
 		requirement: {
 			type: 'operator_finishing_moves',
 			amount: 100,
@@ -497,7 +560,8 @@ export default [
 	},
 	{
 		name: 'Victorious Femme',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_finishing_moves',
 		requirement: {
 			type: 'operator_finishing_moves',
 			amount: 250,
@@ -505,32 +569,16 @@ export default [
 	},
 	{
 		name: 'Mask On',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_finishing_moves',
 		requirement: {
 			type: 'operator_finishing_moves_all',
 		},
 	},
 	{
-		name: 'Company Sniper',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_without_dying',
-			amount: 3,
-			times: 250,
-		},
-	},
-	{
-		name: 'Darkened Pistol',
-		category: 'Operator',
-		requirement: {
-			type: 'operator_without_dying',
-			amount: 3,
-			times: 1000,
-		},
-	},
-	{
 		name: 'Shaded Ghost',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_without_dying',
 		requirement: {
 			type: 'operator_without_dying',
 			amount: 3,
@@ -539,7 +587,8 @@ export default [
 	},
 	{
 		name: 'Shadow Op',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_without_dying',
 		requirement: {
 			type: 'operator_without_dying',
 			amount: 3,
@@ -548,7 +597,8 @@ export default [
 	},
 	{
 		name: 'Relevance',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_without_dying',
 		requirement: {
 			type: 'operator_without_dying',
 			amount: 3,
@@ -556,8 +606,19 @@ export default [
 		},
 	},
 	{
+		name: 'Company Sniper',
+		category: 'operator',
+		subcategory: 'operator_without_dying',
+		requirement: {
+			type: 'operator_without_dying',
+			amount: 3,
+			times: 250,
+		},
+	},
+	{
 		name: 'Shadowy Past',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_without_dying',
 		requirement: {
 			type: 'operator_without_dying',
 			amount: 3,
@@ -566,9 +627,20 @@ export default [
 	},
 	{
 		name: 'Operator Overlook',
-		category: 'Operator',
+		category: 'operator',
+		subcategory: 'operator_without_dying',
 		requirement: {
 			type: 'operator_without_dying_all',
+		},
+	},
+	{
+		name: 'Darkened Pistol',
+		category: 'operator',
+		subcategory: 'operator_without_dying',
+		requirement: {
+			type: 'operator_without_dying',
+			amount: 3,
+			times: 1000,
 		},
 	},
 ]

@@ -1,30 +1,8 @@
 export default [
 	{
-		name: 'Central Blinding',
-		category: 'Warzone',
-		requirement: {
-			type: 'wins',
-			amount: 50,
-		},
-	},
-	{
-		name: 'Determined Glare',
-		category: 'Warzone',
-		requirement: {
-			type: 'wins_all',
-		},
-	},
-	{
-		name: 'Elegant Trifecta',
-		category: 'Warzone',
-		requirement: {
-			type: 'wins',
-			amount: 25,
-		},
-	},
-	{
 		name: 'Radiance',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_wins',
 		requirement: {
 			type: 'wins',
 			amount: 1,
@@ -32,7 +10,8 @@ export default [
 	},
 	{
 		name: 'Metallic Entry',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_wins',
 		requirement: {
 			type: 'wins',
 			amount: 5,
@@ -40,31 +19,52 @@ export default [
 	},
 	{
 		name: 'Emerald Raise',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_wins',
 		requirement: {
 			type: 'wins',
 			amount: 10,
 		},
 	},
 	{
+		name: 'Elegant Trifecta',
+		category: 'warzone',
+		subcategory: 'warzone_wins',
+		requirement: {
+			type: 'wins',
+			amount: 25,
+		},
+	},
+	{
+		name: 'Central Blinding',
+		category: 'warzone',
+		subcategory: 'warzone_wins',
+		requirement: {
+			type: 'wins',
+			amount: 50,
+		},
+	},
+	{
 		name: 'Hardcore',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_wins',
 		requirement: {
 			type: 'wins',
 			amount: 100,
 		},
 	},
 	{
-		name: `Bullet's End`,
-		category: 'Warzone',
+		name: 'Determined Glare',
+		category: 'warzone',
+		subcategory: 'warzone_wins',
 		requirement: {
-			type: 'kills',
-			amount: 50,
+			type: 'wins_all',
 		},
 	},
 	{
 		name: 'Hailstorm',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_kills',
 		requirement: {
 			type: 'kills',
 			amount: 10,
@@ -72,15 +72,26 @@ export default [
 	},
 	{
 		name: 'Graphical Graffiti',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_kills',
 		requirement: {
 			type: 'kills',
 			amount: 25,
 		},
 	},
 	{
+		name: `Bullet's End`,
+		category: 'warzone',
+		subcategory: 'warzone_kills',
+		requirement: {
+			type: 'kills',
+			amount: 50,
+		},
+	},
+	{
 		name: 'Tripped Out',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_kills',
 		requirement: {
 			type: 'kills',
 			amount: 100,
@@ -88,7 +99,8 @@ export default [
 	},
 	{
 		name: 'Incoming Strike',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_kills',
 		requirement: {
 			type: 'kills',
 			amount: 250,
@@ -96,7 +108,8 @@ export default [
 	},
 	{
 		name: 'Golden Vapor',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_kills',
 		requirement: {
 			type: 'kills',
 			amount: 500,
@@ -104,30 +117,16 @@ export default [
 	},
 	{
 		name: 'Gleaming Headshot',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_kills',
 		requirement: {
 			type: 'kills_all',
 		},
 	},
 	{
-		name: 'Alternative Means',
-		category: 'Warzone',
-		requirement: {
-			type: 'contracts',
-			amount: 500,
-		},
-	},
-	{
-		name: 'Deadly Laser',
-		category: 'Warzone',
-		requirement: {
-			type: 'contracts',
-			amount: 100,
-		},
-	},
-	{
 		name: 'Move In',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_contracts',
 		requirement: {
 			type: 'contracts',
 			amount: 10,
@@ -135,7 +134,8 @@ export default [
 	},
 	{
 		name: 'Lasered Infiltration',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_contracts',
 		requirement: {
 			type: 'contracts',
 			amount: 25,
@@ -143,69 +143,88 @@ export default [
 	},
 	{
 		name: 'Gunned Down',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_contracts',
 		requirement: {
 			type: 'contracts',
 			amount: 50,
 		},
 	},
 	{
+		name: 'Deadly Laser',
+		category: 'warzone',
+		subcategory: 'warzone_contracts',
+		requirement: {
+			type: 'contracts',
+			amount: 100,
+		},
+	},
+	{
 		name: 'Reflective',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_contracts',
 		requirement: {
 			type: 'contracts',
 			amount: 250,
 		},
 	},
 	{
+		name: 'Alternative Means',
+		category: 'warzone',
+		subcategory: 'warzone_contracts',
+		requirement: {
+			type: 'contracts',
+			amount: 500,
+		},
+	},
+	{
 		name: 'Time to Strike',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_contracts',
 		requirement: {
 			type: 'contracts_all',
 		},
 	},
 	{
-		name: 'All That Glitters',
-		category: 'Warzone',
-		requirement: {
-			type: 'containers',
-			amount: 50,
-		},
-	},
-	{
-		name: `Death's Payment`,
-		category: 'Warzone',
-		requirement: {
-			type: 'containers_all',
-		},
-	},
-	{
-		name: 'Desert Decor',
-		category: 'Warzone',
-		requirement: {
-			type: 'containers',
-			amount: 250,
-		},
-	},
-	{
 		name: 'Smoking Money',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_containers',
 		requirement: {
 			type: 'containers',
 			amount: 25,
 		},
 	},
 	{
+		name: 'All That Glitters',
+		category: 'warzone',
+		subcategory: 'warzone_containers',
+		requirement: {
+			type: 'containers',
+			amount: 50,
+		},
+	},
+	{
 		name: 'Tattoos and Chains',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_containers',
 		requirement: {
 			type: 'containers',
 			amount: 100,
 		},
 	},
 	{
+		name: 'Desert Decor',
+		category: 'warzone',
+		subcategory: 'warzone_containers',
+		requirement: {
+			type: 'containers',
+			amount: 250,
+		},
+	},
+	{
 		name: 'Dome Polish',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_containers',
 		requirement: {
 			type: 'containers',
 			amount: 500,
@@ -213,10 +232,19 @@ export default [
 	},
 	{
 		name: 'Finest Ruler',
-		category: 'Warzone',
+		category: 'warzone',
+		subcategory: 'warzone_containers',
 		requirement: {
 			type: 'containers',
 			amount: 1000,
+		},
+	},
+	{
+		name: `Death's Payment`,
+		category: 'warzone',
+		subcategory: 'warzone_containers',
+		requirement: {
+			type: 'containers_all',
 		},
 	},
 ]

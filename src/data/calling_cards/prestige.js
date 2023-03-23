@@ -1,175 +1,175 @@
 export default [
 	{
 		name: 'Tagged Up',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'tagged_up',
 		},
 	},
 	{
 		name: 'FISTS IN OVERDRIVE',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'fists_in_overdrive',
 		},
 	},
 	{
 		name: 'FRAG FIND A WAY',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'frag_find_a_way',
 		},
 	},
 	{
 		name: 'Colorful Shine',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'colorful_shine',
 		},
 	},
 	{
 		name: 'CYBER ASSASSIN',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'cyber_assassin',
 		},
 	},
 	{
 		name: 'CINCO SKULLY',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'cinco_skully',
 		},
 	},
 	{
 		name: 'BLACK AND GOLD',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'black_and_gold',
 		},
 	},
 	{
 		name: 'THE PERCH',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'the_perch',
 		},
 	},
 	{
 		name: 'DRENCHED IN GOLD',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'drenched_in_gold',
 		},
 	},
 	{
 		name: 'JOIN US',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'join_us',
 		},
 	},
 	{
 		name: 'Cretaceous Creation',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'cretaceous_creation',
 		},
 	},
 	{
 		name: 'Winged Terror',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'winged_terror',
 		},
 	},
 	{
 		name: 'Worm Devour',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'worm_devour',
 		},
 	},
 	{
 		name: 'Dragon in Downtown',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'dragon_in_downtown',
 		},
 	},
 	{
 		name: 'Money Fight',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'money_fight',
 		},
 	},
 	{
 		name: 'Masked Excitement',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'masked_excitement',
 		},
 	},
 	{
 		name: 'Spilled Milk',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'spilled_milk',
 		},
 	},
 	{
 		name: 'Enraged Cycle',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'enraged_cycle',
 		},
 	},
 	{
 		name: 'Flaming Last Stand',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'flaming_last_stand',
 		},
 	},
 	{
 		name: 'OCULAR REVENGE',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'ocular_revenge',
 		},
 	},
 	{
 		name: 'ONE-MAN CHARGE II',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'oneman_charge_2',
 		},
 	},
 	{
 		name: 'BRAVERY',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'bravery',
 		},
 	},
 	{
 		name: 'REAR SIGHTS',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'rear_sights',
 		},
 	},
 	{
 		name: 'ZOOMER',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'zoomer',
 		},
 	},
 	{
 		name: 'I GOT YOUR BACK',
-		category: 'Prestige',
+		category: 'prestige',
 		requirement: {
 			type: 'i_got_your_back',
 		},

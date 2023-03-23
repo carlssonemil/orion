@@ -1,23 +1,26 @@
 export default [
 	{
-		name: 'Challenger Approaches',
-		category: 'Multiplayer',
-		requirement: {
-			type: 'defender_kills',
-			amount: 100,
-		},
-	},
-	{
 		name: `Death's Flowers`,
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_defender_kills',
 		requirement: {
 			type: 'defender_kills',
 			amount: 50,
 		},
 	},
 	{
+		name: 'Challenger Approaches',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_defender_kills',
+		requirement: {
+			type: 'defender_kills',
+			amount: 100,
+		},
+	},
+	{
 		name: 'Harsh Reality',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_defender_kills',
 		requirement: {
 			type: 'defender_kills',
 			amount: 250,
@@ -25,7 +28,8 @@ export default [
 	},
 	{
 		name: 'Overwhelmed',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_defender_kills',
 		requirement: {
 			type: 'defender_kills',
 			amount: 500,
@@ -33,7 +37,8 @@ export default [
 	},
 	{
 		name: 'One Last Mission',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_defender_kills',
 		requirement: {
 			type: 'defender_kills',
 			amount: 1000,
@@ -41,7 +46,8 @@ export default [
 	},
 	{
 		name: 'Ocular Omnipotence',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_defender_kills',
 		requirement: {
 			type: 'defender_kills',
 			amount: 2500,
@@ -49,85 +55,78 @@ export default [
 	},
 	{
 		name: 'Rattle and Bone',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_defender_kills',
 		requirement: {
 			type: 'defender_kills_all',
 		},
 	},
 	{
-		name: 'Arachnophobia',
-		category: 'Multiplayer',
+		name: 'Dark Warrior',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_assault_kills',
 		requirement: {
 			type: 'assault_kills',
-			amount: 2500,
-		},
-	},
-	{
-		name: 'Black Beetle',
-		category: 'Multiplayer',
-		requirement: {
-			type: 'assault_kills',
-			amount: 250,
-		},
-	},
-	{
-		name: 'Bladed Charge',
-		category: 'Multiplayer',
-		requirement: {
-			type: 'assault_kills',
-			amount: 1000,
+			amount: 50,
 		},
 	},
 	{
 		name: 'Cyber Black',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_assault_kills',
 		requirement: {
 			type: 'assault_kills',
 			amount: 100,
 		},
 	},
 	{
-		name: 'Dark Warrior',
-		category: 'Multiplayer',
+		name: 'Black Beetle',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_assault_kills',
 		requirement: {
 			type: 'assault_kills',
-			amount: 50,
+			amount: 250,
 		},
 	},
 	{
 		name: 'Malicious Intent',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_assault_kills',
 		requirement: {
 			type: 'assault_kills',
 			amount: 500,
 		},
 	},
 	{
+		name: 'Bladed Charge',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_assault_kills',
+		requirement: {
+			type: 'assault_kills',
+			amount: 1000,
+		},
+	},
+	{
+		name: 'Arachnophobia',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_assault_kills',
+		requirement: {
+			type: 'assault_kills',
+			amount: 2500,
+		},
+	},
+	{
 		name: 'Hunger',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_assault_kills',
 		requirement: {
 			type: 'assault_kills_all',
 		},
 	},
 	{
-		name: '4-Wheeled Big Deal',
-		category: 'Multiplayer',
-		requirement: {
-			type: 'occupying_vehicles',
-			amount: 50,
-		},
-	},
-	{
-		name: 'Barreling Down',
-		category: 'Multiplayer',
-		requirement: {
-			type: 'occupying_vehicles',
-			amount: 25,
-		},
-	},
-	{
 		name: 'Speeding Motorist',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_occupying_vehicles',
 		requirement: {
 			type: 'occupying_vehicles',
 			amount: 5,
@@ -135,15 +134,35 @@ export default [
 	},
 	{
 		name: `Speed's the Game`,
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_occupying_vehicles',
 		requirement: {
 			type: 'occupying_vehicles',
 			amount: 10,
 		},
 	},
 	{
+		name: 'Barreling Down',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_occupying_vehicles',
+		requirement: {
+			type: 'occupying_vehicles',
+			amount: 25,
+		},
+	},
+	{
+		name: '4-Wheeled Big Deal',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_occupying_vehicles',
+		requirement: {
+			type: 'occupying_vehicles',
+			amount: 50,
+		},
+	},
+	{
 		name: 'Jet Ski Retreat',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_occupying_vehicles',
 		requirement: {
 			type: 'occupying_vehicles',
 			amount: 100,
@@ -151,7 +170,8 @@ export default [
 	},
 	{
 		name: 'Speeder',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_occupying_vehicles',
 		requirement: {
 			type: 'occupying_vehicles',
 			amount: 250,
@@ -159,22 +179,16 @@ export default [
 	},
 	{
 		name: 'Armored Pickup Charlie',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_occupying_vehicles',
 		requirement: {
 			type: 'occupying_vehicles_all',
 		},
 	},
 	{
-		name: 'Avaritia',
-		category: 'Multiplayer',
-		requirement: {
-			type: 'wins',
-			amount: 100,
-		},
-	},
-	{
 		name: 'Invidia',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_wins',
 		requirement: {
 			type: 'wins',
 			amount: 25,
@@ -182,15 +196,26 @@ export default [
 	},
 	{
 		name: 'Gula',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_wins',
 		requirement: {
 			type: 'wins',
 			amount: 50,
 		},
 	},
 	{
+		name: 'Avaritia',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_wins',
+		requirement: {
+			type: 'wins',
+			amount: 100,
+		},
+	},
+	{
 		name: 'Luxuria',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_wins',
 		requirement: {
 			type: 'wins',
 			amount: 250,
@@ -198,7 +223,8 @@ export default [
 	},
 	{
 		name: 'Superbia',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_wins',
 		requirement: {
 			type: 'wins',
 			amount: 500,
@@ -206,7 +232,8 @@ export default [
 	},
 	{
 		name: 'Ira',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_wins',
 		requirement: {
 			type: 'wins',
 			amount: 1000,
@@ -214,14 +241,16 @@ export default [
 	},
 	{
 		name: 'Notice Me',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_wins',
 		requirement: {
 			type: 'wins_all',
 		},
 	},
 	{
 		name: 'All Mighty',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_misc',
 		requirement: {
 			type: 'accumulate_stars',
 			amount: 50,
@@ -229,7 +258,8 @@ export default [
 	},
 	{
 		name: 'Deadly Precision',
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_misc',
 		requirement: {
 			type: 'gather_intel',
 			amount: 40,
@@ -237,7 +267,8 @@ export default [
 	},
 	{
 		name: `Gaz's Gaze`,
-		category: 'Multiplayer',
+		category: 'multiplayer',
+		subcategory: 'multiplayer_misc',
 		requirement: {
 			type: 'gazs_gaze',
 		},
