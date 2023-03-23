@@ -147,7 +147,7 @@ export default {
 		weapon: 'Tempus Torrent',
 		level: '10',
 		challenge: {
-			amount: 50,
+			amount: 10,
 			type: 'double',
 		},
 	},
