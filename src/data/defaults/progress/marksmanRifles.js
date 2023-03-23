@@ -49,6 +49,9 @@ export default {
 	},
 
 	'Tempus Torrent': {
-
+		'Speckled': false,
+		'Oxysporum': false,
+		'Dire Growth': false,
+		'Sandfall': false,
 	},
 }
