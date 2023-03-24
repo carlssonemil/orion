@@ -70,6 +70,25 @@ nav {
 			opacity: 1;
 		}
 
+		&.new {
+			position: relative;
+
+			&::after {
+				$size: 8px;
+				background: $orange;
+				border-radius: $size;
+				color: white;
+				content: '';
+				display: block;
+				height: $size;
+				position: absolute;
+				right: 0;
+				top: 0;
+				transform: translate(100%, -50%);
+				width: $size;
+			}
+		}
+
 		&.coming-soon {
 			opacity: 1;
 			pointer-events: none;

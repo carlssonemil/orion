@@ -11,6 +11,9 @@
 			<div>
 				<router-link to="/">{{ $tc('general.weapon', 2) }}</router-link>
 				<router-link to="/camouflages">{{ $tc('general.camouflage', 2) }}</router-link>
+				<router-link to="/calling-cards" class="new">{{
+					$tc('general.calling_cards', 2)
+				}}</router-link>
 				<router-link to="/mastery">{{ $t('general.mastery') }}</router-link>
 				<router-link to="/requirements">{{ $tc('general.requirement', 2) }}</router-link>
 			</div>

@@ -8,10 +8,28 @@
 					:value="value"
 					@input="$emit('input', $event.target.value)"
 					@change="$emit('change')">
-					<option value="">{{ $t('general.all') }}</option>
-					<option v-for="(option, index) in filter.options" :key="index" :value="option">
-						{{ $t((filter.key === 'weaponCategory' ? 'weapon_categories.' : 'camouflage_categories.') + option) }}
-					</option>
+					<template v-if="filter.nested_options">
+						<option value="">{{ $t('general.all') }}</option>
+						<optgroup
+							v-for="(subcategories, category, index) in filter.options"
+							:key="index"
+							:label="$t(translationKey(filter.key) + category)">
+							<option :value="category">{{ $t('general.all') }}</option>
+							<option
+								v-for="(subcategory, index) in subcategories"
+								:key="index"
+								:value="subcategory">
+								{{ $t(translationKey(filter.key) + subcategory) }}
+							</option>
+						</optgroup>
+					</template>
+
+					<template v-else>
+						<option value="">{{ $t('general.all') }}</option>
+						<option v-for="(option, index) in filter.options" :key="index" :value="option">
+							{{ $t(translationKey(filter.key) + option) }}
+						</option>
+					</template>
 				</select>
 				<IconComponent name="angle-down" />
 			</div>
@@ -59,7 +77,23 @@ export default {
 			required: true,
 		},
 	},
+
 	components: { IconComponent },
+
+	methods: {
+		translationKey(key) {
+			switch (key) {
+				case 'weaponCategory':
+					return 'weapon_categories.'
+				case 'camouflageCategory':
+					return 'camouflage_categories.'
+				case 'callingCardCategory':
+					return 'calling_card_categories.'
+				default:
+					return ''
+			}
+		},
+	},
 }
 </script>
 
