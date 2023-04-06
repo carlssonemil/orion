@@ -3,7 +3,7 @@ import defaultMasteryCamouflages from '../defaults/progress/masteryCamouflages'
 
 const weapons = ['Lachmann-762', 'SO-14', 'TAQ-V', 'FTAC Recon']
 
-const dlc = []
+const dlc = ['Cronen Squall']
 
 const comingSoon = []
 

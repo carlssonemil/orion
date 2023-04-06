@@ -33,4 +33,6 @@ export default {
 		'Tangographical': false,
 		'Coral Reef': false,
 	},
+	'FJX Imperium': {
+	},
 }

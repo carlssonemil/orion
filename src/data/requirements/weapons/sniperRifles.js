@@ -88,4 +88,6 @@ export default {
 			type: 'headshot',
 		},
 	},
+	'FJX Imperium': {
+	},
 }

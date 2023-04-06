@@ -59,4 +59,6 @@ export default {
 		'Haunting': skulls['Haunting'],
 		...masteryChallenges,
 	},
+	'Cronen Squall': {
+	},
 }

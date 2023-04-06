@@ -26,4 +26,6 @@ export default {
 		'Desert Cat': false,
 		'Haunting': false,
 	},
+	'Cronen Squall': {
+	},
 }
