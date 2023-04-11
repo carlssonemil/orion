@@ -67,7 +67,7 @@ export default {
 		weapon: 'Bryson 800',
 		level: '20',
 		challenge: {
-			amount: 25,
+			amount: 20,
 			type: 'one_shot',
 		},
 	},
