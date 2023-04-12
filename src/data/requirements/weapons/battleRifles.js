@@ -2,9 +2,11 @@ import {
 	cliffside,
 	digital,
 	dragon,
+	fun,
 	geometric,
 	reptile,
 	skulls,
+	solidColors,
 	sprayPaint,
 	stripes,
 	tiger,
@@ -60,5 +62,10 @@ export default {
 		...masteryChallenges,
 	},
 	'Cronen Squall': {
+		'Vapor Storm': sprayPaint['Vapor Storm'],
+		'Ghastly Green': solidColors['Ghastly Green'],
+		'Stone Ridge': geometric['Stone Ridge'],
+		'Intergalactic': fun['Intergalactic'],
+		...masteryChallenges,
 	},
 }

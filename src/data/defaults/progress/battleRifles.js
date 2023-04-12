@@ -27,5 +27,9 @@ export default {
 		'Haunting': false,
 	},
 	'Cronen Squall': {
+		'Vapor Storm': false,
+		'Ghastly Green': false,
+		'Stone Ridge': false,
+		'Intergalactic': false,
 	},
 }

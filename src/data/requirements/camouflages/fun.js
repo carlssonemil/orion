@@ -151,4 +151,28 @@ export default {
 			type: 'double',
 		},
 	},
+	'Psychoactive': {
+		weapon: 'FJX Imperium',
+		level: '17',
+		challenge: {
+			amount: 40,
+			type: 'focused',
+		},
+	},
+	'Bedlam': {
+		weapon: 'FJX Imperium',
+		level: '26',
+		challenge: {
+			amount: 40,
+			type: 'one_shot',
+		},
+	},
+	'Intergalactic': {
+		weapon: 'Cronen Squall',
+		level: '25',
+		challenge: {
+			amount: 40,
+			type: 'mounted',
+		},
+	},
 }

@@ -135,4 +135,12 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Stone Ridge': {
+		weapon: 'Cronen Squall',
+		level: '16',
+		challenge: {
+			amount: 20,
+			type: 'behind',
+		},
+	},
 }

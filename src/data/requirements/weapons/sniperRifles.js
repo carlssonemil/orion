@@ -89,5 +89,14 @@ export default {
 		},
 	},
 	'FJX Imperium': {
+		'Arctic Growth': sprayPaint['Arctic Growth'],
+		'Styx': skulls['Styx'],
+		'Psychoactive': fun['Psychoactive'],
+		'Bedlam': fun['Bedlam'],
+		...masteryChallenges,
+		'Polyatomic': {
+			amount: 25,
+			type: 'headshot',
+		},
 	},
 }

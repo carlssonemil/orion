@@ -39,4 +39,14 @@ export default {
 			type: 'crouched',
 		},
 	},
+	'Styx': {
+		weapon: 'FJX Imperium',
+		level: '10',
+		challenge: {
+			amount: 2,
+			type: 'time_limit',
+			seconds: 10,
+			times: 20,
+		},
+	},
 }
