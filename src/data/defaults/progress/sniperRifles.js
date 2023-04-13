@@ -33,4 +33,10 @@ export default {
 		'Tangographical': false,
 		'Coral Reef': false,
 	},
+	'FJX Imperium': {
+		'Arctic Growth': false,
+		'Styx': false,
+		'Psychoactive': false,
+		'Bedlam': false,
+	},
 }

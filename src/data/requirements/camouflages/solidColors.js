@@ -119,4 +119,12 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Ghastly Green': {
+		weapon: 'Cronen Squall',
+		level: '9',
+		challenge: {
+			amount: 15,
+			type: 'double',
+		},
+	},
 }

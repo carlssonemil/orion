@@ -335,7 +335,8 @@
 			"without_dying": "{amount} kills without dying {times} times",
 			"longshot": "{amount} longshot kills",
 			"headshot": "{amount} headshot kills",
-			"destroy_streaks_equipment_or_vehicles": "Destroy {amount} enemy streaks, equipment, or vehicles"
+			"destroy_streaks_equipment_or_vehicles": "Destroy {amount} enemy streaks, equipment, or vehicles",
+			"focused": "{amount} kills while focused"
 		}
 	},
 	"weapon_categories": {

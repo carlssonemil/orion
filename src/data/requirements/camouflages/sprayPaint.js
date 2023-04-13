@@ -161,4 +161,20 @@ export default {
 			type: 'suppressor',
 		},
 	},
+	'Arctic Growth': {
+		weapon: 'FJX Imperium',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
+	'Vapor Storm': {
+		weapon: 'Cronen Squall',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
 }

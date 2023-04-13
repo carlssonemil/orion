@@ -26,4 +26,10 @@ export default {
 		'Desert Cat': false,
 		'Haunting': false,
 	},
+	'Cronen Squall': {
+		'Vapor Storm': false,
+		'Ghastly Green': false,
+		'Stone Ridge': false,
+		'Intergalactic': false,
+	},
 }
