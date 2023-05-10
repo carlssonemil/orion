@@ -1,9 +1,9 @@
 import defaultHandgunsProgress from '../defaults/progress/handguns'
 import defaultMasteryCamouflages from '../defaults/progress/masteryCamouflages'
 
-const weapons = ['P890', '.50 GS', 'X12', 'Basilisk', 'X13 Auto']
+const weapons = ['P890', '.50 GS', 'X12', 'Basilisk', 'X13 Auto', 'FTAC Siege', 'GS Magna']
 
-const dlc = []
+const dlc = ['FTAC Siege', 'GS Magna']
 
 const comingSoon = []
 

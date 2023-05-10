@@ -33,4 +33,18 @@ export default {
 		'Dark Echo': false,
 		'Party Time': false,
 	},
+
+	'FTAC Siege': {
+		'Sandpaper': false,
+		'Velvet Midnight': false,
+		'Painted Pig': false,
+		'Fuzzy Spectrum': false,
+	},
+
+	'GS Magna': {
+		'Digital Wilds': false,
+		'Rhyolitic': false,
+		'Cracking Onyx': false,
+		'Rad Reverb': false,
+	},
 }

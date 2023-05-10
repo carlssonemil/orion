@@ -175,4 +175,36 @@ export default {
 			type: 'mounted',
 		},
 	},
+	'Painted Pig': {
+		weapon: 'FTAC Siege',
+		level: '17',
+		challenge: {
+			amount: 30,
+			type: 'suppressor',
+		},
+	},
+	'Fuzzy Spectrum': {
+		weapon: 'FTAC Siege',
+		level: '25',
+		challenge: {
+			amount: 20,
+			type: 'hipfire',
+		},
+	},
+	'Rhyolitic': {
+		weapon: 'GS Magna',
+		level: '4',
+		challenge: {
+			amount: 10,
+			type: 'double',
+		},
+	},
+	'Rad Reverb': {
+		weapon: 'GS Magna',
+		level: '9',
+		challenge: {
+			amount: 40,
+			type: 'akimbo',
+		},
+	},
 }

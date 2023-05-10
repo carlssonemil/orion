@@ -145,4 +145,12 @@ export default {
 			type: 'double',
 		},
 	},
+	'Cracking Onyx': {
+		weapon: 'GS Magna',
+		level: '6',
+		challenge: {
+			amount: 10,
+			type: 'behind',
+		},
+	},
 }
