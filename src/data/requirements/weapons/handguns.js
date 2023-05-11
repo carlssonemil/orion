@@ -6,6 +6,7 @@ import {
 	geometric,
 	reptile,
 	solidColors,
+	sprayPaint,
 	tiger,
 	woodland,
 } from '../camouflages/_index'
@@ -64,6 +65,22 @@ export default {
 		'Asphalt Digital': digital['Asphalt Digital'],
 		'Dark Echo': reptile['Dark Echo'],
 		'Party Time': fun['Party Time'],
+		...masteryChallenges,
+	},
+
+	'FTAC Siege': {
+		'Sandpaper': sprayPaint['Sandpaper'],
+		'Velvet Midnight': tiger['Velvet Midnight'],
+		'Painted Pig': fun['Painted Pig'],
+		'Fuzzy Spectrum': fun['Fuzzy Spectrum'],
+		...masteryChallenges,
+	},
+
+	'GS Magna': {
+		'Digital Wilds': digital['Digital Wilds'],
+		'Rhyolitic': fun['Rhyolitic'],
+		'Cracking Onyx': dragon['Cracking Onyx'],
+		'Rad Reverb': fun['Rad Reverb'],
 		...masteryChallenges,
 	},
 }

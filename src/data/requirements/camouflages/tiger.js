@@ -135,4 +135,12 @@ export default {
 			type: 'double',
 		},
 	},
+	'Velvet Midnight': {
+		weapon: 'FTAC Siege',
+		level: '9',
+		challenge: {
+			amount: 15,
+			type: 'ads',
+		},
+	},
 }

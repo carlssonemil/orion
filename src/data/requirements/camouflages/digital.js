@@ -215,4 +215,12 @@ export default {
 			type: 'point_blank',
 		},
 	},
+	'Digital Wilds': {
+		weapon: 'GS Magna',
+		level: '2',
+		challenge: {
+			amount: 40,
+			type: 'kills',
+		},
+	},
 }

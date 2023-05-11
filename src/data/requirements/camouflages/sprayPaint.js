@@ -177,4 +177,12 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Sandpaper': {
+		weapon: 'FTAC Siege',
+		level: '2',
+		challenge: {
+			amount: 40,
+			type: 'kills',
+		},
+	},
 }
