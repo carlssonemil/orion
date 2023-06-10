@@ -11,9 +11,10 @@ const weapons = [
 	'BAS-P',
 	'PDSW 528',
 	'Fennec 45',
+	'ISO 45',
 ]
 
-const dlc = ['BAS-P']
+const dlc = ['BAS-P', 'ISO 45']
 
 const comingSoon = []
 

@@ -102,4 +102,8 @@ export default {
 		'Dark Violet': fun['Dark Violet'],
 		...masteryChallenges,
 	},
+
+	'ISO 45': {
+		
+	},
 }

@@ -119,5 +119,9 @@ export default {
 		...masteryChallenges,
 	},
 
+	'Tempus Razorback': {
+		
+	},
+
 	
 }

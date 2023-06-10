@@ -61,4 +61,8 @@ export default {
 		'Urban Dusk': false,
 		'Dark Violet': false,
 	},
+
+	'ISO 45': {
+		
+	},
 }

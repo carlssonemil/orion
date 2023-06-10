@@ -75,4 +75,8 @@ export default {
 		'Lost Signal': false,
 		'Paths Of Light': false,
 	},
+
+	'Tempus Razorback': {
+		
+	},
 }

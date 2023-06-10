@@ -41,4 +41,8 @@ export default {
 			type: 'behind',
 		},
 	},
+
+	'Tonfa': {
+		
+	},
 }
