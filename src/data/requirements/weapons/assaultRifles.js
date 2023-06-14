@@ -120,7 +120,11 @@ export default {
 	},
 
 	'Tempus Razorback': {
-		
+		'Snake Oil': sprayPaint['Snake Oil'],
+		'Dark Croc': dragon['Dark Croc'],
+		'Alien Waves': digital['Alien Waves'],
+		'Sky Cover': stripes['Sky Cover'],
+		...masteryChallenges,
 	},
 
 	

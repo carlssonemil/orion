@@ -143,4 +143,12 @@ export default {
 			type: 'behind',
 		},
 	},
+	'Ziggurat': {
+		weapon: 'ISO 45',
+		level: '9',
+		challenge: {
+			amount: 40,
+			type: 'ads',
+		},
+	},
 }

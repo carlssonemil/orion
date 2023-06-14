@@ -77,6 +77,9 @@ export default {
 	},
 
 	'Tempus Razorback': {
-		
+		'Snake Oil': false,
+		'Dark Croc': false,
+		'Alien Waves': false,
+		'Sky Cover': false,
 	},
 }

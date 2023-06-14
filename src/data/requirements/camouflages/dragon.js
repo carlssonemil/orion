@@ -153,4 +153,12 @@ export default {
 			type: 'behind',
 		},
 	},
+	'Dark Croc': {
+		weapon: 'Tempus Razorback',
+		level: '9',
+		challenge: {
+			amount: 20,
+			type: 'mounted',
+		},
+	},
 }

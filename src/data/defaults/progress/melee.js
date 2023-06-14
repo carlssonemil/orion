@@ -12,6 +12,6 @@ export default {
 	},
 
 	'Tonfa': {
-		
+		'Oxidation': false,
 	},
 }

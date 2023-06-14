@@ -63,6 +63,9 @@ export default {
 	},
 
 	'ISO 45': {
-		
+		'Tunnels': false,
+		'Ziggurat': false,
+		'Dappled Shade': false,
+		'Prismatic': false,
 	},
 }

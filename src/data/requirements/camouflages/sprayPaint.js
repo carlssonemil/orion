@@ -185,4 +185,20 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Snake Oil': {
+		weapon: 'Tempus Razorback',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
+	'Tunnels': {
+		weapon: 'ISO 45',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
 }
