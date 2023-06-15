@@ -41,4 +41,19 @@ export default {
 			type: 'behind',
 		},
 	},
+
+	'Tonfa': {
+		'Oxidation': fun['Oxidation'],
+		...masteryChallenges,
+		'Platinum': {
+			amount: 2,
+			type: 'time_limit',
+			seconds: 10,
+			times: 15,
+		},
+		'Polyatomic': {
+			amount: 20,
+			type: 'behind',
+		},
+	},
 }

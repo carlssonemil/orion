@@ -207,4 +207,28 @@ export default {
 			type: 'akimbo',
 		},
 	},
+	'Dappled Shade': {
+		weapon: 'ISO 45',
+		level: '13',
+		challenge: {
+			amount: 30,
+			type: 'point_blank',
+		},
+	},
+	'Prismatic': {
+		weapon: 'ISO 45',
+		level: '19',
+		challenge: {
+			amount: 20,
+			type: 'behind',
+		},
+	},
+	'Oxidation': {
+		weapon: 'Tonfa',
+		level: '15',
+		challenge: {
+			amount: 40,
+			type: 'kills',
+		},
+	},
 }

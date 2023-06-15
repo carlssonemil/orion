@@ -61,4 +61,11 @@ export default {
 		'Urban Dusk': false,
 		'Dark Violet': false,
 	},
+
+	'ISO 45': {
+		'Tunnels': false,
+		'Ziggurat': false,
+		'Dappled Shade': false,
+		'Prismatic': false,
+	},
 }

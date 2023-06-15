@@ -223,4 +223,12 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Alien Waves': {
+		weapon: 'Tempus Razorback',
+		level: '15',
+		challenge: {
+			amount: 40,
+			type: 'ads',
+		},
+	},
 }

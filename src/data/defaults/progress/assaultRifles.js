@@ -75,4 +75,11 @@ export default {
 		'Lost Signal': false,
 		'Paths Of Light': false,
 	},
+
+	'Tempus Razorback': {
+		'Snake Oil': false,
+		'Dark Croc': false,
+		'Alien Waves': false,
+		'Sky Cover': false,
+	},
 }
