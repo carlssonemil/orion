@@ -76,4 +76,8 @@ export default {
 			type: 'headshot',
 		},
 	},
+
+	'MX Guardian': {
+		
+	},
 }

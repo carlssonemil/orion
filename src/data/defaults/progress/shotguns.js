@@ -33,4 +33,8 @@ export default {
 		'Ethereal Rampage': false,
 		'Riots Nest': false,
 	},
+
+	'MX Guardian': {
+		
+	},
 }
