@@ -83,5 +83,13 @@ export default {
 		'Red Smoke': woodland['Red Smoke'],
 		'Green Edges': geometric['Green Edges'],
 		...masteryChallenges,
+		'Platinum': {
+			amount: 25,
+			type: 'longshot',
+		},
+		'Polyatomic': {
+			amount: 25,
+			type: 'headshot',
+		},
 	},
 }
