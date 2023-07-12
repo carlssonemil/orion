@@ -35,6 +35,9 @@ export default {
 	},
 
 	'MX Guardian': {
-		
+		'Wet Sands': false,
+		'Connected Dots': false,
+		'Red Smoke': false,
+		'Green Edges': false,
 	},
 }

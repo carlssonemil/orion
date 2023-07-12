@@ -151,4 +151,12 @@ export default {
 			type: 'ads',
 		},
 	},
+	'Green Edges': {
+		weapon: 'MX Guardian',
+		level: '19',
+		challenge: {
+			amount: 20,
+			type: 'hipfire',
+		},
+	},
 }

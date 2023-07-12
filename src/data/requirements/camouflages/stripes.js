@@ -143,4 +143,12 @@ export default {
 			type: 'double',
 		},
 	},
+	'Wet Sands': {
+		weapon: 'MX Guardian',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
 }

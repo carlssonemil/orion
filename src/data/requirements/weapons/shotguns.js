@@ -78,6 +78,10 @@ export default {
 	},
 
 	'MX Guardian': {
-		
+		'Wet Sands': stripes['Wet Sands'],
+		'Connected Dots': digital['Connected Dots'],
+		'Red Smoke': woodland['Red Smoke'],
+		'Green Edges': geometric['Green Edges'],
+		...masteryChallenges,
 	},
 }

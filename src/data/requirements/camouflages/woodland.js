@@ -159,4 +159,12 @@ export default {
 			type: 'double',
 		},
 	},
+	'Red Smoke': {
+		weapon: 'MX Guardian',
+		level: '14',
+		challenge: {
+			amount: 10,
+			type: 'double',
+		},
+	},
 }
