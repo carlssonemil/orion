@@ -231,4 +231,12 @@ export default {
 			type: 'ads',
 		},
 	},
+	'Connected Dots': {
+		weapon: 'MX Guardian',
+		level: '8',
+		challenge: {
+			amount: 20,
+			type: 'point_blank',
+		},
+	},
 }

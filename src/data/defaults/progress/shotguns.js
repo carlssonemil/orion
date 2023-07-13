@@ -33,4 +33,11 @@ export default {
 		'Ethereal Rampage': false,
 		'Riots Nest': false,
 	},
+
+	'MX Guardian': {
+		'Wet Sands': false,
+		'Connected Dots': false,
+		'Red Smoke': false,
+		'Green Edges': false,
+	},
 }
