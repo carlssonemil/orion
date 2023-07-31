@@ -82,4 +82,12 @@ export default {
 		'Alien Waves': false,
 		'Sky Cover': false,
 	},
+
+	'FR Avancer': {
+
+	},
+
+	'M13C': {
+		
+	},
 }

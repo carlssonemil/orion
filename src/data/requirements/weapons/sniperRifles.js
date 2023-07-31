@@ -99,4 +99,8 @@ export default {
 			type: 'headshot',
 		},
 	},
+
+	'Carrack .300': {
+		
+	},
 }
