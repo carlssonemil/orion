@@ -3,6 +3,7 @@ import {
 	cliffside,
 	digital,
 	dragon,
+	foliage,
 	fun,
 	geometric,
 	reptile,
@@ -128,7 +129,11 @@ export default {
 	},
 
 	'FR Avancer': {
-
+		'Fibrous': foliage['Fibrous'],
+		'Scattered Lines': geometric['Scattered Lines'],
+		'Bioluminescent': fun['Bioluminescent'],
+		'Postmortem': skulls['Postmortem'],
+		...masteryChallenges,
 	},
 
 	'M13C': {

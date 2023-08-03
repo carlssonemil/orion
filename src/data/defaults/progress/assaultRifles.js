@@ -84,7 +84,10 @@ export default {
 	},
 
 	'FR Avancer': {
-
+		'Fibrous': false,
+		'Scattered Lines': false,
+		'Bioluminescent': false,
+		'Postmortem': false,
 	},
 
 	'M13C': {

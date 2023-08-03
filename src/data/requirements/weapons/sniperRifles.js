@@ -1,6 +1,7 @@
 import {
 	classic,
 	cliffside,
+	digital,
 	dragon,
 	foliage,
 	fun,
@@ -101,6 +102,14 @@ export default {
 	},
 
 	'Carrack .300': {
-		
+		'Birch': foliage['Birch'],
+		'Cloud Static': sprayPaint['Cloud Static'],
+		'Blood and Mud': digital['Blood and Mud'],
+		'Lumber Tactical': fun['Lumber Tactical'],
+		...masteryChallenges,
+		'Polyatomic': {
+			amount: 25,
+			type: 'headshot',
+		},
 	},
 }
