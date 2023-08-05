@@ -159,4 +159,12 @@ export default {
 			type: 'hipfire',
 		},
 	},
+	'Scattered Lines': {
+		weapon: 'FR Avancer',
+		level: '7',
+		challenge: {
+			amount: 20,
+			type: 'headshot'
+		}
+	}
 }

@@ -12,6 +12,7 @@ import {
 	stripes,
 	tiger,
 	woodland,
+	foliage
 } from '../camouflages/_index'
 
 const masteryChallenges = {
@@ -125,6 +126,17 @@ export default {
 		'Alien Waves': digital['Alien Waves'],
 		'Sky Cover': stripes['Sky Cover'],
 		...masteryChallenges,
+	},
+	'FR Avancer': {
+		'Fibrous': foliage['Fibrous'],
+		'Scattered Lines': geometric['Scattered Lines'],
+		'Bioluminescent': fun['Bioluminescent'],
+		'Postmortem': skulls['Postmortem'],
+		...masteryChallenges,
+	},
+
+	'M13C': {
+
 	},
 
 	

@@ -239,4 +239,12 @@ export default {
 			type: 'point_blank',
 		},
 	},
+	'Blood and Mud': {
+		weapon: 'Carrack .300',
+		level: '14',
+		challenge: {
+			amount: 15,
+			type: 'prone'
+		},
+	},
 }

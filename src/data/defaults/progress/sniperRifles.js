@@ -39,4 +39,10 @@ export default {
 		'Psychoactive': false,
 		'Bedlam': false,
 	},
+	'Carrack .300': {
+		'Birch': false,
+		'Cloud Static': false,
+		'Blood and Mud': false,
+		'Lumber Tactical': false,
+	},
 }

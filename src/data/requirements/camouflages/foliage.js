@@ -89,4 +89,20 @@ export default {
 			type: 'behind',
 		},
 	},
+	'Fibrous': {
+		weapon: 'FR Avancer',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills'
+		}
+	},
+	'Birch': {
+		weapon: 'Carrack .300',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills'
+		}
+	}
 }
