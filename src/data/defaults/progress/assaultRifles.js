@@ -82,4 +82,16 @@ export default {
 		'Alien Waves': false,
 		'Sky Cover': false,
 	},
+
+	'FR Avancer': {
+		'Fibrous': false,
+		'Scattered Lines': false,
+		'Bioluminescent': false,
+		'Postmortem': false,
+	},
+
+	'M13C': {
+
+	},
+
 }

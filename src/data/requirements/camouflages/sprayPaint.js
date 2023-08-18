@@ -201,4 +201,12 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Cloud Static': {
+		weapon: 'Carrack .300',
+		level: '8',
+		challenge: {
+			amount: 20,
+			type: 'one_shot',
+		},
+	},
 }

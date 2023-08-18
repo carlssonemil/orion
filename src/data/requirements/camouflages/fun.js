@@ -231,4 +231,20 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Bioluminescent': {
+		weapon: 'FR Avancer',
+		level: '13',
+		challenge: {
+			amount: 30,
+			type: 'crouched',
+		},
+	},
+	'Lumber Tactical': {
+		weapon: 'Carrack .300',
+		level: '18',
+		challenge: {
+            amount: 20,
+            type: 'focused'
+        },
+	},
 }
