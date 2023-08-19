@@ -167,4 +167,20 @@ export default {
 			type: 'double',
 		},
 	},
+	'Cemented': {
+		weapon: 'M13C',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills'
+		}
+	},
+	'Poison Rivers': {
+		weapon: 'M13C',
+		level: '5',
+		challenge: {
+			amount: 20,
+			type: 'crouched'
+		}
+	}
 }

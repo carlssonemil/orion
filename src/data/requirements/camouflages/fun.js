@@ -247,4 +247,20 @@ export default {
             type: 'focused'
         },
 	},
+	'Demise': {
+		weapon: 'M13C',
+		level: 8,
+		challenge: {
+			amount: 40,
+			type: 'ads'
+		}
+	},
+	'Virulent Strain': {
+		weapon: 'M13C',
+		level: '10',
+		challenge: {
+			amount: 15,
+			type: 'double'
+		}
+	}
 }
