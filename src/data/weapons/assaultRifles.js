@@ -20,7 +20,7 @@ const weapons = [
 
 const dlc = ['M13B', 'Chimera', 'ISO Hemlock', 'Tempus Razorback', 'FR Avancer', 'M13C']
 
-const comingSoon = ['M13C']
+const comingSoon = []
 
 export default weapons.map((weapon) => ({
 	category: 'Assault Rifles',

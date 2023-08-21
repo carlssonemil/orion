@@ -91,7 +91,10 @@ export default {
 	},
 
 	'M13C': {
-
+		'Cemented': false,
+		'Poison Rivers': false,
+		'Demise': false,
+		'Virulent Strain': false
 	},
 
 }

@@ -136,7 +136,11 @@ export default {
 	},
 
 	'M13C': {
-
+		'Cemented': woodland['Cemented'],
+		'Poison Rivers': woodland['Poison Rivers'],
+		'Demise': fun['Demise'],
+		'Virulent Strain': fun['Virulent Strain'],
+		...masteryChallenges,
 	},
 
 	
