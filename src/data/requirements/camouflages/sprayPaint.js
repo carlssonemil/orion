@@ -185,4 +185,28 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Snake Oil': {
+		weapon: 'Tempus Razorback',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
+	'Tunnels': {
+		weapon: 'ISO 45',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
+	'Cloud Static': {
+		weapon: 'Carrack .300',
+		level: '8',
+		challenge: {
+			amount: 20,
+			type: 'one_shot',
+		},
+	},
 }

@@ -102,4 +102,12 @@ export default {
 		'Dark Violet': fun['Dark Violet'],
 		...masteryChallenges,
 	},
+
+	'ISO 45': {
+		'Tunnels': sprayPaint['Tunnels'],
+		'Ziggurat': geometric['Ziggurat'],
+		'Dappled Shade': fun['Dappled Shade'],
+		'Prismatic': fun['Prismatic'],
+		...masteryChallenges,
+	},
 }

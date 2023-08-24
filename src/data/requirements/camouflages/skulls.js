@@ -49,4 +49,12 @@ export default {
 			times: 20,
 		},
 	},
+	'Postmortem': {
+		weapon: 'FR Avancer',
+		level: '19',
+		challenge: {
+			amount: 15,
+			type: 'double'
+		}
+	}
 }

@@ -135,4 +135,20 @@ export default {
 			type: 'mounted',
 		},
 	},
+	'Sky Cover': {
+		weapon: 'Tempus Razorback',
+		level: '21',
+		challenge: {
+			amount: 15,
+			type: 'double',
+		},
+	},
+	'Wet Sands': {
+		weapon: 'MX Guardian',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
 }

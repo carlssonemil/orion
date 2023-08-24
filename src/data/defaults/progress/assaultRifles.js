@@ -75,4 +75,26 @@ export default {
 		'Lost Signal': false,
 		'Paths Of Light': false,
 	},
+
+	'Tempus Razorback': {
+		'Snake Oil': false,
+		'Dark Croc': false,
+		'Alien Waves': false,
+		'Sky Cover': false,
+	},
+
+	'FR Avancer': {
+		'Fibrous': false,
+		'Scattered Lines': false,
+		'Bioluminescent': false,
+		'Postmortem': false,
+	},
+
+	'M13C': {
+		'Cemented': false,
+		'Poison Rivers': false,
+		'Demise': false,
+		'Virulent Strain': false
+	},
+
 }

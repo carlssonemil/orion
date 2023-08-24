@@ -223,4 +223,28 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Alien Waves': {
+		weapon: 'Tempus Razorback',
+		level: '15',
+		challenge: {
+			amount: 40,
+			type: 'ads',
+		},
+	},
+	'Connected Dots': {
+		weapon: 'MX Guardian',
+		level: '8',
+		challenge: {
+			amount: 20,
+			type: 'point_blank',
+		},
+	},
+	'Blood and Mud': {
+		weapon: 'Carrack .300',
+		level: '14',
+		challenge: {
+			amount: 15,
+			type: 'prone'
+		},
+	},
 }

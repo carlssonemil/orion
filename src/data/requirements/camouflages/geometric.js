@@ -143,4 +143,28 @@ export default {
 			type: 'behind',
 		},
 	},
+	'Ziggurat': {
+		weapon: 'ISO 45',
+		level: '9',
+		challenge: {
+			amount: 40,
+			type: 'ads',
+		},
+	},
+	'Green Edges': {
+		weapon: 'MX Guardian',
+		level: '19',
+		challenge: {
+			amount: 20,
+			type: 'hipfire',
+		},
+	},
+	'Scattered Lines': {
+		weapon: 'FR Avancer',
+		level: '7',
+		challenge: {
+			amount: 20,
+			type: 'headshot'
+		}
+	}
 }

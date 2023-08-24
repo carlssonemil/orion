@@ -207,4 +207,60 @@ export default {
 			type: 'akimbo',
 		},
 	},
+	'Dappled Shade': {
+		weapon: 'ISO 45',
+		level: '13',
+		challenge: {
+			amount: 30,
+			type: 'point_blank',
+		},
+	},
+	'Prismatic': {
+		weapon: 'ISO 45',
+		level: '19',
+		challenge: {
+			amount: 20,
+			type: 'behind',
+		},
+	},
+	'Oxidation': {
+		weapon: 'Tonfa',
+		level: '15',
+		challenge: {
+			amount: 40,
+			type: 'kills',
+		},
+	},
+	'Bioluminescent': {
+		weapon: 'FR Avancer',
+		level: '13',
+		challenge: {
+			amount: 30,
+			type: 'crouched',
+		},
+	},
+	'Lumber Tactical': {
+		weapon: 'Carrack .300',
+		level: '18',
+		challenge: {
+            amount: 20,
+            type: 'focused'
+        },
+	},
+	'Demise': {
+		weapon: 'M13C',
+		level: 8,
+		challenge: {
+			amount: 40,
+			type: 'ads'
+		}
+	},
+	'Virulent Strain': {
+		weapon: 'M13C',
+		level: '10',
+		challenge: {
+			amount: 15,
+			type: 'double'
+		}
+	}
 }

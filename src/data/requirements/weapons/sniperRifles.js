@@ -1,6 +1,7 @@
 import {
 	classic,
 	cliffside,
+	digital,
 	dragon,
 	foliage,
 	fun,
@@ -93,6 +94,17 @@ export default {
 		'Styx': skulls['Styx'],
 		'Psychoactive': fun['Psychoactive'],
 		'Bedlam': fun['Bedlam'],
+		...masteryChallenges,
+		'Polyatomic': {
+			amount: 25,
+			type: 'headshot',
+		},
+	},
+	'Carrack .300': {
+		'Birch': foliage['Birch'],
+		'Cloud Static': sprayPaint['Cloud Static'],
+		'Blood and Mud': digital['Blood and Mud'],
+		'Lumber Tactical': fun['Lumber Tactical'],
 		...masteryChallenges,
 		'Polyatomic': {
 			amount: 25,

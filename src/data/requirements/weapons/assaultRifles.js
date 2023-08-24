@@ -12,6 +12,7 @@ import {
 	stripes,
 	tiger,
 	woodland,
+	foliage
 } from '../camouflages/_index'
 
 const masteryChallenges = {
@@ -116,6 +117,29 @@ export default {
 		'Cloud Hopper': fun['Cloud Hopper'],
 		'Lost Signal': fun['Lost Signal'],
 		'Paths Of Light': stripes['Paths Of Light'],
+		...masteryChallenges,
+	},
+
+	'Tempus Razorback': {
+		'Snake Oil': sprayPaint['Snake Oil'],
+		'Dark Croc': dragon['Dark Croc'],
+		'Alien Waves': digital['Alien Waves'],
+		'Sky Cover': stripes['Sky Cover'],
+		...masteryChallenges,
+	},
+	'FR Avancer': {
+		'Fibrous': foliage['Fibrous'],
+		'Scattered Lines': geometric['Scattered Lines'],
+		'Bioluminescent': fun['Bioluminescent'],
+		'Postmortem': skulls['Postmortem'],
+		...masteryChallenges,
+	},
+
+	'M13C': {
+		'Cemented': woodland['Cemented'],
+		'Poison Rivers': woodland['Poison Rivers'],
+		'Demise': fun['Demise'],
+		'Virulent Strain': fun['Virulent Strain'],
 		...masteryChallenges,
 	},
 
