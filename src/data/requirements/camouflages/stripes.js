@@ -151,4 +151,12 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Zany Zebra': {
+		weapon: 'Pickaxe',
+		level: '11',
+		challenge: {
+			amount: 40,
+			type: 'kills',
+		},
+	},
 }

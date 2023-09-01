@@ -68,4 +68,11 @@ export default {
 		'Dappled Shade': false,
 		'Prismatic': false,
 	},
+
+	'Lachmann Shroud': {
+		'Mud Snake': false,
+		'Germinate': false,
+		'Acrid Drift': false,
+		'Goodnight Vibes': false,
+	},
 }
