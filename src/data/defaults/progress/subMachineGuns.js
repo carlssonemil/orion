@@ -68,6 +68,7 @@ export default {
 		'Dappled Shade': false,
 		'Prismatic': false,
 	},
+
 	'Lachmann Shroud': {
 		'Mud Snake': false,
 		'Germinate': false,
