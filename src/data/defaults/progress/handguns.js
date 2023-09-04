@@ -47,4 +47,10 @@ export default {
 		'Cracking Onyx': false,
 		'Rad Reverb': false,
 	},
+	'9mm Deamon': {
+		'Crosshatch': false,
+		'Fractal Lapse': false,
+		'Hunter': false,
+		'Deserted': false,
+	},
 }

@@ -243,24 +243,48 @@ export default {
 		weapon: 'Carrack .300',
 		level: '18',
 		challenge: {
-            amount: 20,
-            type: 'focused'
-        },
+			amount: 20,
+			type: 'focused',
+		},
 	},
 	'Demise': {
 		weapon: 'M13C',
 		level: 8,
 		challenge: {
 			amount: 40,
-			type: 'ads'
-		}
+			type: 'ads',
+		},
 	},
 	'Virulent Strain': {
 		weapon: 'M13C',
 		level: '10',
 		challenge: {
 			amount: 15,
-			type: 'double'
-		}
-	}
+			type: 'double',
+		},
+	},
+	'Germinate': {
+		weapon: 'Lachmann Shroud',
+		level: '5',
+		challenge: {
+			amount: 20,
+			type: 'behind',
+		},
+	},
+	'Goodnight Vibes': {
+		weapon: 'Lachmann Shroud',
+		level: '11',
+		challenge: {
+			amount: 15,
+			type: 'mounted',
+		},
+	},
+	'Crosshatch': {
+		weapon: '9mm Deamon',
+		level: '21',
+		challenge: {
+			amount: 30,
+			type: 'akimbo',
+		},
+	},
 }

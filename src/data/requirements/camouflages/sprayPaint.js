@@ -209,4 +209,20 @@ export default {
 			type: 'one_shot',
 		},
 	},
+	'Mud Snake': {
+		weapon: 'Lachmann Shroud',
+		level: '2',
+		challenge: {
+			amount: 40,
+			type: 'kills',
+		},
+	},
+	'Deserted': {
+		weapon: '9mm Deamon',
+		level: '2',
+		challenge: {
+			amount: 40,
+			type: 'kills',
+		},
+	},
 }

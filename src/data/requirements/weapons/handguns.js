@@ -83,4 +83,11 @@ export default {
 		'Rad Reverb': fun['Rad Reverb'],
 		...masteryChallenges,
 	},
+	'9mm Deamon': {
+		'Deserted': sprayPaint['Deserted'],
+		'Hunter': woodland['Hunter'],
+		'Fractal Lapse': geometric['Fractal Lapse'],
+		'Crosshatch': fun['Crosshatch'],
+		...masteryChallenges,
+	},
 }
