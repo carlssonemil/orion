@@ -56,6 +56,7 @@ export default {
 			type: 'behind',
 		},
 	},
+
 	'Pickaxe': {
 		'Zany Zebra': stripes['Zany Zebra'],
 		...masteryChallenges,
