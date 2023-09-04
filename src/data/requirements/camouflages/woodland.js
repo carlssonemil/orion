@@ -172,15 +172,23 @@ export default {
 		level: '2',
 		challenge: {
 			amount: 50,
-			type: 'kills'
-		}
+			type: 'kills',
+		},
 	},
 	'Poison Rivers': {
 		weapon: 'M13C',
 		level: '5',
 		challenge: {
 			amount: 20,
-			type: 'crouched'
-		}
-	}
+			type: 'crouched',
+		},
+	},
+	'Hunter': {
+		weapon: '9mm Deamon',
+		level: '8',
+		challenge: {
+			amount: 20,
+			type: 'point_blank',
+		},
+	},
 }

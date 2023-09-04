@@ -164,7 +164,15 @@ export default {
 		level: '7',
 		challenge: {
 			amount: 20,
-			type: 'headshot'
-		}
-	}
+			type: 'headshot',
+		},
+	},
+	'Fractal Lapse': {
+		weapon: '9mm Deamon',
+		level: '14',
+		challenge: {
+			amount: 15,
+			type: 'crouched',
+		},
+	},
 }

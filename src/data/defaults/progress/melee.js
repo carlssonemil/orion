@@ -12,6 +12,10 @@ export default {
 	},
 
 	'Tonfa': {
-		'Oxidation': false,
+		Oxidation: false,
+	},
+
+	'Pickaxe': {
+		'Zany Zebra': false,
 	},
 }

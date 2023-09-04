@@ -143,4 +143,12 @@ export default {
 			type: 'ads',
 		},
 	},
+	'Acrid Drift': {
+		weapon: 'Lachmann Shroud',
+		level: '8',
+		challenge: {
+			amount: 25,
+			type: 'double',
+		},
+	},
 }
