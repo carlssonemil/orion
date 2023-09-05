@@ -84,7 +84,7 @@ export default {
 		...masteryChallenges,
 	},
 
-	'9mm Deamon': {
+	'9mm Daemon': {
 		'Deserted': sprayPaint['Deserted'],
 		'Hunter': woodland['Hunter'],
 		'Fractal Lapse': geometric['Fractal Lapse'],

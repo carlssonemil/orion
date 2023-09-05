@@ -184,7 +184,7 @@ export default {
 		},
 	},
 	'Hunter': {
-		weapon: '9mm Deamon',
+		weapon: '9mm Daemon',
 		level: '8',
 		challenge: {
 			amount: 20,

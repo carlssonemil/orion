@@ -48,7 +48,7 @@ export default {
 		'Rad Reverb': false,
 	},
 
-	'9mm Deamon': {
+	'9mm Daemon': {
 		'Crosshatch': false,
 		'Fractal Lapse': false,
 		'Hunter': false,

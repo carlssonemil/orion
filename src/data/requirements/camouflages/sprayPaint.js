@@ -218,7 +218,7 @@ export default {
 		},
 	},
 	'Deserted': {
-		weapon: '9mm Deamon',
+		weapon: '9mm Daemon',
 		level: '2',
 		challenge: {
 			amount: 40,

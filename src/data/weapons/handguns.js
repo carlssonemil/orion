@@ -9,10 +9,10 @@ const weapons = [
 	'X13 Auto',
 	'FTAC Siege',
 	'GS Magna',
-	'9mm Deamon',
+	'9mm Daemon',
 ]
 
-const dlc = ['FTAC Siege', 'GS Magna', '9mm Deamon']
+const dlc = ['FTAC Siege', 'GS Magna', '9mm Daemon']
 
 const comingSoon = []
 

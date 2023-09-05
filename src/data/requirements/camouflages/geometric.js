@@ -168,7 +168,7 @@ export default {
 		},
 	},
 	'Fractal Lapse': {
-		weapon: '9mm Deamon',
+		weapon: '9mm Daemon',
 		level: '14',
 		challenge: {
 			amount: 15,

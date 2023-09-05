@@ -280,7 +280,7 @@ export default {
 		},
 	},
 	'Crosshatch': {
-		weapon: '9mm Deamon',
+		weapon: '9mm Daemon',
 		level: '21',
 		challenge: {
 			amount: 30,
