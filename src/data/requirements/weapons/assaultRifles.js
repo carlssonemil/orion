@@ -12,7 +12,7 @@ import {
 	stripes,
 	tiger,
 	woodland,
-	foliage
+	foliage,
 } from '../camouflages/_index'
 
 const masteryChallenges = {
@@ -143,5 +143,11 @@ export default {
 		...masteryChallenges,
 	},
 
-	
+	'TR-76 Geist': {
+		'Cemented': woodland['Cemented'],
+		'Poison Rivers': woodland['Poison Rivers'],
+		'Demise': fun['Demise'],
+		'Virulent Strain': fun['Virulent Strain'],
+		...masteryChallenges,
+	},
 }
