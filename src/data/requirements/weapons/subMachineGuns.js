@@ -118,4 +118,12 @@ export default {
 		'Goodnight Vibes': fun['Goodnight Vibes'],
 		...masteryChallenges,
 	},
+
+	'ISO 9mm': {
+		'Mud Snake': sprayPaint['Mud Snake'],
+		'Germinate': fun['Germinate'],
+		'Acrid Drift': tiger['Acrid Drift'],
+		'Goodnight Vibes': fun['Goodnight Vibes'],
+		...masteryChallenges,
+	},
 }

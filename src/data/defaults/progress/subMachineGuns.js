@@ -75,4 +75,11 @@ export default {
 		'Acrid Drift': false,
 		'Goodnight Vibes': false,
 	},
+
+	'ISO 9mm': {
+		'Mud Snake': false,
+		'Germinate': false,
+		'Acrid Drift': false,
+		'Goodnight Vibes': false,
+	},
 }
