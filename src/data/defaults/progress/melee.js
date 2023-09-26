@@ -18,4 +18,8 @@ export default {
 	'Pickaxe': {
 		'Zany Zebra': false,
 	},
+
+	'Dual Kamas': {
+		'Zany Zebra': false,
+	},
 }
