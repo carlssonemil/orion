@@ -72,7 +72,37 @@ export default {
 		},
 	},
 
-	'Dual Kamas': {},
+	'Dual Kamas': {
+		Unknown: {
+			type: 'unknown',
+		},
+		...masteryChallenges,
+		Platinum: {
+			amount: 2,
+			type: 'time_limit',
+			seconds: 10,
+			times: 15,
+		},
+		Polyatomic: {
+			amount: 20,
+			type: 'behind',
+		},
+	},
 
-	'DOOM Chainsaw': {},
+	'DOOM Chainsaw': {
+		Unknown: {
+			type: 'unknown',
+		},
+		...masteryChallenges,
+		Platinum: {
+			amount: 2,
+			type: 'time_limit',
+			seconds: 10,
+			times: 15,
+		},
+		Polyatomic: {
+			amount: 20,
+			type: 'behind',
+		},
+	},
 }

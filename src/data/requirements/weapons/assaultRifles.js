@@ -144,6 +144,18 @@ export default {
 	},
 
 	'TR-76 Geist': {
+		Unknown1: {
+			type: 'unknown',
+		},
+		Unknown2: {
+			type: 'unknown',
+		},
+		Unknown3: {
+			type: 'unknown',
+		},
+		Unknown4: {
+			type: 'unknown',
+		},
 		...masteryChallenges,
 	},
 }

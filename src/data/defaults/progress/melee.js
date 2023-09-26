@@ -20,6 +20,6 @@ export default {
 	},
 
 	'Dual Kamas': {
-		'Zany Zebra': false,
+		Unknown: false,
 	},
 }

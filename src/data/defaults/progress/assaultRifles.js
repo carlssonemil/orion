@@ -97,5 +97,10 @@ export default {
 		'Virulent Strain': false,
 	},
 
-	'TR-76 Geist': {},
+	'TR-76 Geist': {
+		Unknown1: false,
+		Unknown2: false,
+		Unknown3: false,
+		Unknown4: false,
+	},
 }

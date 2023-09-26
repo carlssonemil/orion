@@ -319,6 +319,7 @@
 		},
 		"mastery": "{amount} Kills while using the {camouflage} Camo",
 		"types": {
+			"unknown": "Unknown {amount}",
 			"behind": "{amount} kills from behind",
 			"mounted": "{amount} kills while mounted",
 			"hipfire": "{amount} hipfire kills",
@@ -365,7 +366,8 @@
 		"Reptile": "Reptile",
 		"Solid Colors": "Solid Colors",
 		"Classic": "Classic",
-		"Cliffside": "Cliffside"
+		"Cliffside": "Cliffside",
+		"Unknown": "Unknown"
 	},
 	"calling_card_categories": {
 		"campaign": "Campaign",

@@ -76,5 +76,10 @@ export default {
 		'Goodnight Vibes': false,
 	},
 
-	'ISO 9mm': {},
+	'ISO 9mm': {
+		Unknown1: false,
+		Unknown2: false,
+		Unknown3: false,
+		Unknown4: false,
+	},
 }
