@@ -72,18 +72,7 @@ export default {
 		},
 	},
 
-	'Dual Kamas': {
-		'Zany Zebra': stripes['Zany Zebra'],
-		...masteryChallenges,
-		'Platinum': {
-			amount: 2,
-			type: 'time_limit',
-			seconds: 10,
-			times: 15,
-		},
-		'Polyatomic': {
-			amount: 20,
-			type: 'behind',
-		},
-	},
+	'Dual Kamas': {},
+
+	'DOOM Chainsaw': {},
 }

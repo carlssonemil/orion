@@ -144,10 +144,6 @@ export default {
 	},
 
 	'TR-76 Geist': {
-		'Cemented': woodland['Cemented'],
-		'Poison Rivers': woodland['Poison Rivers'],
-		'Demise': fun['Demise'],
-		'Virulent Strain': fun['Virulent Strain'],
 		...masteryChallenges,
 	},
 }

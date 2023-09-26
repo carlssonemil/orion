@@ -1,9 +1,17 @@
 import defaultMeleeProgress from '../defaults/progress/melee'
 import defaultMasteryCamouflages from '../defaults/progress/masteryCamouflages'
 
-const weapons = ['Combat Knife', 'Riot Shield', 'Dual Kodachis', 'Tonfa', 'Pickaxe', 'Dual Kamas']
+const weapons = [
+	'Combat Knife',
+	'Riot Shield',
+	'Dual Kodachis',
+	'Tonfa',
+	'Pickaxe',
+	'Dual Kamas',
+	'DOOM Chainsaw',
+]
 
-const dlc = ['Dual Kodachis', 'Tonfa', 'Pickaxe', 'Dual Kamas']
+const dlc = ['Dual Kodachis', 'Tonfa', 'Pickaxe', 'Dual Kamas', 'DOOM Chainsaw']
 
 const comingSoon = ['DOOM Chainsaw']
 

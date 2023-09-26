@@ -97,10 +97,5 @@ export default {
 		'Virulent Strain': false,
 	},
 
-	'TR-76 Geist': {
-		'Cemented': false,
-		'Poison Rivers': false,
-		'Demise': false,
-		'Virulent Strain': false,
-	},
+	'TR-76 Geist': {},
 }
