@@ -94,15 +94,23 @@ export default {
 		level: '2',
 		challenge: {
 			amount: 50,
-			type: 'kills'
-		}
+			type: 'kills',
+		},
 	},
 	'Birch': {
 		weapon: 'Carrack .300',
 		level: '2',
 		challenge: {
 			amount: 50,
-			type: 'kills'
-		}
-	}
+			type: 'kills',
+		},
+	},
+	'Scratched Up': {
+		weapon: 'TR-76 Geist',
+		level: '14',
+		challenge: {
+			amount: 50,
+			type: 'ads',
+		},
+	},
 }

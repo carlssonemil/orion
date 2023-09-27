@@ -225,4 +225,12 @@ export default {
 			type: 'kills',
 		},
 	},
+	'Veldt': {
+		weapon: 'TR-76 Geist',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
 }

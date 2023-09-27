@@ -12,7 +12,7 @@ import {
 	stripes,
 	tiger,
 	woodland,
-	foliage
+	foliage,
 } from '../camouflages/_index'
 
 const masteryChallenges = {
@@ -143,5 +143,11 @@ export default {
 		...masteryChallenges,
 	},
 
-	
+	'TR-76 Geist': {
+		'Veldt': sprayPaint['Veldt'],
+		'Wild Funk': fun['Wild Funk'],
+		'Scratched Up': foliage['Scratched Up'],
+		'Light Revisited': fun['Light Revisited'],
+		...masteryChallenges,
+	},
 }

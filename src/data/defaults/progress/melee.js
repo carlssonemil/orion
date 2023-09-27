@@ -18,4 +18,8 @@ export default {
 	'Pickaxe': {
 		'Zany Zebra': false,
 	},
+
+	'Dual Kamas': {
+		'Cyber Plateau': false,
+	},
 }

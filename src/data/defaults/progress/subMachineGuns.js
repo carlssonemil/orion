@@ -75,4 +75,11 @@ export default {
 		'Acrid Drift': false,
 		'Goodnight Vibes': false,
 	},
+
+	'ISO 9mm': {
+		'Digital Boulder': false,
+		'Foundation': false,
+		'Snow Tiger': false,
+		'Neon Peaks': false,
+	},
 }

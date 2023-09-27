@@ -175,4 +175,12 @@ export default {
 			type: 'crouched',
 		},
 	},
+	'Foundation': {
+		weapon: 'ISO 9mm',
+		level: '5',
+		challenge: {
+			amount: 20,
+			type: 'hipfire',
+		},
+	},
 }

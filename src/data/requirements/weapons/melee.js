@@ -1,4 +1,4 @@
-import { solidColors, stripes, fun } from '../camouflages/_index'
+import { solidColors, stripes, fun, woodland } from '../camouflages/_index'
 
 const masteryChallenges = {
 	Gold: {
@@ -67,6 +67,38 @@ export default {
 			times: 15,
 		},
 		'Polyatomic': {
+			amount: 20,
+			type: 'behind',
+		},
+	},
+
+	'Dual Kamas': {
+		'Cyber Plateau': woodland['Cyber Plateau'],
+		...masteryChallenges,
+		'Platinum': {
+			amount: 2,
+			type: 'time_limit',
+			seconds: 10,
+			times: 15,
+		},
+		'Polyatomic': {
+			amount: 20,
+			type: 'behind',
+		},
+	},
+
+	'DOOM Chainsaw': {
+		Unknown: {
+			type: 'unknown',
+		},
+		...masteryChallenges,
+		Platinum: {
+			amount: 2,
+			type: 'time_limit',
+			seconds: 10,
+			times: 15,
+		},
+		Polyatomic: {
 			amount: 20,
 			type: 'behind',
 		},
