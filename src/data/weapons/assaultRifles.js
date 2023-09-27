@@ -16,9 +16,18 @@ const weapons = [
 	'Tempus Razorback',
 	'FR Avancer',
 	'M13C',
+	'TR-76 Geist',
 ]
 
-const dlc = ['M13B', 'Chimera', 'ISO Hemlock', 'Tempus Razorback', 'FR Avancer', 'M13C']
+const dlc = [
+	'M13B',
+	'Chimera',
+	'ISO Hemlock',
+	'Tempus Razorback',
+	'FR Avancer',
+	'M13C',
+	'TR-76 Geist',
+]
 
 const comingSoon = []
 

@@ -94,7 +94,13 @@ export default {
 		'Cemented': false,
 		'Poison Rivers': false,
 		'Demise': false,
-		'Virulent Strain': false
+		'Virulent Strain': false,
 	},
 
+	'TR-76 Geist': {
+		'Veldt': false,
+		'Wild Funk': false,
+		'Scratched Up': false,
+		'Light Revisited': false,
+	},
 }

@@ -13,9 +13,10 @@ const weapons = [
 	'Fennec 45',
 	'ISO 45',
 	'Lachmann Shroud',
+	'ISO 9mm',
 ]
 
-const dlc = ['BAS-P', 'ISO 45', 'Lachmann Shroud']
+const dlc = ['BAS-P', 'ISO 45', 'Lachmann Shroud', 'ISO 9mm']
 
 const comingSoon = []
 

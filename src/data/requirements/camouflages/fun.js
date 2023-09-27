@@ -287,4 +287,36 @@ export default {
 			type: 'akimbo',
 		},
 	},
+	'Wild Funk': {
+		weapon: 'TR-76 Geist',
+		level: '8',
+		challenge: {
+			amount: 10,
+			type: 'double',
+		},
+	},
+	'Snow Tiger': {
+		weapon: 'ISO 9mm',
+		level: '8',
+		challenge: {
+			amount: 10,
+			type: 'double',
+		},
+	},
+	'Neon Peaks': {
+		weapon: 'ISO 9mm',
+		level: '12',
+		challenge: {
+			amount: 25,
+			type: 'point_blank',
+		},
+	},
+	'Light Revisited': {
+		weapon: 'TR-76 Geist',
+		level: '22',
+		challenge: {
+			amount: 50,
+			type: 'suppressor',
+		},
+	},
 }

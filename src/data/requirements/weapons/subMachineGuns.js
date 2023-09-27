@@ -118,4 +118,12 @@ export default {
 		'Goodnight Vibes': fun['Goodnight Vibes'],
 		...masteryChallenges,
 	},
+
+	'ISO 9mm': {
+		'Digital Boulder': digital['Digital Boulder'],
+		'Foundation': geometric['Foundation'],
+		'Snow Tiger': fun['Snow Tiger'],
+		'Neon Peaks': fun['Neon Peaks'],
+		...masteryChallenges,
+	},
 }
