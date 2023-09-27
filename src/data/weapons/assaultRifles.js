@@ -29,7 +29,7 @@ const dlc = [
 	'TR-76 Geist',
 ]
 
-const comingSoon = ['TR-76 Geist']
+const comingSoon = []
 
 export default weapons.map((weapon) => ({
 	category: 'Assault Rifles',

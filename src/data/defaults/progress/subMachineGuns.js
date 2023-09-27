@@ -77,9 +77,9 @@ export default {
 	},
 
 	'ISO 9mm': {
-		Unknown1: false,
-		Unknown2: false,
-		Unknown3: false,
-		Unknown4: false,
+		'Digital Boulder': false,
+		'Foundation': false,
+		'Snow Tiger': false,
+		'Neon Peaks': false,
 	},
 }

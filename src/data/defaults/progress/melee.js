@@ -20,6 +20,6 @@ export default {
 	},
 
 	'Dual Kamas': {
-		Unknown: false,
+		'Cyber Plateau': false,
 	},
 }

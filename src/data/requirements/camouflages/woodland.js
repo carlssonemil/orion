@@ -191,4 +191,12 @@ export default {
 			type: 'point_blank',
 		},
 	},
+	'Cyber Plateau': {
+		weapon: 'Dual Kamas',
+		level: '15',
+		challenge: {
+			amount: 50,
+			type: 'kills',
+		},
+	},
 }

@@ -98,9 +98,9 @@ export default {
 	},
 
 	'TR-76 Geist': {
-		Unknown1: false,
-		Unknown2: false,
-		Unknown3: false,
-		Unknown4: false,
+		'Veldt': false,
+		'Wild Funk': false,
+		'Scratched Up': false,
+		'Light Revisited': false,
 	},
 }

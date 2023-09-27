@@ -244,7 +244,15 @@ export default {
 		level: '14',
 		challenge: {
 			amount: 15,
-			type: 'prone'
+			type: 'prone',
+		},
+	},
+	'Digital Boulder': {
+		weapon: 'ISO 9mm',
+		level: '2',
+		challenge: {
+			amount: 50,
+			type: 'kills',
 		},
 	},
 }

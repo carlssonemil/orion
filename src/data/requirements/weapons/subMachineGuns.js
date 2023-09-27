@@ -120,18 +120,10 @@ export default {
 	},
 
 	'ISO 9mm': {
-		Unknown1: {
-			type: 'unknown',
-		},
-		Unknown2: {
-			type: 'unknown',
-		},
-		Unknown3: {
-			type: 'unknown',
-		},
-		Unknown4: {
-			type: 'unknown',
-		},
+		'Digital Boulder': digital['Digital Boulder'],
+		'Foundation': geometric['Foundation'],
+		'Snow Tiger': fun['Snow Tiger'],
+		'Neon Peaks': fun['Neon Peaks'],
 		...masteryChallenges,
 	},
 }

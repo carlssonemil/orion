@@ -18,7 +18,7 @@ const weapons = [
 
 const dlc = ['BAS-P', 'ISO 45', 'Lachmann Shroud', 'ISO 9mm']
 
-const comingSoon = ['ISO 9mm']
+const comingSoon = []
 
 export default weapons.map((weapon) => ({
 	category: 'Sub Machine Guns',

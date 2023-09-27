@@ -144,18 +144,10 @@ export default {
 	},
 
 	'TR-76 Geist': {
-		Unknown1: {
-			type: 'unknown',
-		},
-		Unknown2: {
-			type: 'unknown',
-		},
-		Unknown3: {
-			type: 'unknown',
-		},
-		Unknown4: {
-			type: 'unknown',
-		},
+		'Veldt': sprayPaint['Veldt'],
+		'Wild Funk': fun['Wild Funk'],
+		'Scratched Up': foliage['Scratched Up'],
+		'Light Revisited': fun['Light Revisited'],
 		...masteryChallenges,
 	},
 }
