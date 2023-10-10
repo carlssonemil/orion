@@ -8,12 +8,9 @@ const weapons = [
 	'Tonfa',
 	'Pickaxe',
 	'Dual Kamas',
-	'DOOM Chainsaw',
 ]
 
-const dlc = ['Dual Kodachis', 'Tonfa', 'Pickaxe', 'Dual Kamas', 'DOOM Chainsaw']
-
-const comingSoon = ['DOOM Chainsaw']
+const dlc = ['Dual Kodachis', 'Tonfa', 'Pickaxe', 'Dual Kamas']
 
 export default weapons.map((weapon) => ({
 	category: 'Melee',
