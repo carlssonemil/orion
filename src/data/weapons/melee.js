@@ -12,6 +12,8 @@ const weapons = [
 
 const dlc = ['Dual Kodachis', 'Tonfa', 'Pickaxe', 'Dual Kamas']
 
+const dlc = []
+
 export default weapons.map((weapon) => ({
 	category: 'Melee',
 	name: weapon,
