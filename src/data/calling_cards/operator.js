@@ -355,20 +355,20 @@ export default [
 		},
 	},
 	{
-		name: 'Symbolic End',
+		name: 'Vengeful Stance',
 		category: 'operator',
 		subcategory: 'operator_longshots',
 		requirement: {
-			type: 'operator_longshots',
+			type: 'vengeful_stance',
 			amount: 500,
 		},
 	},
 	{
-		name: 'Chattering Soldier',
+		name: 'God of Death',
 		category: 'operator',
 		subcategory: 'operator_longshots',
 		requirement: {
-			type: 'operator_longshots',
+			type: 'god_of_death',
 			amount: 1000,
 		},
 	},
