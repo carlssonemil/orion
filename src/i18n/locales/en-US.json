@@ -344,8 +344,8 @@
 					"konigs_sights": "Complete All Prestige Challenges"
   			},
   			"prestige 12": {
-					"it_beings_here": "Get 100 Operator One Shot One Kills with Shotguns",
-					"rusher_mentality_": "Disrupt 50 Operator Equipment with DDoS",
+					"it_begins_here": "Get 100 Operator One Shot One Kills with Shotguns",
+					"rusher_mentality": "Disrupt 50 Operator Equipment with DDoS",
 					"duty": "Get 50 Operator Kills with Melee Weapons",
 					"search_party": "Get 20 Operator Kills in a Single Match 10 Times",
 					"ghost_on_point": "Complete All Prestige Challenges"
@@ -418,7 +418,7 @@
 					"wolfs_wrath": "Complete 75 Base Daily Challenges in Multiplayer or Warzone",
 					"endless_battle": "Get 50 Operator Kills Shortly after Swapping Weapons",
 					"hogs_hell": "Get 25 Operator Kills while Swimming",
-					"animal_instrinct": "Complete All Prestige Challenges"
+					"animal_instinct": "Complete All Prestige Challenges"
   			},
   			"prestige 23": {
 					"beautiful_distraction": "Get 100 Mounted Operator Kills with Snipers",

@@ -59,7 +59,7 @@ export default [
    "name": "Drench In Gold",
    "category": "prestige 2",
    "requirement": {
-      "type": "drenched_in_gold"
+      "type": "drench_in_gold"
    },
 },
 {
@@ -73,7 +73,7 @@ export default [
    "name": "Cretaceous Us Creation",
    "category": "prestige 3",
    "requirement": {
-      "type": "cretaceous_creation"
+      "type": "cretaceous_us_creation"
    },
 },
 {
@@ -385,17 +385,17 @@ export default [
    },
 },
 {
-   "name": "It Beings Here",
+   "name": "It Begins Here",
    "category": "prestige 12",
    "requirement": {
-      "type": "it_beings_here"
+      "type": "it_begins_here"
    },
 },
 {
-   "name": "Rusher Mentality ",
+   "name": "Rusher Mentality",
    "category": "prestige 12",
    "requirement": {
-      "type": "rusher_mentality_"
+      "type": "rusher_mentality"
    },
 },
 {
@@ -763,10 +763,10 @@ export default [
    },
 },
 {
-   "name": "Animal Instrinct",
+   "name": "Animal Instinct",
    "category": "prestige 22",
    "requirement": {
-      "type": "animal_instrinct"
+      "type": "animal_instinct"
    },
 },
 {
@@ -798,7 +798,7 @@ export default [
    },
 },
 {
-   "name": "Eat Lead!",
+   "name": "Eat Lead",
    "category": "prestige 23",
    "requirement": {
       "type": "eat_lead"
@@ -812,7 +812,7 @@ export default [
    },
 },
 {
-   "name": "Gotchya!",
+   "name": "Gotchya",
    "category": "prestige 24",
    "requirement": {
       "type": "gotchya"
