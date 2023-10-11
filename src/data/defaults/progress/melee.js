@@ -1,25 +1,25 @@
 export default {
-	'Combat Knife': {
-		Scarlet: false,
-	},
+  'Combat Knife': {
+    Scarlet: false,
+  },
 
-	'Riot Shield': {
-		'Urban Zebra': false,
-	},
+  'Riot Shield': {
+    'Urban Zebra': false,
+  },
 
-	'Dual Kodachis': {
-		'Rush Hour': false,
-	},
+  'Dual Kodachis': {
+    'Rush Hour': false,
+  },
 
-	'Tonfa': {
-		Oxidation: false,
-	},
+  'Tonfa': {
+    Oxidation: false,
+  },
 
-	'Pickaxe': {
-		'Zany Zebra': false,
-	},
+  'Pickaxe': {
+    'Zany Zebra': false,
+  },
 
-	'Dual Kamas': {
-		'Cyber Plateau': false,
-	},
+  'Dual Kamas': {
+    'Cyber Plateau': false,
+  },
 }

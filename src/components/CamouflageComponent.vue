@@ -1,39 +1,39 @@
 <template>
-	<div :class="['camouflage-wrapper', { favorite: isFavorite }]">
-		<div
-			:class="['camouflage', `camouflage-layout-${layout}`]"
-			@click="handleToggleCompleted(camouflage)"
-			:content="requirementTooltip(camouflage)"
-			v-tippy="{ placement: 'bottom' }">
-			<div :class="['inner', this.isCompleted ? 'completed' : '']">
-				<img
-					:src="`https://emilcarlsson.se/orion/camouflages/${convertToKebabCase(
-						camouflage.name
-					)}.png`"
-					:alt="camouflage.name"
-					onerror="javascript:this.src='/base-gradient.svg'" />
-				<IconComponent class="complete" name="check" fill="#10ac84" size="30" />
-				<IconComponent class="remove" name="times" fill="#ee5253" size="30" />
-				<div class="info">
-					<span class="name">{{ camouflage.name }}</span>
-					<span class="requirement">{{ requirementTooltip(camouflage) }}</span>
-				</div>
-			</div>
-		</div>
+  <div :class="['camouflage-wrapper', { favorite: isFavorite }]">
+    <div
+      :class="['camouflage', `camouflage-layout-${layout}`]"
+      @click="handleToggleCompleted(camouflage)"
+      :content="requirementTooltip(camouflage)"
+      v-tippy="{ placement: 'bottom' }">
+      <div :class="['inner', this.isCompleted ? 'completed' : '']">
+        <img
+          :src="`https://emilcarlsson.se/orion/camouflages/${convertToKebabCase(
+            camouflage.name
+          )}.png`"
+          :alt="camouflage.name"
+          onerror="javascript:this.src='/base-gradient.svg'" />
+        <IconComponent class="complete" name="check" fill="#10ac84" size="30" />
+        <IconComponent class="remove" name="times" fill="#ee5253" size="30" />
+        <div class="info">
+          <span class="name">{{ camouflage.name }}</span>
+          <span class="requirement">{{ requirementTooltip(camouflage) }}</span>
+        </div>
+      </div>
+    </div>
 
-		<IconComponent
-			class="favorite-icon"
-			name="star"
-			:fill="isFavorite ? '#feca57' : 'gray'"
-			icon-style="solid"
-			size="25"
-			@click="toggleFavorite({ type: 'camouflages', name: camouflage.name })"
-			v-tippy="{
-				content: $t('filters.toggle_favorite', {
-					state: isFavorite ? $t('general.remove_from') : $t('general.add_to'),
-				}),
-			}" />
-	</div>
+    <IconComponent
+      class="favorite-icon"
+      name="star"
+      :fill="isFavorite ? '#feca57' : 'gray'"
+      icon-style="solid"
+      size="25"
+      @click="toggleFavorite({ type: 'camouflages', name: camouflage.name })"
+      v-tippy="{
+        content: $t('filters.toggle_favorite', {
+          state: isFavorite ? $t('general.remove_from') : $t('general.add_to'),
+        }),
+      }" />
+  </div>
 </template>
 
 <script>
@@ -44,265 +44,265 @@ import { mapActions, mapState } from 'pinia'
 const store = useStore()
 
 export default {
-	data() {
-		return {
-			isCompleted: this.camouflage.isCompleted,
-		}
-	},
+  data() {
+    return {
+      isCompleted: this.camouflage.isCompleted,
+    }
+  },
 
-	props: {
-		camouflage: {
-			type: Object,
-			required: true,
-		},
-	},
+  props: {
+    camouflage: {
+      type: Object,
+      required: true,
+    },
+  },
 
-	computed: {
-		...mapState(useStore, ['camouflageRequirements', 'preferences']),
+  computed: {
+    ...mapState(useStore, ['camouflageRequirements', 'preferences']),
 
-		layout() {
-			return this.preferences.layout
-		},
+    layout() {
+      return this.preferences.layout
+    },
 
-		isFavorite() {
-			return store.isFavorite('camouflages', this.camouflage.name)
-		},
-	},
+    isFavorite() {
+      return store.isFavorite('camouflages', this.camouflage.name)
+    },
+  },
 
-	methods: {
-		convertToKebabCase,
-		...mapActions(useStore, [
-			'toggleCamouflageCompleted',
-			'toggleGoldCamouflageCompleted',
-			'toggleFavorite',
-		]),
+  methods: {
+    convertToKebabCase,
+    ...mapActions(useStore, [
+      'toggleCamouflageCompleted',
+      'toggleGoldCamouflageCompleted',
+      'toggleFavorite',
+    ]),
 
-		requirementTooltip(camouflage) {
-			const requirement = this.camouflageRequirements[camouflage.category][camouflage.name]
+    requirementTooltip(camouflage) {
+      const requirement = this.camouflageRequirements[camouflage.category][camouflage.name]
 
-			return this.$t('pages.camouflages.requirement_tooltip', {
-				weapon: requirement.weapon,
-				level: requirement.level,
-				challenge: this.translateChallenge(requirement.challenge) || 'TBA',
-			})
-		},
+      return this.$t('pages.camouflages.requirement_tooltip', {
+        weapon: requirement.weapon,
+        level: requirement.level,
+        challenge: this.translateChallenge(requirement.challenge) || 'TBA',
+      })
+    },
 
-		handleToggleCompleted(camouflage) {
-			const weaponName = this.camouflageRequirements[camouflage.category][camouflage.name].weapon
-			this.toggleCamouflageCompleted(weaponName, camouflage.name, this.isCompleted)
-			this.toggleIsCompleted()
-		},
+    handleToggleCompleted(camouflage) {
+      const weaponName = this.camouflageRequirements[camouflage.category][camouflage.name].weapon
+      this.toggleCamouflageCompleted(weaponName, camouflage.name, this.isCompleted)
+      this.toggleIsCompleted()
+    },
 
-		toggleIsCompleted() {
-			this.isCompleted = !this.isCompleted
-		},
+    toggleIsCompleted() {
+      this.isCompleted = !this.isCompleted
+    },
 
-		translateChallenge(challenge) {
-			const { amount, type, seconds, times } = challenge
+    translateChallenge(challenge) {
+      const { amount, type, seconds, times } = challenge
 
-			if (type === 'time_limit') {
-				return this.$t(`challenges.types.${type}`, { amount, seconds, times })
-			} else if (type === 'without_dying') {
-				return this.$t(`challenges.types.${type}`, { amount, times })
-			} else {
-				return this.$t(`challenges.types.${type}`, { amount })
-			}
-		},
-	},
+      if (type === 'time_limit') {
+        return this.$t(`challenges.types.${type}`, { amount, seconds, times })
+      } else if (type === 'without_dying') {
+        return this.$t(`challenges.types.${type}`, { amount, times })
+      } else {
+        return this.$t(`challenges.types.${type}`, { amount })
+      }
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .camouflage-wrapper {
-	position: relative;
+  position: relative;
 
-	&.favorite .favorite-icon {
-		opacity: 1 !important;
-	}
+  &.favorite .favorite-icon {
+    opacity: 1 !important;
+  }
 
-	&:hover {
-		.favorite-icon {
-			opacity: 1;
-		}
-	}
+  &:hover {
+    .favorite-icon {
+      opacity: 1;
+    }
+  }
 
-	.favorite-icon {
-		cursor: pointer;
-		opacity: 0;
-		position: absolute;
-		right: 0;
-		top: 0;
-		transition: $transition;
-		transform: translate(50%, -50%);
-		z-index: 2;
+  .favorite-icon {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: $transition;
+    transform: translate(50%, -50%);
+    z-index: 2;
 
-		@media (max-width: $tablet) {
-			opacity: 1 !important;
-			transform: translate(50%, -50%) scale(1.25);
-		}
-	}
+    @media (max-width: $tablet) {
+      opacity: 1 !important;
+      transform: translate(50%, -50%) scale(1.25);
+    }
+  }
 
-	.camouflage {
-		user-select: none;
+  .camouflage {
+    user-select: none;
 
-		&.camouflage-layout-grid > .inner {
-			flex-direction: column;
-			justify-content: center;
+    &.camouflage-layout-grid > .inner {
+      flex-direction: column;
+      justify-content: center;
 
-			&.completed > .info {
-				opacity: 0.5;
-			}
+      &.completed > .info {
+        opacity: 0.5;
+      }
 
-			img {
-				height: 80px;
-				object-fit: cover;
-				position: relative;
-				width: 100%;
-				z-index: 1;
-			}
+      img {
+        height: 80px;
+        object-fit: cover;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+      }
 
-			.icon-component {
-				left: 50%;
-				opacity: 0;
-				position: absolute;
-				transform: translate(-50%, -50%);
-				transition: $transition;
-				top: 35%;
-				z-index: 2;
-			}
+      .icon-component {
+        left: 50%;
+        opacity: 0;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: $transition;
+        top: 35%;
+        z-index: 2;
+      }
 
-			.info {
-				padding: 8px;
+      .info {
+        padding: 8px;
 
-				.name {
-					font-size: 14px;
-				}
-			}
-		}
+        .name {
+          font-size: 14px;
+        }
+      }
+    }
 
-		&.camouflage-layout-list > .inner {
-			$image-size: 100px;
-			background: $elevation-1-color;
-			flex-direction: row;
+    &.camouflage-layout-list > .inner {
+      $image-size: 100px;
+      background: $elevation-1-color;
+      flex-direction: row;
 
-			&.completed > .info {
-				opacity: 0.5;
-			}
+      &.completed > .info {
+        opacity: 0.5;
+      }
 
-			img {
-				height: $image-size;
-				position: relative;
-				width: $image-size;
-				z-index: 1;
-			}
+      img {
+        height: $image-size;
+        position: relative;
+        width: $image-size;
+        z-index: 1;
+      }
 
-			.icon-component {
-				left: calc($image-size / 2);
-				opacity: 0;
-				position: absolute;
-				transform: translate(-50%, -50%);
-				transition: $transition;
-				top: 50%;
-				z-index: 2;
-			}
+      .icon-component {
+        left: calc($image-size / 2);
+        opacity: 0;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: $transition;
+        top: 50%;
+        z-index: 2;
+      }
 
-			.info {
-				padding: 0 20px;
-				text-align: left;
+      .info {
+        padding: 0 20px;
+        text-align: left;
 
-				.name {
-					font-weight: 500;
-				}
+        .name {
+          font-weight: 500;
+        }
 
-				.requirement {
-					display: block;
-					font-size: 14px;
-					line-height: 1.5;
-					margin-top: 10px;
-				}
-			}
-		}
+        .requirement {
+          display: block;
+          font-size: 14px;
+          line-height: 1.5;
+          margin-top: 10px;
+        }
+      }
+    }
 
-		.inner {
-			align-items: center;
-			background: $elevation-2-color;
-			border-radius: $border-radius;
-			cursor: pointer;
-			display: flex;
-			height: 100%;
-			overflow: hidden;
-			position: relative;
-			transition: $transition;
-			width: 100%;
+    .inner {
+      align-items: center;
+      background: $elevation-2-color;
+      border-radius: $border-radius;
+      cursor: pointer;
+      display: flex;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      transition: $transition;
+      width: 100%;
 
-			&:hover {
-				@media (min-width: $tablet) {
-					img,
-					p {
-						opacity: 0.25;
-					}
+      &:hover {
+        @media (min-width: $tablet) {
+          img,
+          p {
+            opacity: 0.25;
+          }
 
-					.icon-component.complete {
-						opacity: 1;
-					}
-				}
-			}
+          .icon-component.complete {
+            opacity: 1;
+          }
+        }
+      }
 
-			&.completed {
-				&:hover {
-					@media (min-width: $tablet) {
-						.icon-component.complete {
-							opacity: 0;
-						}
-						.icon-component.remove {
-							opacity: 1;
-						}
-					}
-				}
+      &.completed {
+        &:hover {
+          @media (min-width: $tablet) {
+            .icon-component.complete {
+              opacity: 0;
+            }
+            .icon-component.remove {
+              opacity: 1;
+            }
+          }
+        }
 
-				img,
-				p {
-					opacity: 0.25;
-				}
+        img,
+        p {
+          opacity: 0.25;
+        }
 
-				.icon-component {
-					&.complete {
-						opacity: 1;
-					}
+        .icon-component {
+          &.complete {
+            opacity: 1;
+          }
 
-					&.remove {
-						opacity: 0;
-					}
-				}
-			}
+          &.remove {
+            opacity: 0;
+          }
+        }
+      }
 
-			&.disabled {
-				cursor: not-allowed;
+      &.disabled {
+        cursor: not-allowed;
 
-				&:hover {
-					img,
-					p {
-						opacity: 1;
-					}
+        &:hover {
+          img,
+          p {
+            opacity: 1;
+          }
 
-					.icon-component {
-						opacity: 0;
-					}
-				}
-			}
+          .icon-component {
+            opacity: 0;
+          }
+        }
+      }
 
-			.info {
-				transition: opacity $transition;
+      .info {
+        transition: opacity $transition;
 
-				.requirement {
-					display: none;
-				}
-			}
+        .requirement {
+          display: none;
+        }
+      }
 
-			p {
-				font-size: 14px;
-			}
-		}
-	}
+      p {
+        font-size: 14px;
+      }
+    }
+  }
 }
 </style>

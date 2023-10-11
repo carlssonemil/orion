@@ -14,46 +14,46 @@ import classic from './requirements/camouflages/classic'
 import cliffside from './requirements/camouflages/cliffside'
 
 export default {
-	'Spray Paint': {
-		...sprayPaint,
-	},
-	'Woodland': {
-		...woodland,
-	},
-	'Digital': {
-		...digital,
-	},
-	'Dragon': {
-		...dragon,
-	},
-	'Geometric': {
-		...geometric,
-	},
-	'Fun': {
-		...fun,
-	},
-	'Foliage': {
-		...foliage,
-	},
-	'Skulls': {
-		...skulls,
-	},
-	'Tiger': {
-		...tiger,
-	},
-	'Stripes': {
-		...stripes,
-	},
-	'Reptile': {
-		...reptile,
-	},
-	'Solid Colors': {
-		...solidColors,
-	},
-	'Classic': {
-		...classic,
-	},
-	'Cliffside': {
-		...cliffside,
-	},
+  'Spray Paint': {
+    ...sprayPaint,
+  },
+  'Woodland': {
+    ...woodland,
+  },
+  'Digital': {
+    ...digital,
+  },
+  'Dragon': {
+    ...dragon,
+  },
+  'Geometric': {
+    ...geometric,
+  },
+  'Fun': {
+    ...fun,
+  },
+  'Foliage': {
+    ...foliage,
+  },
+  'Skulls': {
+    ...skulls,
+  },
+  'Tiger': {
+    ...tiger,
+  },
+  'Stripes': {
+    ...stripes,
+  },
+  'Reptile': {
+    ...reptile,
+  },
+  'Solid Colors': {
+    ...solidColors,
+  },
+  'Classic': {
+    ...classic,
+  },
+  'Cliffside': {
+    ...cliffside,
+  },
 }

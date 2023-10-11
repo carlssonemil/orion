@@ -8,17 +8,17 @@ const dlc = ['Cronen Squall']
 const comingSoon = []
 
 export default weapons.map((weapon) => ({
-	category: 'Battle Rifles',
-	name: weapon,
-	dlc: dlc.includes(weapon),
-	comingSoon: comingSoon.includes(weapon),
-	progress: {
-		...defaultBattleRiflesProgress[weapon],
-		Gold: false,
-		Platinum: false,
-		Polyatomic: false,
-	},
-	masteryProgress: {
-		...defaultMasteryCamouflages,
-	},
+  category: 'Battle Rifles',
+  name: weapon,
+  dlc: dlc.includes(weapon),
+  comingSoon: comingSoon.includes(weapon),
+  progress: {
+    ...defaultBattleRiflesProgress[weapon],
+    Gold: false,
+    Platinum: false,
+    Polyatomic: false,
+  },
+  masteryProgress: {
+    ...defaultMasteryCamouflages,
+  },
 }))

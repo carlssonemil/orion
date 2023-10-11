@@ -10,14 +10,14 @@ import defaultSniperRiflesProgress from './progress/sniperRifles'
 import defaultSubmachineGunsProgress from './progress/subMachineGuns'
 
 export {
-	defaultAssaultRiflesProgress,
-	defaultBattleRiflesProgress,
-	defaultHandgunsProgress,
-	defaultLaunchersProgress,
-	defaultLightMachineGunsProgress,
-	defaultMarksmanRiflesProgress,
-	defaultMeleeProgress,
-	defaultShotgunsProgress,
-	defaultSniperRiflesProgress,
-	defaultSubmachineGunsProgress,
+  defaultAssaultRiflesProgress,
+  defaultBattleRiflesProgress,
+  defaultHandgunsProgress,
+  defaultLaunchersProgress,
+  defaultLightMachineGunsProgress,
+  defaultMarksmanRiflesProgress,
+  defaultMeleeProgress,
+  defaultShotgunsProgress,
+  defaultSniperRiflesProgress,
+  defaultSubmachineGunsProgress,
 }

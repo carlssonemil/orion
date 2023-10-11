@@ -25,8 +25,8 @@ Vue.component('LoaderComponent', LoaderComponent)
 Vue.component('ModalComponent', ModalComponent)
 
 new Vue({
-	router,
-	i18n,
-	pinia: createPinia(),
-	render: (h) => h(App),
+  router,
+  i18n,
+  pinia: createPinia(),
+  render: (h) => h(App),
 }).$mount('#app')

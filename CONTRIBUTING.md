@@ -89,9 +89,9 @@ If you want to help contribute some images for the camouflages, the process is t
 
 If you don't have access to any image editing software (besides Paint), [Photopea](https://www.photopea.com/) is an amazing and completely free Photoshop alternative. I will also happily accept any images, or in-game screenshots, of the camouflages on my email ([hello@emilcarlsson.se](hello@emilcarlsson.se)) and I can edit and add them to the site myself!
 
-### 
+###
 
-### 
+###
 
 ## License
 

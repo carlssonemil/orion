@@ -4,8 +4,8 @@ const base = Object.keys(woodland)
 const dlc = []
 
 export default [...base, ...dlc].map((camouflage) => ({
-	category: 'Woodland',
-	name: camouflage,
-	dlc: dlc.includes(camouflage),
-	isCompleted: false,
+  category: 'Woodland',
+  name: camouflage,
+  dlc: dlc.includes(camouflage),
+  isCompleted: false,
 }))

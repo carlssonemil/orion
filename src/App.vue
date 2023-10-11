@@ -1,28 +1,28 @@
 <template>
-	<div id="app">
-		<NoticeComponent />
-		<NavigationComponent @toggleMobileNavigation="toggleMobileNavigation" />
-		<MobileNavigationComponent
-			:show="showMobileNavigation"
-			@toggleMobileNavigation="toggleMobileNavigation" />
+  <div id="app">
+    <NoticeComponent />
+    <NavigationComponent @toggleMobileNavigation="toggleMobileNavigation" />
+    <MobileNavigationComponent
+      :show="showMobileNavigation"
+      @toggleMobileNavigation="toggleMobileNavigation" />
 
-		<main>
-			<transition name="page-fade" mode="out-in">
-				<router-view />
-			</transition>
-		</main>
+    <main>
+      <transition name="page-fade" mode="out-in">
+        <router-view />
+      </transition>
+    </main>
 
-		<notifications position="top center">
-			<template slot="body" slot-scope="props">
-				<div class="notification" :class="props.item.type" @click="props.close">
-					<p class="title">{{ props.item.title }}</p>
-					<IconComponent class="remove" name="times" width="18" height="18" />
-				</div>
-			</template>
-		</notifications>
+    <notifications position="top center">
+      <template slot="body" slot-scope="props">
+        <div class="notification" :class="props.item.type" @click="props.close">
+          <p class="title">{{ props.item.title }}</p>
+          <IconComponent class="remove" name="times" width="18" height="18" />
+        </div>
+      </template>
+    </notifications>
 
-		<FooterComponent />
-	</div>
+    <FooterComponent />
+  </div>
 </template>
 
 <script>
@@ -34,35 +34,35 @@ import NavigationComponent from '@/components/layout/NavigationComponent.vue'
 import NoticeComponent from './components/NoticeComponent.vue'
 
 export default {
-	components: {
-		FooterComponent,
-		MobileNavigationComponent,
-		NavigationComponent,
-		NoticeComponent,
-	},
+  components: {
+    FooterComponent,
+    MobileNavigationComponent,
+    NavigationComponent,
+    NoticeComponent,
+  },
 
-	data() {
-		return {
-			showMobileNavigation: false,
-		}
-	},
+  data() {
+    return {
+      showMobileNavigation: false,
+    }
+  },
 
-	async beforeCreate() {
-		const store = useStore()
-		await store.getStoredProgress()
-	},
+  async beforeCreate() {
+    const store = useStore()
+    await store.getStoredProgress()
+  },
 
-	watch: {
-		$route() {
-			this.showMobileNavigation = false
-		},
-	},
+  watch: {
+    $route() {
+      this.showMobileNavigation = false
+    },
+  },
 
-	methods: {
-		toggleMobileNavigation() {
-			this.showMobileNavigation = !this.showMobileNavigation
-		},
-	},
+  methods: {
+    toggleMobileNavigation() {
+      this.showMobileNavigation = !this.showMobileNavigation
+    },
+  },
 }
 </script>
 
@@ -71,8 +71,8 @@ export default {
 @import '@/scss/main';
 
 #app {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 </style>

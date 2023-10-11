@@ -4,8 +4,8 @@ const base = Object.keys(classic)
 const dlc = []
 
 export default [...base, ...dlc].map((camouflage) => ({
-	category: 'Classic',
-	name: camouflage,
-	dlc: dlc.includes(camouflage),
-	isCompleted: false,
+  category: 'Classic',
+  name: camouflage,
+  dlc: dlc.includes(camouflage),
+  isCompleted: false,
 }))

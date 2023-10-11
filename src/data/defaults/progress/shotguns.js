@@ -1,43 +1,43 @@
 export default {
-	'Lockwood 300': {
-		'Mosswood': false,
-		'Jungle Cat': false,
-		'Red Cell': false,
-		'Hunting Orange': false,
-	},
+  'Lockwood 300': {
+    'Mosswood': false,
+    'Jungle Cat': false,
+    'Red Cell': false,
+    'Hunting Orange': false,
+  },
 
-	'Expedite 12': {
-		'Forest Shadow': false,
-		'Tiger Stripes': false,
-		'Snowed In': false,
-		'Violent Orchid': false,
-	},
+  'Expedite 12': {
+    'Forest Shadow': false,
+    'Tiger Stripes': false,
+    'Snowed In': false,
+    'Violent Orchid': false,
+  },
 
-	'Bryson 800': {
-		'Mud Bath': false,
-		'Bamboo': false,
-		'Ground Cover': false,
-		'Aqua': false,
-	},
+  'Bryson 800': {
+    'Mud Bath': false,
+    'Bamboo': false,
+    'Ground Cover': false,
+    'Aqua': false,
+  },
 
-	'Bryson 890': {
-		'Snowstorm Digital': false,
-		'Stone Guard': false,
-		'Shedding': false,
-		'Arctic Chill': false,
-	},
+  'Bryson 890': {
+    'Snowstorm Digital': false,
+    'Stone Guard': false,
+    'Shedding': false,
+    'Arctic Chill': false,
+  },
 
-	'KV Broadside': {
-		'Unplumbed': false,
-		'Conflagration': false,
-		'Ethereal Rampage': false,
-		'Riots Nest': false,
-	},
+  'KV Broadside': {
+    'Unplumbed': false,
+    'Conflagration': false,
+    'Ethereal Rampage': false,
+    'Riots Nest': false,
+  },
 
-	'MX Guardian': {
-		'Wet Sands': false,
-		'Connected Dots': false,
-		'Red Smoke': false,
-		'Green Edges': false,
-	},
+  'MX Guardian': {
+    'Wet Sands': false,
+    'Connected Dots': false,
+    'Red Smoke': false,
+    'Green Edges': false,
+  },
 }

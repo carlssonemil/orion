@@ -6,28 +6,28 @@ import vue2 from '@vitejs/plugin-vue2'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	css: {
-		preprocessorOptions: {
-			scss: {
-				additionalData: `
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
 					@import "./src/scss/abstracts/variables.scss";
 					@import "./src/scss/abstracts/mixins.scss";
 				`,
-			},
-		},
-	},
+      },
+    },
+  },
 
-	plugins: [
-		vue2(),
-		legacy({
-			targets: ['ie >= 11'],
-			additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
-		}),
-	],
+  plugins: [
+    vue2(),
+    legacy({
+      targets: ['ie >= 11'],
+      additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
+    }),
+  ],
 
-	resolve: {
-		alias: {
-			'@': fileURLToPath(new URL('./src', import.meta.url)),
-		},
-	},
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
 })

@@ -1,411 +1,411 @@
 {
-	"general": {
-		"about": "Om",
-		"add_to": "Lägg till i",
-		"all": "Alla",
-		"calling_cards": "Visitkort | Visitkort",
-		"camouflage": "Camouflage | Camouflager",
-		"category": "Kategori | Kategorier",
-		"change_language": "Ändra språk",
-		"close": "Stäng",
-		"coming_soon": "Kommer snart",
-		"complete": "Färdigställa",
-		"days_ago": "{0} dag sedan | {0} dagar sedan",
-		"dlc": "DLC",
-		"favorites": "Favoriter",
-		"filters": "Filter",
-		"grid": "Rutnät",
-		"hide": "Dölj",
-		"list": "Lista",
-		"made_by": "Skapad av {0}",
-		"mastery": "Mastery",
-		"mobile_nav_support_link": "Stöd mig genom att köpa en öl till mig 🍺",
-		"no_favorites_placeholder": "Du har inga favoriter än. Klicka på {star} ikonen på ett {type} för att lägga till den i dina favoriter.",
-		"remove_all": "Ta bort alla",
-		"remove_from": "Ta bort från",
-		"report_an_issue": "Rapportera ett problem",
-		"requirement": "Krav | Krav",
-		"reset": "Återställ",
-		"search": "Sök",
-		"setting": "Inställning | Inställningar",
-		"show": "Visa",
-		"support_notice_link": "köpa en öl till mig",
-		"support_notice": "Om du gillar den här hemsidan, visa din uppskattning genom att {link} 🍺",
-		"translated_by": ", översatt av {0}",
-		"weapon": "Vapen | Vapen",
-		"unlocked": "unlocked"
-	},
-	"filters": {
-		"hide_completed": "Dölj avklarade",
-		"hide_dlc": "Dölj DLC",
-		"hide_gold": "Dölj Guld",
-		"hide_orion": "Dölj Orion",
-		"hide_platinum": "Dölj Platinum",
-		"hide_polyatomic": "Dölj Polyatomic",
-		"toggle_favorite": "{state} favoriter",
-		"toggle_favorites": "Växla favoriter",
-		"toggle_layout": "Växla layout"
-	},
-	"locales": {
-		"en-US": "English",
-		"sv-SE": "Svenska",
-		"es-CO": "Español",
-		"de-DE": "Deutsch",
-		"fr-FR": "Français",
+  "general": {
+    "about": "Om",
+    "add_to": "Lägg till i",
+    "all": "Alla",
+    "calling_cards": "Visitkort | Visitkort",
+    "camouflage": "Camouflage | Camouflager",
+    "category": "Kategori | Kategorier",
+    "change_language": "Ändra språk",
+    "close": "Stäng",
+    "coming_soon": "Kommer snart",
+    "complete": "Färdigställa",
+    "days_ago": "{0} dag sedan | {0} dagar sedan",
+    "dlc": "DLC",
+    "favorites": "Favoriter",
+    "filters": "Filter",
+    "grid": "Rutnät",
+    "hide": "Dölj",
+    "list": "Lista",
+    "made_by": "Skapad av {0}",
+    "mastery": "Mastery",
+    "mobile_nav_support_link": "Stöd mig genom att köpa en öl till mig 🍺",
+    "no_favorites_placeholder": "Du har inga favoriter än. Klicka på {star} ikonen på ett {type} för att lägga till den i dina favoriter.",
+    "remove_all": "Ta bort alla",
+    "remove_from": "Ta bort från",
+    "report_an_issue": "Rapportera ett problem",
+    "requirement": "Krav | Krav",
+    "reset": "Återställ",
+    "search": "Sök",
+    "setting": "Inställning | Inställningar",
+    "show": "Visa",
+    "support_notice_link": "köpa en öl till mig",
+    "support_notice": "Om du gillar den här hemsidan, visa din uppskattning genom att {link} 🍺",
+    "translated_by": ", översatt av {0}",
+    "weapon": "Vapen | Vapen",
+    "unlocked": "unlocked"
+  },
+  "filters": {
+    "hide_completed": "Dölj avklarade",
+    "hide_dlc": "Dölj DLC",
+    "hide_gold": "Dölj Guld",
+    "hide_orion": "Dölj Orion",
+    "hide_platinum": "Dölj Platinum",
+    "hide_polyatomic": "Dölj Polyatomic",
+    "toggle_favorite": "{state} favoriter",
+    "toggle_favorites": "Växla favoriter",
+    "toggle_layout": "Växla layout"
+  },
+  "locales": {
+    "en-US": "English",
+    "sv-SE": "Svenska",
+    "es-CO": "Español",
+    "de-DE": "Deutsch",
+    "fr-FR": "Français",
     "uk-UA": "Українська"
-	},
-	"pages": {
-		"404": {
-			"description": "Hoppsan, det ser ut som att du tog fel sväng och hamnade på en saknad sida. 🤔",
-			"link": "Återvänd hem"
-		},
-		"about": {
-			"features": {
-				"autosaving": {
-					"title": "Autosparning",
-					"description": "Dina framsteg sparas och lagras automatiskt. Inget konto behövs."
-				},
-				"responsive": {
-					"title": "Responsiv",
-					"description": "Hemsidan fungerar på alla enheter, från dator till mobil."
-				},
-				"export_import": {
-					"title": "Exportera/Importera",
-					"description": "Exportera dina framsteg till en fil och importera den till en annan enhet."
-				},
-				"filterable": {
-					"title": "Filtreringsbar",
-					"description": "Växla enkelt mellan vapenkategorier och växla avklarade på/av."
-				},
-				"ad_free": {
-					"title": "Annonsfri",
-					"description": "Inga irriterande annonser som väsnas på hemsidan. Inte nu, aldrig någonsin."
-				}
-			},
-			"open_source_description": "Byggd med {0}, lagrad på {1} och analys av {2}. Koden till den här webbplatsen är tillgänglig på {3}.",
-			"open_source": "Öppen källkod",
-			"previous_trackers_description": "Letar du efter camouflage trackers för de tidigare Call of Duty-spelen som går tillbaka till 2019?",
-			"previous_trackers": "Tidigare trackers",
-			"subtitle": "Håll koll på dina framsteg till Orion-camouflaget med denna lättanvända tracker.",
-			"support_me_description": "Du kan stötta mig genom att {0} 🍺, det skulle vara mycket uppskattat!",
-			"support_me_link": "köpa en öl",
-			"support_me": "Stötta mig",
-			"title": "Enkel, lätt och intuitiv"
-		},
-		"calling_cards": {
-			"completed_in_category": "Visitkort färdiga i kategori",
-			"empty_search": "Din sökning matchade inte några visitkort 🤔",
-			"finished_placeholder": " Du har klarat alla visitkortutmaningar 👏"
-		},
-		"camouflages": {
-			"completed_in_category": "Camouflager färdiga i kategori",
-			"empty_search": "Din sökning matchade inte några camouflager 🤔",
-			"finished_placeholder": "Du har klarat alla camouflageutmaningar 👏",
-			"requirement_tooltip": "Få {weapon} till level {level} - {challenge}"
-		},
-		"mastery": {
-			"completed_modal": {
-				"body": "Grattis till att du klarat alla mastery utmaningar! Det är riktigt bra! Du började först spåra din grind här {duration} den {date}.",
-				"support_link": "köpa en öl åt mig",
-				"support": "Om du gillade den här trackern, visa din uppskattning genom att sprida budskapet om det och om du känner dig extra generös kan du överväga att {0} som ett tack. Hoppas vi ses på slagfältet! Skål! 🍺",
-				"title": "Mastery utmaningar avklarade 👏🥳"
-			},
-			"info": "När du har låst upp varje mastery-camouflage låses en mastery-utmaning upp som kräver att du får ett visst antal kills medan du använder det specifika camouflaget för att slutföra det.",
-			"progress": {
-				"label": "Mastery framsteg",
-				"tooltip": "Framsteg mot att klara alla mastery utmaningar"
-			}
-		},
-		"requirements": {
-			"checklist": {
-				"base": "Bas camouflager på 51 vapen",
-				"gold": "Guld camouflager på 51 vapen",
-				"platinum": "Platinum camouflager på 51 vapen",
-				"polyatomic": "Polyatomic camouflager på 51 vapen"
-			},
-			"description": "Det nya camouflagesystemet som implementerats i Modern Warfare II skiljer sig ganska mycket från de senaste Call of Duty-spelen och det kan vara ganska svårt att få ett grepp om och förstå det först, åtminstone jag tyckte det. Det verkar dock vara mycket lättare att grinda igenom jämfört med de tidigare spelen. För att låsa upp Orion-camouflaget måste följande krav uppfyllas: {checklist} När du går igenom camouflagestegen kommer du att låsa upp nästa steg:",
-			"stages": {
-				"base": "Bas",
-				"gold": "Guld",
-				"orion": "Orion",
-				"platinum": "Platinum",
-				"polyatomic": "Polyatomic"
-			},
-			"table": {
-				"headers": {
-					"requirement": "Krav",
-					"stage": "Steg"
-				},
-				"stage_requirements": {
-					"base": "Bas camouflager tilldelas per deras tillhörande vapens bas utmaningar, som låses upp genom att levla upp det specifika vapnet.",
-					"gold": "När bas camouflagen har låsts upp låser du upp guld camouflage utmaningen för det specifika vapnet.",
-					"orion": "Orion camouflaget kommer automatiskt att låsas upp när du har låst upp Polyatomic camouflaget på 51 vapen.",
-					"platinum": "Efter att ha slutfört alla guld camouflage utmaningar för en specifik vapenkategori låser du upp Platinum camouflage utmaningen för den kategorin.",
-					"polyatomic": "När du har låst upp alla Platinum camouflager för 51 vapen låser du upp Polyatomic camouflage utmaningen för alla vapen."
-				},
-				"subtitle": "För att komma till nästa camouflagesteg måste du först låsa upp föregående steg:",
-				"title": "Hur låser jag upp varje camouflagesteg?"
-			},
-			"title": "Hur låser jag upp Orion-camouflaget?"
-		},
-		"settings": {
-			"export": {
-				"copy_to_clipboard": "Kopiera till urklipp",
-				"description": "Exportera dina framsteg till en annan enhet eller webbläsare.",
-				"download_as_file": "Ladda ner som fil",
-				"title": "Exportera framsteg"
-			},
-			"import": {
-				"description": "Importera dina framsteg från en annan enhet eller webbläsare genom att antingen klistra in den exporterade koden eller ladda upp den exporterade filen.",
-				"import_code": "Importera kod",
-				"import_disabled_tooltip": "Du måste ange kod i fältet ovan.",
-				"import_from_file": "Importera från fil",
-				"placeholder": "Klistra in koden här, eller importera från filen nedan.",
-				"title": "Importera framsteg"
-			},
-			"reset": {
-				"confirm": {
-					"body": "Är du säker på att du vill återställa alla dina framsteg?",
-					"cancel": "Avbryt",
-					"reset": "Återställ",
-					"title": "Återställ alla framsteg"
-				},
-				"description": "Denna åtgärd återställer alla dina framsteg och börjar om från noll.",
-				"reset_my_progress": "Återställ mina framsteg",
-				"title": "Återställ alla framsteg",
-				"warning": "Denna åtgärd är oåterkallelig om du inte har exporterat dina framsteg."
-			}
-		},
-		"weapons": {
-			"completed_in_category": "Vapen avklarade i kategori",
-			"completed_modal": {
-				"body": "Grattis till att du avslutat Orion camouflage grinden! Det har varit en lång resa! Du började först spåra din grind här {duration} den {date}.",
-				"support_link": "köpa en öl åt mig",
-				"support": "Om du gillade den här trackern, visa din uppskattning genom att sprida budskapet om det och om du känner dig extra generös kan du överväga att {0} som ett tack. Hoppas vi ses på slagfältet! Skål! 🍺",
-				"title": "Orion upplåst! 👏🥳"
-			},
-			"double_click_tooltip": "Dubbelklicka för att {state} vapen",
-			"finished_placeholder": "Du har klarat alla camouflageutmaningar 👏",
-			"info_link": "här",
-			"info_tooltip": "Du behöver bara avklara antalet basvapen som finns för varje kategori för att låsa upp Platinum-camouflageutmaningen. Till exempel kräver Assault Rifles totalt 8 guldcamouflage för att låsa upp Platinum-camouflageutmaningen för alla vapen i den kategorin. Tryck på denna ikon för att läsa mer.",
-			"info": "Du behöver bara avklara antalet basvapen som finns för varje kategori för att låsa upp Platinum-camouflageutmaningen. Till exempel kräver Assault Rifles totalt 8 guldcamouflage för att låsa upp Platinum-camouflageutmaningen för alla vapen i den kategorin. Läs mer {link}.",
-			"progress": {
-				"label": "Orion framsteg",
-				"tooltip": "Framsteg mot Orion-camouflaget"
-			}
-		}
-	},
-	"utmaningar": {
-		"calling_cards": {
-			"campaign": {
-				"chainlinked": "Slå 'Borderline'-kampanjuppdraget i valfri svårighetsgrad",
-				"gaz": "Slå 'Recon by Fire'-kampanjuppdraget i valfri svårighetsgrad",
-				"shadow_company_ops": "Al Qatala",
-				"soaps_determination": "Slutför 'Strike' kampanjuppdraget"
-			},
-			"dmz": {
-				"activate_uav": "Aktivera {amount} UAV Towers i DMZ",
-				"activate_uav_all": "Slutför alla UAV Tower utmaningar",
-				"agent_kills": "Döda {amount} agenter i DMZ",
-				"agent_kills_all": "Slutför alla döda agenter utmaningar",
-				"armored_agent_kills": "Döda {amount} Armored Agents i DMZ",
-				"armored_agent_kills_all": "Slutför alla Armored Agent utmaningar",
-				"clear_strongholds": "Rensa {amount} Strongholds i DMZ",
-				"clear_strongholds_all": "Slutför alla Stronghold utmaningar",
-				"complete_contracts": "Slutför {amount} kontrakt i DMZ",
-				"complete_contracts_all": "Slutför alla kontrakt utmaningar",
-				"defeat_bosses": "Besegra {amount} Stronghold Bossar i DMZ",
-				"defeat_bosses_all": "Slutför alla Stronghold Bossar utmaningar",
-				"exfil": "Exfil från DMZ {times} gånger",
-				"exfil_all": "Slutför alla Exfil från DMZ utmaningar",
-				"exfil_cash": "Exfil {amount} kontanter från DMZ",
-				"exfil_cash_all": "Slutför alla kontant exfil utmaningar",
-				"exfil_final_helicopter": "Exfil med Final Helicopter {times} gånger",
-				"exfil_final_helicopter_all": "Slutför alla Final Exfil utmaningar",
-				"extract_valuables": "Extrahera {amount} värdesaker från DMZ",
-				"extract_valuables_all": "Slutför alla extrahera värdesaker utmaningar",
-				"loot_caches": "Plundra {amount} gömställen in the DMZ",
-				"loot_caches_all": "Slutför alla plundra utmaningar",
-				"operator_kills": "Döda {amount} Operatörer i DMZ",
-				"operator_kills_all": "Slutför alla Operatör utmaningar",
-				"unlock_spaces": "Lås up {amount} Locked Spaces i DMZ",
-				"unlock_spaces_all": "Slutför alla upplåsningsutmaningar"
-			},
-			"multiplayer": {
-				"accumulate_stars": "Ackumulera {amount} stjärnor från kooperativa spellägen",
-				"assault_kills": "Få {amount} Objective Assault Kills i Multiplayer spellägen",
-				"assault_kills_all": "Slutför alla Objective Assault Kills utmaningar",
-				"defender_kills": "Få {amount} Objective Defender Kills i Multiplayer spellägen",
-				"defender_kills_all": "Slutför alla Objective Defender Kills utmaningar",
-				"gather_intel": "Samla {amount} Intel Fragments i Spec Ops",
-				"gazs_gaze": "Slutför Atomgraid räd minst en gång",
-				"occupying_vehicles": "Döda {amount} fiender i fordon",
-				"occupying_vehicles_all": "Slutför alla döda fiender i fordon utmaningar",
-				"wins": "Vinn {amount} matcher i Multiplayer spellägen",
-				"wins_all": "Slutför alla vinst utmaningar"
-			},
-			"operator": {
-				"operator_assists": "Få {amount} Operatör Assists",
-				"operator_assists_all": "Slutför alla Operatör Assists utmaningar",
-				"operator_double_kills": "Få {amount} Operatör Double Kills",
-				"operator_double_kills_all": "Slutför alla Operatör Double Kills utmaningar",
-				"operator_finishing_moves": "Execute {amount} Finishing Moves on Operatörer",
-				"operator_finishing_moves_all": "Slutför alla Finishing Moves on Operatörer utmaningar",
-				"operator_headshots": "Få {amount} Operatör huvudskott",
-				"operator_headshots_all": "Slutför alla Operatör Headshots utmaningar",
-				"operator_hipfire_kills": "Få {amount} Operatör Hipfire Kills",
-				"operator_hipfire_kills_all": "Slutför alla Operatör Hipfire Kills utmaningar",
-				"operator_kills": "Få {amount} Operatör Kills",
-				"operator_kills_all": "Slutför alla Operatör Kills utmaningar",
-				"operator_kills_lethals": "Få {amount} Operatör Kills med Lethals",
-				"operator_kills_lethals_all": "Slutför alla Operatör Kills med Lethals utmaningar",
-				"operator_longshots": "Få {amount} Operatör Longshots",
-				"operator_longshots_all": "Slutför alla Operatör Longshots utmaningar",
-				"operator_melee": "Få {amount} Operatör Melee Kills",
-				"operator_melee_all": "Slutför alla Operatör Melee Kills utmaningar",
-				"operator_without_dying": "Få {amount} Operatör Kills utan att dö {times} gånger",
-				"operator_without_dying_all": "Slutför alla Operatör Kills utan att dö utmaningar"
-			},
-			"prestige": {
-				"black_and_gold": "Få 200 Hipfire Operatör Kills med Assault Rifles",
-				"bravery": "Använd 50 Killstreaks",
-				"cinco_skully": "Få 25 Operatör Kills med Drill Charge",
-				"colorful_shine": "Få 50 Operatör Longshot Kills med SMGs",
-				"cretaceous_creation": "Få 50 Operatör Kills med Launchers",
-				"cyber_assassin": "Slutför alla Prestige utmaningar",
-				"dragon_in_downtown": "Få 30 Operator Kills med kastknivar",
-				"drenched_in_gold": "Få 100 Operator Kills med hagelgevär medan du siktar",
-				"enraged_cycle": "Få 50 Operatör Kills med Battle Rage",
-				"fists_in_overdrive": "Få 100 Operatör huvudskott med Battle Rifles",
-				"flaming_last_stand": "Få 100 Hipfire Operatör Kills med Pistoler",
-				"frag_find_a_way": "Få 25 Operatör Kills med Frag Grenade",
-				"i_got_your_back": "Slutför alla Prestige utmaningar",
-				"join_us": "Slutför alla Prestige utmaningar",
-				"masked_excitement": "Få 100 Operatör huvudskott med LMGs",
-				"money_fight": "Slutför alla Prestige utmaningar",
-				"ocular_revenge": "Slutför alla Prestige utmaningar",
-				"oneman_charge_2": "Få 100 döda med sekundära vapen",
-				"rear_sights": "Få 100 Kingslayer Kills",
-				"spilled_milk": "Shock 25 operatörer med Shock Stick",
-				"tagged_up": "Få 25 Operatör Triple Kills",
-				"the_perch": "Få 50 Operatör Kills när du använder Dead Silence",
-				"winged_terror": "Utför 10 avslutande drag",
-				"worm_devour": "Få 5 Operatör Kills utan att dö 15 gånger",
-				"zoomer": "Förstör 25 fordon"
-			},
-			"season": {
-				"aerial_entrance": "Season 01 Battlepass Sector A1 belöning",
-				"corner_cover": "Season 01 Battlepass Sector A17 belöning",
-				"gathered_gents": "Season 01 Battlepass Sector A2 belöning",
-				"hired_sniper": "Season 01 Battlepass Sector A5 belöning",
-				"plane_sight": "Season 01 Battlepass Sector A14 belöning",
-				"scaling_assassin": "Season 01 Battlepass Sector A8 belöning",
-				"sole_survivor": "Season 01 Battlepass Sector A18 belöning"
-			},
-			"twitch": {
-				"death_wrap": "Titta på kvalificerade Twitch-streams",
-				"deaths_angel": "Titta på kvalificerade Twitch-streams"
-			},
-			"warzone": {
-				"containers": "Öppna {amount} behållare i Warzone",
-				"containers_all": "Slutför alla Warzone plundrautmaningar",
-				"contracts": "Slutför {amount} kontrakt i Warzone",
-				"contracts_all": "Slutför alla Warzone kontraktutmaningar",
-				"kills": "Få {amount} Kills i Warzone",
-				"kills_all": "Slutför alla Warzone killutmaningar",
-				"wins": "Vinn {amount} matcher i Warzone",
-				"wins_all": "Slutför alla Warzone vinstutmaningar"
-			}
-		},
-		"mastery": "{amount} Kills när du använder {camouflage} camouflaget",
-		"types": {
-			"behind": "{amount} kills bakifrån",
-			"mounted": "{amount} kills när du är monterad",
-			"hipfire": "{amount} kills från höften",
-			"ads": "{amount} kills när du siktar",
-			"one_shot": "{amount} en-skotts kills",
-			"double": "{amount} dubbel kills",
-			"crouched": "{amount} kills när du duckar",
-			"prone": "{amount} kills när du ligger ner",
-			"kills": "{amount} kills",
-			"point_blank": "{amount} kills point blank",
-			"suppressor": "{amount} kills med en ljuddämpare",
-			"time_limit": "{amount} kills inom {seconds} sekunder av varandra {times} gånger",
-			"akimbo": "{amount} kills med Akimbo-vapen",
-			"without_dying": "{amount} kills utan att dö {times} gånger",
-			"longshot": "{amount} långskott kills",
-			"headshot": "{amount} huvudskott kills",
-			"destroy_streaks_equipment_or_vehicles": "Förstör {amount} stycken av fiende streaks, utrustning eller fordon"
-		}
-	},
-	"weapon_categories": {
-		"Assault Rifles": "Assault Rifles",
-		"Battle Rifles": "Battle Rifles",
-		"Handguns": "Handguns",
-		"Launchers": "Launchers",
-		"Light Machine Guns": "Light Machine Guns",
-		"Marksman Rifles": "Marksman Rifles",
-		"Melee": "Melee",
-		"Shotguns": "Shotguns",
-		"Sniper Rifles": "Sniper Rifles",
-		"Sub Machine Guns": "Sub Machine Guns"
-	},
-	"camouflage_categories": {
-		"Spray Paint": "Spray Paint",
-		"Woodland": "Woodland",
-		"Digital": "Digital",
-		"Dragon": "Dragon",
-		"Geometric": "Geometric",
-		"Fun": "Fun",
-		"Foliage": "Foliage",
-		"Skulls": "Skulls",
-		"Tiger": "Tiger",
-		"Stripes": "Stripes",
-		"Reptile": "Reptile",
-		"Solid Colors": "Solid Colors",
-		"Classic": "Classic",
-		"Cliffside": "Cliffside"
-	},
-	"calling_card_categories": {
-		"campaign": "Kampanj",
-		"multiplayer": "Multiplayer",
-		"dmz": "DMZ",
-		"dmz_activate_uav": "Aktivera UAVs",
-		"dmz_agent_kills": "Agent Kills",
-		"dmz_armored_agent_kills": "Armerade Agent Kills",
-		"dmz_clear_strongholds": "Rensa Strongholds",
-		"dmz_complete_contracts": "Slutför Kontrakt",
-		"dmz_defeat_bosses": "Besegra Bossar",
-		"dmz_exfil": "Exfil",
-		"dmz_exfil_cash": "Exfil Cash",
-		"dmz_exfil_final_helicopter": "Exfil Final Helicopter",
-		"dmz_extract_valuables": "Extract Värdesaker",
-		"dmz_loot_caches": "Plundra Caches",
-		"dmz_operator_kills": "Operatör Kills",
-		"dmz_unlock_spaces": "Lås upp platser",
-		"multiplayer_assault_kills": "Attack Kills",
-		"multiplayer_defender_kills": "Defens Kills",
-		"multiplayer_misc": "Misc",
-		"multiplayer_occupying_vehicles": "Ockuperade fordon",
-		"multiplayer_wins": "Vinster",
-		"operator": "Operatör",
-		"operator_assists": "Assister",
-		"operator_double_kills": "Dubbel Kills",
-		"operator_finishing_moves": "Finishing Moves",
-		"operator_headshots": "Huvudskott",
-		"operator_hipfire_kills": "Hipfire Kills",
-		"operator_kills": "Kills",
-		"operator_kills_lethals": "Kills med Lethals",
-		"operator_longshots": "Longshots",
-		"operator_melee": "Melee Kills",
-		"operator_without_dying": "Kills utan att dö",
-		"prestige": "Prestige",
-		"season": "Säsong",
-		"twitch": "Twitch",
-		"warzone": "Warzone",
-		"warzone_containers": "Behållare",
-		"warzone_contracts": "Kontrakt",
-		"warzone_kills": "Kills",
-		"warzone_wins": "Vinster"
-	}
+  },
+  "pages": {
+    "404": {
+      "description": "Hoppsan, det ser ut som att du tog fel sväng och hamnade på en saknad sida. 🤔",
+      "link": "Återvänd hem"
+    },
+    "about": {
+      "features": {
+        "autosaving": {
+          "title": "Autosparning",
+          "description": "Dina framsteg sparas och lagras automatiskt. Inget konto behövs."
+        },
+        "responsive": {
+          "title": "Responsiv",
+          "description": "Hemsidan fungerar på alla enheter, från dator till mobil."
+        },
+        "export_import": {
+          "title": "Exportera/Importera",
+          "description": "Exportera dina framsteg till en fil och importera den till en annan enhet."
+        },
+        "filterable": {
+          "title": "Filtreringsbar",
+          "description": "Växla enkelt mellan vapenkategorier och växla avklarade på/av."
+        },
+        "ad_free": {
+          "title": "Annonsfri",
+          "description": "Inga irriterande annonser som väsnas på hemsidan. Inte nu, aldrig någonsin."
+        }
+      },
+      "open_source_description": "Byggd med {0}, lagrad på {1} och analys av {2}. Koden till den här webbplatsen är tillgänglig på {3}.",
+      "open_source": "Öppen källkod",
+      "previous_trackers_description": "Letar du efter camouflage trackers för de tidigare Call of Duty-spelen som går tillbaka till 2019?",
+      "previous_trackers": "Tidigare trackers",
+      "subtitle": "Håll koll på dina framsteg till Orion-camouflaget med denna lättanvända tracker.",
+      "support_me_description": "Du kan stötta mig genom att {0} 🍺, det skulle vara mycket uppskattat!",
+      "support_me_link": "köpa en öl",
+      "support_me": "Stötta mig",
+      "title": "Enkel, lätt och intuitiv"
+    },
+    "calling_cards": {
+      "completed_in_category": "Visitkort färdiga i kategori",
+      "empty_search": "Din sökning matchade inte några visitkort 🤔",
+      "finished_placeholder": " Du har klarat alla visitkortutmaningar 👏"
+    },
+    "camouflages": {
+      "completed_in_category": "Camouflager färdiga i kategori",
+      "empty_search": "Din sökning matchade inte några camouflager 🤔",
+      "finished_placeholder": "Du har klarat alla camouflageutmaningar 👏",
+      "requirement_tooltip": "Få {weapon} till level {level} - {challenge}"
+    },
+    "mastery": {
+      "completed_modal": {
+        "body": "Grattis till att du klarat alla mastery utmaningar! Det är riktigt bra! Du började först spåra din grind här {duration} den {date}.",
+        "support_link": "köpa en öl åt mig",
+        "support": "Om du gillade den här trackern, visa din uppskattning genom att sprida budskapet om det och om du känner dig extra generös kan du överväga att {0} som ett tack. Hoppas vi ses på slagfältet! Skål! 🍺",
+        "title": "Mastery utmaningar avklarade 👏🥳"
+      },
+      "info": "När du har låst upp varje mastery-camouflage låses en mastery-utmaning upp som kräver att du får ett visst antal kills medan du använder det specifika camouflaget för att slutföra det.",
+      "progress": {
+        "label": "Mastery framsteg",
+        "tooltip": "Framsteg mot att klara alla mastery utmaningar"
+      }
+    },
+    "requirements": {
+      "checklist": {
+        "base": "Bas camouflager på 51 vapen",
+        "gold": "Guld camouflager på 51 vapen",
+        "platinum": "Platinum camouflager på 51 vapen",
+        "polyatomic": "Polyatomic camouflager på 51 vapen"
+      },
+      "description": "Det nya camouflagesystemet som implementerats i Modern Warfare II skiljer sig ganska mycket från de senaste Call of Duty-spelen och det kan vara ganska svårt att få ett grepp om och förstå det först, åtminstone jag tyckte det. Det verkar dock vara mycket lättare att grinda igenom jämfört med de tidigare spelen. För att låsa upp Orion-camouflaget måste följande krav uppfyllas: {checklist} När du går igenom camouflagestegen kommer du att låsa upp nästa steg:",
+      "stages": {
+        "base": "Bas",
+        "gold": "Guld",
+        "orion": "Orion",
+        "platinum": "Platinum",
+        "polyatomic": "Polyatomic"
+      },
+      "table": {
+        "headers": {
+          "requirement": "Krav",
+          "stage": "Steg"
+        },
+        "stage_requirements": {
+          "base": "Bas camouflager tilldelas per deras tillhörande vapens bas utmaningar, som låses upp genom att levla upp det specifika vapnet.",
+          "gold": "När bas camouflagen har låsts upp låser du upp guld camouflage utmaningen för det specifika vapnet.",
+          "orion": "Orion camouflaget kommer automatiskt att låsas upp när du har låst upp Polyatomic camouflaget på 51 vapen.",
+          "platinum": "Efter att ha slutfört alla guld camouflage utmaningar för en specifik vapenkategori låser du upp Platinum camouflage utmaningen för den kategorin.",
+          "polyatomic": "När du har låst upp alla Platinum camouflager för 51 vapen låser du upp Polyatomic camouflage utmaningen för alla vapen."
+        },
+        "subtitle": "För att komma till nästa camouflagesteg måste du först låsa upp föregående steg:",
+        "title": "Hur låser jag upp varje camouflagesteg?"
+      },
+      "title": "Hur låser jag upp Orion-camouflaget?"
+    },
+    "settings": {
+      "export": {
+        "copy_to_clipboard": "Kopiera till urklipp",
+        "description": "Exportera dina framsteg till en annan enhet eller webbläsare.",
+        "download_as_file": "Ladda ner som fil",
+        "title": "Exportera framsteg"
+      },
+      "import": {
+        "description": "Importera dina framsteg från en annan enhet eller webbläsare genom att antingen klistra in den exporterade koden eller ladda upp den exporterade filen.",
+        "import_code": "Importera kod",
+        "import_disabled_tooltip": "Du måste ange kod i fältet ovan.",
+        "import_from_file": "Importera från fil",
+        "placeholder": "Klistra in koden här, eller importera från filen nedan.",
+        "title": "Importera framsteg"
+      },
+      "reset": {
+        "confirm": {
+          "body": "Är du säker på att du vill återställa alla dina framsteg?",
+          "cancel": "Avbryt",
+          "reset": "Återställ",
+          "title": "Återställ alla framsteg"
+        },
+        "description": "Denna åtgärd återställer alla dina framsteg och börjar om från noll.",
+        "reset_my_progress": "Återställ mina framsteg",
+        "title": "Återställ alla framsteg",
+        "warning": "Denna åtgärd är oåterkallelig om du inte har exporterat dina framsteg."
+      }
+    },
+    "weapons": {
+      "completed_in_category": "Vapen avklarade i kategori",
+      "completed_modal": {
+        "body": "Grattis till att du avslutat Orion camouflage grinden! Det har varit en lång resa! Du började först spåra din grind här {duration} den {date}.",
+        "support_link": "köpa en öl åt mig",
+        "support": "Om du gillade den här trackern, visa din uppskattning genom att sprida budskapet om det och om du känner dig extra generös kan du överväga att {0} som ett tack. Hoppas vi ses på slagfältet! Skål! 🍺",
+        "title": "Orion upplåst! 👏🥳"
+      },
+      "double_click_tooltip": "Dubbelklicka för att {state} vapen",
+      "finished_placeholder": "Du har klarat alla camouflageutmaningar 👏",
+      "info_link": "här",
+      "info_tooltip": "Du behöver bara avklara antalet basvapen som finns för varje kategori för att låsa upp Platinum-camouflageutmaningen. Till exempel kräver Assault Rifles totalt 8 guldcamouflage för att låsa upp Platinum-camouflageutmaningen för alla vapen i den kategorin. Tryck på denna ikon för att läsa mer.",
+      "info": "Du behöver bara avklara antalet basvapen som finns för varje kategori för att låsa upp Platinum-camouflageutmaningen. Till exempel kräver Assault Rifles totalt 8 guldcamouflage för att låsa upp Platinum-camouflageutmaningen för alla vapen i den kategorin. Läs mer {link}.",
+      "progress": {
+        "label": "Orion framsteg",
+        "tooltip": "Framsteg mot Orion-camouflaget"
+      }
+    }
+  },
+  "utmaningar": {
+    "calling_cards": {
+      "campaign": {
+        "chainlinked": "Slå 'Borderline'-kampanjuppdraget i valfri svårighetsgrad",
+        "gaz": "Slå 'Recon by Fire'-kampanjuppdraget i valfri svårighetsgrad",
+        "shadow_company_ops": "Al Qatala",
+        "soaps_determination": "Slutför 'Strike' kampanjuppdraget"
+      },
+      "dmz": {
+        "activate_uav": "Aktivera {amount} UAV Towers i DMZ",
+        "activate_uav_all": "Slutför alla UAV Tower utmaningar",
+        "agent_kills": "Döda {amount} agenter i DMZ",
+        "agent_kills_all": "Slutför alla döda agenter utmaningar",
+        "armored_agent_kills": "Döda {amount} Armored Agents i DMZ",
+        "armored_agent_kills_all": "Slutför alla Armored Agent utmaningar",
+        "clear_strongholds": "Rensa {amount} Strongholds i DMZ",
+        "clear_strongholds_all": "Slutför alla Stronghold utmaningar",
+        "complete_contracts": "Slutför {amount} kontrakt i DMZ",
+        "complete_contracts_all": "Slutför alla kontrakt utmaningar",
+        "defeat_bosses": "Besegra {amount} Stronghold Bossar i DMZ",
+        "defeat_bosses_all": "Slutför alla Stronghold Bossar utmaningar",
+        "exfil": "Exfil från DMZ {times} gånger",
+        "exfil_all": "Slutför alla Exfil från DMZ utmaningar",
+        "exfil_cash": "Exfil {amount} kontanter från DMZ",
+        "exfil_cash_all": "Slutför alla kontant exfil utmaningar",
+        "exfil_final_helicopter": "Exfil med Final Helicopter {times} gånger",
+        "exfil_final_helicopter_all": "Slutför alla Final Exfil utmaningar",
+        "extract_valuables": "Extrahera {amount} värdesaker från DMZ",
+        "extract_valuables_all": "Slutför alla extrahera värdesaker utmaningar",
+        "loot_caches": "Plundra {amount} gömställen in the DMZ",
+        "loot_caches_all": "Slutför alla plundra utmaningar",
+        "operator_kills": "Döda {amount} Operatörer i DMZ",
+        "operator_kills_all": "Slutför alla Operatör utmaningar",
+        "unlock_spaces": "Lås up {amount} Locked Spaces i DMZ",
+        "unlock_spaces_all": "Slutför alla upplåsningsutmaningar"
+      },
+      "multiplayer": {
+        "accumulate_stars": "Ackumulera {amount} stjärnor från kooperativa spellägen",
+        "assault_kills": "Få {amount} Objective Assault Kills i Multiplayer spellägen",
+        "assault_kills_all": "Slutför alla Objective Assault Kills utmaningar",
+        "defender_kills": "Få {amount} Objective Defender Kills i Multiplayer spellägen",
+        "defender_kills_all": "Slutför alla Objective Defender Kills utmaningar",
+        "gather_intel": "Samla {amount} Intel Fragments i Spec Ops",
+        "gazs_gaze": "Slutför Atomgraid räd minst en gång",
+        "occupying_vehicles": "Döda {amount} fiender i fordon",
+        "occupying_vehicles_all": "Slutför alla döda fiender i fordon utmaningar",
+        "wins": "Vinn {amount} matcher i Multiplayer spellägen",
+        "wins_all": "Slutför alla vinst utmaningar"
+      },
+      "operator": {
+        "operator_assists": "Få {amount} Operatör Assists",
+        "operator_assists_all": "Slutför alla Operatör Assists utmaningar",
+        "operator_double_kills": "Få {amount} Operatör Double Kills",
+        "operator_double_kills_all": "Slutför alla Operatör Double Kills utmaningar",
+        "operator_finishing_moves": "Execute {amount} Finishing Moves on Operatörer",
+        "operator_finishing_moves_all": "Slutför alla Finishing Moves on Operatörer utmaningar",
+        "operator_headshots": "Få {amount} Operatör huvudskott",
+        "operator_headshots_all": "Slutför alla Operatör Headshots utmaningar",
+        "operator_hipfire_kills": "Få {amount} Operatör Hipfire Kills",
+        "operator_hipfire_kills_all": "Slutför alla Operatör Hipfire Kills utmaningar",
+        "operator_kills": "Få {amount} Operatör Kills",
+        "operator_kills_all": "Slutför alla Operatör Kills utmaningar",
+        "operator_kills_lethals": "Få {amount} Operatör Kills med Lethals",
+        "operator_kills_lethals_all": "Slutför alla Operatör Kills med Lethals utmaningar",
+        "operator_longshots": "Få {amount} Operatör Longshots",
+        "operator_longshots_all": "Slutför alla Operatör Longshots utmaningar",
+        "operator_melee": "Få {amount} Operatör Melee Kills",
+        "operator_melee_all": "Slutför alla Operatör Melee Kills utmaningar",
+        "operator_without_dying": "Få {amount} Operatör Kills utan att dö {times} gånger",
+        "operator_without_dying_all": "Slutför alla Operatör Kills utan att dö utmaningar"
+      },
+      "prestige": {
+        "black_and_gold": "Få 200 Hipfire Operatör Kills med Assault Rifles",
+        "bravery": "Använd 50 Killstreaks",
+        "cinco_skully": "Få 25 Operatör Kills med Drill Charge",
+        "colorful_shine": "Få 50 Operatör Longshot Kills med SMGs",
+        "cretaceous_creation": "Få 50 Operatör Kills med Launchers",
+        "cyber_assassin": "Slutför alla Prestige utmaningar",
+        "dragon_in_downtown": "Få 30 Operator Kills med kastknivar",
+        "drenched_in_gold": "Få 100 Operator Kills med hagelgevär medan du siktar",
+        "enraged_cycle": "Få 50 Operatör Kills med Battle Rage",
+        "fists_in_overdrive": "Få 100 Operatör huvudskott med Battle Rifles",
+        "flaming_last_stand": "Få 100 Hipfire Operatör Kills med Pistoler",
+        "frag_find_a_way": "Få 25 Operatör Kills med Frag Grenade",
+        "i_got_your_back": "Slutför alla Prestige utmaningar",
+        "join_us": "Slutför alla Prestige utmaningar",
+        "masked_excitement": "Få 100 Operatör huvudskott med LMGs",
+        "money_fight": "Slutför alla Prestige utmaningar",
+        "ocular_revenge": "Slutför alla Prestige utmaningar",
+        "oneman_charge_2": "Få 100 döda med sekundära vapen",
+        "rear_sights": "Få 100 Kingslayer Kills",
+        "spilled_milk": "Shock 25 operatörer med Shock Stick",
+        "tagged_up": "Få 25 Operatör Triple Kills",
+        "the_perch": "Få 50 Operatör Kills när du använder Dead Silence",
+        "winged_terror": "Utför 10 avslutande drag",
+        "worm_devour": "Få 5 Operatör Kills utan att dö 15 gånger",
+        "zoomer": "Förstör 25 fordon"
+      },
+      "season": {
+        "aerial_entrance": "Season 01 Battlepass Sector A1 belöning",
+        "corner_cover": "Season 01 Battlepass Sector A17 belöning",
+        "gathered_gents": "Season 01 Battlepass Sector A2 belöning",
+        "hired_sniper": "Season 01 Battlepass Sector A5 belöning",
+        "plane_sight": "Season 01 Battlepass Sector A14 belöning",
+        "scaling_assassin": "Season 01 Battlepass Sector A8 belöning",
+        "sole_survivor": "Season 01 Battlepass Sector A18 belöning"
+      },
+      "twitch": {
+        "death_wrap": "Titta på kvalificerade Twitch-streams",
+        "deaths_angel": "Titta på kvalificerade Twitch-streams"
+      },
+      "warzone": {
+        "containers": "Öppna {amount} behållare i Warzone",
+        "containers_all": "Slutför alla Warzone plundrautmaningar",
+        "contracts": "Slutför {amount} kontrakt i Warzone",
+        "contracts_all": "Slutför alla Warzone kontraktutmaningar",
+        "kills": "Få {amount} Kills i Warzone",
+        "kills_all": "Slutför alla Warzone killutmaningar",
+        "wins": "Vinn {amount} matcher i Warzone",
+        "wins_all": "Slutför alla Warzone vinstutmaningar"
+      }
+    },
+    "mastery": "{amount} Kills när du använder {camouflage} camouflaget",
+    "types": {
+      "behind": "{amount} kills bakifrån",
+      "mounted": "{amount} kills när du är monterad",
+      "hipfire": "{amount} kills från höften",
+      "ads": "{amount} kills när du siktar",
+      "one_shot": "{amount} en-skotts kills",
+      "double": "{amount} dubbel kills",
+      "crouched": "{amount} kills när du duckar",
+      "prone": "{amount} kills när du ligger ner",
+      "kills": "{amount} kills",
+      "point_blank": "{amount} kills point blank",
+      "suppressor": "{amount} kills med en ljuddämpare",
+      "time_limit": "{amount} kills inom {seconds} sekunder av varandra {times} gånger",
+      "akimbo": "{amount} kills med Akimbo-vapen",
+      "without_dying": "{amount} kills utan att dö {times} gånger",
+      "longshot": "{amount} långskott kills",
+      "headshot": "{amount} huvudskott kills",
+      "destroy_streaks_equipment_or_vehicles": "Förstör {amount} stycken av fiende streaks, utrustning eller fordon"
+    }
+  },
+  "weapon_categories": {
+    "Assault Rifles": "Assault Rifles",
+    "Battle Rifles": "Battle Rifles",
+    "Handguns": "Handguns",
+    "Launchers": "Launchers",
+    "Light Machine Guns": "Light Machine Guns",
+    "Marksman Rifles": "Marksman Rifles",
+    "Melee": "Melee",
+    "Shotguns": "Shotguns",
+    "Sniper Rifles": "Sniper Rifles",
+    "Sub Machine Guns": "Sub Machine Guns"
+  },
+  "camouflage_categories": {
+    "Spray Paint": "Spray Paint",
+    "Woodland": "Woodland",
+    "Digital": "Digital",
+    "Dragon": "Dragon",
+    "Geometric": "Geometric",
+    "Fun": "Fun",
+    "Foliage": "Foliage",
+    "Skulls": "Skulls",
+    "Tiger": "Tiger",
+    "Stripes": "Stripes",
+    "Reptile": "Reptile",
+    "Solid Colors": "Solid Colors",
+    "Classic": "Classic",
+    "Cliffside": "Cliffside"
+  },
+  "calling_card_categories": {
+    "campaign": "Kampanj",
+    "multiplayer": "Multiplayer",
+    "dmz": "DMZ",
+    "dmz_activate_uav": "Aktivera UAVs",
+    "dmz_agent_kills": "Agent Kills",
+    "dmz_armored_agent_kills": "Armerade Agent Kills",
+    "dmz_clear_strongholds": "Rensa Strongholds",
+    "dmz_complete_contracts": "Slutför Kontrakt",
+    "dmz_defeat_bosses": "Besegra Bossar",
+    "dmz_exfil": "Exfil",
+    "dmz_exfil_cash": "Exfil Cash",
+    "dmz_exfil_final_helicopter": "Exfil Final Helicopter",
+    "dmz_extract_valuables": "Extract Värdesaker",
+    "dmz_loot_caches": "Plundra Caches",
+    "dmz_operator_kills": "Operatör Kills",
+    "dmz_unlock_spaces": "Lås upp platser",
+    "multiplayer_assault_kills": "Attack Kills",
+    "multiplayer_defender_kills": "Defens Kills",
+    "multiplayer_misc": "Misc",
+    "multiplayer_occupying_vehicles": "Ockuperade fordon",
+    "multiplayer_wins": "Vinster",
+    "operator": "Operatör",
+    "operator_assists": "Assister",
+    "operator_double_kills": "Dubbel Kills",
+    "operator_finishing_moves": "Finishing Moves",
+    "operator_headshots": "Huvudskott",
+    "operator_hipfire_kills": "Hipfire Kills",
+    "operator_kills": "Kills",
+    "operator_kills_lethals": "Kills med Lethals",
+    "operator_longshots": "Longshots",
+    "operator_melee": "Melee Kills",
+    "operator_without_dying": "Kills utan att dö",
+    "prestige": "Prestige",
+    "season": "Säsong",
+    "twitch": "Twitch",
+    "warzone": "Warzone",
+    "warzone_containers": "Behållare",
+    "warzone_contracts": "Kontrakt",
+    "warzone_kills": "Kills",
+    "warzone_wins": "Vinster"
+  }
 }

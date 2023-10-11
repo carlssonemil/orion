@@ -9,9 +9,9 @@ const locale = getStoredLocale()
 const DEFAULT_LOCALE = 'en-US'
 
 const i18n = new VueI18n({
-	locale: locale || DEFAULT_LOCALE,
-	fallbackLocale: DEFAULT_LOCALE,
-	messages: Object.assign(locales),
+  locale: locale || DEFAULT_LOCALE,
+  fallbackLocale: DEFAULT_LOCALE,
+  messages: Object.assign(locales),
 })
 
 export { DEFAULT_LOCALE, locales, i18n }

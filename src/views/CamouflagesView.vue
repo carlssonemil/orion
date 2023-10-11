@@ -1,15 +1,15 @@
 <template>
-	<div class="container">
-		<div class="filter-container">
-			<FiltersComponent :options="filterOptions" />
-			<div class="toggles">
-				<FavoritesToggleComponent />
-				<LayoutToggleComponent />
-			</div>
-		</div>
+  <div class="container">
+    <div class="filter-container">
+      <FiltersComponent :options="filterOptions" />
+      <div class="toggles">
+        <FavoritesToggleComponent />
+        <LayoutToggleComponent />
+      </div>
+    </div>
 
-		<CamouflagesComponent :camouflages="filteredCamouflages" :favorites="favorites" />
-	</div>
+    <CamouflagesComponent :camouflages="filteredCamouflages" :favorites="favorites" />
+  </div>
 </template>
 
 <script>
@@ -26,137 +26,137 @@ import LayoutToggleComponent from '@/components/LayoutToggleComponent.vue'
 const store = useStore()
 
 export default {
-	components: {
-		CamouflagesComponent,
-		FavoritesToggleComponent,
-		FiltersComponent,
-		LayoutToggleComponent,
-	},
+  components: {
+    CamouflagesComponent,
+    FavoritesToggleComponent,
+    FiltersComponent,
+    LayoutToggleComponent,
+  },
 
-	computed: {
-		...mapState(useStore, ['camouflageRequirements', 'weapons', 'filters']),
+  computed: {
+    ...mapState(useStore, ['camouflageRequirements', 'weapons', 'filters']),
 
-		filterOptions() {
-			return [
-				{
-					label: this.$tc('general.category'),
-					key: 'camouflageCategory',
-					type: 'select',
-					options: this.camouflageCategories,
-				},
-				{
-					label: this.$t('filters.hide_completed'),
-					key: 'hideCompletedCamouflages',
-					type: 'checkbox',
-				},
-				{
-					id: 'search',
-					placeholder: `${this.$t('general.search')}...`,
-					key: 'search',
-					type: 'search',
-				},
-			]
-		},
+    filterOptions() {
+      return [
+        {
+          label: this.$tc('general.category'),
+          key: 'camouflageCategory',
+          type: 'select',
+          options: this.camouflageCategories,
+        },
+        {
+          label: this.$t('filters.hide_completed'),
+          key: 'hideCompletedCamouflages',
+          type: 'checkbox',
+        },
+        {
+          id: 'search',
+          placeholder: `${this.$t('general.search')}...`,
+          key: 'search',
+          type: 'search',
+        },
+      ]
+    },
 
-		camouflageCategories() {
-			return Array.from(new Set(camouflages.map((camouflage) => camouflage.category)))
-		},
+    camouflageCategories() {
+      return Array.from(new Set(camouflages.map((camouflage) => camouflage.category)))
+    },
 
-		camouflages() {
-			const camouflageProgress = this.weapons
-				.map((weapon) => weapon.progress)
-				.flat()
-				.reduce((a, b) => ({ ...a, ...b }), {})
+    camouflages() {
+      const camouflageProgress = this.weapons
+        .map((weapon) => weapon.progress)
+        .flat()
+        .reduce((a, b) => ({ ...a, ...b }), {})
 
-			camouflages.forEach((camouflage) => {
-				camouflage.isCompleted = camouflageProgress[camouflage.name] || false
-			})
+      camouflages.forEach((camouflage) => {
+        camouflage.isCompleted = camouflageProgress[camouflage.name] || false
+      })
 
-			return camouflages
-		},
+      return camouflages
+    },
 
-		filteredCamouflages() {
-			const { camouflageCategory, hideCompletedCamouflages, search } = this.filters
+    filteredCamouflages() {
+      const { camouflageCategory, hideCompletedCamouflages, search } = this.filters
 
-			let filteredCamouflages = this.camouflages
+      let filteredCamouflages = this.camouflages
 
-			if (camouflageCategory) {
-				filteredCamouflages = filteredCamouflages.filter(
-					(camouflage) => camouflage.category === camouflageCategory
-				)
-			}
+      if (camouflageCategory) {
+        filteredCamouflages = filteredCamouflages.filter(
+          (camouflage) => camouflage.category === camouflageCategory
+        )
+      }
 
-			if (hideCompletedCamouflages) {
-				filteredCamouflages = filteredCamouflages.filter((camouflage) => !camouflage.isCompleted)
-			}
+      if (hideCompletedCamouflages) {
+        filteredCamouflages = filteredCamouflages.filter((camouflage) => !camouflage.isCompleted)
+      }
 
-			if (search) {
-				filteredCamouflages = filteredCamouflages.filter((camouflage) =>
-					camouflage.name.toLowerCase().includes(search.toLowerCase())
-				)
-			}
+      if (search) {
+        filteredCamouflages = filteredCamouflages.filter((camouflage) =>
+          camouflage.name.toLowerCase().includes(search.toLowerCase())
+        )
+      }
 
-			return groupBy(filteredCamouflages, (camouflage) => camouflage.category)
-		},
+      return groupBy(filteredCamouflages, (camouflage) => camouflage.category)
+    },
 
-		favorites() {
-			const favorites = store.getFavorites('camouflages')
-			return camouflages.filter((camouflage) => favorites.includes(camouflage.name))
-		},
-	},
+    favorites() {
+      const favorites = store.getFavorites('camouflages')
+      return camouflages.filter((camouflage) => favorites.includes(camouflage.name))
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .container {
-	text-align: center;
+  text-align: center;
 }
 
 h1 {
-	margin-top: 75px;
+  margin-top: 75px;
 }
 
 h2 {
-	margin: 30px auto 0;
-	max-width: 450px;
+  margin: 30px auto 0;
+  max-width: 450px;
 }
 
 .filter-container {
-	align-items: center;
-	display: flex;
-	width: 100%;
+  align-items: center;
+  display: flex;
+  width: 100%;
 
-	@media (max-width: $tablet) {
-		flex-direction: column;
+  @media (max-width: $tablet) {
+    flex-direction: column;
 
-		::v-deep .filters-component {
-			margin-bottom: 20px;
-			margin-right: 0;
-			width: 100%;
+    ::v-deep .filters-component {
+      margin-bottom: 20px;
+      margin-right: 0;
+      width: 100%;
 
-			#search {
-				margin: 8px 0 0;
-			}
-		}
+      #search {
+        margin: 8px 0 0;
+      }
+    }
 
-		.toggles {
-			display: flex;
-			justify-content: space-between;
-			width: 100%;
+    .toggles {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
 
-			> :first-child {
-				margin-right: 20px;
-			}
-		}
-	}
+      > :first-child {
+        margin-right: 20px;
+      }
+    }
+  }
 }
 
 ::v-deep .filters-component {
-	flex-grow: 1;
-	margin-right: 15px;
+  flex-grow: 1;
+  margin-right: 15px;
 
-	#search {
-		margin: 0 10px 0 auto;
-	}
+  #search {
+    margin: 0 10px 0 auto;
+  }
 }
 </style>

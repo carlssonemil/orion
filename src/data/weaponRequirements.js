@@ -10,34 +10,34 @@ import sniperRiflesRequirements from './requirements/weapons/sniperRifles'
 import subMachineGunsRequirements from './requirements/weapons/subMachineGuns'
 
 export default {
-	'Assault Rifles': {
-		...assaultRiflesRequiresments,
-	},
-	'Battle Rifles': {
-		...battleRiflesRequirements,
-	},
-	'Sub Machine Guns': {
-		...subMachineGunsRequirements,
-	},
-	'Shotguns': {
-		...shotgunsRequirements,
-	},
-	'Light Machine Guns': {
-		...lightMachineGunsRequirements,
-	},
-	'Marksman Rifles': {
-		...marksmanRiflesRequirements,
-	},
-	'Sniper Rifles': {
-		...sniperRiflesRequirements,
-	},
-	'Handguns': {
-		...handgunsRequirements,
-	},
-	'Launchers': {
-		...launchersRequirements,
-	},
-	'Melee': {
-		...meleeRequirements,
-	},
+  'Assault Rifles': {
+    ...assaultRiflesRequiresments,
+  },
+  'Battle Rifles': {
+    ...battleRiflesRequirements,
+  },
+  'Sub Machine Guns': {
+    ...subMachineGunsRequirements,
+  },
+  'Shotguns': {
+    ...shotgunsRequirements,
+  },
+  'Light Machine Guns': {
+    ...lightMachineGunsRequirements,
+  },
+  'Marksman Rifles': {
+    ...marksmanRiflesRequirements,
+  },
+  'Sniper Rifles': {
+    ...sniperRiflesRequirements,
+  },
+  'Handguns': {
+    ...handgunsRequirements,
+  },
+  'Launchers': {
+    ...launchersRequirements,
+  },
+  'Melee': {
+    ...meleeRequirements,
+  },
 }

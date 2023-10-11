@@ -8,12 +8,12 @@ import twitch from './calling_cards/twitch'
 import warzone from './calling_cards/warzone'
 
 export default [
-	...operator,
-	...campaign,
-	...multiplayer,
-	...dmz,
-	...warzone,
-	...prestige,
-	...twitch,
-	...season,
+  ...operator,
+  ...campaign,
+  ...multiplayer,
+  ...dmz,
+  ...warzone,
+  ...prestige,
+  ...twitch,
+  ...season,
 ]
