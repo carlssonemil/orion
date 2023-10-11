@@ -359,7 +359,7 @@ export default [
 		category: 'operator',
 		subcategory: 'operator_longshots',
 		requirement: {
-			type: 'vengeful_stance',
+			type: 'operator_longshots',
 			amount: 500,
 		},
 	},
@@ -368,7 +368,7 @@ export default [
 		category: 'operator',
 		subcategory: 'operator_longshots',
 		requirement: {
-			type: 'god_of_death',
+			type: 'operator_longshots',
 			amount: 1000,
 		},
 	},
