@@ -1,4 +1,3 @@
-// TODO: Might not be needed if camouflage pictures are never implemented.
 const convertToKebabCase = (string) => {
 	return string
 		.replace(/\s+/g, '-')

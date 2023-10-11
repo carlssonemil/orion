@@ -266,180 +266,180 @@
 				"operator_without_dying": "Get {amount} Operator Kills without dying {times} times",
 				"operator_without_dying_all": "Complete all Operator Kills without dying challenges"
 			},
-  			"prestige 1": {
-					"tagged_up": "Get 25 Operator Triple Kills",
-					"fists_in_overdrive": "Get 100 Operator Headshots with Battle Rifles",
-					"frag_finds_a_way": "Get 25 Operator Kills with Frag Grenade",
-					"colorful_shine": "Get 50 Operator Longshot Kills with SMGs",
-					"cyber_assassin": "Complete All Prestige Challenges"
-  			},
-  			"prestige 2": {
-					"cinco_skully": "Get 25 Operator Kills with Drill Charge",
-					"black_and_gold": "Get 200 Hipfire Operator Kills with Assault Rifles",
-					"the_perch": "Get 50 Operator Kills using Dead Silence",
-					"drench_in_gold": "Get 100 Operator Kills with Shotguns while Aiming Down Sights",
-					"join_us": "Complete All Prestige Challenges"
-  			},
-  			"prestige 3": {
-					"cretaceous_us_creation": "Get 50 Operator Kills with Launchers",
-					"winged_terror": "Execute 10 Finishing Moves",
-					"worm_devour": "Get 5 Operator Kills Without Dying 15 Times",
-					"dragon_in_downtown": "Get 30 Operator Kills with Throwing Knife",
-					"money_fight": "Complete All Prestige Challenges"
-  			},
-  			"prestige 4": {
-					"masked_excitement": "Get 100 Operator Headshots with LMGs",
-					"spilled_milk": "Shock 25 Operators with Shock Stick",
-					"enraged_cycle": "Get Operator Kills Using Battle Rage",
-					"flaming_last_stand": "Get 100 Hipfire Operator Kills with Pistols",
-					"ocular_revenge": "Complete All Prestige Challenges"
-  			},
-  			"prestige 5": {
-					"oneman_charge_2": "Get 100 Kills with Secondary Weapons",
-					"professional": "Use 50 Killstreaks",
-					"blinding_decent": "Get 100 Kingslayer Kills",
-					"by_fire": "Destroy 25 Vehicles",
-					"i_got_your_back": "Complete All Prestige Challenges"
-  			},
-  			"prestige 6": {
-					"sirens_appearance": "Get 150 Operator Kills while at Low Health",
-					"flaming_ouroboros": "Get 150 Operator One Shot One Kills with Snipers",
-					"warlocks_entrance": "Mark 100 Enemies with Tactical Cameras",
-					"depths_of_hell": "Complete All Prestige Challenges",
-					"eternal_torment": "Get 50 Operator Kills with Molotov"
-  			},
-  			"prestige 7": {
-					"spray_and_pray": "Get 50 Melee Operator Kills",
-					"masked_marauder": "Get 50 Longshot Operator Kills with Battle Rifles",
-					"gamma_radiance": "Kill 50 Operators from Behind using Tracker Perk",
-					"dive_into_battle": "Stun 100 Operators with Stun Grenades",
-					"ghosts_gaze": "Complete All Prestige Challenges"
-  			},
-  			"prestige 8": {
-					"grim_fate": "Get 15 Quad Kills",
-					"joust": "Get 100 Operator Kills with Riot Shield",
-					"symbolic_end": "Respawn 50 Times using Tactial Insertion",
-					"chattering_soldier": "Get 100 Operator Headshots with Marksman Rifles",
-					"the_inevitable": "Complete All Prestige Challenges"
-  			},
-  			"prestige 9": {
-					"goggles_on": "Get 100 Buzzkills",
-					"downed": "Get 50 Operator Prone Kills with Pistols",
-					"rider": "Supply 100 Player with Munition Box",
-					"hold_your_fire": "Get 10 Operator Kills Without Dying 10 Times",
-					"over_yonder": "Complete All Prestige Challenges"
-  			},
-  			"prestige 10": {
-					"explosive_supreme": "Get 150 Hipfire Operator Kills with LMGs",
-					"bright_blue": "Get 25 Operator Kills with Semtex",
-					"blinding_soldiers": "Call in 20 Mortar Strikes",
-					"abstract_geometry": "Get 10 Hipfire Operator Kills in a Single Match 10 Times",
-					"windows": "Complete All Prestige Challenges"
-  			},
-  			"prestige 11": {
-					"in_the_zone": "Get 100 Operatir Headshots with SMGs",
-					"the_other_side": "Blind 25 Operators with Flash Grenades",
-					"strength_and_grit": "Get 100 Kills with Killstreaks",
-					"right_down_the_middle": "Get 10 Mounted Operator Kills in a Single Match 10 Times",
-					"konigs_sights": "Complete All Prestige Challenges"
-  			},
-  			"prestige 12": {
-					"it_begins_here": "Get 100 Operator One Shot One Kills with Shotguns",
-					"rusher_mentality": "Disrupt 50 Operator Equipment with DDoS",
-					"duty": "Get 50 Operator Kills with Melee Weapons",
-					"search_party": "Get 20 Operator Kills in a Single Match 10 Times",
-					"ghost_on_point": "Complete All Prestige Challenges"
-  			},
-  			"prestige 13": {
-					"prime_time": "Get 50 Operator Double Kills with Assault Rifles",
-					"shell_of_a_man": "Get 25 Operator Kills from Behind",
-					"x_marks_the_spot": "Get 25 Operator Kills with your Last Bullet",
-					"seeing_green": "Get 10 Operator Headshot Kills in a Single Match 10 Times",
-					"red_ghost": "Complete All Prestige Challenges"
-  			},
-  			"prestige 14": {
-					"never_back_down": "Get 30 Point Blank Operator Kills with Snipers",
-					"pseudo_power": "Get 10 Operator Double Kills with Frag Grenades",
-					"against_the_odds": "Injure 50 Operators with Tear Gas",
-					"this_is_it": "Get 100 Revenge Kills",
-					"against_the_wall": "Complete All Prestige Challenges"
-  			},
-  			"prestige 15": {
-					"stars": "Get 150 Crouch Kills",
-					"exes": "Get 20 Buzzkills with Lethals",
-					"stars_beta": "Get 50 Operator Kills with Secondary Weapon using Overkill Perk",
-					"circles": "Use 50 Field Upgrades using Overclock Perk",
-					"zap": "Complete All Prestige Challenges"
-  			},
-  			"prestige 16": {
-					"slithering": "Get 25 Operator Triple Kills with Assault Rifles",
-					"venom_splash": "Get 15 Operator Kills without Dying 5 Times",
-					"blue_unholy": "Kill 30 Sprinting Operators with Melee Weapons",
-					"8legged_nightmare": "Get 50 Operator Kills After Recently Picking Up A Weapon",
-					"bloody_growl": "Complete All Prestige Challenges"
-  			},
-  			"prestige 17": {
-					"the_membrane": "Get 50 Operator Kills with Launchers",
-					"enraged_monkey": "Win 50 Matches",
-					"insane_even": "Get 100 Operator Kills While On Low Health",
-					"the_fear_in_your_eyes": "Get 50 Kills with Throwing Stars",
-					"skull_face_off": "Complete All Prestige Challenges"
-  			},
-  			"prestige 18": {
-					"fluff_assault": "Get 200 Operator Kills without Taking Damage from that Operator",
-					"seasoned_campers": "Get 15 Operator Kills with Proximity Mine",
-					"serious_combat": "Get 10 Operator Kills Without Dying 10 Times with Battle Rifles",
-					"windy_wonders": "Get 25 Operator Kills After Recently Reloading",
-					"prestige_18": "Complete All Prestige Challenges"
+      "prestige 1": {
+        "tagged_up": "Get 25 Operator Triple Kills",
+        "fists_in_overdrive": "Get 100 Operator Headshots with Battle Rifles",
+        "frag_finds_a_way": "Get 25 Operator Kills with Frag Grenade",
+        "colorful_shine": "Get 50 Operator Longshot Kills with SMGs",
+        "cyber_assassin": "Complete All Prestige Challenges"
+      },
+      "prestige 2": {
+        "cinco_skully": "Get 25 Operator Kills with Drill Charge",
+        "black_and_gold": "Get 200 Hipfire Operator Kills with Assault Rifles",
+        "the_perch": "Get 50 Operator Kills using Dead Silence",
+        "drench_in_gold": "Get 100 Operator Kills with Shotguns while Aiming Down Sights",
+        "join_us": "Complete All Prestige Challenges"
+      },
+      "prestige 3": {
+        "cretaceous_us_creation": "Get 50 Operator Kills with Launchers",
+        "winged_terror": "Execute 10 Finishing Moves",
+        "worm_devour": "Get 5 Operator Kills Without Dying 15 Times",
+        "dragon_in_downtown": "Get 30 Operator Kills with Throwing Knife",
+        "money_fight": "Complete All Prestige Challenges"
+      },
+      "prestige 4": {
+        "masked_excitement": "Get 100 Operator Headshots with LMGs",
+        "spilled_milk": "Shock 25 Operators with Shock Stick",
+        "enraged_cycle": "Get Operator Kills Using Battle Rage",
+        "flaming_last_stand": "Get 100 Hipfire Operator Kills with Pistols",
+        "ocular_revenge": "Complete All Prestige Challenges"
+      },
+      "prestige 5": {
+        "oneman_charge_2": "Get 100 Kills with Secondary Weapons",
+        "professional": "Use 50 Killstreaks",
+        "blinding_decent": "Get 100 Kingslayer Kills",
+        "by_fire": "Destroy 25 Vehicles",
+        "i_got_your_back": "Complete All Prestige Challenges"
+      },
+      "prestige 6": {
+        "sirens_appearance": "Get 150 Operator Kills while at Low Health",
+        "flaming_ouroboros": "Get 150 Operator One Shot One Kills with Snipers",
+        "warlocks_entrance": "Mark 100 Enemies with Tactical Cameras",
+        "depths_of_hell": "Complete All Prestige Challenges",
+        "eternal_torment": "Get 50 Operator Kills with Molotov"
+      },
+      "prestige 7": {
+        "spray_and_pray": "Get 50 Melee Operator Kills",
+        "masked_marauder": "Get 50 Longshot Operator Kills with Battle Rifles",
+        "gamma_radiance": "Kill 50 Operators from Behind using Tracker Perk",
+        "dive_into_battle": "Stun 100 Operators with Stun Grenades",
+        "ghosts_gaze": "Complete All Prestige Challenges"
+      },
+      "prestige 8": {
+        "grim_fate": "Get 15 Quad Kills",
+        "joust": "Get 100 Operator Kills with Riot Shield",
+        "symbolic_end": "Respawn 50 Times using Tactial Insertion",
+        "chattering_soldier": "Get 100 Operator Headshots with Marksman Rifles",
+        "the_inevitable": "Complete All Prestige Challenges"
+      },
+      "prestige 9": {
+        "goggles_on": "Get 100 Buzzkills",
+        "downed": "Get 50 Operator Prone Kills with Pistols",
+        "rider": "Supply 100 Player with Munition Box",
+        "hold_your_fire": "Get 10 Operator Kills Without Dying 10 Times",
+        "over_yonder": "Complete All Prestige Challenges"
+      },
+      "prestige 10": {
+        "explosive_supreme": "Get 150 Hipfire Operator Kills with LMGs",
+        "bright_blue": "Get 25 Operator Kills with Semtex",
+        "blinding_soldiers": "Call in 20 Mortar Strikes",
+        "abstract_geometry": "Get 10 Hipfire Operator Kills in a Single Match 10 Times",
+        "windows": "Complete All Prestige Challenges"
+      },
+      "prestige 11": {
+        "in_the_zone": "Get 100 Operatir Headshots with SMGs",
+        "the_other_side": "Blind 25 Operators with Flash Grenades",
+        "strength_and_grit": "Get 100 Kills with Killstreaks",
+        "right_down_the_middle": "Get 10 Mounted Operator Kills in a Single Match 10 Times",
+        "konigs_sights": "Complete All Prestige Challenges"
+      },
+      "prestige 12": {
+        "it_begins_here": "Get 100 Operator One Shot One Kills with Shotguns",
+        "rusher_mentality": "Disrupt 50 Operator Equipment with DDoS",
+        "duty": "Get 50 Operator Kills with Melee Weapons",
+        "search_party": "Get 20 Operator Kills in a Single Match 10 Times",
+        "ghost_on_point": "Complete All Prestige Challenges"
+      },
+      "prestige 13": {
+        "prime_time": "Get 50 Operator Double Kills with Assault Rifles",
+        "shell_of_a_man": "Get 25 Operator Kills from Behind",
+        "x_marks_the_spot": "Get 25 Operator Kills with your Last Bullet",
+        "seeing_green": "Get 10 Operator Headshot Kills in a Single Match 10 Times",
+        "red_ghost": "Complete All Prestige Challenges"
+      },
+      "prestige 14": {
+        "never_back_down": "Get 30 Point Blank Operator Kills with Snipers",
+        "pseudo_power": "Get 10 Operator Double Kills with Frag Grenades",
+        "against_the_odds": "Injure 50 Operators with Tear Gas",
+        "this_is_it": "Get 100 Revenge Kills",
+        "against_the_wall": "Complete All Prestige Challenges"
+      },
+      "prestige 15": {
+        "stars": "Get 150 Crouch Kills",
+        "exes": "Get 20 Buzzkills with Lethals",
+        "stars_beta": "Get 50 Operator Kills with Secondary Weapon using Overkill Perk",
+        "circles": "Use 50 Field Upgrades using Overclock Perk",
+        "zap": "Complete All Prestige Challenges"
+      },
+      "prestige 16": {
+        "slithering": "Get 25 Operator Triple Kills with Assault Rifles",
+        "venom_splash": "Get 15 Operator Kills without Dying 5 Times",
+        "blue_unholy": "Kill 30 Sprinting Operators with Melee Weapons",
+        "8legged_nightmare": "Get 50 Operator Kills After Recently Picking Up A Weapon",
+        "bloody_growl": "Complete All Prestige Challenges"
+      },
+      "prestige 17": {
+        "the_membrane": "Get 50 Operator Kills with Launchers",
+        "enraged_monkey": "Win 50 Matches",
+        "insane_even": "Get 100 Operator Kills While On Low Health",
+        "the_fear_in_your_eyes": "Get 50 Kills with Throwing Stars",
+        "skull_face_off": "Complete All Prestige Challenges"
+      },
+      "prestige 18": {
+        "fluff_assault": "Get 200 Operator Kills without Taking Damage from that Operator",
+        "seasoned_campers": "Get 15 Operator Kills with Proximity Mine",
+        "serious_combat": "Get 10 Operator Kills Without Dying 10 Times with Battle Rifles",
+        "windy_wonders": "Get 25 Operator Kills After Recently Reloading",
+        "prestige_18": "Complete All Prestige Challenges"
 			},
-  			"prestige 19": {
-					"feral_house_cat": "Get 25 Operator Kills Affected by Smoke Grenade",
-					"sea_rage": "Get 30 Secondary Weapon Operator Headshot Kills",
-					"fight_the_tiger": "Get 50 Wall Bang Operator Kills",
-					"locked_in_battle": "Get 20 Operator Triple Kills with LMGs",
-					"prestige_19": "Complete All Prestige Challenges"
-  			},
-	  		"prestige 20": {
-					"heavy_gunning": "Spot 25 Operators Using Snapshot Grenade",
-					"slope_killers": "Get 10 Afterlife Kills",
-					"sud_buds": "Get 50 Kills with Marksman Rifle",
-					"ghost_grind": "Get 50 Operator Double Kills with SMGs",
-					"prestige_20": "Complete All Prestige Challenges"
-	  		},
-  			"prestige 21": {
-					"ravens_cry": "Get 15 Operator Kills",
-					"snake_soul": "Get 30 Operator Kills by Fire",
-					"letting_the_lion_out": "Get 100 Operator Kills while Enemy Team Has an Active UAV",
-					"unbearable": "Get 100 Operator Hipfire Kills With Pistols",
-					"prestige_21": "Complete All Prestige Challenges"
-  			},
-  			"prestige 22": {
-					"infinity_calling": "Get 100 ADS Operator Kills with Pistols",
-					"wolfs_wrath": "Complete 75 Base Daily Challenges in Multiplayer or Warzone",
-					"endless_battle": "Get 50 Operator Kills Shortly after Swapping Weapons",
-					"hogs_hell": "Get 25 Operator Kills while Swimming",
-					"animal_instinct": "Complete All Prestige Challenges"
-  			},
-  			"prestige 23": {
-					"beautiful_distraction": "Get 100 Mounted Operator Kills with Snipers",
-					"money_blaster": "Get 50 Operator Kills with Claymore",
-					"smoke_tricks": "Get 100 Longshot",
-					"king_ham": "Get 50 Melee Operator Kills with Non-Melee Weapons",
-					"eat_lead": "Complete All Prestige Challenges"
-  			},
-  			"prestige 24": {
-					"swirling_crimson": "Get 25 Operator Quad Kills with Shotguns",
-					"gotchya": "Get 25 Operator Kills by Sticking them with Thermite",
-					"the_knight": "Get 50 Low-Blow Operator Kills with Melee Weapons",
-					"babel_brawl": "Get 150 Avenger Operator Kills",
-					"the_record": "Complete All Prestige Challenges"
-  			},
-  			"prestige 25": {
-					"deep_in_thought": "Get 25 Operator Triple Kills with SMGs",
-					"no_more_practice": "Spot 100 Operators with the Spotter Scope",
-					"ride_and_fire": "Get 30 Extreme Longshot Operator Kills",
-					"unspent_shells": "Intercept 50 Equipment with the Trophy System",
-					"ghost_provides_cover": "Complete All Prestige Challenges"
+      "prestige 19": {
+        "feral_house_cat": "Get 25 Operator Kills Affected by Smoke Grenade",
+        "sea_rage": "Get 30 Secondary Weapon Operator Headshot Kills",
+        "fight_the_tiger": "Get 50 Wall Bang Operator Kills",
+        "locked_in_battle": "Get 20 Operator Triple Kills with LMGs",
+        "prestige_19": "Complete All Prestige Challenges"
+      },
+      "prestige 20": {
+        "heavy_gunning": "Spot 25 Operators Using Snapshot Grenade",
+        "slope_killers": "Get 10 Afterlife Kills",
+        "sud_buds": "Get 50 Kills with Marksman Rifle",
+        "ghost_grind": "Get 50 Operator Double Kills with SMGs",
+        "prestige_20": "Complete All Prestige Challenges"
+      },
+      "prestige 21": {
+        "ravens_cry": "Get 15 Operator Kills",
+        "snake_soul": "Get 30 Operator Kills by Fire",
+        "letting_the_lion_out": "Get 100 Operator Kills while Enemy Team Has an Active UAV",
+        "unbearable": "Get 100 Operator Hipfire Kills With Pistols",
+        "prestige_21": "Complete All Prestige Challenges"
+      },
+      "prestige 22": {
+        "infinity_calling": "Get 100 ADS Operator Kills with Pistols",
+        "wolfs_wrath": "Complete 75 Base Daily Challenges in Multiplayer or Warzone",
+        "endless_battle": "Get 50 Operator Kills Shortly after Swapping Weapons",
+        "hogs_hell": "Get 25 Operator Kills while Swimming",
+        "animal_instinct": "Complete All Prestige Challenges"
+      },
+      "prestige 23": {
+        "beautiful_distraction": "Get 100 Mounted Operator Kills with Snipers",
+        "money_blaster": "Get 50 Operator Kills with Claymore",
+        "smoke_tricks": "Get 100 Longshot",
+        "king_ham": "Get 50 Melee Operator Kills with Non-Melee Weapons",
+        "eat_lead": "Complete All Prestige Challenges"
+      },
+      "prestige 24": {
+        "swirling_crimson": "Get 25 Operator Quad Kills with Shotguns",
+        "gotchya": "Get 25 Operator Kills by Sticking them with Thermite",
+        "the_knight": "Get 50 Low-Blow Operator Kills with Melee Weapons",
+        "babel_brawl": "Get 150 Avenger Operator Kills",
+        "the_record": "Complete All Prestige Challenges"
+      },
+      "prestige 25": {
+        "deep_in_thought": "Get 25 Operator Triple Kills with SMGs",
+        "no_more_practice": "Spot 100 Operators with the Spotter Scope",
+        "ride_and_fire": "Get 30 Extreme Longshot Operator Kills",
+        "unspent_shells": "Intercept 50 Equipment with the Trophy System",
+        "ghost_provides_cover": "Complete All Prestige Challenges"
 			},
 			"season": {
 				"aerial_entrance": "Season 01 Battlepass Sector A1 Reward",
