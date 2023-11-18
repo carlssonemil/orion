@@ -7,10 +7,10 @@
     <div>
       <router-link to="/">{{ $tc('general.weapon', 2) }}</router-link>
       <router-link to="/camouflages">{{ $tc('general.camouflage', 2) }}</router-link>
-      <router-link to="/calling-cards" class="new">{{
-        $tc('general.calling_cards', 2)
-      }}</router-link>
+      <router-link to="/calling-cards">{{ $tc('general.calling_cards', 2) }}</router-link>
       <router-link to="/mastery">{{ $t('general.mastery') }}</router-link>
+      <a href="https://interstellar.emca.app">Interstellar</a>
+
       <router-link
         to="/settings"
         class="icon settings"
@@ -18,6 +18,7 @@
         v-tippy="{ placement: 'bottom' }">
         <IconComponent name="cog" />
       </router-link>
+
       <a
         href="https://github.com/carlssonemil/orion/issues/new?title=[Bug]%20"
         target="_blank"

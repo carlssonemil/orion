@@ -200,6 +200,8 @@ nav.mobile {
 		width: 100%;
 
 		a {
+			align-items: center;
+			display: flex;
 			font-size: 16px;
 
 			+ a {
@@ -219,6 +221,10 @@ nav.mobile {
 					position: relative;
 					top: 2px;
 				}
+			}
+
+			.icon-component {
+				margin-right: 8px;
 			}
 		}
 	}

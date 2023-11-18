@@ -12,7 +12,12 @@
     <div>
       <router-link to="/about">{{ $t('general.about') }}</router-link>
       <router-link to="/requirements">{{ $tc('general.requirement') }}</router-link>
-      <a href="https://github.com/carlssonemil/orion">GitHub</a>
+      <a href="https://github.com/carlssonemil/orion" v-tippy="{ content: 'GitHub' }">
+        <IconComponent name="github" />
+      </a>
+      <a href="https://discord.gg/kM3hmsZG" v-tippy="{ content: 'Discord' }">
+        <IconComponent name="discord" />
+      </a>
       <LocaleSwitcherComponent />
     </div>
   </footer>

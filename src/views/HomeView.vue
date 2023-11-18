@@ -1,5 +1,14 @@
 <template>
   <div class="container">
+    <AlertComponent style="margin-bottom: 30px">
+      <p>
+        Looking for the tracker for Modern Warfare 3?
+        <a href="https://interstellar.emca.app/">You can find it here</a>! Zombie camouflages for
+        the Modern Warfare 2 guns and shared calling cards will be added to this tracker in the
+        coming weeks! Good luck with the grind! 🚀
+      </p>
+    </AlertComponent>
+
     <div class="filter-container">
       <FiltersComponent :options="filterOptions" :show-info="true">
         <template #info>
@@ -69,6 +78,7 @@ import WeaponsComponent from '@/components/WeaponsComponent.vue'
 import ProgressComponent from '@/components/ProgressComponent.vue'
 import LayoutToggleComponent from '@/components/LayoutToggleComponent.vue'
 import FavoritesToggleComponent from '@/components/FavoritesToggleComponent.vue'
+import AlertComponent from '@/components/AlertComponent.vue'
 
 export default {
   components: {
@@ -78,6 +88,7 @@ export default {
     ProgressComponent,
     LayoutToggleComponent,
     FavoritesToggleComponent,
+    AlertComponent,
   },
 
   data() {
