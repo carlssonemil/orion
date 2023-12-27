@@ -250,7 +250,7 @@ export default [
   {
     name: 'Panther Soldier',
     category: 'dmz',
-    subcategory: 'dmz_defeat_bosses',
+    subcategory: 'dmz_complete_contracts',
     requirement: {
       type: 'defeat_bosses',
       amount: 1,
