@@ -15,7 +15,7 @@
       <a href="https://github.com/carlssonemil/orion" v-tippy="{ content: 'GitHub' }">
         <IconComponent name="github" />
       </a>
-      <a href="https://discord.gg/kM3hmsZG" v-tippy="{ content: 'Discord' }">
+      <a href="https://discord.gg/VzKpZbBPkM" v-tippy="{ content: 'Discord' }">
         <IconComponent name="discord" />
       </a>
       <LocaleSwitcherComponent />
